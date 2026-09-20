@@ -35,6 +35,8 @@ from robrains.ml_modules import (
     DevelopmentHITL,
     ScopeAcceleratorTaskBackend,
     EnantioExtravaganzaBackend,
+    MyCustomBackend,
+    DragonflyBackend,
 )
 from robrains.parameter_backends import (
     Chemical,
@@ -908,6 +910,20 @@ class MultiTaskScope(ML_Platform_omni, AllScopeTaskBackend):
 
 class DevHITL(ML_Platform_HITL_Development_omni, DevelopmentHITL):
     """Single Bayesian Optimisation class, this class"""
+
+    def __init__(self):
+        super().__init__()
+
+
+class MyCustomML(ML_Platform_omni, MyCustomBackend):
+    """Custom ML algorithm combining platform communication with custom backend logic."""
+
+    def __init__(self):
+        super().__init__()
+
+
+class DragonflyML(ML_Platform_omni, DragonflyBackend):
+    """Dragonfly GP Bandit ML algorithm combining platform communication with dragonfly backend logic."""
 
     def __init__(self):
         super().__init__()

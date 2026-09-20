@@ -54,8 +54,9 @@ st.file_uploader(
 )
 
 if st.session_state["session_file"] is not None:
-    ret = backend.session_container.load_session(st.session_state["session_file"])
+    ret, error_msg = backend.session_container.load_session(st.session_state["session_file"])
     if ret == "Success":
         st.success("Session Loaded Successfully!")
     elif ret == "Error":
-        st.warning("Error loading session file, rebuild from scratch!")
+        st.warning(f"Error loading session file: {error_msg}")
+        st.info("请检查终端日志获取详细信息，或从零开始配置。")

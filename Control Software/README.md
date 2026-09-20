@@ -3,7 +3,9 @@
 > ***"This mission is too important for me to allow you to jeopardize it."***  
 > — *HAL9000 (2001: A Space Odyssey) *
 
-
+source "/home/jpf/ai4s/Robochem/Robochem_Flex/Control Software/.venv/bin/activate"
+cd "/home/jpf/ai4s/Robochem/Robochem_Flex/Control Software"
+streamlit run robochem_flex.py
 
 **Robochem-Flex** is the integrated control framework developed by the Noël Research Group (NRG) for automated reaction optimization.  
 It unifies **machine learning**, **hardware automation**, and an intuitive **Streamlit-based GUI** into a single modular ecosystem.
@@ -78,7 +80,7 @@ All dependencies are listed in the environment files:
 ### Create and Activate the Conda Environment
 
 ```bash
-conda env create --file .\robochem_flex.yml
+conda env create --file robochem_flex.yml
 conda activate robochem_flex
 ```
 

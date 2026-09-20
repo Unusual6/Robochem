@@ -15,3 +15,5 @@ from .scopeacceleratortaskbackend import ScopeAcceleratorTaskBackend
 from .scopeacceleratorfidelitybackend import ScopeAcceleratorFidelityBackend
 from .singlebayesianoptibackend import SingleBayesianOptiBackend
 from .enantioextravaganza import EnantioExtravaganzaBackend
+from .my_custom_backend import MyCustomBackend
+from .dragonfly_backend import DragonflyBackend

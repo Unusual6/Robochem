@@ -4,6 +4,15 @@
 > — *Douglas Adams (The Salmon of Doubt) *
 
 
+PC (Windows)
+ ├── USB ──→ Arduino 串口设备 (泵、采样器、光源、传感器、GPIO)  [9600 baud]
+ ├── RS-485 ─→ Modbus 温控器 (Omron)
+ ├── 以太网 ─→ HPLC / NMR / 拉曼 (TCP Socket)
+ ├── SSH ──→ 树莓派 (UV/拉曼光谱)
+ └── USB ──→ Bronkhorst 流量控制器
+
+
+
 
 The **NRG's next-generation platform for Automated Chemistry**, providing a flexible, modular, and easily extendable framework to control, coordinate, and analyze complex experimental setups.
 

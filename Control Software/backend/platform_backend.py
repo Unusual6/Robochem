@@ -39,6 +39,8 @@ from backend.ml_backends import (
     EnantioExtravaganza,
     DevHITL,
     ScopeAcceleratorTask,
+    MyCustomML,
+    DragonflyML,
 )
 from omniplatypus.procedures.analytics.analytics_template import AnalyticsTemplate
 
@@ -95,12 +97,15 @@ class PlatformBackend(BaseLoggedClass):
 
     """
 
+    # Use __file__ to construct absolute path (works regardless of cwd)
+    _base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     platform_config_path = os.path.join(
-        "omniplatypus", "omniplatypus", "omniplatypus", "config", "platform_config.json"
+        _base_dir, "OmniPlatypus", "OmniPlatypus", "omniplatypus", "config", "platform_config.json"
     )
     holder_config_path = os.path.join(
-        "omniplatypus",
-        "omniplatypus",
+        _base_dir,
+        "OmniPlatypus",
+        "OmniPlatypus",
         "omniplatypus",
         "config",
         "sample_holder_types.json",
@@ -122,6 +127,8 @@ class PlatformBackend(BaseLoggedClass):
         "MultiTaskScope_HITL": MultiTaskScope_HITL,
         "ScopeAcceleratorTask": ScopeAcceleratorTask,
         "EnantioExtravaganza": EnantioExtravaganza,
+        "MyCustomML": MyCustomML,
+        "DragonflyML": DragonflyML,
     }
     platform_constructors = {
         "PhotochemicalReaction": PhotochemicalReaction,

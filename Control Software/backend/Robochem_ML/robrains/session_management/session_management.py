@@ -509,8 +509,9 @@ class SessionContainer(BaseLoggedClass):
             if vials_df is not None:
                 self._session["number_of_vials"] = vials_df.number_vials
 
-            return "Success"
+            return "Success", ""
         except Exception as e:
-            self.log_mssg(f"Error in loading the session: {e}", level="warning")
+            error_msg = str(e)
+            self.log_mssg(f"Error in loading the session: {error_msg}", level="warning")
             # raise e
-            return "Error"
+            return "Error", error_msg
