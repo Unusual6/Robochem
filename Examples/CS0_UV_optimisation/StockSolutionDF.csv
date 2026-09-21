@@ -1,0 +1,4 @@
+Solvent,StockID,Conc_SM,Conc_THF,Conc_TBADT
+MeCN,Stock_0,1000.0,0.0,0.0
+MeCN,Stock_1,0.0,8000.0,0.0
+MeCN,Stock_2,0.0,0.0,17.0
