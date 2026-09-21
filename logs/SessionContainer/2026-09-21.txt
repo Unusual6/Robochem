@@ -1,2 +1,11 @@
      [OK] 14:58:30 [SessionContainer] Session container initialised
      [OK] 14:58:43 [SessionContainer] Session container initialised
+     [OK] 15:54:28 [SessionContainer] Session container initialised
+[WARNING] 15:54:28 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'
+     [OK] 15:54:51 [SessionContainer] Session container initialised
+[WARNING] 15:54:51 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'
+     [OK] 15:56:26 [SessionContainer] Session container initialised
+[WARNING] 15:56:26 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'
+     [OK] 15:57:39 [SessionContainer] Session container initialised
+     [OK] 15:57:41 [SessionContainer] Session container initialised
+[WARNING] 15:57:41 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'

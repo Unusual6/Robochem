@@ -1,0 +1,25 @@
+          15:57:40 [ML_parameter] Initializing ML parameter 'Limiting Reagent'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'Limiting Reagent' initialized: phy_chem=Chemical, unit=mM, constant_valued=False
+          15:57:40 [ML_parameter] Updating Limiting Reagent attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=Limiting Reagent, phy_chem=Chemical, discrete=['SM'], min_value=50.0, max_value=200.0, unit=mM)
+          15:57:40 [ML_parameter] Initializing ML parameter 'Excess Reagent'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'Excess Reagent' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating Excess Reagent attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=Excess Reagent, phy_chem=Chemical, discrete=['THF'], min_value=1.0, max_value=18.0, unit=eq)
+          15:57:40 [ML_parameter] Initializing ML parameter 'Catalyst'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'Catalyst' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating Catalyst attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=Catalyst, phy_chem=Chemical, discrete=['TBADT'], min_value=0.005, max_value=0.03, unit=eq)
+          15:57:40 [ML_parameter] Initializing ML parameter 'residence_time'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'residence_time' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating residence_time attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=residence_time, phy_chem=Physical, discrete=[], min_value=60.0, max_value=1200.0, unit=S)
+          15:57:40 [ML_parameter] Initializing ML parameter 'light_intensity'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'light_intensity' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating light_intensity attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=light_intensity, phy_chem=Physical, discrete=[], min_value=0.0, max_value=100.0, unit=%)

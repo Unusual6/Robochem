@@ -1,2 +1,85 @@
      [OK] 14:58:30 [SessionContainer] Session container initialised
      [OK] 14:58:43 [SessionContainer] Session container initialised
+     [OK] 15:54:28 [SessionContainer] Session container initialised
+[WARNING] 15:54:28 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'
+     [OK] 15:54:51 [SessionContainer] Session container initialised
+[WARNING] 15:54:51 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'
+     [OK] 15:56:26 [SessionContainer] Session container initialised
+[WARNING] 15:56:26 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'
+     [OK] 15:57:39 [SessionContainer] Session container initialised
+     [OK] 15:57:39 [StockSolutionDF] Chemicals columns updated.
+     [OK] 15:57:39 [StockSolutionDF] initialized successfully.
+     [OK] 15:57:40 [VialDF] initialized successfully.
+          15:57:40 [ML_parameter] Initializing ML parameter 'Limiting Reagent'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'Limiting Reagent' initialized: phy_chem=Chemical, unit=mM, constant_valued=False
+          15:57:40 [ML_parameter] Updating Limiting Reagent attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=Limiting Reagent, phy_chem=Chemical, discrete=['SM'], min_value=50.0, max_value=200.0, unit=mM)
+          15:57:40 [ML_parameter] Initializing ML parameter 'Excess Reagent'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'Excess Reagent' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating Excess Reagent attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=Excess Reagent, phy_chem=Chemical, discrete=['THF'], min_value=1.0, max_value=18.0, unit=eq)
+          15:57:40 [ML_parameter] Initializing ML parameter 'Catalyst'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'Catalyst' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating Catalyst attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=Catalyst, phy_chem=Chemical, discrete=['TBADT'], min_value=0.005, max_value=0.03, unit=eq)
+          15:57:40 [ML_parameter] Initializing ML parameter 'residence_time'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'residence_time' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating residence_time attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=residence_time, phy_chem=Physical, discrete=[], min_value=60.0, max_value=1200.0, unit=S)
+          15:57:40 [ML_parameter] Initializing ML parameter 'light_intensity'
+     [OK] 15:57:40 [ML_parameter] ML parameter 'light_intensity' initialized: phy_chem=Chemical, unit=eq, constant_valued=False
+          15:57:40 [ML_parameter] Updating light_intensity attributes
+     [OK] 15:57:40 [ML_parameter] Attribute update complete
+          15:57:40 [ML_parameter] ├New values: MLParameter(name=light_intensity, phy_chem=Physical, discrete=[], min_value=0.0, max_value=100.0, unit=%)
+     [OK] 15:57:40 [type] Creating instance from JSON data.
+[WARNING] 15:57:40 [SingleBayesianOptiHITL] No experiment passed to the platform, IF YOU are reloading from json, ignore this
+          15:57:40 [type] ├Primed common settings via com_prime.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Initializing optimizer from JSON data.
+          15:57:40 [SingleBayesianOptiHITL] ├Restored added_keys: []
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Model updated to SingleTaskGP
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Model' to SingleTaskGP.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Acquisition Function updated to UCB
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Acquisition Function' to UCB.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Initialisation Method updated to LHS
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Initialisation Method' to LHS.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Number of initial points updated to 10
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Number of initial points' to 10.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Number of total points updated to 40
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Number of total points' to 40.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Number of Experiments per batch updated to 5
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Number of Experiments per batch' to 5.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Explorative Factor updated to 0.1
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Explorative Factor' to 0.1.
+[WARNING] 15:57:40 [SingleBayesianOptiHITL] Unknown type
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter eta updated to 0.001
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'eta' to 0.001.
+[WARNING] 15:57:40 [SingleBayesianOptiHITL] Unknown type
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter alpha updated to 0.0
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'alpha' to 0.0.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter force_categorical updated to False
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'force_categorical' to False.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter adaptive updated to False
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'adaptive' to False.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter adaptive_threshold_exploration updated to 0.05
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'adaptive_threshold_exploration' to 0.05.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter adaptive_threshold_exploitation updated to 0.8
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'adaptive_threshold_exploitation' to 0.8.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter adaptivity_counter updated to 3
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'adaptivity_counter' to 3.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter weighted_multi_objective updated to False
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'weighted_multi_objective' to False.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter weigths updated to [1.0, 1.0]
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'weigths' to [1.0, 1.0].
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Termination criterion updated to max_iter
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Termination criterion' to max_iter.
+     [OK] 15:57:40 [SingleBayesianOptiHITL] Parameter Resubmission of Failed N updated to 0
+          15:57:40 [SingleBayesianOptiHITL] ├Updated parameter 'Resubmission of Failed N' to 0.
+          15:57:40 [type] ├Completed ML priming from JSON.
+     [OK] 15:57:41 [type] Instance creation from JSON successful.
+     [OK] 15:57:41 [SessionContainer] Session container initialised
+          15:57:41 [SingleBayesianOptiHITL] Initiating kill_thread(): signalling stop event.
+[WARNING] 15:57:41 [SessionContainer] Error in loading the session: [Errno 2] No such file or directory: 'C:\\Users\\issuser\\Robochem\\Examples\\CS0_UV_optimisation\\StockSolutionDF.csv'
