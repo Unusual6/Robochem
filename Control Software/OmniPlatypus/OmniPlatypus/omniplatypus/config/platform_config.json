@@ -25,6 +25,12 @@
           "slug_alignment_volume": 0.0,
           "analysis_to_collector_volume": 0.0,
           "analysis_phase_sensor": null
+        },
+        "UV": {
+          "reactor_to_analysis_volume": 1000.0,
+          "slug_alignment_volume": 540.0,
+          "analysis_to_collector_volume": 1800.0,
+          "analysis_phase_sensor": "ps_raman_in"
         }
       },
       "sampling": {
@@ -366,6 +372,18 @@
         "IP": {
           "host": "192.168.1.3",
           "port": 99999
+        }
+      },
+      "UV_Spectrometer": {
+        "tags": [
+          "ip_socket",
+          "analytics",
+          "uv"
+        ],
+        "class": "u3900h_spectrometer",
+        "IP": {
+          "host": "localhost",
+          "port": 9000
         }
       }
     },

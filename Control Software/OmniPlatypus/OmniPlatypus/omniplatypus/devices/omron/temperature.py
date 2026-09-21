@@ -17,7 +17,7 @@ from omniplatypus.devices.base.device_modbus import (
 from omniplatypus.devices.base.device import ParameterAccess
 
 
-class E5CStatus(Flag, boundary=enum.CONFORM):
+class E5CStatus(Flag):
     """Omron E5_C Status Registers flags."""
 
     HEATER_OVERCURRENT_CT1 = 0x00000001

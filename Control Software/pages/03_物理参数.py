@@ -4,8 +4,7 @@ github: github.com/EliaSavino
 
 Happy Hacking!
 
-Descr: Page to add the physical parameters of the experiment, choosing which should be constant and which should be varied
-
+Descr: 物理参数页面，选择哪些参数应保持恒定，哪些应变化
 
 """
 
@@ -14,14 +13,15 @@ from backend.frontend_functions import (
     page_header,
     render_parameter_row,
     render_exp_parameter_row,
+    ensure_backend,
 )
 
 
-# --------------------------------------------- Streamlit page setup ---------------------------------------------------
-bknd = st.session_state["platform_backend"]
+# --------------------------------------------- Streamlit 页面设置 ---------------------------------------------------
+bknd = ensure_backend()
 page_header()
 
-st.subheader("Physical Parameters")
+st.subheader("物理参数")
 
 st.write("")
 required_parameters, required_exp_parameters = bknd.platform_parameters(
@@ -61,11 +61,11 @@ for parameter_key, parameter_value in required_exp_parameters.items():
 
 st.write("")
 st.write("")
-# add a similar form for optional parameters, that is only shown if the user clicks the advanced check box
+# 添加可选参数的类似表单，仅在用户点击高级复选框时显示
 
 
-if st.checkbox("Advanced Physical Parameters"):
-    st.write("Optional Parameters")
+if st.checkbox("高级物理参数"):
+    st.write("可选参数")
 
     optional_parameters = bknd.platform_parameters(
         experiment_name=bknd.session_container["platform_experiment"],
@@ -91,7 +91,7 @@ if st.checkbox("Advanced Physical Parameters"):
 
         bknd.session_container.update_session(parameter_key, parameter_data)
 else:
-    # remove optional parameters from the session container
+    # 从会话容器中移除可选参数
     optional_parameters = bknd.platform_parameters(
         experiment_name=bknd.session_container["platform_experiment"],
         required=False,
@@ -105,7 +105,7 @@ else:
         ):
             bknd.session_container.pop(parameter_key)
 
-if st.checkbox("Advanced Experimental Parameters"):
+if st.checkbox("高级实验参数"):
     physical_choiches = bknd.platform_parameters(
         experiment_name=bknd.session_container["platform_experiment"],
         required=False,

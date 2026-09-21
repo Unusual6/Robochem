@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-3900H 光谱仪客户端</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #1a1a2e; color: #e0e0e0; min-height: 100vh; }
+        .header { background: linear-gradient(135deg, #16213e, #0f3460); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #00d2ff; }
+        .header h1 { font-size: 20px; color: #00d2ff; letter-spacing: 1px; }
+        .status-bar { display: flex; gap: 16px; font-size: 13px; }
+        .status-item { padding: 4px 12px; border-radius: 12px; background: #1a1a2e; }
+        .status-item .label { color: #888; margin-right: 6px; }
+        .connected { color: #00e676; }
+        .disconnected { color: #ff5252; }
+
+        .main { display: grid; grid-template-columns: 340px 1fr; gap: 16px; padding: 16px; height: calc(100vh - 98px); }
+        .panel { background: #16213e; border-radius: 10px; padding: 16px; overflow: auto; }
+        .panel h2 { font-size: 16px; color: #00d2ff; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #0f3460; }
+
+        .btn { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.2s; margin: 4px 2px; }
+        .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn-primary { background: #00d2ff; color: #000; }
+        .btn-primary:hover:not(:disabled) { background: #00b8e6; }
+        .btn-success { background: #00e676; color: #000; }
+        .btn-success:hover:not(:disabled) { background: #00c853; }
+        .btn-warning { background: #ff9800; color: #000; }
+        .btn-warning:hover:not(:disabled) { background: #f57c00; }
+        .btn-danger { background: #ff5252; color: #fff; }
+        .btn-danger:hover:not(:disabled) { background: #d32f2f; }
+        .btn-outline { background: transparent; border: 1px solid #00d2ff; color: #00d2ff; }
+        .btn-outline:hover:not(:disabled) { background: rgba(0,210,255,0.1); }
+
+        .form-group { margin-bottom: 10px; }
+        .form-group label { display: block; font-size: 12px; color: #888; margin-bottom: 4px; }
+        .form-group input, .form-group select { width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid #0f3460; background: #0d1b3e; color: #e0e0e0; font-size: 13px; }
+        .form-group input:focus { outline: none; border-color: #00d2ff; }
+        .form-row { display: flex; gap: 8px; }
+        .form-row .form-group { flex: 1; }
+
+        .progress-container { margin: 10px 0; }
+        .progress-bar { height: 8px; background: #0d1b3e; border-radius: 4px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, #00d2ff, #00e676); border-radius: 4px; transition: width 0.3s; }
+        .progress-text { font-size: 12px; color: #888; margin-top: 4px; text-align: center; }
+
+        .chart-container { height: 380px; position: relative; }
+        canvas { width: 100% !important; height: 100% !important; }
+
+        .log-panel { max-height: 300px; }
+        .log-list { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; max-height: 260px; overflow-y: auto; }
+        .log-entry { padding: 3px 6px; margin: 1px 0; border-radius: 3px; display: flex; gap: 8px; }
+        .log-entry.tx { background: rgba(0,210,255,0.08); }
+        .log-entry.rx { background: rgba(0,230,118,0.08); }
+        .log-time { color: #666; min-width: 60px; }
+        .log-dir { font-weight: bold; min-width: 36px; }
+        .log-dir.tx { color: #00d2ff; }
+        .log-dir.rx { color: #00e676; }
+        .log-payload { color: #ccc; word-break: break-all; }
+        .log-hex { color: #666; font-size: 10px; word-break: break-all; }
+
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .info-item { background: #0d1b3e; padding: 8px 10px; border-radius: 6px; }
+        .info-item .lbl { font-size: 11px; color: #666; }
+        .info-item .val { font-size: 14px; color: #00d2ff; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔬 U-3900H 光谱仪客户端</h1>
+        <div class="status-bar">
+            <div class="status-item"> <span class="label">连接状态</span> <span id="connStatus" class="disconnected">未连接</span> </div>
+            <div class="status-item"> <span class="label">设备状态</span> <span id="devStatus">--</span> </div>
+            <div class="status-item"> <span class="label">field3</span> <span id="field3">00</span> </div>
+            <div class="status-item"> <span class="label">field4</span> <span id="field4">00000000</span> </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- 左侧控制面板 -->
+        <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="panel">
+                <h2>📡 连接管理</h2>
+                <div style="display:flex;gap:4px;flex-wrap:wrap;">
+                    <button class="btn btn-primary" onclick="doConnect()" id="btnConnect">🔗 连接设备</button>
+                    <button class="btn btn-danger" onclick="doDisconnect()" id="btnDisconnect" disabled>⛓ 断开连接</button>
+                    <button class="btn btn-outline" onclick="doPollStatus()" id="btnPoll" disabled>🔄 轮询状态</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>⚙️ 扫描参数</h2>
+                <div class="form-row">
+                    <div class="form-group"><label>起始波长 (nm)</label><input type="number" id="startWv" value="534.00" step="0.01"></div>
+                    <div class="form-group"><label>结束波长 (nm)</label><input type="number" id="endWv" value="200.00" step="0.01"></div>
+                </div>
+                <div class="form-group"><label>扫描速度 (nm/min)</label><input type="number" id="scanSpeed" value="300.0" step="1"></div>
+                <button class="btn btn-primary" onclick="doSetParams()" id="btnSetParams" disabled>📝 设置参数</button>
+            </div>
+
+            <div class="panel">
+                <h2>🎯 操作</h2>
+                <div style="display:flex;flex-direction:column;gap:4px;">
+                    <button class="btn btn-warning" onclick="doSelftest()" id="btnSelftest" disabled>🧪 设备自检</button>
+                    <button class="btn btn-warning" onclick="doBaseline()" id="btnBaseline" disabled>📏 基线校准</button>
+                    <button class="btn btn-success" onclick="doScan()" id="btnScan" disabled>▶ 开始扫描</button>
+                </div>
+                <div class="progress-container" style="margin-top:10px;">
+                    <div class="progress-bar"><div class="progress-fill" id="scanProgressBar" style="width:0%"></div></div>
+                    <div class="progress-text" id="scanProgressText">就绪</div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>📊 设备信息</h2>
+                <div class="info-grid">
+                    <div class="info-item"><div class="lbl">当前波长</div><div class="val" id="curWv">534.00 nm</div></div>
+                    <div class="info-item"><div class="lbl">当前吸光度</div><div class="val" id="curAbs">0.0000</div></div>
+                    <div class="info-item"><div class="lbl">数据点数</div><div class="val" id="dataCount">0</div></div>
+                    <div class="info-item"><div class="lbl">扫描状态</div><div class="val" id="scanState">空闲</div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧：图表 + 协议帧日志 -->
+        <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="panel" style="flex:1;">
+                <h2>📈 光谱曲线 (客户端视图)</h2>
+                <div class="chart-container">
+                    <canvas id="spectrumChart"></canvas>
+                </div>
+            </div>
+
+            <div class="panel log-panel">
+                <h2>📋 协议帧通讯日志 (U3900H 协议)</h2>
+                <div class="log-list" id="logList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==================== Chart.js 初始化 ====================
+        const ctx = document.getElementById('spectrumChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: { labels: [], datasets: [{ label: '吸光度 (Abs)', data: [], borderColor: '#00d2ff', backgroundColor: 'rgba(0,210,255,0.1)', borderWidth: 1.5, pointRadius: 0, tension: 0.1, fill: true }] },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 100 },
+                scales: {
+                    x: { title: { display: true, text: '波长 (nm)', color: '#888' }, grid: { color: '#1a1a40' }, ticks: { color: '#888' } },
+                    y: { title: { display: true, text: '吸光度', color: '#888' }, grid: { color: '#1a1a40' }, ticks: { color: '#888' } }
+                },
+                plugins: { legend: { labels: { color: '#888' } } }
+            }
+        });
+
+        let eventAfterId = 0;
+
+        // ==================== 按钮操作 ====================
+        function setButtonsDisabled(disabled) {
+            ['btnSelftest', 'btnBaseline', 'btnScan', 'btnSetParams', 'btnPoll', 'btnDisconnect'].forEach(id => {
+                document.getElementById(id).disabled = disabled;
+            });
+            document.getElementById('btnConnect').disabled = !disabled;
+        }
+
+        async function doConnect() {
+            const r = await fetch('/api/connect', { method: 'POST' });
+            const data = await r.json();
+            if (data.success) {
+                document.getElementById('connStatus').textContent = '已连接';
+                document.getElementById('connStatus').className = 'connected';
+                setButtonsDisabled(false);
+            } else {
+                alert('连接失败，请确保虚拟光谱仪服务端已启动');
+            }
+        }
+
+        async function doDisconnect() {
+            await fetch('/api/disconnect', { method: 'POST' });
+            document.getElementById('connStatus').textContent = '未连接';
+            document.getElementById('connStatus').className = 'disconnected';
+            setButtonsDisabled(true);
+            document.getElementById('btnConnect').disabled = false;
+        }
+
+        async function doSelftest() {
+            const btn = document.getElementById('btnSelftest');
+            btn.disabled = true; btn.textContent = '自检中...';
+            await fetch('/api/selftest', { method: 'POST' });
+            // 按钮由事件驱动恢复（selftest_complete）
+        }
+
+        async function doBaseline() {
+            const btn = document.getElementById('btnBaseline');
+            btn.disabled = true; btn.textContent = '校准中...';
+            await fetch('/api/baseline', { method: 'POST' });
+            // 按钮由事件驱动恢复（baseline_complete），后端通过协议帧轮询状态直到就绪
+        }
+
+        async function doScan() {
+            const btn = document.getElementById('btnScan');
+            btn.disabled = true; btn.textContent = '扫描中...';
+            document.getElementById('scanState').textContent = '扫描中';
+            await fetch('/api/start_scan', { method: 'POST' });
+            // 按钮由事件驱动恢复（scan_complete），后端通过协议帧逐波长测量
+        }
+
+        async function doSetParams() {
+            const startWv = document.getElementById('startWv').value;
+            const endWv = document.getElementById('endWv').value;
+            const scanSpeed = document.getElementById('scanSpeed').value;
+            await fetch('/api/set_params', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ start_wavelength: parseFloat(startWv), end_wavelength: parseFloat(endWv), scan_speed: parseFloat(scanSpeed) })
+            });
+        }
+
+        async function doPollStatus() {
+            await fetch('/api/poll_status', { method: 'POST' });
+        }
+
+        // ==================== 事件轮询 ====================
+        async function pollEvents() {
+            try {
+                const r = await fetch(`/api/events?after_id=${eventAfterId}`);
+                const data = await r.json();
+
+                if (data.connected !== undefined) {
+                    const connEl = document.getElementById('connStatus');
+                    if (data.connected) {
+                        connEl.textContent = '已连接';
+                        connEl.className = 'connected';
+                        document.getElementById('btnConnect').disabled = true;
+                        // 不盲目启用所有按钮，由各事件独立控制按钮状态
+                        ['btnPoll', 'btnDisconnect'].forEach(id => {
+                            document.getElementById(id).disabled = false;
+                        });
+                    } else {
+                        connEl.textContent = '未连接';
+                        connEl.className = 'disconnected';
+                        setButtonsDisabled(true);
+                        document.getElementById('btnConnect').disabled = false;
+                    }
+                }
+
+                // 处理事件（先于 data.scanning 检查，避免被覆盖）
+                let scanCompletedThisPoll = false;
+                for (const evt of data.events) {
+                    if (evt.type === 'scan_update') {
+                        const d = evt.data;
+                        document.getElementById('curWv').textContent = d.wavelength.toFixed(2) + ' nm';
+                        document.getElementById('curAbs').textContent = d.absorbance.toFixed(6);
+                    } else if (evt.type === 'scan_complete') {
+                        document.getElementById('scanState').textContent = '完成';
+                        document.getElementById('btnScan').disabled = false;
+                        document.getElementById('btnScan').textContent = '▶ 开始扫描';
+                        document.getElementById('scanProgressBar').style.width = '100%';
+                        document.getElementById('scanProgressText').textContent = '100%';
+                        document.getElementById('dataCount').textContent = evt.data.total_points;
+                        updateChartComplete(evt.data.data);
+                        scanCompletedThisPoll = true;
+                    } else if (evt.type === 'frame_log') {
+                        addLogEntry(evt.data);
+                    } else if (evt.type === 'params_updated') {
+                        const p = evt.data.params;
+                        document.getElementById('startWv').value = p.start_wavelength.toFixed(2);
+                        document.getElementById('endWv').value = p.end_wavelength.toFixed(2);
+                        document.getElementById('scanSpeed').value = p.scan_speed.toFixed(1);
+                        // 参数设置完成后恢复按钮
+                        const bp = document.getElementById('btnSetParams');
+                        bp.disabled = false; bp.textContent = '📝 设置参数';
+                    } else if (evt.type === 'connected') {
+                        document.getElementById('devStatus').textContent = '就绪';
+                    } else if (evt.type === 'disconnected') {
+                        document.getElementById('devStatus').textContent = '--';
+                    } else if (evt.type === 'baseline_started') {
+                        document.getElementById('devStatus').textContent = '基线校准中（协议帧轮询中...）';
+                    } else if (evt.type === 'baseline_complete') {
+                        document.getElementById('devStatus').textContent = '就绪';
+                        // 基线校准完成 → 恢复按钮
+                        const bbb = document.getElementById('btnBaseline');
+                        bbb.disabled = false; bbb.textContent = '📏 基线校准';
+                    } else if (evt.type === 'selftest_started') {
+                        document.getElementById('devStatus').textContent = '自检中';
+                    } else if (evt.type === 'selftest_complete') {
+                        document.getElementById('devStatus').textContent = '就绪';
+                        // 自检完成 → 恢复按钮
+                        const bst = document.getElementById('btnSelftest');
+                        bst.disabled = false; bst.textContent = '🧪 设备自检';
+                    } else if (evt.type === 'error') {
+                        console.error(evt.data.message);
+                        // 出错时恢复所有操作按钮
+                        ['btnSelftest','btnBaseline','btnScan','btnSetParams'].forEach(id => {
+                            const el = document.getElementById(id);
+                            if (el) { el.disabled = false; }
+                        });
+                        document.getElementById('btnScan').textContent = '▶ 开始扫描';
+                        document.getElementById('btnBaseline').textContent = '📏 基线校准';
+                        document.getElementById('btnSelftest').textContent = '🧪 设备自检';
+                        document.getElementById('btnSetParams').textContent = '📝 设置参数';
+                    }
+                }
+
+                if (data.latest_id) eventAfterId = data.latest_id;
+
+                // 扫描状态检查：放在事件处理之后，且本周期未收到 scan_complete 时才允许覆盖
+                if (!scanCompletedThisPoll && data.scanning !== undefined) {
+                    document.getElementById('btnScan').disabled = data.scanning;
+                    if (data.scanning) {
+                        document.getElementById('btnScan').textContent = '扫描中...';
+                    }
+                }
+                if (!scanCompletedThisPoll && data.scan_progress !== undefined) {
+                    const pct = Math.min(100, Math.max(0, data.scan_progress)).toFixed(1);
+                    document.getElementById('scanProgressBar').style.width = pct + '%';
+                    document.getElementById('scanProgressText').textContent = pct + '%';
+                }
+
+                // 同步扫描数据到图表
+                const scanR = await fetch('/api/scan_data');
+                const scanData = await scanR.json();
+                if (scanData.data && scanData.data.length > 0) {
+                    updateChartIncremental(scanData.data);
+                }
+
+                // 同步状态
+                const statusR = await fetch('/api/status');
+                const statusData = await statusR.json();
+                if (statusData.status) {
+                    document.getElementById('field3').textContent = statusData.status.field3 || '00';
+                    document.getElementById('field4').textContent = statusData.status.field4 || '00000000';
+                }
+                document.getElementById('dataCount').textContent = statusData.scan_data_count;
+                // 仅在未收到 scan_complete 事件时才更新状态文本
+                if (!scanCompletedThisPoll) {
+                    document.getElementById('scanState').textContent = statusData.scanning ? '扫描中' : (statusData.baseline_running ? '校准中' : '空闲');
+                }
+
+            } catch (e) { /* ignore */ }
+        }
+
+        function updateChartIncremental(data) {
+            chart.data.labels = data.map(p => p.wavelength.toFixed(1));
+            chart.data.datasets[0].data = data.map(p => p.absorbance);
+            chart.update('none');
+        }
+
+        function updateChartComplete(data) {
+            chart.data.labels = data.map(p => p.w.toFixed(1));
+            chart.data.datasets[0].data = data.map(p => p.a);
+            chart.update();
+        }
+
+        // ==================== 协议帧日志 ====================
+        function addLogEntry(entry) {
+            const logList = document.getElementById('logList');
+            const div = document.createElement('div');
+            div.className = 'log-entry ' + entry.direction;
+            div.innerHTML = `<span class="log-time">${entry.time}</span><span class="log-dir ${entry.direction}">${entry.label}</span><span class="log-payload">${entry.payload}</span>${entry.raw_hex ? '<br><span class="log-hex" style="padding-left:104px;">HEX: ' + entry.raw_hex + '</span>' : ''}`;
+            logList.appendChild(div);
+            if (logList.children.length > 100) logList.removeChild(logList.firstChild);
+            logList.scrollTop = logList.scrollHeight;
+        }
+
+        // 加载初始帧日志
+        async function loadFrameLogs() {
+            const r = await fetch('/api/frame_logs?count=50');
+            const data = await r.json();
+            document.getElementById('logList').innerHTML = '';
+            for (const entry of data.logs) addLogEntry(entry);
+        }
+
+        // ==================== 初始化 ====================
+        setButtonsDisabled(true);
+        document.getElementById('btnConnect').disabled = false;
+
+        setInterval(pollEvents, 500);
+        // 定期加载帧日志
+        setInterval(loadFrameLogs, 2000);
+        loadFrameLogs();
+    </script>
+</body>
+</html>

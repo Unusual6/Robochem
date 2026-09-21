@@ -1,14 +1,12 @@
-"""Machine Learning Settings
+"""机器学习设置
 
-This file is automatically activated by running 'streamlit run robochem.py'.
+运行 'streamlit run robochem.py' 后此文件自动激活。
 
-Here the variable space as needed by the machine learning model (dragonfly Bayesian Optimization) is defined.
-The different chemcial parameters has been decided in the Reagent Settings already. For each type of parameter, the boundaries
-are defined, i.e. the min and max values it can take.
+在此定义机器学习模型（贝叶斯优化）所需的变量空间。
+各类化学参数已在试剂设置页面中确定。对于每种参数类型，设定其边界，即最小值和最大值。
 
-Here it is also decided how many experiments that should be done. How many initial runs and how many extra refinement
-runs. It is also possible to start the optimization from previous run files. The corresponding json file has to be saved
-in the folder corresponding to current campaign.
+同时决定实验次数，包括初始运行次数和额外优化次数。也可以从之前的运行文件开始优化，
+对应的 json 文件需保存在当前活动对应的文件夹中。
 
 Author: Elia Savino
 """
@@ -28,19 +26,20 @@ from backend.frontend_functions import (
     display_ml_parameters,
     display_ml_task_all_settings,
     display_ml_task_settings,
+    ensure_backend,
 )
 
 # import custom functions to run these are stored elsewhere to make them easier to unit test
 
 
-# --------------------------------------------- Streamlit page setup ---------------------------------------------------
+# --------------------------------------------- Streamlit 页面设置 ---------------------------------------------------
 page_header()
-backend = st.session_state["platform_backend"]
-# --------------------------------------------- Machine Learning Settings ----------------------------------------------
-st.subheader("Machine Learning Settings")
+backend = ensure_backend()
+# --------------------------------------------- 机器学习设置 ----------------------------------------------
+st.subheader("机器学习设置")
 
 st.markdown("_____")
-# --------------------------------------------- Create Variable space -------------------------------------------------#
+# --------------------------------------------- 创建变量空间 -------------------------------------------------#
 
 # initialise the ml_params
 
@@ -59,9 +58,9 @@ physical_ml_parameters = [
     if backend.session_container[param].phy_chem == "Physical"
 ]
 
-st.markdown("## Set the chemical space for the ML algorithm")
+st.markdown("## 设置机器学习算法的化学空间")
 if len(chemical_ml_parameters) > 0:
-    st.markdown("### Chemicals")
+    st.markdown("### 化学物质")
     for chemical_ml_param in chemical_ml_parameters:
         display_ml_chem_param(chemical_ml_param)
 
@@ -69,14 +68,14 @@ if len(chemical_ml_parameters) > 0:
         "MultiTaskScope",
         "MultiTaskScope_HITL",
     ]:
-        st.markdown("### Task Settings")
+        st.markdown("### 任务设置")
         display_ml_task_all_settings(chemical_ml_parameters)
     elif backend.session_container["experiment_type"] == "ScopeAcceleratorTask":
-        st.markdown("### Task Settings")
+        st.markdown("### 任务设置")
         display_ml_task_settings(chemical_ml_parameters)
 
 if len(physical_ml_parameters) > 0:
-    st.markdown("### Physical Parameters")
+    st.markdown("### 物理参数")
     for physical_ml_param in physical_ml_parameters:
         display_physical_ml_parameters(physical_ml_param)
 
@@ -102,7 +101,7 @@ objectives = (
 )
 # objective_index = objectives.index(st.session_state["objective"])
 obj = st.multiselect(
-    "Select the objectives to optimize on",
+    "选择要优化的目标",
     objectives,
     default=(
         backend.session_container["objectives"]
@@ -132,5 +131,5 @@ backend.session_container["objectives"] = obj
 # display the input parameter for the machine learning model
 
 st.markdown("---")
-st.write("## ML Parameters")
+st.write("## 机器学习参数")
 display_ml_parameters()

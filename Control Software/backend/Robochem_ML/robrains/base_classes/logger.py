@@ -276,6 +276,9 @@ class Logger:
             cls._print(
                 f"Make sure all devices are explicitly closed before the program terminates.{Style.RESET_ALL}"
             )
+        except (PermissionError, OSError) as e:
+            cls._print(f"{Fore.YELLOW}{e}")
+            cls._print(f"{Fore.YELLOW}[logger.py] Could not log to files (permission/os error).")
 
 
 atexit.register(Logger.shutdown_log_server)

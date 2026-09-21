@@ -38,6 +38,7 @@ from omniplatypus.devices.ika.heating_plate import HeatingPlate
 from omniplatypus.devices.nrg.rama_berry import RamaBerry
 from omniplatypus.devices.magritek.spinsolve import SpinsolveClient
 from omniplatypus.devices.nrg.chromtroller import HPLCClient
+from omniplatypus.devices.nrg.u3900h_spectrometer import U3900HSpectrometer
 
 
 class SampleHolder:
@@ -112,6 +113,7 @@ class Platform:
         "rama_berry": RamaBerry,
         "spinsolve_client": SpinsolveClient,
         "hplcclient": HPLCClient,
+        "u3900h_spectrometer": U3900HSpectrometer,
     }
     default_config_filename = "platform_config.json"
     default_storage_filename = "platform_storage.json"

@@ -32,6 +32,25 @@ from omniplatypus.procedures.unit_tasks.sampling.liquid_handler_sampling import 
 from lamas.utils import LamaMethod, LamaParameter
 
 
+def ensure_backend():
+    """
+    Lazy-initialize PlatformBackend in st.session_state.
+    Streamlit MPA v1 pre-loads pages before the main script runs, so the guard
+    in robochem_flex.py may not have executed yet when a page first imports.
+    Call this at the top of every page module to guarantee 'platform_backend'
+    exists in session_state before any subsequent access.
+    """
+    if "platform_backend" not in st.session_state:
+        try:
+            from backend.platform_backend import PlatformBackend
+            st.session_state["platform_backend"] = PlatformBackend(st.session_state)
+        except Exception as exc:
+            st.error(f"后端初始化失败: {exc}")
+            st.info("请确认所有必需目录可写，并通过首页重新启动应用。")
+            raise
+    return st.session_state["platform_backend"]
+
+
 def page_header():
     """
     page header setup:
@@ -42,6 +61,11 @@ def page_header():
         page_icon="utils/NRG_icon.png",
         layout="wide",
         initial_sidebar_state="expanded",
+        menu_items={
+            "About": "### Robochem-Flex\n自动化化学实验平台，集成 OmniPlatypus 硬件与机器学习优化引擎。",
+            "Get help": None,
+            "Report a bug": None,
+        },
     )
 
     # Title of the main page
@@ -92,10 +116,11 @@ def render_parameter_row(
     # name of parameter:
     col1.write(prettify_parameter_name(parameter_key))
     choosable = ["variable", "constant"]
-    # radio button to set the parameter constant or variable
+    # 单选按钮：设置参数为可变或恒定
     choiche = col2.radio(
-        "Set constant",
+        "设为恒定",
         ["variable", "constant"],
+        format_func=lambda x: "可变" if x == "variable" else "恒定",
         index=choosable.index(
             parameter_data.get("style", "variable" if not optional else "constant")
         ),
@@ -105,7 +130,7 @@ def render_parameter_row(
     # if the parameter is set to constant then let the user set the constant value:
     if choiche == "constant":
         value = col3.number_input(
-            f"Set Value [{parameter_value['unit']}]",
+            f"设置值 [{parameter_value['unit']}]",
             min_value=parameter_value["min_value"],
             max_value=parameter_value["max_value"],
             value=(
@@ -137,11 +162,11 @@ def render_exp_parameter_row(
     """
     col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
     col1.write(prettify_parameter_name(parameter_key))
-    if col2.checkbox("Modify", value=False, key=f"{parameter_key}_modify"):
+    if col2.checkbox("修改", value=False, key=f"{parameter_key}_modify"):
         # check the type of the parameter value:
         if parameter_value["value"] == True or parameter_value["value"] == False:
             new_value = col3.checkbox(
-                f"True",
+                f"是",
                 value=parameter_data.value,
                 key=f"{parameter_key}_constant_value",
             )
@@ -152,7 +177,7 @@ def render_exp_parameter_row(
             case int() | float():
                 unit = parameter_value.get("unit", None)
                 new_value = col3.number_input(
-                    f"Set Value [{unit if unit is not None else '-'}]",
+                    f"设置值 [{unit if unit is not None else '-'}]",
                     value=parameter_data.value,
                     key=f"{parameter_key}_constant_value",
                 )
@@ -160,18 +185,18 @@ def render_exp_parameter_row(
             case str():
                 if parameter_value.get("allowed_values", None) is not None:
                     new_value = col3.selectbox(
-                        f"Set Value",
+                        f"设置值",
                         options=parameter_value["allowed_values"],
                         key=f"{parameter_key}_constant_value",
                     )
                 else:
                     new_value = col3.text_input(
-                        f"Set Value",
+                        f"设置值",
                         value=parameter_data.value,
                         key=f"{parameter_key}_constant_value",
                     )
             case _:
-                st.warning("The type of the parameter is not supported")
+                st.warning("不支持的参数类型")
                 return "don't save"
 
         parameter_data.value = new_value
@@ -195,7 +220,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
     # check which type the current parameter value is:
     if parameter_key == "yield_calculation_chemical":
         new_value = col2.selectbox(
-            f"Set Value {unit_string}",
+            f"设置值 {unit_string}",
             options=Chemical.available_purposes,
             key=f"{parameter_key}_constant_value",
             index=(
@@ -205,7 +230,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
             ),
         )
     elif parameter_key == "target_peak":
-        use_dataframe = col2.checkbox("Add multiple?", key=f"{parameter_key}_multiple")
+        use_dataframe = col2.checkbox("添加多个？", key=f"{parameter_key}_multiple")
 
         if isinstance(parameter_data.value, pd.DataFrame):
             use_dataframe = True
@@ -244,7 +269,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
                 },
             )
 
-            if col2.button("Save", key=f"{parameter_key}_save"):
+            if col2.button("保存", key=f"{parameter_key}_save"):
                 param_data = param_data.dropna(
                     subset=["Chemical"]
                 )  # Remove rows where "Chemical" is NaN
@@ -264,7 +289,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
         else:
             # If not using a DataFrame, allow input of a single float
             new_value = col2.number_input(
-                f"Set Value {unit_string}",
+                f"设置值 {unit_string}",
                 min_value=parameter_data.min_value,
                 max_value=parameter_data.max_value,
                 value=(
@@ -276,7 +301,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
             )
 
     elif parameter_key == "retention_time":
-        use_dataframe = col2.checkbox("Add multiple?", key=f"{parameter_key}_multiple")
+        use_dataframe = col2.checkbox("添加多个？", key=f"{parameter_key}_multiple")
 
         if isinstance(parameter_data.value, pd.DataFrame):
             use_dataframe = True
@@ -315,7 +340,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
                 },
             )
 
-            if col2.button("Save", key=f"{parameter_key}_save"):
+            if col2.button("保存", key=f"{parameter_key}_save"):
                 # Remove any rows where "Chemical" is empty (to avoid storing invalid rows)
                 new_value = param_data
             else:
@@ -326,7 +351,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
         else:
             # If not using a DataFrame, allow input of a single float
             parameter_data.value = col2.number_input(
-                f"Set Value {unit_string}",
+                f"设置值 {unit_string}",
                 min_value=parameter_data.min_value,
                 max_value=parameter_data.max_value,
                 value=(
@@ -339,7 +364,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
 
     elif parameter_data.allowed_values is not None:
         new_value = col2.selectbox(
-            f"Set Value {unit_string}",
+            f"设置值 {unit_string}",
             options=parameter_data.allowed_values,
             key=f"{parameter_key}_constant_value",
             index=(
@@ -350,7 +375,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
         )
     elif isinstance(parameter_data.value, int | float | None):
         new_value = col2.number_input(
-            f"Set Value {unit_string}",
+            f"设置值 {unit_string}",
             min_value=parameter_data.min_value,
             max_value=parameter_data.max_value,
             value=parameter_data.value,
@@ -358,7 +383,7 @@ def render_analytical_parameter(parameter_key: str, parameter_data: AnalyParamet
         )
     else:
         new_value = col2.text_input(
-            f"Set Value {unit_string}",
+            f"设置值 {unit_string}",
             value=parameter_data.value,
             key=f"{parameter_key}_constant_value",
         )
@@ -387,13 +412,13 @@ def display_chemical_inputs(chem_class: Chemical, i=0):
     with st.container():
         cols = st.columns([3, 3, 3, 3, 3])
         name = cols[0].text_input(
-            "Name",
+            "名称",
             key=f"name-{i}",
             value=chem_class.name if chem_class.name is not None else "",
-            help="Human-readable reagent name",
+            help="试剂的可读名称",
         )
         identifier_type = cols[1].selectbox(
-            "Identifier Type",
+            "标识符类型",
             Chemical.available_IDs,
             key=f"id_type-{i}",
             index=(
@@ -401,16 +426,16 @@ def display_chemical_inputs(chem_class: Chemical, i=0):
                 if chem_class.identifier_type is not None
                 else 0
             ),
-            help="Choose a unique identifier type for record-keeping",
+            help="选择用于记录的唯一标识符类型",
         )
         identifier = cols[2].text_input(
-            "Identifier",
+            "标识符",
             key=f"identifier-{i}",
             value=chem_class.identifier if chem_class.identifier is not None else "",
-            help="Enter the value for the unique reagent identifier",
+            help="输入唯一试剂标识符的值",
         )
         purpose = cols[3].selectbox(
-            "Purpose",
+            "用途",
             Chemical.available_purposes,
             key=f"purpose-{i}",
             index=(
@@ -418,23 +443,23 @@ def display_chemical_inputs(chem_class: Chemical, i=0):
                 if chem_class.purpose is not None
                 else 0
             ),
-            help="Select the role of this reagent in the reaction",
+            help="选择该试剂在反应中的角色",
         )
         if purpose == "Constant":
-            st.write("Please provide a value for the constant chemical")
+            st.write("请为恒定化学物质提供数值")
             value = cols[4].number_input(
-                "Concentration (mM)",
+                "浓度 (mM)",
                 key=f"value-{i}",
                 min_value=0.0,
                 value=chem_class.value if chem_class.value is not None else 0.0,
             )
         elif st.session_state["platform_backend"].session_container["price"] == "Yes":
             price = cols[4].number_input(
-                "Price (€/mmol)",
+                "价格 (€/mmol)",
                 key=f"price-{i}",
                 min_value=0.0,
                 value=chem_class.price if chem_class.price is not None else 0.0,
-                help="Enter the price of the chemical in €/mmol",
+                help="输入化学物质价格，单位为 €/mmol",
             )
         # Assume here we want to create an instance of Chemical
         if all(
@@ -488,7 +513,7 @@ def configure_column_config(df, StockDF_object):
         column_config = {
             key: st.column_config.NumberColumn(
                 f"{key} (mM)",
-                help=f"Add the concentration of chemical: {key.split('_')[-1]} in the stock solution (mM)",
+                help=f"添加化学物质 {key.split('_')[-1]} 在储备溶液中的浓度 (mM)",
                 min_value=0.0,
                 default=0.0,
             )
@@ -497,24 +522,24 @@ def configure_column_config(df, StockDF_object):
         }
 
         column_config["Solvent"] = st.column_config.SelectboxColumn(
-            "Solvent",
+            "溶剂",
             options=(
                 StockDF_object.solvent_list
                 if StockDF_object.solvent_list
-                else ["Solvent?"]
+                else ["溶剂？"]
             ),
-            help="Select the solvent for the stock solution",
+            help="选择储备溶液的溶剂",
             default=(
                 StockDF_object.solvent_list[0]
                 if StockDF_object.solvent_list
-                else "Solvent?"
+                else "溶剂？"
             ),
         )
 
         # Add StockID with dynamic generation logic
         column_config["StockID"] = st.column_config.TextColumn(
-            "Stock ID",
-            help="Enter the name of the stock solution",
+            "储备溶液 ID",
+            help="输入储备溶液的名称",
             disabled=False,
             default=StockDF_object.generate_name(),
         )
@@ -558,7 +583,7 @@ def handle_stock_solutions(stock_column: st.columns):
     # Ensure columns match between edited_df and StockDF.df
     if set(edited_df.columns) != set(StockDF.df.columns):
         st.warning(
-            "The columns have changed. Resetting the DataFrame to the current StockDF."
+            "列已发生变化，正在重置为当前的 StockDF。"
         )
         edited_df = (
             StockDF.df.copy()
@@ -569,26 +594,26 @@ def handle_stock_solutions(stock_column: st.columns):
 
     # Validation of the displayed DataFrame
     if edited_df.drop(columns="StockID").eq(0.0).all(axis=1).any():
-        st.warning("All stock solutions need at least one compound in them!")
+        st.warning("所有储备溶液至少需要一种化合物！")
         submit_button_visible = False
     elif edited_df["StockID"].isnull().any():
-        st.warning("Please provide a name for each stock solution.")
+        st.warning("请为每种储备溶液提供名称。")
         submit_button_visible = False
     elif edited_df["StockID"].duplicated().any():
-        st.warning("Stock IDs must be unique. Changes will not be saved.")
+        st.warning("储备溶液 ID 必须唯一，更改将不会保存。")
         submit_button_visible = False
     else:
         submit_button_visible = True
 
     # Only show the submit button if everything is valid
     if submit_button_visible:
-        if st.button("Submit Stock Solution"):
+        if st.button("提交储备溶液"):
             StockDF.update_from_df(edited_df)
             st.session_state["platform_backend"].session_container["StockDF"] = StockDF
-            st.success("Stock solution updated successfully!")
+            st.success("储备溶液更新成功！")
 
     # Optionally display the current StockDF in a collapsible section
-    with st.expander("Show current StockDF details"):
+    with st.expander("显示当前储备溶液详情"):
         st.write(StockDF.df)
 
 
@@ -601,7 +626,7 @@ def initialise_or_update_VialDF():
         st.session_state["platform_backend"].session_container["platform_name"]
     )
     if stocks_df is None:
-        st.warning("Please configure the stock solutions first")
+        st.warning("请先配置储备溶液")
         return
 
     if "VialDF" not in backend:
@@ -631,51 +656,51 @@ def configure_vial_column_config(VialDF_object):
     ):
         column_config = {
             "VialName": st.column_config.TextColumn(
-                "Vial Name", help="Enter the name of the vial"
+                "样品瓶名称", help="输入样品瓶的名称"
             ),
             "StockID": st.column_config.SelectboxColumn(
-                "Stock Solution",
+                "储备溶液",
                 options=VialDF_object.stock_list + VialDF_object.solvent_list,
-                help="Select the stock solution for the vial",
+                help="选择样品瓶对应的储备溶液",
                 default="Not a Stock",
             ),
             "Volume": st.column_config.NumberColumn(
-                "Volume (ul)",
+                "体积 (uL)",
                 min_value=0.0,
-                help="Enter the volume of the stock solution in the vial in uL",
+                help="输入样品瓶中储备溶液的体积，单位为 uL",
             ),
             "Type": st.column_config.SelectboxColumn(
-                "Type",
+                "类型",
                 options=VialDF_object.sample_type,
-                help="Select the type of the vial",
+                help="选择样品瓶的类型",
                 default="Solvent",
             ),
             "Sampler": st.column_config.SelectboxColumn(
-                "Liquid Handler",
+                "液体处理器",
                 options=VialDF_object.available_handlers,
-                help="Select the liquid handler for the vial",
+                help="选择样品瓶对应的液体处理器",
                 default=VialDF_object.available_handlers[-1],
             ),
             "Holder": st.column_config.SelectboxColumn(
-                "Sample Holder",
+                "样品架",
                 options=VialDF_object.available_holders,
-                help="Select the sample holder for the vial",
+                help="选择样品瓶对应的样品架",
                 default=VialDF_object.available_holders[0],
             ),
             "Position": st.column_config.SelectboxColumn(
-                "Position",
+                "位置",
                 options=VialDF_object.available_positions,
-                help="Enter the position of the vial in the sample holder",
+                help="输入样品瓶在样品架中的位置",
                 default="A1",
             ),
             "Counter": st.column_config.NumberColumn(
-                "Counter",
-                help="Septum piercing counter",
+                "穿刺计数",
+                help="隔垫穿刺计数器",
                 default=0,
             ),
             "Viable": st.column_config.CheckboxColumn(
-                "Viable",
-                help="Toggle to set the vial as avaible for the machine",
+                "可用",
+                help="切换以设置样品瓶是否可供机器使用",
                 default=True,
             ),
         }
@@ -713,18 +738,18 @@ def handle_vials():
     )
 
     # Button to trigger updating the VialDF
-    if st.button("Submit Vial Configuration"):
+    if st.button("提交样品瓶配置"):
         ret = VialDF_object.update_from_df(edited_vial_df)
         if ret is not None and ret["level"] == "warning":
-            st.warning(f"The current vial config has something wrong: {ret['message']}")
+            st.warning(f"当前样品瓶配置存在问题：{ret['message']}")
         else:
             st.session_state["platform_backend"].session_container[
                 "VialDF"
             ] = VialDF_object
-            st.success("Vial configuration updated successfully!")
+            st.success("样品瓶配置更新成功！")
 
     # Optionally show the current state of the VialDF
-    with st.expander("Show current VialDF details"):
+    with st.expander("显示当前样品瓶详情"):
         st.write(VialDF_object.df)
 
 
@@ -738,8 +763,7 @@ def initialise_ml_parameters():
         backend = st.session_state["platform_backend"]
     except KeyError:
         st.warning(
-            "I don't know how you got here without a backend started, but kudos to you for managing. "
-            "Restart the platform and try again."
+            "未检测到已启动的后端，请重启平台后再试。"
         )
 
     chemicals = backend.session_container.search_by_tag("chemical")
@@ -814,26 +838,26 @@ def display_ml_chem_param(ml_parameter: ML_parameter):
         col_name.write(ml_parameter.name)
 
         min_value = col_min.number_input(
-            f"Min Value [{ml_parameter.unit}]",
+            f"最小值 [{ml_parameter.unit}]",
             min_value=0.0,
             value=ml_parameter.min_value if ml_parameter.min_value is not None else 0.0,
             step=0.000001,
             format="%0.6f",
             key=f"{ml_parameter.name}_min",
-            help=f"Amount of {ml_parameter.name.lower()} will not be lower than this",
+            help=f"{ml_parameter.name.lower()} 用量不低于此值",
         )
         max_value = col_max.number_input(
-            f"Max Value [{ml_parameter.unit}]",
+            f"最大值 [{ml_parameter.unit}]",
             min_value=0.0,
             value=ml_parameter.max_value if ml_parameter.max_value is not None else 0.0,
             step=0.000001,
             format="%0.6f",
             key=f"{ml_parameter.name}_max",
-            help=f"Amount of {ml_parameter.name.lower()} will not be higher than this",
+            help=f"{ml_parameter.name.lower()} 用量不高于此值",
         )
 
         const: bool = col_const.checkbox(
-            f"Constant Valued",
+            f"设为恒定值",
             value=current_const,
             key=f"constant_valued{ml_parameter.name}",
         )
@@ -847,7 +871,7 @@ def display_ml_chem_param(ml_parameter: ML_parameter):
         col_name.write(ml_parameter.name)
 
         const_val = col_val.number_input(
-            f"Constant value [{ml_parameter.unit}]",
+            f"恒定值 [{ml_parameter.unit}]",
             step=0.00001,
             format="%0.6f",
             value=(
@@ -858,7 +882,7 @@ def display_ml_chem_param(ml_parameter: ML_parameter):
         )
 
         const: bool = col_const.checkbox(
-            f"Constant Valued",
+            f"设为恒定值",
             value=current_const,
             key=f"const_val_{ml_parameter.name}",
         )
@@ -873,7 +897,7 @@ def display_physical_ml_parameters(ml_physical: ML_parameter):
     friendly_name = ml_physical.name.replace("_", " ").capitalize()
     col_name.write(friendly_name)
     method = col_method.radio(
-        "Continuous or Discrete",
+        "连续或离散",
         ["Continuous", "Discrete"],
         index=(
             ["Continuous", "Discrete"].index(ml_physical.discrete_continuous)
@@ -881,12 +905,13 @@ def display_physical_ml_parameters(ml_physical: ML_parameter):
             else 0
         ),
         key=f"{ml_physical.name}_method",
+        format_func=lambda x: "连续" if x == "Continuous" else "离散",
     )
 
     if method == "Continuous":
         ml_physical.discrete_continuous = "Continuous"
         min_value = col_min.number_input(
-            f"Min Value [{ml_physical.unit}]",
+            f"最小值 [{ml_physical.unit}]",
             min_value=ml_physical.default_min,
             max_value=ml_physical.default_max,
             step=0.000001,
@@ -897,10 +922,10 @@ def display_physical_ml_parameters(ml_physical: ML_parameter):
                 else ml_physical.default_min
             ),
             key=f"{ml_physical.name}_min",
-            help=f"{friendly_name} will not be set lower than this",
+            help=f"{friendly_name} 设置值不低于此",
         )
         max_value = col_max.number_input(
-            f"Max Value [{ml_physical.unit}]",
+            f"最大值 [{ml_physical.unit}]",
             max_value=ml_physical.default_max,
             min_value=ml_physical.default_min,
             step=0.000001,
@@ -911,13 +936,13 @@ def display_physical_ml_parameters(ml_physical: ML_parameter):
                 else ml_physical.default_max
             ),
             key=f"{ml_physical.name}_max",
-            help=f"{friendly_name} will not be set higher than this",
+            help=f"{friendly_name} 设置值不高于此",
         )
         ml_physical.update_values(min_value=min_value, max_value=max_value)
     elif method == "Discrete":
         ml_physical.discrete_continuous = "Discrete"
         discrete = col_min.text_input(
-            f"Discrete Values [{ml_physical.unit}]",
+            f"离散值 [{ml_physical.unit}]",
             ml_physical.discrete_str if ml_physical.discrete_str is not None else "",
             key=f"{ml_physical.name}_discrete",
         )
@@ -937,6 +962,12 @@ def display_ml_parameters():
         "Number of total points",
         "Number of Experiments per batch",
     ]
+    # 中文标签映射
+    simple_param_labels = {
+        "Number of initial points": "初始实验点数",
+        "Number of total points": "总实验点数",
+        "Number of Experiments per batch": "每批次实验数",
+    }
 
     # Function to render parameter row
     def render_parameter_row(param_key, param_value, current_param):
@@ -968,14 +999,14 @@ def display_ml_parameters():
                 "qMEV",
             ]:
                 st.error(
-                    f"{value} is only suitable for single objectives, please choose another acquisition function"
+                    f"{value} 仅适用于单目标优化，请选择其他采集函数"
                 )
             elif len(backend.session_container["objectives"]) == 1 and value in [
                 "EHVI",
                 "qEHVI",
             ]:
                 st.error(
-                    f"{value} is only suitable for multi-objective optimization, please choose another acquisition function"
+                    f"{value} 仅适用于多目标优化，请选择其他采集函数"
                 )
         elif param_value == "bool":
             value = st.checkbox(
@@ -1002,11 +1033,11 @@ def display_ml_parameters():
                 simple_param, None
             )
             render_parameter_row(
-                simple_param, ml_parameters[simple_param], current_param
+                simple_param_labels.get(simple_param, simple_param), ml_parameters[simple_param], current_param
             )
 
     # Use expander for other parameters
-    with st.expander("Show advanced parameters"):
+    with st.expander("显示高级参数"):
         for ml_param_key, ml_param_value in ml_parameters.items():
             if ml_param_key not in simple_params:
                 current_param = backend.ml_experiment_class.parameters.get(
@@ -1065,24 +1096,22 @@ def input_file(name: str, filetype: str = "json", key: str = None):
     :param key: str: the key of the file
     :returns: file: the value of the file
     """
-    st.write(f"Please upload your {filetype} file for {name}")
+    st.write(f"请上传 {name} 的 {filetype} 文件")
     return st.file_uploader(name, type=[filetype], key=key)
 
 
 def display_sample_and_stock_solution_ui(position: str = "reagents"):
     # Stock Solutions Section
     backend = st.session_state["platform_backend"]
-    st.subheader("Stock Solutions")
+    st.subheader("储备溶液")
 
     reagent_text1 = (
-        "Reagents are sampled from stock solutions of known concentration.\n"
-        "Fill the table below with the concentration of each chemical within each stock solution.\n"
-        "It is possible to add multiple reagents to the same solution, however this imposes limitations on the relative"
-        " concentrations in the reaction mixture, please keep this in mind."
+        "试剂从已知浓度的储备溶液中取样。\n"
+        "请在下表中填写每种化学物质在各储备溶液中的浓度。\n"
+        "可以在同一溶液中添加多种试剂，但这会限制反应混合物中的相对浓度比例，请注意这一点。"
     )
     reagent_text2 = (
-        "Please modify the stock solutions if fixing the current platform error required you to remake one or more of the"
-        "stock solutions. \n"
+        "如果修正当前平台错误需要重新配制一个或多个储备溶液，请在此处修改。\n"
     )
     st.markdown(reagent_text1 if position == "reagents" else reagent_text2)
     st.write("")
@@ -1092,38 +1121,36 @@ def display_sample_and_stock_solution_ui(position: str = "reagents"):
     handle_stock_solutions(stock_col1)
 
     # Sample Vials and Volumes Section
-    st.subheader("Sample Vials and Volumes")
+    st.subheader("样品瓶和体积")
     vial_text1 = (
-        "This table must list all vials available to the platform, their position, volume and content."
+        "此表格必须列出平台可用的所有样品瓶，包括其位置、体积和内容物。"
     )
     vial_text2 = (
-        "Please modify the vials if fixing the current platform error required you refill or modify the"
-        "vials. \n"
+        "如果修正当前平台错误需要重新装填或修改样品瓶，请在此处修改。\n"
     )
     st.write(vial_text1 if position == "reagents" else vial_text2)
 
     st.markdown(
-        "### DETAILED INSTRUCTIONS \n"
-        "1. Select the number of vials that you intend to insert in the sample holders, including a. Solvents, "
-        "b. Waste, c. Reagents, d. Samples (for receiver handler), e. Cleaning solutions. \n "
-        "2. For each vial a row is generated with a hash value (this value is unique and you will not ever have "
-        "to worry about it). \n"
-        "3. Fill in the details of the vial:\n"
-        "    1. `Vial Name` (chosen internal tracking name i.e. 'vial starting material')\n"
-        "    2. `Liquid Handler` (in which liquid handler will the vial be i.e. Handler_1)\n"
-        "    3. `Sample holder` (in which sample holder will the vial be i.e Holder_A)\n"
-        "    4. `Position` (in which position will the vial be within the holder i.e. A1)\n"
-        "    5. `Type` (what is the vial for i.e. Solvent, Stock or Sample)\n"
-        "    6. `Stock Solution` (if the vial is a reagent, which stock solution does it contain i.e. Stock_SM)\n"
-        "    7. `Volume` (how much of the stock solution is in the vial i.e. 4000 uL)\n"
+        "### 详细说明 \n"
+        "1. 选择您打算放入样品架中的样品瓶数量，包括：a. 溶剂、"
+        "b. 废液、c. 试剂、d. 样品（用于接收处理器）、e. 清洗液。\n"
+        "2. 每添加一个样品瓶会生成一行，带有一个哈希值（该值唯一，您无需关心）。\n"
+        "3. 填写样品瓶的详细信息：\n"
+        "    1. `样品瓶名称`（选择的内部跟踪名称，例如「起始物料瓶」）\n"
+        "    2. `液体处理器`（样品瓶位于哪个液体处理器，例如 Handler_1）\n"
+        "    3. `样品架`（样品瓶位于哪个样品架，例如 Holder_A）\n"
+        "    4. `位置`（样品瓶在样品架中的位置，例如 A1）\n"
+        "    5. `类型`（样品瓶的用途，例如 溶剂、储备液 或 样品）\n"
+        "    6. `储备溶液`（如果样品瓶是试剂，它包含哪个储备溶液，例如 Stock_SM）\n"
+        "    7. `体积`（样品瓶中有多少储备溶液，例如 4000 uL）\n"
     )
     st.markdown(
-        " **WARNING**: make sure the information you enter here is correct."
+        " **警告**：请确保此处输入的信息正确无误。"
     )
 
     # Template vial file upload
     st.file_uploader(
-        "You can upload a template vial file (e.g. from a previous run) here:",
+        "您可以在此上传模板样品瓶文件（例如从之前的运行中导出）：",
         type=["csv"],
         key="vial_df_template",
         accept_multiple_files=False,
@@ -1148,7 +1175,7 @@ def display_sample_and_stock_solution_ui(position: str = "reagents"):
     # Number of Vials input and update
     sample_col1, sample_col2 = st.columns([4, 1])
     number_vials = sample_col2.number_input(
-        "Number of Vials",
+        "样品瓶数量",
         min_value=1,
         max_value=100,
         value=backend.session_container.get("number_of_vials", 1),
@@ -1189,7 +1216,7 @@ def create_simple_widget(
             label, value=str(default_or_value) if default_or_value else "", key=key
         )
     else:
-        st.write(f"Unsupported type for parameter `{label}`: {param_type}")
+        st.write(f"参数 `{label}` 不支持的类型: {param_type}")
         return default_or_value
 
 
@@ -1222,7 +1249,7 @@ def create_input_widget(parameter: LamaParameter, full_path: str):
             # Variable-length Tuple, e.g., Tuple[int, ...]
             element_type = args[0]
             num_elements = st.number_input(
-                f"Number of elements in {param_name}",
+                f"{param_name} 的元素个数",
                 min_value=1,
                 max_value=10,
                 value=3,
@@ -1356,7 +1383,7 @@ def display_ml_task_all_settings(chemical_parameters: list[ML_parameter]):
             chem.task_feature = False
 
     ml_task = st.selectbox(
-        "Select the ML parameter to set the task",
+        "选择用于设置任务的条件参数",
         [chem.name for chem in chemical_parameters],
         index=(
             [chem.name for chem in chemical_parameters].index(task_param)
@@ -1392,7 +1419,7 @@ def display_ml_task_settings(chemical_parameters: list[ML_parameter]):
             chem.task_feature = False
 
     ml_task = st.selectbox(
-        "Select the ML parameter to set the task",
+        "选择要设为目标任务的 ML 参数",
         [chem.name for chem in chemical_parameters],
         index=(
             [chem.name for chem in chemical_parameters].index(task_param)
@@ -1406,7 +1433,7 @@ def display_ml_task_settings(chemical_parameters: list[ML_parameter]):
     ][0]
     chemical_of_interest.task_feature = True
     task_feature = st.selectbox(
-        "Select the feature to generate candidates for",
+        "选择要生成候选方案的特征",
         chemical_of_interest.discrete,
         index=(
             chemical_of_interest.discrete.index(chemical_of_interest.task_value)

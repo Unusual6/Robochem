@@ -1,28 +1,27 @@
-""" User Settings
+""" 用户设置
 
-This file is automatically activated by running 'streamlit run robochem.py'.
+运行 'streamlit run robochem.py' 后此文件自动激活。
 
-Here the user can fill in the name of the user which will create a new folder (if it doesn't already exist)
-and the name of the experiments that will be run. All corresponding files will be saved at this location with
-the name of the experiments.
+用户可以在此填写用户名（将创建新文件夹，如不存在）和实验名称。
+所有相关文件将保存在该位置并以实验名称命名。
 
 Author: Elia Savino
 """
 
 import streamlit as st
 import os
-from backend.frontend_functions import page_header
+from backend.frontend_functions import page_header, ensure_backend
 
 
-# --------------------------------------------- Streamlit page setup ---------------------------------------------------
-backend = st.session_state["platform_backend"]
+# --------------------------------------------- Streamlit 页面设置 ---------------------------------------------------
+backend = ensure_backend()
 page_header()
 
-# ----------------------------------------------------- User -----------------------------------------------------------
-st.subheader("User name")
+# ----------------------------------------------------- 用户 -----------------------------------------------------------
+st.subheader("用户名")
 st.write("")
 
-# Create list with available users, move guest folder to front (default option)
+# 创建可用用户列表，将 Guest 文件夹移至最前（默认选项）
 available_users = [
     name
     for name in os.listdir(backend.robochem_path)
@@ -34,9 +33,9 @@ available_users = list(set(available_users))
 
 col1, col2, col3 = st.columns([10, 2, 10])
 
-# Choose the user
+# 选择用户
 user_name = col1.selectbox(
-    "Current user",
+    "当前用户",
     available_users,
     key="user_name",
     index=available_users.index(backend.session_container.get("user_name", "Guest")),
@@ -44,22 +43,22 @@ user_name = col1.selectbox(
 backend.user_path = os.path.join(backend.robochem_path, st.session_state["user_name"])
 backend.session_container.update_session("user_name", user_name)
 
-# Add new user if not in list of available users
-new_folder = col3.text_input("If your name is not in list, add your name here")
+# 如果不在列表中则添加新用户
+new_folder = col3.text_input("如果您的名字不在列表中，请在此添加")
 if new_folder != "":
     if not os.path.exists(os.path.join(backend.robochem_path, new_folder)):
         os.makedirs(os.path.join(backend.robochem_path, new_folder))
-col3.button("Update user-list")
+col3.button("更新用户列表")
 col2.write("")
 
 st.markdown("_____")
 
-# ------------------------------------------------ FILENAME ------------------------------------------------------------
+# ------------------------------------------------ 实验名称 ------------------------------------------------------------
 
-st.subheader("Experiment")
+st.subheader("实验")
 col21, col22 = st.columns([28, 28])
 experiment_name = col21.text_input(
-    label=f"Insert the name for the files generated this run:",
+    label=f"输入本次实验生成文件的名称：",
     value=backend.session_container.get("experiment_name", ""),
     key="experiment_name",
 )
@@ -76,15 +75,15 @@ if st.session_state["experiment_name"] != "":
 
 
 st.markdown("_____")
-# ------------------------------------------------- Platform Selection -------------------------------------------------
+# ------------------------------------------------- 平台选择 -------------------------------------------------
 
-st.subheader("Platform and Experiment Selection")
+st.subheader("平台与实验选择")
 st.write("")
 st.write("")
 col31, col32, col33 = st.columns([1, 1, 1])
-# Choose the platform
+# 选择平台
 platform_name = col31.selectbox(
-    "Select the platform you are using",
+    "选择您使用的平台",
     backend.available_platforms,
     key="platform_name",
     index=(
@@ -96,14 +95,14 @@ platform_name = col31.selectbox(
     ),
 )
 backend.session_container.update_session("platform_name", platform_name)
-# find the available experiment:
+# 查找可用实验：
 if platform_name != "":
     available_experiments = backend.platform_available_experiments(platform_name)
 else:
     available_experiments = []
 
 platform_experiment = col32.selectbox(
-    "Select the experiment for the platform",
+    "选择平台实验类型",
     available_experiments,
     key="platform_experiment",
     index=(
@@ -118,9 +117,9 @@ backend.session_container.update_session("platform_experiment", platform_experim
 
 available_ml = list(backend.ML_classes.keys())
 
-# Choose the experiment
+# 选择实验
 experiment_name = col33.selectbox(
-    "Select the experiment machine learning method",
+    "选择实验机器学习方法",
     available_ml,
     key="experiment_type",
     index=(
@@ -131,7 +130,7 @@ experiment_name = col33.selectbox(
 )
 backend.session_container.update_session("experiment_type", experiment_name)
 
-# save the choice and initialise the experiment class.
+# 保存选择并初始化实验类
 
 if "experiment_class" in backend.session_container.keys():
     if isinstance(
@@ -139,27 +138,27 @@ if "experiment_class" in backend.session_container.keys():
         backend.ML_classes[experiment_name],
     ):
         st.success(
-            f"There is a ML module loaded, probably you are continuing a previous session."
-            f" The experiment class is {experiment_name}. This will not be overridden."
+            f"已加载 ML 模块，您可能正在继续之前的会话。"
+            f" 实验类为 {experiment_name}，不会被覆盖。"
         )
         backend.ml_experiment_class = backend.session_container["experiment_class"]
     else:
         st.warning(
-            f"There is a ML module loaded of type {type(backend.session_container['experiment_class'])}."
-            f"this doesn't match the selection in the form: {experiment_name}. Do you want to override it and start a new one?"
+            f"已加载的 ML 模块类型为 {type(backend.session_container['experiment_class'])}，"
+            f"与表单中选择的 {experiment_name} 不匹配。是否覆盖并重新开始？"
         )
-        if st.button("Yes"):
+        if st.button("是"):
             backend.ml_experiment_class = backend.ML_classes[experiment_name]()
             backend.session_container.update_session(
                 "experiment_class", backend.ml_experiment_class
             )
 elif not hasattr(backend, "ml_experiment_class") or backend.ml_experiment_class is None:
-    st.success("There is no ML module loaded, initialising a new one.")
+    st.success("未加载 ML 模块，正在初始化新的模块。")
     backend.ml_experiment_class = backend.ML_classes[experiment_name]()
     backend.session_container.update_session(
         "experiment_class", backend.ml_experiment_class
     )
 else:
     st.error(
-        "Something went wrong with the experiment class, please restart the platform."
+        "实验类出现问题，请重启平台。"
     )

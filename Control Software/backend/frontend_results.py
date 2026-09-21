@@ -104,9 +104,9 @@ def plot_results(results_df: pd.DataFrame, objectives: list):
                     color=colors[i],
                     alpha=0.3,
                 )
-        fig.suptitle("Objectives vs Experiment iteration")
-        ax.set_xlabel("Experiment number")
-        ax.set_ylabel("Objective value")
+        fig.suptitle("目标值 vs 实验迭代次数")
+        ax.set_xlabel("实验编号")
+        ax.set_ylabel("目标值")
         ax.legend()
         ax.set_xlim(-1, len(exp_n))
         ax.set_xticks(exp_n)
@@ -116,7 +116,7 @@ def plot_results(results_df: pd.DataFrame, objectives: list):
         with obvsob:
             fig, ax = plt.subplots()
             fig.suptitle(
-                f"Pareto plot of objectives {objectives[0]} and {objectives[1]}"
+                f"目标 {objectives[0]} 与 {objectives[1]} 的帕累托图"
             )
             ax.scatter(
                 results_df[objectives[0]],
@@ -139,11 +139,11 @@ def plot_results(results_df: pd.DataFrame, objectives: list):
             st.pyplot(fig)
 
     elif num_obj > 2:
-        obj1 = st.selectbox("Select the first objective", options=objectives)
-        obj2 = st.selectbox("Select the second objective", options=objectives)
+        obj1 = st.selectbox("选择第一个目标", options=objectives)
+        obj2 = st.selectbox("选择第二个目标", options=objectives)
         with obvsob:
             fig, ax = plt.subplots()
-            fig.suptitle(f"Pareto plot of objectives {obj1} and {obj2}")
+            fig.suptitle(f"目标 {obj1} 与 {obj2} 的帕累托图")
             ax.scatter(
                 results_df[obj1],
                 results_df[obj2],
@@ -181,7 +181,7 @@ def handle_vials_empty(backend: PlatformBackend, error: UserActionRequest):
     # first we display the stock solutions:
     stock_col1, stock_col2 = st.columns([3, 1])
     number_stocks = stock_col2.number_input(
-        "Number of Stock Solutions",
+        "储备溶液数量",
         min_value=1,
         max_value=100,
         key="number_of_stock_solutions",
@@ -196,14 +196,14 @@ def handle_vials_empty(backend: PlatformBackend, error: UserActionRequest):
     handle_stock_solutions(stock_col1)
 
     # now we display the vials df
-    st.write("## Handle your vials")
+    st.write("## 管理样品瓶")
     st.write(
-        "Suggestion: Remove emtpy vials and Samples, refill solvents, and add new stock solutions"
-        "\n if needed, concentrations may change!"
+        "建议：移除空瓶和样品，补充溶剂，必要时添加新的储备溶液"
+        "\n 注意：浓度可能会变化！"
     )
     sample_col1, sample_col2 = st.columns([4, 1])
     number_vials = sample_col2.number_input(
-        "Number of Vials",
+        "样品瓶数量",
         min_value=1,
         max_value=100,
         value=st.session_state["platform_backend"].session_container.get(
@@ -217,7 +217,7 @@ def handle_vials_empty(backend: PlatformBackend, error: UserActionRequest):
     # display and load the vials:
     handle_vials()
 
-    with st.button("Refill"):
+    with st.button("重新填充"):
         merge_df = backend.merge_df()
         resolved = UserAction(
             error_keyword="VialsEmpty",
@@ -252,15 +252,15 @@ def handle_results(
         backend.session_container["stopped"] = True
         backend.ml_experiment_class.kill_thread()
         st.success(
-            f"Your experiment is finished! We suggest to save the session now! \n"
-            f"You can also add more experiments if you want to continue!",
+            f"您的实验已完成！建议现在保存会话！\n"
+            f"您也可以继续添加更多实验！",
             icon=":material/sentiment_very_satisfied:",
         )
         cols = st.columns([1, 1, 1], vertical_alignment="bottom")
         more_exp = cols[1].number_input(
-            "Number of additional experiments", min_value=1, value=1
+            "额外实验数量", min_value=1, value=1
         )
-        if cols[2].button("Add more experiments"):
+        if cols[2].button("添加更多实验"):
             st.write(f"Adding {more_exp} experiments")
             backend.ml_experiment_class.add_more_experiments(more_exp)
             backend.session_container["stopped"] = False
@@ -270,14 +270,14 @@ def handle_results(
     objectives = backend.session_container["objectives"]
 
     # display the results (editable if HITL)
-    st.write("## Results")
+    st.write("## 结果")
     st.markdown(
-        "Here the results will be displayed, if you are doing a HITL experiment, please "
-        'add the results as you measure them and press the "Push Results" button.\n\n'
-        "**Note**: this list is updated every 30s."
+        "实验结果将在此显示，如果您正在进行人机协作（HITL）实验，请在测量完成后"
+        "添加结果，然后点击"提交结果"按钮。\n\n"
+        "**注意**：此列表每30秒更新一次。"
     )
     if "results_df" not in backend.session_container:
-        st.write("No results yet")
+        st.write("暂无结果")
         return
     # display the results DF
 
@@ -290,8 +290,8 @@ def handle_results(
     if hasattr(backend.ml_experiment_class, "put_HITL"):
         # validate the DF:
         if not backend.ml_experiment_class.res_df_is_valid(res_df):
-            st.warning("Please fill all the objectives")
-        elif st.button("Push Results"):
+            st.warning("请填写所有目标值")
+        elif st.button("提交结果"):
             backend.session_container["results_df"] = res_df
             print(res_df)
             backend.ml_experiment_class.put_HITL(res_df)
@@ -309,7 +309,7 @@ def handle_results(
                 disabled=True,
             )
 
-    st.write("## Results plot")
+    st.write("## 结果图表")
     plot_results(backend.session_container["results_df"], objectives)
 
 
@@ -333,7 +333,7 @@ def check_platform_status(
             break
     if platform_samples is not None:
         backend.session_container["VialDF"].update_from_platform(platform_samples)
-        st.success("Updated samples.")
+        st.success("样品已更新。")
 
     # Check if an error condition is already present.
     action_request = backend.session_container.get("platform_error_condition", None)
@@ -353,7 +353,7 @@ def check_platform_status(
 
         st.error(
             f"**{action_request_type.__name__}**\n\n"
-            f"The platform encountered an issue with the available samples:\n\n"
+            f"平台遇到可用样品问题：\n\n"
             f"{action_request.description}",
             icon=":material/oil_barrel:",
         )
@@ -369,16 +369,16 @@ def check_platform_status(
 
         st.write("\n")
         st.button(
-            "Fix it",
+            "修复",
             on_click=send_solution,
-            help="Send the modified sample dataframe to the platform.",
+            help="将修改后的样品数据框发送到平台。",
         )
     else:
         st.error(
             f"**{action_request_type.__name__}**\n\n"
-            f"The platform encountered an issue:\n\n"
+            f"平台遇到问题：\n\n"
             f"{action_request.description}\n\n"
-            "*There is no implemented way to handle this issue yet. Cry us a river*.",
+            "*目前尚无处理此问题的实现方式。请联系开发人员。*",
             icon=":material/error:",
         )
 

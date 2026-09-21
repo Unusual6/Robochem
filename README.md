@@ -43,3 +43,5 @@ The contents of this repository are licensed under the Apache License, Version 2
 For more information, consult the NOTICE and LICENSE files.
 
 Copyright 2025 [Noël Research Group](https://www.noelresearchgroup.com).
+运行命令
+streamlit run robochem_flex.py

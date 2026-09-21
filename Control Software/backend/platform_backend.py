@@ -39,8 +39,8 @@ from backend.ml_backends import (
     EnantioExtravaganza,
     DevHITL,
     ScopeAcceleratorTask,
-    MyCustomML,
-    DragonflyML,
+    # MyCustomML,
+    # DragonflyML,
 )
 from omniplatypus.procedures.analytics.analytics_template import AnalyticsTemplate
 
@@ -127,8 +127,8 @@ class PlatformBackend(BaseLoggedClass):
         "MultiTaskScope_HITL": MultiTaskScope_HITL,
         "ScopeAcceleratorTask": ScopeAcceleratorTask,
         "EnantioExtravaganza": EnantioExtravaganza,
-        "MyCustomML": MyCustomML,
-        "DragonflyML": DragonflyML,
+        # "MyCustomML": MyCustomML,
+        # "DragonflyML": DragonflyML,
     }
     platform_constructors = {
         "PhotochemicalReaction": PhotochemicalReaction,
@@ -349,11 +349,11 @@ class PlatformBackend(BaseLoggedClass):
             }
 
             if len(keys) == 0:
-                self.log_mssg(f"No values found with tag {keyword}", level="warning")
+                self.log_mssg(f"未找到标签 {keyword} 的值", level="warning")
 
             return keys
         except Exception as e:
-            self.log_mssg(f"Error searching by tag: {e}", level="error")
+            self.log_mssg(f"按标签搜索时出错: {e}", level="error")
             return {}
 
     def sample_holder_positions(self, holder_config: dict):
@@ -364,7 +364,7 @@ class PlatformBackend(BaseLoggedClass):
         list = holder_config.get("components", None)
         if list is None:
             self.log_mssg(
-                f"No components found in the holder configuration", level="error"
+                f"样品架配置中未找到组件", level="error"
             )
             return []
         alphabetic = [key for key in list.keys() if key.isalpha()]
@@ -412,7 +412,7 @@ class PlatformBackend(BaseLoggedClass):
                 handlers_dict[handler] = holder_dict
 
         except Exception as e:
-            self.log_mssg(f"Error processing handlers: {e}", level="error")
+            self.log_mssg(f"处理液体处理器时出错: {e}", level="error")
 
         return handlers_dict
 
@@ -421,7 +421,9 @@ class PlatformBackend(BaseLoggedClass):
         returns the available analytics for the experiments
         """
         # first get the experiment class:
-        experiment_name = self.session_container["platform_experiment"]
+        experiment_name = self.session_container.get("platform_experiment", None)
+        if experiment_name is None:
+            return []
         if experiment_name in self.platform_constructors:
             experiment_class: BaseExperiment = self.platform_constructors[
                 experiment_name
@@ -429,7 +431,7 @@ class PlatformBackend(BaseLoggedClass):
             return experiment_class.get_analytical_methods().keys()
         else:
             raise RuntimeError(
-                f"Cannot find definition for experiment '{experiment_name}'."
+                f"未找到实验 '{experiment_name}' 的定义。"
             )
 
     def get_analytic_parameters(self):
@@ -447,7 +449,7 @@ class PlatformBackend(BaseLoggedClass):
                 experiment_name
             ].get_analytical_methods()
         else:
-            self.log_mssg(f"Experiment {experiment_name} not found", level="warning")
+            self.log_mssg(f"未找到实验 {experiment_name}", level="warning")
             return None
 
         if analytics_name in available_analytics.keys():
@@ -578,7 +580,7 @@ class PlatformBackend(BaseLoggedClass):
             )
 
         except Exception as e:
-            self.log_mssg(f"Error initialising the ML backend: {e}", level="error")
+            self.log_mssg(f"初始化机器学习后端时出错: {e}", level="error")
             raise e
             self._ml_ready = False
 
@@ -786,29 +788,29 @@ class PlatformBackend(BaseLoggedClass):
         self._platform_ready = False
         self._ml_ready = False
 
-        self.log_mssg("Stopped the platform")
+        self.log_mssg("平台已停止")
 
     def validate_data(self):
         """Checks that all the required components of the data are initialised and ready to roll"""
         # check that there is at least a chemical:
         if len(self.session_container.search_by_tag("chemical")) == 0:
-            self.log_mssg("No chemical data found", level="error")
+            self.log_mssg("未找到化学物质数据", level="error")
             self._ready_to_roll = False
-            return "No chemical data found"
+            return "未找到化学物质数据"
         # check that there is at least on ML parameter:
         if len(self.session_container.search_by_tag("ML_parameter")) == 0:
-            self.log_mssg("No ML data found", level="error")
+            self.log_mssg("未找到机器学习参数", level="error")
             self._ready_to_roll = False
-            return "No ML data found"
+            return "未找到机器学习参数"
         # check that the vial and liquid handler dfs are not empty:
         if len(self.session_container["VialDF"].df) == 0:
-            self.log_mssg("No vial data found", level="error")
+            self.log_mssg("未找到样品瓶数据", level="error")
             self._ready_to_roll = False
-            return "No vial data found"
+            return "未找到样品瓶数据"
         if len(self.session_container["StockDF"].df) == 0:
-            self.log_mssg("No stock data found", level="error")
+            self.log_mssg("未找到储备溶液数据", level="error")
             self._ready_to_roll = False
-            return "No stock data found"
+            return "未找到储备溶液数据"
 
         # add more checks as needed
 

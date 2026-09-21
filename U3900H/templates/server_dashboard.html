@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-3900H 虚拟光谱仪服务端</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #0d1117; color: #c9d1d9; min-height: 100vh; }
+        .header { background: #161b22; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #58a6ff; }
+        .header h1 { font-size: 20px; color: #58a6ff; letter-spacing: 1px; }
+        .status-bar { display: flex; gap: 16px; font-size: 13px; }
+        .status-item { padding: 4px 12px; border-radius: 12px; background: #0d1117; border: 1px solid #30363d; }
+        .status-item .label { color: #8b949e; margin-right: 6px; }
+        .status-val { font-weight: 500; }
+        .ok { color: #3fb950; }
+        .busy { color: #d2991d; }
+        .off { color: #f85149; }
+
+        .main { display: grid; grid-template-columns: 360px 1fr; gap: 16px; padding: 16px; height: calc(100vh - 98px); }
+        .panel { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 16px; overflow: auto; }
+        .panel h2 { font-size: 16px; color: #58a6ff; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #30363d; }
+
+        .btn { padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.2s; margin: 4px 2px; }
+        .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn-primary { background: #238636; color: #fff; border: 1px solid #2ea043; }
+        .btn-primary:hover:not(:disabled) { background: #2ea043; }
+        .btn-secondary { background: #21262d; color: #c9d1d9; border: 1px solid #30363d; }
+        .btn-secondary:hover:not(:disabled) { background: #30363d; }
+        .btn-danger { background: #da3633; color: #fff; }
+        .btn-danger:hover:not(:disabled) { background: #f85149; }
+
+        .form-group { margin-bottom: 10px; }
+        .form-group label { display: block; font-size: 12px; color: #8b949e; margin-bottom: 4px; }
+        .form-group input { width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid #30363d; background: #0d1117; color: #c9d1d9; font-size: 13px; }
+        .form-group input:focus { outline: none; border-color: #58a6ff; }
+        .form-row { display: flex; gap: 8px; }
+        .form-row .form-group { flex: 1; }
+
+        .chart-container { height: 400px; position: relative; }
+        canvas { width: 100% !important; height: 100% !important; }
+
+        .log-panel { max-height: 300px; }
+        .log-list { font-family: 'Consolas', 'Courier New', monospace; font-size: 11px; max-height: 260px; overflow-y: auto; }
+        .log-entry { padding: 3px 6px; margin: 1px 0; border-radius: 3px; display: flex; gap: 8px; }
+        .log-entry.tx { background: rgba(35,134,54,0.1); }
+        .log-entry.rx { background: rgba(88,166,255,0.1); }
+        .log-time { color: #484f58; min-width: 60px; }
+        .log-dir { font-weight: bold; min-width: 36px; }
+        .log-dir.tx { color: #3fb950; }
+        .log-dir.rx { color: #58a6ff; }
+        .log-payload { color: #8b949e; word-break: break-all; }
+        .log-hex { color: #484f58; font-size: 10px; word-break: break-all; }
+
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .info-item { background: #0d1117; padding: 8px 10px; border-radius: 6px; border: 1px solid #30363d; }
+        .info-item .lbl { font-size: 11px; color: #484f58; }
+        .info-item .val { font-size: 14px; color: #58a6ff; font-weight: 500; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid #30363d; }
+        th { color: #8b949e; font-weight: 500; }
+        td { color: #c9d1d9; }
+
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; }
+        .badge-ok { background: rgba(63,185,80,0.2); color: #3fb950; }
+        .badge-busy { background: rgba(210,153,29,0.2); color: #d2991d; }
+        .badge-off { background: rgba(248,81,73,0.2); color: #f85149; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🖥️ U-3900H 虚拟光谱仪服务端</h1>
+        <div class="status-bar">
+            <div class="status-item"><span class="label">field3</span> <span class="status-val" id="field3">00</span> <span id="field3Badge" class="badge badge-ok">空闲</span></div>
+            <div class="status-item"><span class="label">field4</span> <span class="status-val" id="field4">00000000</span> <span id="field4Badge" class="badge badge-ok">就绪</span></div>
+            <div class="status-item"><span class="label">TCP端口</span> <span class="status-val ok">9000</span></div>
+            <div class="status-item"><span class="label">已连接客户端</span> <span class="status-val" id="clientCount">0</span></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- 左侧控制面板 -->
+        <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="panel">
+                <h2>⚙️ 光谱参数设置</h2>
+                <div class="form-row">
+                    <div class="form-group"><label>起始波长 (nm)</label><input type="number" id="startWv" value="534.00" step="0.01"></div>
+                    <div class="form-group"><label>结束波长 (nm)</label><input type="number" id="endWv" value="200.00" step="0.01"></div>
+                </div>
+                <div class="form-group"><label>扫描速度 (nm/min)</label><input type="number" id="scanSpeed" value="300.0" step="1"></div>
+                <div class="form-group"><label>步进 (nm)</label><input type="number" id="step" value="-1.0" step="0.1"></div>
+                <button class="btn btn-primary" onclick="setSpectrumParams()">📝 设置参数</button>
+            </div>
+
+            <div class="panel">
+                <h2>📊 设备状态概览</h2>
+                <div class="info-grid">
+                    <div class="info-item"><div class="lbl">当前波长</div><div class="val" id="curWv">534.00 nm</div></div>
+                    <div class="info-item"><div class="lbl">当前吸光度</div><div class="val" id="curAbs">0.0000</div></div>
+                    <div class="info-item"><div class="lbl">扫描进度</div><div class="val" id="scanProgress">0%</div></div>
+                    <div class="info-item"><div class="lbl">扫描数据点</div><div class="val" id="dataCount">0</div></div>
+                    <div class="info-item"><div class="lbl">扫描状态</div><div class="val" id="scanState">空闲</div></div>
+                    <div class="info-item"><div class="lbl">基线校准</div><div class="val" id="baselineState">未校准</div></div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>📋 协议帧通讯日志</h2>
+                <div class="log-list" id="logList"></div>
+            </div>
+        </div>
+
+        <!-- 右侧：光谱曲线 -->
+        <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="panel" style="flex:1;">
+                <h2>📈 光谱曲线 (服务端视图)</h2>
+                <div class="chart-container">
+                    <canvas id="spectrumChart"></canvas>
+                </div>
+            </div>
+
+            <div class="panel" style="max-height:220px;">
+                <h2>🔌 业务接口状态</h2>
+                <table>
+                    <thead><tr><th>命令码</th><th>功能</th><th>状态</th><th>说明</th></tr></thead>
+                    <tbody id="cmdTable">
+                        <tr><td>00010002</td><td>读取ID/版本</td><td><span class="badge badge-ok">就绪</span></td><td>服务端始终就绪</td></tr>
+                        <tr><td>00010810</td><td>初始化</td><td><span class="badge badge-ok">就绪</span></td><td>模拟 300ms 耗时</td></tr>
+                        <tr><td>00010300</td><td>模式初始化</td><td><span class="badge badge-ok">就绪</span></td><td></td></tr>
+                        <tr><td>00010100</td><td>参数设置</td><td><span class="badge badge-ok">就绪</span></td><td>同步更新参数</td></tr>
+                        <tr><td>00010800</td><td>状态轮询</td><td><span class="badge badge-ok">就绪</span></td><td>返回 field3/field4/数据</td></tr>
+                        <tr><td>00010323</td><td>基线校准</td><td><span id="baselineBadge" class="badge badge-ok">就绪</span></td><td>后台执行 ~2s</td></tr>
+                        <tr><td>00010500</td><td>开始扫描</td><td><span id="scanStartBadge" class="badge badge-ok">就绪</span></td><td>生成随机光谱峰</td></tr>
+                        <tr><td>00010801</td><td>波长设置/测量</td><td><span id="scanPointBadge" class="badge badge-ok">就绪</span></td><td>单点测量 Abs</td></tr>
+                        <tr><td>00010302</td><td>结束扫描</td><td><span id="scanEndBadge" class="badge badge-ok">就绪</span></td><td>返回完整光谱数据</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==================== Chart.js ====================
+        const ctx = document.getElementById('spectrumChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: { labels: [], datasets: [{ label: '吸光度 (Abs)', data: [], borderColor: '#58a6ff', backgroundColor: 'rgba(88,166,255,0.1)', borderWidth: 2, pointRadius: 0, tension: 0.2, fill: true }] },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: { duration: 150 },
+                scales: {
+                    x: { title: { display: true, text: '波长 (nm)', color: '#8b949e' }, grid: { color: '#21262d' }, ticks: { color: '#8b949e' } },
+                    y: { title: { display: true, text: '吸光度', color: '#8b949e' }, grid: { color: '#21262d' }, ticks: { color: '#8b949e' } }
+                },
+                plugins: { legend: { labels: { color: '#8b949e' } } }
+            }
+        });
+
+        let eventAfterId = 0;
+
+        // ==================== 周期轮询 ====================
+        async function poll() {
+            try {
+                // 拉取事件
+                const evtR = await fetch(`/api/events?after_id=${eventAfterId}`);
+                const evtData = await evtR.json();
+                if (evtData.latest_id) eventAfterId = evtData.latest_id;
+
+                // 处理事件
+                for (const evt of evtData.events || []) {
+                    handleEvent(evt);
+                }
+
+                // 拉取最新状态
+                const statusR = await fetch('/api/status');
+                const status = await statusR.json();
+                updateStatusUI(status);
+
+                // 拉取扫描数据
+                const scanR = await fetch('/api/scan_data');
+                const scanData = await scanR.json();
+                updateChart(scanData);
+
+            } catch (e) { /* ignore */ }
+        }
+
+        function handleEvent(evt) {
+            switch (evt.type) {
+                case 'frame_log':
+                    addLogEntry(evt.data);
+                    break;
+                case 'scan_complete':
+                    if (evt.data.data) {
+                        updateChartComplete(evt.data.data);
+                    }
+                    break;
+                case 'params_updated':
+                    const p = evt.data.params;
+                    document.getElementById('startWv').value = p.start_wavelength.toFixed(2);
+                    document.getElementById('endWv').value = p.end_wavelength.toFixed(2);
+                    document.getElementById('scanSpeed').value = p.scan_speed.toFixed(1);
+                    break;
+                case 'scan_started':
+                case 'scan_update':
+                case 'baseline_started':
+                case 'baseline_complete':
+                case 'selftest_started':
+                case 'selftest_complete':
+                    // 状态会通过 /api/status 同步
+                    break;
+            }
+        }
+
+        function updateStatusUI(status) {
+            // field3
+            document.getElementById('field3').textContent = status.field3;
+            const f3Badge = document.getElementById('field3Badge');
+            if (status.field3 === '00') { f3Badge.textContent = '空闲/完成'; f3Badge.className = 'badge badge-ok'; }
+            else if (status.field3 === '01') { f3Badge.textContent = '自检中'; f3Badge.className = 'badge badge-busy'; }
+            else if (status.field3 === '02') { f3Badge.textContent = '基线校准中'; f3Badge.className = 'badge badge-busy'; }
+
+            // field4
+            document.getElementById('field4').textContent = status.field4;
+            const f4Badge = document.getElementById('field4Badge');
+            if (status.field4 === '00000000') { f4Badge.textContent = '就绪/完成'; f4Badge.className = 'badge badge-ok'; }
+            else if (status.field4 === '00000200') { f4Badge.textContent = 'Ready'; f4Badge.className = 'badge badge-ok'; }
+            else if (status.field4 === '00000A00') { f4Badge.textContent = 'Busy'; f4Badge.className = 'badge badge-busy'; }
+
+            // 其他状态
+            document.getElementById('curWv').textContent = (status.current_wavelength || 0).toFixed(2) + ' nm';
+            document.getElementById('curAbs').textContent = (status.current_absorbance || 0).toFixed(6);
+            document.getElementById('scanProgress').textContent = (status.scan_progress || 0).toFixed(1) + '%';
+            document.getElementById('dataCount').textContent = status.scan_data_count || 0;
+
+            if (status.scanning) document.getElementById('scanState').textContent = '扫描中';
+            else if (status.baseline_running) document.getElementById('scanState').textContent = '基线校准中';
+            else document.getElementById('scanState').textContent = '空闲';
+
+            document.getElementById('baselineState').textContent = status.baseline_calibrated ? '已校准' : '未校准';
+
+            // 更新命令表格状态
+            const busy = status.scanning || status.baseline_running || status.selftest_running;
+            const scanStartEl = document.getElementById('scanStartBadge');
+            const scanPointEl = document.getElementById('scanPointBadge');
+            const scanEndEl = document.getElementById('scanEndBadge');
+            const baselineBadgeEl = document.getElementById('baselineBadge');
+
+            if (busy) {
+                scanStartEl.textContent = '忙碌'; scanStartEl.className = 'badge badge-busy';
+                scanPointEl.textContent = '忙碌'; scanPointEl.className = 'badge badge-busy';
+                scanEndEl.textContent = '忙碌'; scanEndEl.className = 'badge badge-busy';
+                baselineBadgeEl.textContent = '忙碌'; baselineBadgeEl.className = 'badge badge-busy';
+            } else {
+                scanStartEl.textContent = '就绪'; scanStartEl.className = 'badge badge-ok';
+                scanPointEl.textContent = '就绪'; scanPointEl.className = 'badge badge-ok';
+                scanEndEl.textContent = '就绪'; scanEndEl.className = 'badge badge-ok';
+                baselineBadgeEl.textContent = '就绪'; baselineBadgeEl.className = 'badge badge-ok';
+            }
+        }
+
+        function updateChart(scanData) {
+            const d = scanData.complete_data && scanData.complete_data.length > 0
+                ? scanData.complete_data
+                : scanData.data || [];
+
+            if (d.length === 0) return;
+
+            chart.data.labels = d.map(p => (p.w || p.wavelength).toFixed(1));
+            chart.data.datasets[0].data = d.map(p => p.a || p.absorbance);
+            chart.update('none');
+        }
+
+        function updateChartComplete(data) {
+            chart.data.labels = data.map(p => p.w.toFixed(1));
+            chart.data.datasets[0].data = data.map(p => p.a);
+            chart.update();
+        }
+
+        // ==================== 参数设置 ====================
+        async function setSpectrumParams() {
+            const data = {
+                start_wavelength: parseFloat(document.getElementById('startWv').value),
+                end_wavelength: parseFloat(document.getElementById('endWv').value),
+                scan_speed: parseFloat(document.getElementById('scanSpeed').value),
+                step: parseFloat(document.getElementById('step').value),
+            };
+            await fetch('/api/set_params', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+        }
+
+        // ==================== 协议帧日志 ====================
+        function addLogEntry(entry) {
+            const logList = document.getElementById('logList');
+            const div = document.createElement('div');
+            div.className = 'log-entry ' + entry.direction;
+            div.innerHTML = `<span class="log-time">${entry.time}</span><span class="log-dir ${entry.direction}">${entry.label}</span><span class="log-payload">${entry.payload}</span>${entry.raw_hex ? '<br><span class="log-hex" style="padding-left:104px;">HEX: ' + entry.raw_hex + '</span>' : ''}`;
+            logList.appendChild(div);
+            while (logList.children.length > 100) logList.removeChild(logList.firstChild);
+            logList.scrollTop = logList.scrollHeight;
+        }
+
+        async function loadFrameLogs() {
+            const r = await fetch('/api/frame_logs?count=50');
+            const data = await r.json();
+            document.getElementById('logList').innerHTML = '';
+            for (const entry of data.logs) addLogEntry(entry);
+        }
+
+        // ==================== 初始化 ====================
+        setInterval(poll, 500);
+        setInterval(loadFrameLogs, 2000);
+        loadFrameLogs();
+        poll();
+    </script>
+</body>
+</html>

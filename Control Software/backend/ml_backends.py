@@ -35,8 +35,8 @@ from robrains.ml_modules import (
     DevelopmentHITL,
     ScopeAcceleratorTaskBackend,
     EnantioExtravaganzaBackend,
-    MyCustomBackend,
-    DragonflyBackend,
+    # MyCustomBackend,
+    # DragonflyBackend,
 )
 from robrains.parameter_backends import (
     Chemical,
@@ -179,7 +179,7 @@ class ToandFromMachine:
                 )
                 to_append.foreign_key = param_name
             else:
-                raise ValueError("No value found for the parameter")
+                raise ValueError("未找到参数的值")
             if "target_chemical" in locals() and target_chemical.value == param_name:
                 target_chemical_value = value_discrete
             translated_values.append(to_append)
@@ -189,7 +189,7 @@ class ToandFromMachine:
             if constant.name == "yield_calculation_chemical":
                 if target_chemical_value is None:
                     raise ValueError(
-                        f"Did not find the chemical to calculate yield for ('{target_chemical.value}')."
+                        f"未找到计算产率的目标化学物质 ('{target_chemical.value}')。"
                     )
 
                 to_append = AnalyticalParameter(
@@ -215,7 +215,7 @@ class ToandFromMachine:
                         ].values[0]
                     else:
                         raise ValueError(
-                            f"Chemical '{target_chemical_value}' not found in {constant.name} data."
+                            f"化学物质 '{target_chemical_value}' 未在 {constant.name} 数据中找到。"
                         )
                     min_value = None
                     max_value = None
@@ -378,7 +378,7 @@ class ToandFromMachine:
                         level="error",
                     )
                     raise ValueError(
-                        f"Poorly defined discrete parameter: {param_name} missing from check dict"
+                        f"离散参数定义有误: {param_name} 未在检查字典中找到"
                     )
 
                 if isinstance(position_value_discrete, int):
@@ -529,7 +529,7 @@ class ToandFromMachine:
 
                 case _:
                     raise ValueError(
-                        "Simone is annoyed at you for not putting down the rigth target! Go in your room and think about what you have done!"
+                        "目标设置错误！请检查并修正你的目标参数。"
                     )
 
         return metrics
@@ -915,17 +915,17 @@ class DevHITL(ML_Platform_HITL_Development_omni, DevelopmentHITL):
         super().__init__()
 
 
-class MyCustomML(ML_Platform_omni, MyCustomBackend):
-    """Custom ML algorithm combining platform communication with custom backend logic."""
-
-    def __init__(self):
-        super().__init__()
-
-
-class DragonflyML(ML_Platform_omni, DragonflyBackend):
-    """Dragonfly GP Bandit ML algorithm combining platform communication with dragonfly backend logic."""
-
-    def __init__(self):
-        super().__init__()
+# class MyCustomML(ML_Platform_omni, MyCustomBackend):
+#     """Custom ML algorithm combining platform communication with custom backend logic."""
+# 
+#     def __init__(self):
+#         super().__init__()
+# 
+# 
+# class DragonflyML(ML_Platform_omni, DragonflyBackend):
+#     """Dragonfly GP Bandit ML algorithm combining platform communication with dragonfly backend logic."""
+# 
+#     def __init__(self):
+#         super().__init__()
 
 

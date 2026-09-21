@@ -35,6 +35,7 @@ from omniplatypus.procedures.experiments.base_experiment import (
     BaseExperiment,
 )
 from omniplatypus.procedures.analytics.raman_analysis import AnalyticsRaman
+from omniplatypus.procedures.analytics.u3900h_analytics import AnalyticsU3900H
 from omniplatypus.procedures.unit_tasks.driving.driving_pumps import (
     FillPump,
     PrimePump,
@@ -119,6 +120,11 @@ class ChemicalReaction(BaseExperiment):
             analysis_class=AnalyticsRaman,
             analytical_device="Raman",
             platform_constants_key="Raman",
+        ),
+        "UV": ExperimentAnalysisCoupler(
+            analysis_class=AnalyticsU3900H,
+            analytical_device="UV_Spectrometer",
+            platform_constants_key="UV",
         ),
     }  # Analytical methods supported by the experiment
 
