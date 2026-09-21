@@ -273,7 +273,7 @@ def handle_results(
     st.write("## 结果")
     st.markdown(
         "实验结果将在此显示，如果您正在进行人机协作（HITL）实验，请在测量完成后"
-        "添加结果，然后点击"提交结果"按钮。\n\n"
+        '添加结果，然后点击"提交结果"按钮。\n\n'
         "**注意**：此列表每30秒更新一次。"
     )
     if "results_df" not in backend.session_container:
