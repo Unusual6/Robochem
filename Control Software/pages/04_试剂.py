@@ -60,7 +60,7 @@ price = columns[2].selectbox(
     "是否添加试剂价格？",
     ["是", "否"],
     key="price",
-    index=["是", "否"].index(backend.session_container.get("price", "否")),
+    index=["是", "否"].index(backend.session_container.get("price", "否")) if backend.session_container.get("price", "否") in ["是", "否"] else 1,
 )
 st.session_state["platform_backend"].session_container.update_session("price", price)
 

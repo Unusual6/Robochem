@@ -392,6 +392,7 @@ class U3900HSpectrometer(BaseDevice):
     def _write(self, parameter: DeviceParameter, value: Any) -> None:
         """Write a parameter value to the device."""
         name = parameter.name
+        self.log(f"[DIAG] _write() called: name={name}, value={value}, type={type(value).__name__}")
 
         if name == "start_wavelength":
             self._scan_start_wv = float(value)
@@ -406,13 +407,19 @@ class U3900HSpectrometer(BaseDevice):
             self.log(f"Scan speed set to {value} nm/min")
 
         elif name == "start_scan" and value is True:
+            self.log(f"[DIAG] Triggering _do_scan()")
             self._do_scan(parameter)
 
         elif name == "baseline_calibrate" and value is True:
+            self.log(f"[DIAG] Triggering _do_baseline()")
             self._do_baseline(parameter)
 
         elif name == "selftest" and value is True:
+            self.log(f"[DIAG] Triggering _do_selftest()")
             self._do_selftest(parameter)
+
+        else:
+            self.log(f"[DIAG] _write() NO MATCH: name={name}, value={value}, value is True={value is True}")
 
     def _read(self, parameter: DeviceParameter) -> Any:
         """Read a parameter value from the device."""

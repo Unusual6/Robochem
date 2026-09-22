@@ -41,9 +41,9 @@
 | **home** | WRITE ONLY | ArduinoValueRun | Run homing cycle|    value = RUN, | 
 | **unlock** | WRITE ONLY | ArduinoValueRun | Unlock grbl without zeroing|    value = RUN, | 
 | **offset** | WRITE ONLY | GrblPosition | Set the working coordinates to the given value| | 
-| **feed** | READ/WRITE | float | Set feed-rate| 0.0 <= value <= 5000.0  mm/min, | 
-| **move** | WRITE ONLY | GrblPosition | Move to an absolute work position at the feed rate| [X=0.0, Y=0.0, Z=-80.0] <= value <= [X=172.0, Y=290.0, Z=0.0] , | 
-| **fast_move** | WRITE ONLY | GrblPosition | Move to an absolute work position as fast as possible| [X=0.0, Y=0.0, Z=-80.0] <= value <= [X=172.0, Y=290.0, Z=0.0] , | 
+| **feed** | READ/WRITE | float | Set feed-rate| 0.0 <= value <= 2000.0  mm/min, | 
+| **move** | WRITE ONLY | GrblPosition | Move to an absolute work position at the feed rate| | 
+| **fast_move** | WRITE ONLY | GrblPosition | Move to an absolute work position as fast as possible| | 
 | **aux_needle** | WRITE ONLY | GrblAuxNeedle | Insert or retract the auxiliary needle| - OFF -> 9 , - ON -> 8 , | 
 | **units_mm** | WRITE ONLY | ArduinoValueRun | Set units to mm|    value = RUN, | 
 | **absolute** | WRITE ONLY | ArduinoValueRun | All coordinates are absolute values from the origin|    value = RUN, | 

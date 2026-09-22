@@ -13,6 +13,8 @@ once built.
 
 import json
 import os
+import subprocess
+import time
 
 import pandas as pd
 import sys
@@ -142,6 +144,7 @@ class PlatformBackend(BaseLoggedClass):
     _platform_ready = False
     _results_df = None
     platform_experiment: BaseExperiment | None = None
+    _spectrometer_server_process: subprocess.Popen | None = None
 
     def __del__(self):
         try:
@@ -149,6 +152,7 @@ class PlatformBackend(BaseLoggedClass):
                 self.platform_experiment.stop()
         except:
             pass
+        self._stop_spectrometer_server()
 
     def __init__(self, streamlit_session: SessionStateProxy) -> None:
         """Initialises the platform backend"""
@@ -543,7 +547,7 @@ class PlatformBackend(BaseLoggedClass):
         path = self.session_container["experiment_path"]
         # check first if the ml_experiment has been primed:
         if self.ml_experiment_class is None:
-            self.ml_experiment_class = self.session_container["ml_experiment_class"]
+            self.ml_experiment_class = self.session_container["experiment_class"]
         if self.ml_experiment_class.primed == True:
             # check if the ML has an instance of the experiment class available:
             if self.ml_experiment_class.experiment != self.platform_experiment:
@@ -712,13 +716,17 @@ class PlatformBackend(BaseLoggedClass):
             experiment_key = self.session_container["platform_experiment"]
             self.platform_experiment_class = self.platform_constructors[experiment_key]
             # initialise the experiment class
+            analysis_type = self.session_container["analysis_type"]
             self.platform_experiment = self.platform_experiment_class(
-                analytical_method=self.session_container["analysis_type"],
+                analytical_method=analysis_type,
             )
             # find the name of the platform :
             platform_name = self.session_container["platform_name"]
             # get the DFA for the platform:
             samples_df = self.merge_dfs()
+
+            # 如果分析类型是 UV，自动启动虚拟光谱仪服务端
+            self._start_spectrometer_server_if_needed(analysis_type)
 
             # start the experiment:
             # optional arguments for Platform object, see Omniplatypus Platform.build() for details.
@@ -784,11 +792,61 @@ class PlatformBackend(BaseLoggedClass):
         self._emergency_stop.set()
         self.platform_experiment.stop()
 
+        # 停止虚拟光谱仪服务端子进程
+        self._stop_spectrometer_server()
+
         del self.platform_experiment
         self._platform_ready = False
         self._ml_ready = False
 
         self.log_mssg("平台已停止")
+
+    def _start_spectrometer_server_if_needed(self, analysis_type: str) -> None:
+        """如果分析类型是 UV，自动启动虚拟光谱仪服务端（TCP 端口 9000）。
+        确保驱动层客户端 (U3900HSpectrometer) 在平台构建时能够成功连接。"""
+        if analysis_type != "UV":
+            return
+        if self._spectrometer_server_process is not None:
+            # 检查是否已经在运行
+            poll = self._spectrometer_server_process.poll()
+            if poll is None:
+                self.log_mssg("虚拟光谱仪服务端已在运行", level="info")
+                return
+        # 计算 virtual_spectrometer_server.py 的路径
+        server_script = os.path.join(
+            self._base_dir, "..", "U3900H", "virtual_spectrometer_server.py"
+        )
+        if not os.path.exists(server_script):
+            self.log_mssg(
+                f"虚拟光谱仪服务端脚本未找到: {server_script}", level="warning"
+            )
+            return
+        try:
+            self._spectrometer_server_process = subprocess.Popen(
+                [sys.executable, server_script],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            # 等待服务端 TCP 端口就绪
+            self.log_mssg("正在启动虚拟光谱仪服务端...", level="info")
+            time.sleep(2)
+            self.log_mssg("虚拟光谱仪服务端已启动 (端口 9000)", level="ok")
+        except Exception as e:
+            self.log_mssg(f"启动虚拟光谱仪服务端失败: {e}", level="error")
+
+    def _stop_spectrometer_server(self) -> None:
+        """停止虚拟光谱仪服务端子进程。"""
+        if self._spectrometer_server_process is not None:
+            try:
+                self._spectrometer_server_process.terminate()
+                self._spectrometer_server_process.wait(timeout=5)
+            except Exception:
+                try:
+                    self._spectrometer_server_process.kill()
+                except Exception:
+                    pass
+            self._spectrometer_server_process = None
+            self.log_mssg("虚拟光谱仪服务端已停止", level="info")
 
     def validate_data(self):
         """Checks that all the required components of the data are initialised and ready to roll"""
@@ -830,5 +888,5 @@ class PlatformBackend(BaseLoggedClass):
         return self._rolling
 
     def __del__(self):
-        if hasattr(self, "ml_experiment_class"):
+        if hasattr(self, "ml_experiment_class") and self.ml_experiment_class is not None:
             self.ml_experiment_class.kill_thread()

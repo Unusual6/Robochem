@@ -137,11 +137,15 @@ class AnalyticsU3900H(AnalyticsTemplate):
         @return: dict
             Results dictionary with yield, integral, absorbance, pass/fail.
         """
+        self.log(f"[DIAG] analyse() called, process_only={process_only}, device={self._device}")
+
         _parameters = self.validate_parameters(conditions)
         non_spectrometer_parameters = self._split_parameters(_parameters)
 
         if not process_only:
+            self.log(f"[DIAG] Calling _set_parameters()")
             self._set_parameters(conditions)
+            self.log(f"[DIAG] Calling _spectrometer_run()")
             data = self._spectrometer_run()
         else:
             data_file = os.path.join(
@@ -193,6 +197,8 @@ class AnalyticsU3900H(AnalyticsTemplate):
         Returns scan data as DataFrame.
         """
         self.log("Starting U3900H acquisition", indent="enter")
+
+        self.log(f"[DIAG] _device is_open={self._device.is_open()}, initialized={self._device.is_initialized()}")
 
         # Run self-test first to initialize
         self.log("Running self-test...")
