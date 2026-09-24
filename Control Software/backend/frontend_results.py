@@ -68,6 +68,9 @@ def plot_results(results_df: pd.DataFrame, objectives: list):
     plt.rcParams["figure.facecolor"] = "#0e1117"
     plt.rcParams["axes.facecolor"] = "#0e1117"
     plt.rcParams["savefig.facecolor"] = "#0e1117"
+    # 中文字体配置:必须在 style.use 之后设置(否则会被样式重置覆盖)
+    plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
+    plt.rcParams["axes.unicode_minus"] = False
 
     num_obj = len(objectives)
     exp_n = results_df.index

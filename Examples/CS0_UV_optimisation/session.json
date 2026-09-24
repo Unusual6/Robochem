@@ -2,7 +2,7 @@
     "experiment_path": "",
     "user_name": "Examples",
     "platform_name": "Perry",
-    "platform_experiment": "PhotochemicalReaction",
+    "platform_experiment": "PhotochemicalReaction - dry run",
     "experiment_type": "BO_optimisation",
     "experiment_name": "CS0_UV_optimisation",
     "residence_time": {

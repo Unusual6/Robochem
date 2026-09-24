@@ -88,7 +88,7 @@ class U3900HSpectrometer(BaseDevice):
     def __init__(self):
         BaseDevice.__init__(self)
         self.generic_name = "U-3900H UV-Vis Spectrometer"
-
+        print("U3900HSpectrometer driver initialized")
         self._sock = None
         self._buffer = bytearray()
         self._lock = threading.Lock()
@@ -211,11 +211,13 @@ class U3900HSpectrometer(BaseDevice):
         parameter.description = "Scan progress percentage (0-100)"
         parameter.caching_policy = ParameterCachingPolicy.NEVER
         self.add_parameter(parameter)
-
+        print("U3900HSpectrometer driver initialized")
+        
     # ========== Connection Management ==========
 
     def open(self, host: str, port: int):
         """Establish TCP connection to the U3900H spectrometer."""
+        print(f"Opening connection to {host}:{port}")
         self._host = host
         self._port = port
         try:

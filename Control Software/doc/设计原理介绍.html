@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robochem-Flex 实现设计原理介绍</title>
+<style>
+  :root {
+    --primary: #0b6e4f;
+    --primary-light: #128c7e;
+    --accent: #f4a259;
+    --bg: #f7f9f8;
+    --card: #ffffff;
+    --border: #d8e2dc;
+    --text: #1f2933;
+    --muted: #5b6770;
+    --code-bg: #1e293b;
+    --code-text: #e2e8f0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  header {
+    background: linear-gradient(120deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: #fff;
+    padding: 36px 24px 28px;
+    box-shadow: 0 4px 18px rgba(11,110,79,.18);
+  }
+  header h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: .5px;}
+  header p { margin: 0; opacity: .92; font-size: 14px;}
+  .container { display: flex; max-width: 1280px; margin: 0 auto; padding: 24px; gap: 24px;}
+  nav.toc {
+    flex: 0 0 260px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px;
+    position: sticky;
+    top: 24px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+  }
+  nav.toc h3 { margin-top: 0; color: var(--primary); font-size: 15px;}
+  nav.toc ol { margin: 0; padding-left: 18px;}
+  nav.toc li { margin-bottom: 6px; font-size: 14px;}
+  nav.toc a { color: var(--text); text-decoration: none;}
+  nav.toc a:hover { color: var(--primary-light); text-decoration: underline;}
+  main { flex: 1; min-width: 0;}
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+  }
+  section.card h2 {
+    margin-top: 0;
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+    font-size: 22px;
+  }
+  section.card h3 { color: var(--primary-light); margin-top: 22px;}
+  section.card h4 { color: var(--text); margin-top: 18px;}
+  code, pre {
+    font-family: "Cascadia Code", "Consolas", "Courier New", monospace;
+  }
+  code.inline {
+    background: #eef3ef;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #0b5345;
+  }
+  pre {
+    background: var(--code-bg);
+    color: var(--code-text);
+    padding: 14px 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+  }
+  pre code { background: transparent; color: inherit; padding: 0;}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #eef3ef; color: var(--primary);}
+  tr:nth-child(even) td { background: #fbfcfb; }
+  .tag {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 6px;
+  }
+  .tag.green { background: var(--primary);}
+  .tag.blue { background: #2c7be5;}
+  .tag.purple { background: #7e57c2;}
+  .tag.gray { background: #6b7280;}
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .grid-3 .item {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    background: #fbfcfb;
+  }
+  .grid-3 .item h4 { margin: 0 0 6px; color: var(--primary);}
+  .grid-3 .item p { margin: 0; font-size: 13px; color: var(--muted);}
+  .arch-diagram {
+    background: #fbfcfb;
+    border: 1px dashed var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin: 14px 0;
+    text-align: center;
+    overflow-x: auto;
+  }
+  .arch-row { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin: 10px 0;}
+  .arch-box {
+    border: 1px solid var(--primary-light);
+    background: #eafaf4;
+    border-radius: 8px;
+    padding: 10px 16px;
+    min-width: 160px;
+    color: var(--primary);
+    font-weight: 600;
+  }
+  .arch-box.dark { background: var(--primary); color: #fff; border-color: var(--primary);}
+  .arch-box.ml { background: #fff4e6; border-color: var(--accent); color: #b35a00;}
+  .arch-box.hw { background: #e8f0fe; border-color: #2c7be5; color: #1a4e8a;}
+  .arrow { font-size: 22px; color: var(--muted); margin: 4px 0;}
+  .callout {
+    background: #fff8e6;
+    border-left: 4px solid var(--accent);
+    padding: 10px 14px;
+    margin: 14px 0;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .callout.info {
+    background: #e8f4fd;
+    border-left-color: #2c7be5;
+  }
+  .file-path {
+    background: #eef3ef;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-family: "Consolas", monospace;
+    font-size: 13px;
+    color: #0b5345;
+    text-decoration: none;
+  }
+  footer {
+    text-align: center;
+    padding: 18px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  @media (max-width: 900px) {
+    .container { flex-direction: column; }
+    nav.toc { position: static; max-height: none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Robochem-Flex 实现设计原理介绍</h1>
+  <p>模块化自驱动化学实验平台 · 代码架构 · 二次开发指南 · 功能实现说明</p>
+</header>
+
+<div class="container">
+
+  <nav class="toc">
+    <h3>目录</h3>
+    <ol>
+      <li><a href="#overview">项目总览</a></li>
+      <li><a href="#architecture">系统架构原理</a></li>
+      <li><a href="#modules">项目模块路径</a></li>
+      <li><a href="#code-impl">代码实现解析</a>
+        <ol>
+          <li><a href="#impl-frontend">前端入口</a></li>
+          <li><a href="#impl-backend">平台后端</a></li>
+          <li><a href="#impl-hardware">硬件层 (OmniPlatypus)</a></li>
+          <li><a href="#impl-ml">机器学习 (RoBrains)</a></li>
+          <li><a href="#impl-lamas">光谱分析 (LAMAS)</a></li>
+        </ol>
+      </li>
+      <li><a href="#features">功能实现</a></li>
+      <li><a href="#dev-examples">二次开发示例</a>
+        <ol>
+          <li><a href="#dev-ml">自定义 ML 后端</a></li>
+          <li><a href="#dev-device">自定义设备驱动</a></li>
+          <li><a href="#dev-analytics">自定义分析方法</a></li>
+          <li><a href="#dev-experiment">自定义实验流程</a></li>
+        </ol>
+      </li>
+      <li><a href="#examples">示例数据 (Examples)</a></li>
+      <li><a href="#run">运行与启动</a></li>
+    </ol>
+  </nav>
+
+  <main>
+
+    <section class="card" id="overview">
+      <h2>1. 项目总览</h2>
+      <p>
+        <strong>Robochem-Flex</strong> 是 Noël Research Group (NRG) 开发的<strong>模块化自驱动实验室框架</strong>(Self-Driving Laboratory Framework)，
+        用于化学反应自动优化。它将<strong>机器学习</strong>、<strong>硬件自动化</strong> 与 <strong>Streamlit 交互式 GUI</strong> 整合为单一生态系统，
+        支持从配置、运行到结果分析的全流程闭环。
+      </p>
+
+      <div class="grid-3">
+        <div class="item">
+          <h4>前端 GUI</h4>
+          <p>Streamlit 多页面应用,配置参数与实时监控</p>
+        </div>
+        <div class="item">
+          <h4>硬件层 OmniPlatypus</h4>
+          <p>统一驱动泵、阀、传感器与光谱仪</p>
+        </div>
+        <div class="item">
+          <h4>机器学习 RoBrains</h4>
+          <p>贝叶斯优化、多任务学习、HITL</p>
+        </div>
+        <div class="item">
+          <h4>光谱分析 LAMAS</h4>
+          <p>光谱去卷积与定量分析</p>
+        </div>
+        <div class="item">
+          <h4>平台后端 Backend</h4>
+          <p>桥接 GUI、ML 与硬件的中央协调器</p>
+        </div>
+        <div class="item">
+          <h4>Examples 示例</h4>
+          <p>CS0-CS6 复现 publication 中各场景</p>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <strong>核心理念:</strong> 平台采用 <em>分层解耦</em> 设计 — 各层通过清晰的抽象基类与参数容器通信,
+        上层无需了解硬件协议细节,下层不关心优化策略。新增设备或算法只需继承基类、在配置文件中注册即可接入。
+      </div>
+    </section>
+
+    <section class="card" id="architecture">
+      <h2>2. 系统架构原理</h2>
+      <p>Robochem-Flex 采用经典四层架构,数据流自顶向下,反馈自底向上:</p>
+
+      <div class="arch-diagram">
+        <div class="arch-row">
+          <div class="arch-box dark">用户 (User)</div>
+        </div>
+        <div class="arrow">↓ 配置 / 启动</div>
+        <div class="arch-row">
+          <div class="arch-box">Streamlit GUI<br><small>robochem_flex.py + pages/</small></div>
+          <div class="arch-box ml">ML 后台<br><small>RBrains</small></div>
+        </div>
+        <div class="arrow">↓ 参数下发  ↑结果回传</div>
+        <div class="arch-row">
+          <div class="arch-box">PlatformBackend<br><small>backend/platform_backend.py</small></div>
+        </div>
+        <div class="arrow">↓ recipe / ↑ run_result</div>
+        <div class="arch-row">
+          <div class="arch-box hw">BaseExperiment<br><small>procedures/experiments/</small></div>
+          <div class="arch-box hw">AnalyticsTemplate<br><small>procedures/analytics/</small></div>
+        </div>
+        <div class="arrow">↓ 设备指令  ↑测量数据</div>
+        <div class="arch-row">
+          <div class="arch-box hw">Platform + Devices<br><small>OmniPlatypus</small></div>
+        </div>
+        <div class="arrow">↓ 串口/TCP/Modbus</div>
+        <div class="arch-row">
+          <div class="arch-box hw">物理设备<br><small>注射泵 / 采样器 / 光谱仪 / 传感器</small></div>
+        </div>
+      </div>
+
+      <h3>关键设计模式</h3>
+      <ul>
+        <li><strong>模板方法 (Template Method):</strong> <code class="inline">BaseExperiment</code> 与 <code class="inline">AnalyticsTemplate</code> 定义流程骨架,子类覆写 <code class="inline">*_procedure</code> 钩子实现具体化学/光化学/热化学反应。</li>
+        <li><strong>策略模式 (Strategy):</strong> <code class="inline">ML_classes</code> 字典注册多种优化算法,前端下拉切换。</li>
+        <li><strong>参数容器 (Parameter Container):</strong> <code class="inline">NumericalParameter</code>/<code class="inline">ExperimentalParameter</code>/<code class="inline">AnalyticalParameter</code> 携带值、单位、范围与 <code class="inline">foreign_key</code>,跨层翻译不丢失语义。</li>
+        <li><strong>观察者 (Observer):</strong> 设备通过 <code class="inline">ParameterCachingPolicy</code> 与后台接收线程,异步推送测量值至缓存。</li>
+        <li><strong>多线程协调:</strong> <code class="inline">platform_thread</code> 跑实验,<code class="inline">ml_thread</code> 跑优化,<code class="inline">frontend_queue</code> 推送日志到 Streamlit。</li>
+      </ul>
+    </section>
+
+    <section class="card" id="modules">
+      <h2>3. 项目模块路径</h2>
+
+      <h3>3.1 顶层目录</h3>
+      <table>
+        <tr><th>路径</th><th>说明</th></tr>
+        <tr><td><span class="file-path">Control Software/</span></td><td>主应用代码,含前后端、硬件抽象、ML、LAMAS</td></tr>
+        <tr><td><span class="file-path">Devices/</span></td><td>硬件资源:CAD 模型、固件、PCB 设计</td></tr>
+        <tr><td><span class="file-path">Examples/</span></td><td>CS0-CS6 示例活动配置,含 dryrun HITL 测试</td></tr>
+        <tr><td><span class="file-path">README.md</span></td><td>项目根 README</td></tr>
+        <tr><td><span class="file-path">robochem_flex.yml</span></td><td>Conda 严格环境定义</td></tr>
+        <tr><td><span class="file-path">robochem_flex_alt.yml</span></td><td>Conda 宽松备选环境</td></tr>
+      </table>
+
+      <h3>3.2 Control Software 内部模块</h3>
+      <table>
+        <tr><th>路径</th><th>功能</th></tr>
+        <tr>
+          <td><span class="file-path">Control Software/robochem_flex.py</span></td>
+          <td>Streamlit 入口,初始化 <code>PlatformBackend</code> 与全局会话状态</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/pages/</span></td>
+          <td>多页面 (按 02_~07_ 编号):用户设置、物理参数、试剂、分析、机器学习、运行平台</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/backend/</span></td>
+          <td>桥接层: <code>platform_backend.py</code>(中心协调)、<code>ml_backends.py</code>(ML 类封装)、<code>frontend_functions.py</code>(渲染)、<code>frontend_results.py</code>(结果展示)</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/backend/Robochem_ML/robrains/</span></td>
+          <td>RBrains 包: ML 算法、通信、参数、会话管理</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/OmniPlatypus/OmniPlatypus/omniplatypus/</span></td>
+          <td>OmniPlatypus 包: 硬件抽象与实验流程</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/Lamas/lamas/</span></td>
+          <td>LAMAS 包: 光谱去卷积 (alpaca/glama/guanaco/vicuna/llama)</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/Path/</span></td>
+          <td>路径相关辅助资源</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/utils/</span></td>
+          <td>通用工具与图片资源</td>
+        </tr>
+        <tr>
+          <td><span class="file-path">Control Software/doc/</span></td>
+          <td>文档目录 (本文件即位于此)</td>
+        </tr>
+      </table>
+
+      <h3>3.3 OmniPlatypus 子模块</h3>
+      <table>
+        <tr><th>路径</th><th>说明</th></tr>
+        <tr><td><span class="file-path">.../config/platform_config.json</span></td><td>平台配置:设备列表、常量(体积、相位传感器映射)、Gui_Specs</td></tr>
+        <tr><td><span class="file-path">.../config/sample_holder_types.json</span></td><td>样品瓶支架类型与几何</td></tr>
+        <tr><td><span class="file-path">.../devices/base/</span></td><td>设备基类: <code>BaseDevice</code>, <code>DeviceParameter</code>, <code>ParameterAccess</code>, <code>ParameterCachingPolicy</code></td></tr>
+        <tr><td><span class="file-path">.../devices/nrg/</span></td><td>NRG 自研设备: <code>syringe_pump</code>(注射泵)、<code>sampler</code>(采样器)、<code>phase_sensor</code>(相位传感器)、<code>gpio</code>(阀)、<code>chromtroller</code>、<code>rama_berry</code>(Raman)、<code>uv_berry</code>、<code>u3900h_spectrometer</code>(UV-Vis)、<code>solar_simulator_light</code>(光源)、<code>back_pressure_regulator</code></td></tr>
+        <tr><td><span class="file-path">.../devices/knauer/</span></td><td>Knauer 系列泵</td></tr>
+        <tr><td><span class="file-path">.../devices/bronkhorst/</span></td><td>Bronkhorst 质量流量计</td></tr>
+        <tr><td><span class="file-path">.../devices/ika/</span></td><td>IKA 温控/搅拌器</td></tr>
+        <tr><td><span class="file-path">.../devices/omron/</span></td><td>Omron 设备</td></tr>
+        <tr><td><span class="file-path">.../devices/magritek/</span></td><td>Magritek NMR (Spinsolve)</td></tr>
+        <tr><td><span class="file-path">.../devices/platform.py</span></td><td><code>Platform</code> 类: 按配置自动构建设备实例</td></tr>
+        <tr><td><span class="file-path">.../devices/serial_id.py</span></td><td>USB 串口自动识别 (known_device 映射)</td></tr>
+        <tr><td><span class="file-path">.../procedures/experiments/</span></td><td>实验流程: <code>base_experiment</code>(模板)、<code>chemistry</code>(化学)、<code>photochemistry</code>(光化学)、<code>thermochemistry</code>(热化学)、<code>experiment_parameters</code></td></tr>
+        <tr><td><span class="file-path">.../procedures/analytics/</span></td><td>分析模板: <code>analytics_template</code>、<code>analytics_parameters</code>、<code>nmr_analysis</code>、<code>hplc_analysis</code>、<code>raman_analysis</code>、<code>uv_analytics</code>、<code>u3900h_analytics</code>、<code>lama_analytics</code>、<code>custom_baseline_methods</code></td></tr>
+        <tr><td><span class="file-path">.../procedures/unit_tasks/</span></td><td>原子任务: <code>driving_pumps</code>(FillPump/PrimePump/PumpVolume/MixSlug)、<code>liquid_handler_sampling</code>(RecipeComponent/VialRecipeComponent/OrderRecipe)、<code>liquid_handler_moving</code>(HomeSampler)、<code>liquid_handler_injecting</code>(Inject)、<code>phase_sensors</code>(PumpUntilPhaseChange/SlugQualityCheck/MonitorPhase)、<code>user_actions</code></td></tr>
+        <tr><td><span class="file-path">.../scripts/</span></td><td>独立测试与启动脚本</td></tr>
+        <tr><td><span class="file-path">.../utilities/</span></td><td>通用工具: <code>general.py</code>(ThreadEx/run_all/conversion_factor)、<code>logger.py</code></td></tr>
+      </table>
+
+      <h3>3.4 RoBrains 子模块</h3>
+      <table>
+        <tr><th>路径</th><th>说明</th></tr>
+        <tr><td><span class="file-path">.../robrains/base_classes/</span></td><td>基类: <code>BaseLoggedClass</code>, <code>logger.py</code>, <code>websocket_logger.py</code></td></tr>
+        <tr><td><span class="file-path">.../robrains/communication_module/</span></td><td>通信层: <code>baseMLBackend</code>, <code>ML_Platform</code>(多线程), <code>ML_Platform_HITL</code>(人机协作), <code>ML_Platform_HITL_Development</code>, <code>ML_Assistant</code></td></tr>
+        <tr><td><span class="file-path">.../robrains/ml_modules/</span></td><td>算法实现: <code>singlebayesianoptibackend</code>(SingleTaskGP+EI/qEI)、<code>efficientbatchedbobackend</code>、<code>scopeacceleratortaskbackend</code>(多任务迁移)、<code>scopeacceleratorfidelitybackend</code>(多保真)、<code>allscopetaskbackend</code>、<code>enantioextravaganza</code>、<code>dragonfly_backend</code>、<code>my_custom_backend</code>(模板)、<code>developmenthitl</code></td></tr>
+        <tr><td><span class="file-path">.../robrains/custom_acquisition/</span></td><td>自定义采集函数: <code>learnedconstraintsacquisition</code>, <code>maxvariance</code></td></tr>
+        <tr><td><span class="file-path">.../robrains/custom_models/</span></td><td>自定义代理模型: GP/BLR/BNN/RF/SVR/Logistic/NN 等</td></tr>
+        <tr><td><span class="file-path">.../robrains/parameter_backends/</span></td><td>参数对象: <code>chemical.py</code>(Chemical), <code>mlparameter.py</code>(ML_parameter), <code>physicalparameter.py</code>, <code>expparameter.py</code>, <code>analyparameter.py</code>, <code>stocksolutiondf.py</code>, <code>vialdf.py</code></td></tr>
+        <tr><td><span class="file-path">.../robrains/session_management/</span></td><td><code>SessionContainer</code>: 会话状态持久化 (JSON)</td></tr>
+        <tr><td><span class="file-path">.../robrains/utils.py</span></td><td><code>ColumnNormalizer</code> 等通用工具</td></tr>
+      </table>
+
+      <h3>3.5 LAMAS 子模块</h3>
+      <table>
+        <tr><th>文件</th><th>说明</th></tr>
+        <tr><td><span class="file-path">lamas/lama.py</span></td><td>核心: 基础光谱去卷积框架</td></tr>
+        <tr><td><span class="file-path">lamas/alpaca.py</span></td><td>ALPACA: 高级光谱分析</td></tr>
+        <tr><td><span class="file-path">lamas/glama.py</span></td><td>GLAMA: 全局 LAMAS</td></tr>
+        <tr><td><span class="file-path">lamas/guanaco.py</span></td><td>GUANACO: NMR 专用</td></tr>
+        <tr><td><span class="file-path">lamas/vicuna.py</span></td><td>VICUNA: 色谱专用</td></tr>
+        <tr><td><span class="file-path">lamas/templates.py</span></td><td>分析模板/数据结构</td></tr>
+        <tr><td><span class="file-path">lamas/utils.py</span></td><td>通用工具</td></tr>
+        <tr><td><span class="file-path">lamas/logger.py</span></td><td>LAMAS 日志</td></tr>
+        <tr><td><span class="file-path">lamas/lama_sheperd.py</span></td><td>LAMAS Sheperd: 批量分析编排</td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="code-impl">
+      <h2>4. 代码实现解析</h2>
+
+      <h3 id="impl-frontend">4.1 前端入口 (Streamlit GUI)</h3>
+      <p>
+        入口 <span class="file-path">robochem_flex.py</span> 通过 <code class="inline">streamlit run</code> 启动,
+        在 <code class="inline">st.session_state["platform_backend"]</code> 中创建 <code>PlatformBackend</code> 单例,
+        保证多页面之间共享状态。
+      </p>
+      <pre><code>if "platform_backend" not in st.session_state:
+    st.session_state["platform_backend"] = PlatformBackend(st.session_state)
+backend = st.session_state["platform_backend"]</code></pre>
+      <p>
+        各页面文件按编号顺序自动激活,典型页面:
+      </p>
+      <ul>
+        <li><span class="file-path">pages/02_用户设置.py</span> — 用户名、实验名、平台选择</li>
+        <li><span class="file-path">pages/03_物理参数.py</span> — 物理参数(温度、停留时间等)定义</li>
+        <li><span class="file-path">pages/04_试剂.py</span> — 化学物质、储备液、样品瓶布局</li>
+        <li><span class="file-path">pages/05_分析.py</span> — 选择分析技术(下拉框),渲染 <code>analytical_parameter</code></li>
+        <li><span class="file-path">pages/06_机器学习.py</span> — 选择 ML 算法、目标、参数空间</li>
+        <li><span class="file-path">pages/07_运行平台.py</span> — 校验、启动/关机按钮、实时结果展示</li>
+      </ul>
+
+      <h3 id="impl-backend">4.2 平台后端 (PlatformBackend)</h3>
+      <p>
+        <span class="file-path">backend/platform_backend.py</span> 中的 <code>PlatformBackend</code> 是整个系统的<strong>中央协调器</strong>,
+        继承 <code>BaseLoggedClass</code>,持有:
+      </p>
+      <ul>
+        <li><code>session_container</code>: <code>SessionContainer</code> 实例,管理可序列化的会话状态</li>
+        <li><code>platform_config</code>: 从 <span class="file-path">config/platform_config.json</span> 加载的设备/常量字典</li>
+        <li><code>ML_classes</code>: ML 算法注册字典,前端下拉项与其一一对应</li>
+        <li><code>platform_constructors</code>: 实验流程类(Photochemical/Thermochemical/DryRun)</li>
+        <li><code>_rolling</code> / <code>_emergency_stop</code>: <code>threading.Event</code> 控制运行状态</li>
+        <li><code>platform_experiment</code> / <code>platform_thread</code> / <code>ml_thread</code>: 运行时实例与线程</li>
+      </ul>
+
+      <h4>ML 算法注册字典示例</h4>
+      <pre><code>ML_classes = {
+    "BO_optimisation":         SingleBayesianOpti,
+    "BO_optimisation_HITL":    SingleBayesianOptiHITL,
+    "EfficientBatchedBO_HITL": EfficientBatchedBO_HITL,
+    "MultiTaskScope":          MultiTaskScope,
+    "MultiTaskScope_HITL":     MultiTaskScope_HITL,
+    "ScopeAcceleratorTask":    ScopeAcceleratorTask,
+    "EnantioExtravaganza":     EnantioExtravaganza,
+    # "MyCustomML":            MyCustomML,   # ← 二次开发时取消注释
+}</code></pre>
+
+      <h3 id="impl-hardware">4.3 硬件层 (OmniPlatypus)</h3>
+
+      <h4>4.3.1 设备基类 BaseDevice</h4>
+      <p>
+        <span class="file-path">devices/base/device.py</span> 定义所有设备的统一接口,核心抽象:
+      </p>
+      <ul>
+        <li><code>ParameterAccess</code> 枚举: <code>R</code> / <code>W</code> / <code>RW</code></li>
+        <li><code>ParameterCachingPolicy</code> 枚举: <code>NEVER</code> / <code>TRY</code> / <code>ALWAYS</code></li>
+        <li><code>DeviceParameter</code>: 描述参数的元信息(访问级别、缓存策略、值类型、单位)</li>
+        <li><code>__getitem__</code> / <code>__setitem__</code>: 通过 <code>self['param_name']</code> 读写参数</li>
+      </ul>
+      <p>这意味着上层代码可以<strong>不感知协议细节</strong>,例如:</p>
+      <pre><code># 通用方式驱动任何设备
+device['start_wavelength'] = 500.0
+device['start_scan'] = True
+data = device['data']</code></pre>
+
+      <h4>4.3.2 设备驱动实例 — U3900H UV-Vis</h4>
+      <p>
+        <span class="file-path">devices/nrg/u3900h_spectrometer.py</span> 演示了自定义 TCP 设备如何接入平台:
+      </p>
+      <ul>
+        <li>STX/ETX 二进制帧协议: <code>_encode_frame</code> / <code>_decode_frame</code> / BCC 校验</li>
+        <li>后台接收线程 <code>_recv_thread</code> 持续读取 socket,推送至内部缓存</li>
+        <li><code>threading.Lock</code> 保证并发安全</li>
+        <li>注册 <code>DeviceParameter</code>: <code>start_wavelength</code>, <code>end_wavelength</code>, <code>scan_speed</code>, <code>data</code>, <code>start_scan</code>, <code>baseline_calibrate</code>, <code>selftest</code>, <code>status</code>, <code>scan_progress</code></li>
+      </ul>
+
+      <h4>4.3.3 Platform 类与设备构建</h4>
+      <p>
+        <span class="file-path">devices/platform.py</span> 中的 <code>Platform</code> 类按 <code>platform_config.json</code> 中
+        <code>devices</code> 段落自动实例化所有设备:<code>class</code> 字段映射类名,<code>serial.known_device</code> 通过
+        <code>serial_id.py</code> 自动绑定 USB 端口,<code>setup</code> 字段传入构造参数。
+      </p>
+
+      <h4>4.3.4 实验流程基类 BaseExperiment</h4>
+      <p>
+        <span class="file-path">procedures/experiments/base_experiment.py</span> 定义实验骨架:
+      </p>
+      <ul>
+        <li><code>_analytical_methods</code>: <code>dict[str, ExperimentAnalysisCoupler]</code>,声明本实验支持的所有分析技术</li>
+        <li><code>_required_parameters</code> / <code>_optional_parameters</code>: 参数约束声明</li>
+        <li><code>_required_devices</code>: 必需设备名集合</li>
+        <li><code>start()</code> / <code>submit_run()</code> / <code>get_results()</code> / <code>stop()</code>: 运行生命周期</li>
+        <li>含 <code>*_procedure</code> 钩子方法,子类覆写</li>
+        <li>内置 <code>_run_requests_queue</code>: <code>Queue</code> 实现异步调度</li>
+      </ul>
+
+      <h4>4.3.5 ChemicalReaction 实战示例</h4>
+      <p>
+        <span class="file-path">procedures/experiments/chemistry.py</span> 的 <code>ChemicalReaction</code> 注册了 5 种分析方法:
+      </p>
+      <pre><code>_analytical_methods = {
+    "Human":      ExperimentAnalysisCoupler(analysis_class=None,           ...),
+    "NMR_dummy":  ExperimentAnalysisCoupler(analysis_class=DummyNMRAnalysis,...),
+    "NMR":        ExperimentAnalysisCoupler(analysis_class=NMRAnalysis,     ...),
+    "UPLC":       ExperimentAnalysisCoupler(analysis_class=HPLCAnalysis,   ...),
+    "Raman":      ExperimentAnalysisCoupler(analysis_class=AnalyticsRaman, ...),
+    "UV":         ExperimentAnalysisCoupler(analysis_class=AnalyticsU3900H,...),
+}</code></pre>
+      <p>
+        每个耦合器声明 <code>analytical_device</code>(对应 <code>platform_config.json</code> 中设备名)与
+        <code>platform_constants_key</code>(对应 <code>constants.analysis</code> 段)。新增 UV 通道只需新增一行注册。
+      </p>
+
+      <h3 id="impl-ml">4.4 机器学习 (RoBrains)</h3>
+      <p>
+        ML 后端继承 <strong>通信模块 + ML 模块</strong> 双重基类,例如 <code>SingleBayesianOpti</code> 同时继承
+        <code>SingleBayesianOptiBackend</code>(算法) 与 <code>ML_Platform_HITL</code>(通信),保证算法与平台解耦。
+      </p>
+      <pre><code>class SingleBayesianOpti(SingleBayesianOptiBackend, ML_Platform_HITL):
+    """Single-task Bayesian Optimization with HITL support."""
+    pass</code></pre>
+
+      <h4>关键流程</h4>
+      <ol>
+        <li><code>ML_prime(ml_parameters, targets, path)</code>: 初始化参数空间、目标、会话路径</li>
+        <li><code>comm_prime(kwargs)</code>: 与硬件层建立通信</li>
+        <li><code>first_run()</code>: Sobol 采样生成初始点</li>
+        <li>主循环 <code>run()</code>:
+          <ul>
+            <li>从 <code>results_df</code> 训练代理模型 (SingleTaskGP + Standardize)</li>
+            <li>优化采集函数 (qExpectedImprovement / qLogExpectedImprovement)</li>
+            <li>调用 <code>_to_machine(tensor)</code> 把张量翻译为 <code>ExperimentalParameter</code> 列表 (recipe)</li>
+            <li>通过通信模块下发 recipe,等待硬件回传结果</li>
+            <li>调用 <code>_to_ml(result)</code> 把结果翻译为 <code>(x, y, y_var)</code> 张量</li>
+            <li>写入 <code>utilities_df</code> 与 <code>results_df</code></li>
+          </ul>
+        </li>
+      </ol>
+
+      <h4>张量 ↔ 参数翻译 (_to_machine / _to_ml)</h4>
+      <p>
+        <code>ToandFromMachine</code> 类(<span class="file-path">backend/ml_backends.py</span>)是 ML 层与硬件层的<strong>语义桥梁</strong>:
+        每个参数通过 <code>foreign_key</code> 关联 ML 张量位置(<code>check_dict</code>),
+        <code>translation_continuous</code> / <code>translation_discrete</code> / <code>translation_task</code> / <code>translation_fidelity</code>
+        完成连续/离散/任务/保真特征的编码与反编码。
+      </p>
+      <p>
+        <code>_sampling_priorities</code> 字典定义了不同试剂类型(Limiting Reagent / Catalyst / Solvent 等)的采样优先级,
+        用于 slug 生成时的体积分配排序。
+      </p>
+
+      <h3 id="impl-lamas">4.5 光谱分析 (LAMAS)</h3>
+      <p>
+        LAMAS 提供光谱去卷积与定量分析能力。在 Robochem-Flex 中,
+        <code>procedures/analytics/analytics_template.py</code> 的 <code>AnalyticsTemplate</code> 是统一入口,
+        各具体分析类继承它并通过 <code>_processing_methods</code> 暴露可选数学方法。
+      </p>
+      <p>
+        <code>AnalyticalParameter</code>(<span class="file-path">procedures/analytics/analytics_parameters.py</span>)
+        携带 <code>tag</code> 字段(如 <code>"all"</code>、<code>"simple_integration"</code>),
+        前端 <span class="file-path">pages/05_分析.py</span> 通过 <code>backend.get_analytic_parameters()</code>
+        按 tag 过滤参数,实现"选择数学方法 → 显示对应参数"的动态渲染。
+      </p>
+    </section>
+
+    <section class="card" id="features">
+      <h2>5. 功能实现</h2>
+
+      <div class="grid-3">
+        <div class="item">
+          <h4><span class="tag green">核心</span>化学反应自动优化</h4>
+          <p>配置化学参数空间 → ML 提议 → 平台执行 → 分析反馈 → 下一轮,直至收敛</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag green">核心</span>多分析技术支持</h4>
+          <p>NMR / UPLC / Raman / UV-Vis / Human(HITL) 五种内联分析,可热切换</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag blue">ML</span>多策略优化</h4>
+          <p>BO、Efficient Batched BO、Multi-Task Scope、Scope Accelerator、EnantioExtravaganza、HITL Dev</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag blue">ML</span>多目标优化</h4>
+          <p>支持多目标(收率、选择性、ee 值)同时优化,基于 Pareto 前沿</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag blue">ML</span>多保真/多任务迁移</h4>
+          <p>在不同底物间迁移学习,加速 scope 表探索</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag purple">HITL</span>人机协作</h4>
+          <p>DryRun / DevelopmentHITL 模式支持手动输入结果,无硬件即可测试软件链路</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag purple">HITL</span>安全控制</h4>
+          <p>启动/暂停/关机/紧急停止按钮,会话自动保存</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">HW</span>设备抽象与自动识别</h4>
+          <p>USB 串口 known_device 自动绑定,设备类按 platform_config.json 注册</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">HW</span>相位传感器监控</h4>
+          <p>slug 注入/对齐/质量校验/监测,异常自动丢弃并清洗</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">HW</span>多设备协议覆盖</h4>
+          <p>Serial / TCP socket / Modbus / Arduino 多协议,统一 BaseDevice 接口</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">HW</span>清洗与维护流程</h4>
+          <p>clean_on_start、needle_wash、gas_purge、drying 等可配置流程</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">UI</span>会话持久化</h4>
+          <p>SessionContainer 序列化 JSON,加载即可恢复实验活动</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">UI</span>实时结果可视化</h4>
+          <p>figure_hypervolyme.png / figure_objectives.png 动态刷新</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">UI</span>ML 日志面板</h4>
+          <p>Streamlit 自动开第二 tab,实时显示优化日志</p>
+        </div>
+        <div class="item">
+          <h4><span class="tag gray">UI</span>多平台支持</h4>
+          <p>platform_config.json 可定义 Perry/Jerry/Terry 等多平台</p>
+        </div>
+      </div>
+
+      <h3>5.1 典型优化运行流程</h3>
+      <pre><code>用户:
+  1. 在 GUI 配置:平台(Perry)、实验类型(PhotochemicalReaction)
+     → 参数空间(温度、停留时间、催化剂当量、光强)
+     → 分析技术(Raman 或 UV) → ML 算法(BO_optimisation)
+  2. 保存会话 → 点击 "启动"
+
+PlatformBackend.start():
+  3. build platform (按 platform_config 实例化设备)
+  4. 启动 platform_thread 跑 BaseExperiment.start()
+  5. 启动 ml_thread 跑 ML_instance.first_run() + run()
+
+ML 主循环 (SingleBayesianOptiBackend):
+  6. 训练 SingleTaskGP(X, Y)
+  7. 优化 qExpectedImprovement → 下一个 tensor
+  8. _to_machine(tensor) → recipe (List[ExperimentalParameter])
+  9. 通信模块下发 recipe → BaseExperiment.submit_run()
+ 10. ChemicalReaction 执行:采样 → 注入 → 反应 → 分析 → 收集
+ 11. AnalyticsU3900H.analyse() 返回 RunResult(yield, integral, absorbance_at_wlen)
+ 12. _to_ml(result) → (x, y, y_var) 写入 results_df
+ 13. 回到步骤 6,直至达到 Number of total points 或终止条件</code></pre>
+    </section>
+
+    <section class="card" id="dev-examples">
+      <h2>6. 二次开发示例</h2>
+      <p>
+        Robochem-Flex 提供<strong>四个层次的扩展点</strong>,均通过继承基类 + 注册到字典/配置文件即可接入,
+        无需修改核心代码。
+      </p>
+
+      <h3 id="dev-ml">6.1 自定义 ML 后端</h3>
+      <p>
+        模板: <span class="file-path">backend/Robochem_ML/robrains/ml_modules/my_custom_backend.py</span>
+      </p>
+      <pre><code>from robrains.communication_module import baseMLBackend
+
+class MyCustomBackend(baseMLBackend):
+    """自定义 BO 后端模板"""
+
+    # 前端可配置的参数(类型/可选值)
+    input_parameters = {
+        "Number of initial points": "int",
+        "Number of total points":   "int",
+        "Explorative Factor":       "float",
+        "Termination criterion":    ["max_iter", "performance"],
+    }
+    input_defaults = {
+        "Number of initial points": 10,
+        "Number of total points":   100,
+        "Explorative Factor":       0.1,
+        "Termination criterion":    "max_iter",
+    }
+
+    def validate_and_update(self, key, value):
+        """前端参数校验与更新"""
+        # 校验后赋值 self.parameters[key] = value
+
+    def first_run(self) -> pd.DataFrame:
+        """Sobol 采样生成初始点"""
+        bounds = self.bounds
+        # draw_sobol_samples(...) → DataFrame
+
+    def update(self):
+        """主循环: 训练模型 + 优化采集函数 + 下发 recipe"""
+        # SingleTaskGP + qExpectedImprovement
+        # 调用 _to_machine(tensor) 与 _to_ml(result)</code></pre>
+      <p>注册步骤:</p>
+      <ol>
+        <li>在 <span class="file-path">backend/ml_backends.py</span> 中定义 <code>MyCustomML(MyCustomBackend, ML_Platform_HITL)</code> 子类</li>
+        <li>在 <span class="file-path">backend/platform_backend.py</span> 的 <code>ML_classes</code> 字典中添加 <code>"MyCustomML": MyCustomML</code></li>
+        <li>重启 Streamlit,前端"机器学习"页面下拉框即可看到新选项</li>
+      </ol>
+
+      <h3 id="dev-device">6.2 自定义设备驱动 (以 RamaBerry Raman 光谱仪为例)</h3>
+      <p>
+        参考实现: <span class="file-path">devices/nrg/rama_berry.py</span>。
+        Raman 光谱仪通过树莓派上运行的 <code>RamaBerryPy</code> 服务端应用对外提供 JSON-over-Socket 协议,
+        因此驱动继承 <code>SocketDevice</code> 而非直接继承 <code>BaseDevice</code> —
+        后者已封装 socket 生命周期,新驱动只需关注业务命令。
+      </p>
+
+      <h4>步骤 1:继承 SocketDevice,注册参数表</h4>
+      <pre><code># devices/nrg/rama_berry.py
+from omniplatypus.devices.base.device import (
+    DeviceParameter, ParameterAccess, ParameterCachingPolicy, ParameterEnumValue
+)
+from omniplatypus.devices.base.device_socket import SocketDevice
+from bidict import bidict
+
+# 可选: 定义枚举型参数值(用于离散选项)
+class DataPollerStyle(ParameterEnumValue):
+    _raw_values = bidict({
+        "SERVER_SINGLE":   "SERVER_SINGLE",
+        "SERVER_KINETIC":  "SERVER_KINETIC",
+    })
+
+class RamaBerry(SocketDevice):
+    def __init__(self):
+        SocketDevice.__init__(self)
+        self.generic_name = "Raman Spectrometer"
+
+        # —— 11 个参数,覆盖全部协议命令 ——
+        # 1. 积分时间 (ms),范围 100~50000,只写
+        p = DeviceParameter(name="integration_time", access_level=ParameterAccess.W,
+                            value_type=float, internal_id=201)
+        p.units = "ms"; p.caching_policy = ParameterCachingPolicy.ALWAYS
+        p.min_value = 100.0; p.max_value = 50000.0
+        self.add_parameter(p)
+
+        # 2. 平均次数 (RW, int)
+        # 3. delay / 4. n_scans / 5. save_as (DataPollerStyle 枚举)
+        # 6. dark_correction (bool) / 7. data (pd.DataFrame, 只读)
+        # 8. start_acq / 9. stop_acq (bool 触发型, RW)
+        # 10. save_moniker (str) / 11. save_path (str)
+        # ... 每个 DeviceParameter 都通过 self.add_parameter(...) 注册
+
+    # —— 协议层 ——
+    def _send_command(self, command: str, data=None):
+        """JSON over TCP: 发 {command[, data]}, 收 4 字节长度前缀 + JSON 响应"""
+        payload = {"command": command}
+        if data: payload["data"] = data
+        self._socket.sendall(json.dumps(payload).encode())
+        data_len = int.from_bytes(self._socket.recv(4), "big")
+        # 循环 recv 拼接,直到达到 data_len
+        return json.loads(full_response)</code></pre>
+
+      <h4>步骤 2:重写 open / close 控制设备生命周期</h4>
+      <pre><code>def open(self, host: str, port: int):
+    """打开连接: 先 SSH 启动树莓派上的 server,再建立 socket"""
+    self._start_server(host, "Raman")    # 见下方
+    self._connect_socket(host, port)     # SocketDevice.open(self, host, port)
+    self._initialized = True
+
+def _start_server(self, host, username):
+    """通过 paramiko SSH 到树莓派启动 RamaBerry_listener.py
+    前提: ~/.ssh/id_rsa 已配置免密登录"""
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    private_key = paramiko.RSAKey.from_private_key_file(
+        os.path.expanduser("~/.ssh/id_rsa"))
+    ssh.connect(host, 22, username=username, pkey=private_key)
+    ssh.exec_command("""
+        mkdir -p /mnt/Raman_Data/logs/log/Ramaberry_server/$(date +'%Y%m%d') &&
+        cd Documents/GitHub/Spectrometer\\ Interface &&
+        source /home/Raman/miniforge3/etc/profile.d/conda.sh &&
+        conda activate ramaberry_server_env &&
+        nohup python server_app/RamaBerry_listener.py \\
+            > /mnt/Raman_Data/logs/log/Ramaberry_server/$(date +'%Y%m%d')/$(date +'%H%M%S')-log.out 2>&1 &
+    """, timeout=10)
+    ssh.close()
+
+def close(self):
+    """关闭: 发 shutdown 命令优雅退出服务端,再关 socket"""
+    self._send_command("shutdown")
+    SocketDevice.close(self)</code></pre>
+
+      <h4>步骤 3:重写 _write / _read 把参数映射到协议命令</h4>
+      <pre><code>def _write(self, parameter: DeviceParameter, value):
+    """写参数: 区分"触发型命令"与"普通参数设置" """
+    if parameter.name == "start_acq" and value is True:
+        # 触发采集 → 发 start_acq 命令,完成后把缓存值复位为 False
+        self._send_command("start_acq")
+        parameter.value = False
+        parameter.last_known_value = False
+    elif parameter.name == "stop_acq" and value is True:
+        self._send_command("stop_acq")
+        parameter.value = False
+    elif parameter.name == "save_as":
+        # 枚举型: 转成小写字符串再下发
+        self._send_command("set_params", {parameter.name: value.value.lower()})
+    else:
+        # 普通参数: 统一走 set_params 命令
+        self._send_command("set_params", {parameter.name: value})
+
+def _read(self, parameter: DeviceParameter):
+    """读参数: data 走 get_data,其它走 get_params"""
+    if parameter.name == "data":
+        return pd.DataFrame(self._send_command("get_data")["data"])
+    return self._send_command("get_params", {"name": parameter.name})[parameter.name]</code></pre>
+
+      <h4>步骤 4:在 platform_config.json 中注册设备</h4>
+      <pre><code>// config/platform_config.json → Perry → devices
+"Raman": {
+    "tags":   ["ip_socket", "analytics", "raman"],
+    "class":  "rama_berry",                          // ← 映射到 devices/nrg/rama_berry.py:RamaBerry
+    "IP": {
+        "host":     "192.168.1.1",
+        "port":     99999,
+        "ssh_host": "Raman",                         // SSH 用户名
+        "keys":     "~/.ssh/id_rsa"
+    }
+}</code></pre>
+
+      <div class="callout info">
+        <strong>关键设计要点:</strong>
+        <ul>
+          <li><strong>分层继承:</strong> <code>RamaBerry → SocketDevice → BaseDevice</code>,socket 协议样板由 <code>SocketDevice</code> 提供,业务驱动只关心命令语义。</li>
+          <li><strong>触发型参数:</strong> <code>start_acq</code> / <code>stop_acq</code> 是 <code>bool</code> 但语义是"按下按钮",<code>_write</code> 中识别为命令并在执行后自动复位缓存。</li>
+          <li><strong>枚举型参数:</strong> 通过 <code>ParameterEnumValue</code> + <code>bidict</code> 定义离散可选值,前端下拉框自动渲染。</li>
+          <li><strong>缓存策略:</strong> 大部分参数 <code>ALWAYS</code>(只在 init 时读),<code>data</code> 必须 <code>NEVER</code>(每次实时拉取最新光谱)。</li>
+          <li><strong>外部服务依赖:</strong> <code>open()</code> 内嵌 SSH 启动树莓派上的 <code>RamaBerry_listener.py</code> 服务端,真正的硬件控制在远端,本机只走 TCP。</li>
+        </ul>
+      </div>
+
+      <h3 id="dev-analytics">6.3 自定义分析方法</h3>
+      <p>
+        模板: <span class="file-path">procedures/analytics/analytics_template.py</span> 的 <code>AnalyticsTemplate</code>
+      </p>
+      <pre><code>from omniplatypus.procedures.analytics.analytics_template import (
+    AnalyticsTemplate, AnalysisError
+)
+from omniplatypus.procedures.analytics.analytics_parameters import AnalyticalParameter
+
+class AnalyticsU3900H(AnalyticsTemplate):
+    result_metrics = ["yield", "integral", "absorbance_at_wlen", "pass"]
+
+    _required_parameters = [
+        AnalyticalParameter(name="yield_calculation_chemical", value="", tag="all"),
+        AnalyticalParameter(name="start_wavelength", value=534.0,
+                            min_value=190.0, max_value=1100.0, units="nm", tag="all"),
+        # ...
+    ]
+    _optional_parameters = [
+        AnalyticalParameter(name="integration_lower_bound", value=200,
+                            min_value=190, max_value=1100, units="nm",
+                            tag="simple_integration"),
+        # ...
+    ]
+    _processing_methods = ["single_point_absorbance", "integrated_absorbance"]
+
+    def analyse(self, run_result, parameter_values):
+        """根据 _processing_method 选择算法,返回 metrics dict"""
+        # 取光谱 → 计算吸光度 → 通过摩尔吸光系数 → yield</code></pre>
+      <p>注册到实验流程:</p>
+      <pre><code># procedures/experiments/chemistry.py 的 _analytical_methods
+"UV": ExperimentAnalysisCoupler(
+    analysis_class=AnalyticsU3900H,
+    analytical_device="UV_Spectrometer",
+    platform_constants_key="UV",
+)</code></pre>
+      <p>同时需在 <code>platform_config.json</code> 的 <code>constants.analysis</code> 段加入对应常量(体积、相位传感器)。</p>
+
+      <h3 id="dev-experiment">6.4 自定义实验流程</h3>
+      <p>
+        继承 <code>ChemicalReaction</code> 或直接继承 <code>BaseExperiment</code>,覆写钩子方法:
+      </p>
+      <pre><code>from omniplatypus.procedures.experiments.chemistry import ChemicalReaction
+
+class PhotochemicalReaction(ChemicalReaction):
+    """光化学反应: 在化学基础上增加光源控制"""
+
+    _required_devices = ChemicalReaction._required_devices | {"Light_Source"}
+
+    def reaction_procedure(self):
+        # 1. 打开光源 (self._light['on'] = True)
+        # 2. 设置光强 (self._light['intensity'] = ...)
+        # 3. 调用 super().reaction_procedure() 执行基础反应
+        # 4. 反应结束后关闭光源
+
+class ThermochemicalReaction(ChemicalReaction):
+    """热化学反应: 增加温控设备"""
+    _required_devices = ChemicalReaction._required_devices | {"Reactor_Thermostat"}</code></pre>
+      <p>在 <code>platform_constructors</code> 字典中注册:</p>
+      <pre><code>platform_constructors = {
+    "PhotochemicalReaction":         PhotochemicalReaction,
+    "ThermochemicalReaction":        ThermochemicalReaction,
+    "PhotochemicalReaction - dry run": PhotochemicalReactionDryRun,
+}</code></pre>
+      <p>前端"用户设置"页的下拉框即可自动看到新实验类型。</p>
+    </section>
+
+    <section class="card" id="examples">
+      <h2>7. 示例数据 (Examples)</h2>
+      <p>
+        <span class="file-path">Examples/</span> 提供复现 publication 中各场景的完整配置,直接加载即可运行:
+      </p>
+      <table>
+        <tr><th>示例</th><th>类型</th><th>说明</th></tr>
+        <tr><td><span class="file-path">CS0_dryrun</span></td><td><span class="tag purple">HITL</span></td><td>Human-in-the-Loop 模拟,无硬件即可测试软件链路</td></tr>
+        <tr><td><span class="file-path">CS0</span></td><td><span class="tag green">基础</span></td><td>基础 BO 优化演示</td></tr>
+        <tr><td><span class="file-path">CS0_UV_optimisation</span></td><td><span class="tag blue">UV</span></td><td>U3900H UV-Vis 优化案例(BO 驱动)</td></tr>
+        <tr><td><span class="file-path">CS1</span></td><td><span class="tag green">基础</span></td><td>光化学反应优化</td></tr>
+        <tr><td><span class="file-path">CS2</span></td><td><span class="tag green">基础</span></td><td>热化学反应优化</td></tr>
+        <tr><td><span class="file-path">CS3</span></td><td><span class="tag blue">ML</span></td><td>多目标任务优化</td></tr>
+        <tr><td><span class="file-path">CS4</span></td><td><span class="tag blue">ML</span></td><td>多任务 Scope 迁移学习</td></tr>
+        <tr><td><span class="file-path">CS5_1 / CS5_2</span></td><td><span class="tag blue">ML</span></td><td>批次 BO 实验</td></tr>
+        <tr><td><span class="file-path">CS6</span></td><td><span class="tag blue">ML</span></td><td>EnantioExtravaganza 对映选择性优化</td></tr>
+      </table>
+      <div class="callout">
+        使用方式: 将 <code>Examples/</code> 拷贝至 <code>%USERPROFILE%\Robochem\Examples\</code>,
+        在首页通过 file_uploader 加载子文件夹内的 <code>session.json</code>,依次走完所有设置页到达"运行平台"页。
+      </div>
+    </section>
+
+    <section class="card" id="run">
+      <h2>8. 运行与启动</h2>
+      <h3>8.1 环境准备</h3>
+      <pre><code># 创建 conda 环境 (Python 3.12)
+conda env create -f robochem_flex.yml
+conda activate robochem_flex
+
+# 备选(若主环境解析失败)
+conda env create -f robochem_flex_alt.yml</code></pre>
+
+      <h3>8.2 安装子包 (editable mode)</h3>
+      <pre><code>cd "Control Software"
+pip install -e .\backend\Robochem_ML\
+pip install -e .\Lamas\
+pip install -e .\OmniPlatypus\OmniPlatypus\</code></pre>
+
+      <h3>8.3 启动 GUI</h3>
+      <pre><code>streamlit run robochem_flex.py</code></pre>
+      <p>Streamlit 会自动打开两个浏览器 tab:</p>
+      <ul>
+        <li><strong>主控制面板</strong> — 多页面 GUI,完成配置与运行</li>
+        <li><strong>ML 日志面板</strong> — 实时显示 ML 后端日志输出</li>
+      </ul>
+
+      <h3>8.4 无硬件测试 (DryRun)</h3>
+      <p>加载 <code>CS0_dryrun</code> 示例,选择 <code>Human</code> 分析技术与 <code>BO_optimisation_HITL</code> ML 算法,
+        手动输入每轮"测量结果",即可完整演练软件链路。</p>
+
+      <div class="callout info">
+        <strong>提示:</strong> 任何二次开发(ML/Device/Analytics/Experiment)完成注册后,
+        <strong>重启 Streamlit</strong>(Ctrl+C 后重新 <code>streamlit run</code>)即可让前端下拉项更新。
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  Robochem-Flex Implementation Design Documentation · Noël Research Group (NRG) · 2025
+  <br>本文件由项目代码静态分析自动生成,具体实现以源码为准。
+</footer>
+
+</body>
+</html>

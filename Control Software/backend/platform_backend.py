@@ -432,7 +432,7 @@ class PlatformBackend(BaseLoggedClass):
             experiment_class: BaseExperiment = self.platform_constructors[
                 experiment_name
             ]
-            return experiment_class.get_analytical_methods().keys()
+            return list(experiment_class.get_analytical_methods().keys())
         else:
             raise RuntimeError(
                 f"未找到实验 '{experiment_name}' 的定义。"
