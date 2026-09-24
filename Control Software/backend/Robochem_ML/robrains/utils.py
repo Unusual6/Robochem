@@ -11,7 +11,10 @@ Descr:
 import numpy as np
 import pandas as pd
 import torch
-from pyDOE import lhs
+try:
+    from pyDOE import lhs
+except ImportError:  # 部分环境下包目录为小写 pydoe
+    from pydoe import lhs
 import random
 from botorch.acquisition.objective import MCAcquisitionObjective
 from gpytorch.kernels import (

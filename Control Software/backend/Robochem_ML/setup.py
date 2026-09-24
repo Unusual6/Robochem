@@ -39,9 +39,10 @@ setup(
         "Intended Audience :: Robochem Team",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
     ],
-    python_requires=">=3.11",
+    python_requires=">=3.10",
     extras_require={
         "dev": [
             "unittest",
