@@ -107,9 +107,9 @@ def plot_results(results_df: pd.DataFrame, objectives: list):
                     color=colors[i],
                     alpha=0.3,
                 )
-        fig.suptitle("目标值 vs 实验迭代次数")
-        ax.set_xlabel("实验编号")
-        ax.set_ylabel("目标值")
+        fig.suptitle("Objective vs Experiment Iteration")
+        ax.set_xlabel("Experiment No.")
+        ax.set_ylabel("Objective")
         ax.legend()
         ax.set_xlim(-1, len(exp_n))
         ax.set_xticks(exp_n)
@@ -119,7 +119,7 @@ def plot_results(results_df: pd.DataFrame, objectives: list):
         with obvsob:
             fig, ax = plt.subplots()
             fig.suptitle(
-                f"目标 {objectives[0]} 与 {objectives[1]} 的帕累托图"
+                f"Pareto plot of {objectives[0]} vs {objectives[1]}"
             )
             ax.scatter(
                 results_df[objectives[0]],
@@ -146,7 +146,7 @@ def plot_results(results_df: pd.DataFrame, objectives: list):
         obj2 = st.selectbox("选择第二个目标", options=objectives)
         with obvsob:
             fig, ax = plt.subplots()
-            fig.suptitle(f"目标 {obj1} 与 {obj2} 的帕累托图")
+            fig.suptitle(f"Pareto plot of {obj1} vs {obj2}")
             ax.scatter(
                 results_df[obj1],
                 results_df[obj2],
@@ -327,6 +327,8 @@ def check_platform_status(
     """
 
     # Load the latest samples information
+    if backend.platform_experiment is None:
+        return
     platform_samples = None
     while True:
         latest_samples = backend.platform_experiment.get_samples(block=False)

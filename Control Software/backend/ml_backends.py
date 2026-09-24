@@ -103,6 +103,13 @@ class ToandFromMachine:
 
         translated_values = []
         target_chemical_value = None
+        # Build a mapping from ML parameter role name to actual chemical name
+        # e.g. "Limiting Reagent" -> "SM"
+        chemical_role_map = {}
+        for p in self.ML_parameters:
+            if p.phy_chem == "Chemical" and p.discrete:
+                chemical_role_map[p.name] = p.discrete[0]
+
         for parameter in self.ML_parameters:
             param_name = parameter.name
             phy_chem = "Chemical" if parameter.phy_chem == "Chemical" else "Physical"
@@ -180,8 +187,13 @@ class ToandFromMachine:
                 to_append.foreign_key = param_name
             else:
                 raise ValueError("未找到参数的值")
-            if "target_chemical" in locals() and target_chemical.value == param_name:
-                target_chemical_value = value_discrete
+            # Match target chemical: support both chemical name (e.g. "SM")
+            # and ML parameter role name (e.g. "Limiting Reagent")
+            if "target_chemical" in locals():
+                tc_val = target_chemical.value
+                if phy_chem == "Chemical":
+                    if tc_val == value_discrete or tc_val == param_name:
+                        target_chemical_value = value_discrete
             translated_values.append(to_append)
 
         # find all the constants and add them to the list:

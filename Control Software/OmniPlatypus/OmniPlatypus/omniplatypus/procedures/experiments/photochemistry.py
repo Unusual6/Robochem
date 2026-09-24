@@ -32,6 +32,7 @@ from omniplatypus.procedures.experiments.experiment_parameters import (
     NumericalParameter,
     RunResult,
 )
+from omniplatypus.utilities.general import dict_to_str
 from omniplatypus.procedures.experiments.base_experiment import (
     ExperimentAnalysisCoupler,
     BaseExperiment,
@@ -156,7 +157,8 @@ class PhotochemicalReaction(ChemicalReaction):
         turned off or reset.
         """
         self._stop_monitoring.set()
-        self._monitoring_thread.join(timeout=300)
+        if self._monitoring_thread is not None:
+            self._monitoring_thread.join(timeout=300)
         ChemicalReaction._procedure_shutdown(self)
 
 
@@ -263,12 +265,16 @@ class PhotochemicalReactionDryRun(PhotochemicalReaction):
         time.sleep(0.1)
         results.collection_vial_id = collection_vial_id
 
-        # UV Analysis (when configured, e.g. for dry-run testing without physical hardware)
+        # Call the analytical method to generate analysis results (e.g. yield)
         if self._analytical_method is not None:
-            self._log(f"Run [{run_id}]: Analysis started...")
+            self._log(f"Run [{run_id}]: Dry-run analysis started...")
             results.result = self._analytical_method.analyse(
                 conditions=conditions,
                 recipe=recipe,
+            )
+            self._log(
+                f"Run [{run_id}]: Dry-run analysis finished:\n{dict_to_str(results.result)}",
+                level="ok",
             )
 
         results.success = True

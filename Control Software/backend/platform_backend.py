@@ -802,7 +802,7 @@ class PlatformBackend(BaseLoggedClass):
         self.log_mssg("平台已停止")
 
     def _start_spectrometer_server_if_needed(self, analysis_type: str) -> None:
-        """如果分析类型是 UV，自动启动虚拟光谱仪服务端（TCP 端口 9000）。
+        """如果分析类型是 UV，自动启动虚拟光谱仪服务端（TCP 端口 9100）。
         确保驱动层客户端 (U3900HSpectrometer) 在平台构建时能够成功连接。"""
         if analysis_type != "UV":
             return
@@ -812,6 +812,18 @@ class PlatformBackend(BaseLoggedClass):
             if poll is None:
                 self.log_mssg("虚拟光谱仪服务端已在运行", level="info")
                 return
+        # 先检测端口是否已有服务在运行（用户可能手动启动了）
+        import socket as _socket
+        port = 9100
+        try:
+            s = _socket.socket(_socket.AF_INET, _socket.SOCK_STREAM)
+            s.settimeout(1)
+            s.connect(("localhost", port))
+            s.close()
+            self.log_mssg(f"虚拟光谱仪服务端已在端口 {port} 运行（外部进程）", level="ok")
+            return
+        except Exception:
+            pass  # 端口无服务，需要启动
         # 计算 virtual_spectrometer_server.py 的路径
         server_script = os.path.join(
             self._base_dir, "..", "U3900H", "virtual_spectrometer_server.py"
@@ -824,13 +836,11 @@ class PlatformBackend(BaseLoggedClass):
         try:
             self._spectrometer_server_process = subprocess.Popen(
                 [sys.executable, server_script],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
             )
             # 等待服务端 TCP 端口就绪
             self.log_mssg("正在启动虚拟光谱仪服务端...", level="info")
             time.sleep(2)
-            self.log_mssg("虚拟光谱仪服务端已启动 (端口 9000)", level="ok")
+            self.log_mssg(f"虚拟光谱仪服务端已启动 (端口 {port})", level="ok")
         except Exception as e:
             self.log_mssg(f"启动虚拟光谱仪服务端失败: {e}", level="error")
 

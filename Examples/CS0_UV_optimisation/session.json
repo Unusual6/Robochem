@@ -517,7 +517,7 @@
         "unit": "nm",
         "style": "constant",
         "omni_tag": "simple_integration",
-        "value": 250,
+        "value": 600,
         "low_bound": null,
         "high_bound": null,
         "allowed_values": null

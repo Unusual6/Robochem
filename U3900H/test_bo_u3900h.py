@@ -41,7 +41,7 @@ N_ITER = 6                             # BO 迭代次数
 SCAN_SPAN = 200.0                      # 每次扫描覆盖 200 nm (start -> start - 200)
 SCAN_SPEED = 600.0                     # nm/min (加速虚拟扫描)
 DEVICE_HOST = "localhost"
-DEVICE_PORT = 9000
+DEVICE_PORT = 9100
 
 
 def make_device() -> U3900HSpectrometer:
