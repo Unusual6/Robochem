@@ -2,7 +2,7 @@
 """
 光谱仪客户端程序 (Spectrometer Client)
 - Flask HTTP (端口 5001): 客户端前端管理页面
-- TCP Socket 连接服务端 9000 端口，使用 U3900H 协议帧通信
+- TCP Socket 连接服务端 9100 端口，使用 U3900H 协议帧通信
   仅打印 U3900H 协议帧交互，不打印 HTTP 请求
 """
 
@@ -121,7 +121,7 @@ def parse_scan_response(payload_str):
 class SpectrometerTCPClient:
     """通过 TCP Socket 使用 U3900H 协议与虚拟光谱仪通信"""
 
-    def __init__(self, host="localhost", port=9000):
+    def __init__(self, host="localhost", port=9100):
         self.host = host
         self.port = port
         self.sock = None
@@ -515,7 +515,7 @@ class SpectrometerTCPClient:
 
 # ==================== 全局客户端实例 ====================
 
-client = SpectrometerTCPClient(host="localhost", port=9000)
+client = SpectrometerTCPClient(host="localhost", port=9100)
 
 
 # ==================== Flask HTTP 路由（客户端前端专用） ====================
@@ -630,7 +630,7 @@ if __name__ == "__main__":
     print("=" * 60)
     print("  U-3900H 光谱仪客户端")
     print(f"  客户端前端 (HTTP):  http://localhost:5001")
-    print(f"  协议连接目标 (TCP):  localhost:9000")
+    print(f"  协议连接目标 (TCP):  localhost:9100")
     print("=" * 60)
 
     threading.Thread(target=auto_open_browser, daemon=True).start()

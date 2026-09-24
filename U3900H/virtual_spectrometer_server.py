@@ -2,13 +2,14 @@
 """
 虚拟光谱仪服务端 (U3900H Virtual Spectrometer Server)
 - Flask HTTP (端口 5000): 服务端前端管理页面
-- TCP Socket Server (端口 9000): 使用 U3900H 协议帧与客户端通信
+- TCP Socket Server (端口 9100): 使用 U3900H 协议帧与客户端通信
   仅打印协议帧交互，不打印 HTTP 请求
 """
 
 import json
 import os
 import struct
+import sys
 import time
 import math
 import random
@@ -18,6 +19,9 @@ import socket
 import select
 from flask import Flask, render_template, jsonify, request
 from flask_cors import CORS
+
+# 强制 stdout 行缓冲，确保日志实时输出到终端
+sys.stdout.reconfigure(line_buffering=True)
 
 # ==================== 抑制 Flask HTTP 请求日志 ====================
 logging.getLogger('werkzeug').setLevel(logging.ERROR)
@@ -423,7 +427,7 @@ spectrometer = VirtualSpectrometer()
 class TCPSpectrometerServer:
     """TCP 服务器，使用 U3900H 协议帧与第三方 Socket 客户端通信"""
 
-    def __init__(self, host="0.0.0.0", port=9000):
+    def __init__(self, host="0.0.0.0", port=9100):
         self.host = host
         self.port = port
         self.server_socket = None
@@ -591,13 +595,13 @@ def api_set_params():
 if __name__ == "__main__":
     print("=" * 60)
     print("  U-3900H 虚拟光谱仪服务器")
-    print(f"  管理页面 (HTTP):      http://localhost:5000")
-    print(f"  U3900H 协议端口 (TCP): 0.0.0.0:9000")
+    print(f"  管理页面 (HTTP):      http://localhost:4090")
+    print(f"  U3900H 协议端口 (TCP): 0.0.0.0:9100")
     print("=" * 60)
 
     # 启动 TCP 协议服务器（供第三方 Socket 客户端连接）
-    tcp_server = TCPSpectrometerServer(host="0.0.0.0", port=9000)
+    tcp_server = TCPSpectrometerServer(host="0.0.0.0", port=9100)
     tcp_server.start()
 
     # 启动 Flask HTTP 服务（供服务端前端使用）
-    app.run(host="0.0.0.0", port=5000, threaded=True, debug=False)
+    app.run(host="0.0.0.0", port=4090, threaded=True, debug=False)

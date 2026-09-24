@@ -455,10 +455,12 @@ class SessionContainer(BaseLoggedClass):
         else:
             return data
 
-    def load_session(self, file: None = None, path: str = None):
+    def load_session(self, file: None = None, path: str = None, base_dir: str = None):
         """Load the session from a JSON file and reconstruct the session objects.
         :param file: this is a file like object that we can read directly, if this is none we go for the path.
         :param path: reloads the data from the path, if path is none reloads from the experiment path:
+        :param base_dir: optional base directory for resolving relative CSV paths when experiment_path is empty.
+            If not provided, defaults to ~/Robochem/.
 
         """
         try:
@@ -480,7 +482,10 @@ class SessionContainer(BaseLoggedClass):
             if exp_path == "":
                 user = session_data["user_name"]
                 experiment = session_data["experiment_name"]
-                exp_path = os.path.join(os.path.expanduser("~"), "Robochem", user, experiment)
+                # Use provided base_dir, or fall back to ~/Robochem/
+                if base_dir is None:
+                    base_dir = os.path.join(os.path.expanduser("~"), "Robochem")
+                exp_path = os.path.join(base_dir, user, experiment)
                 if not os.path.exists(exp_path):
                     os.makedirs(exp_path)
             self._session["experiment_path"] = exp_path

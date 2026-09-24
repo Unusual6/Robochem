@@ -734,7 +734,7 @@ def handle_vials():
         disabled=["VialID"],
         num_rows="dynamic",
         key="vial_df_editor",
-        use_container_width=True,
+        width="stretch",
     )
 
     # Button to trigger updating the VialDF
@@ -954,6 +954,9 @@ def display_ml_parameters():
     Displays the input parameters for the machine learning model (adaptive, depends on the ml model chosen)
     """
     backend = st.session_state["platform_backend"]
+    if backend.ml_experiment_class is None:
+        st.warning("机器学习模型尚未初始化，请先在「运行平台」页面启动平台。")
+        return
     ml_parameters = backend.ml_experiment_class.input_parameters
 
     # Define simple parameters

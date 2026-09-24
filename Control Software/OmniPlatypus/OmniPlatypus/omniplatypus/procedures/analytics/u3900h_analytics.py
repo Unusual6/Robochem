@@ -98,7 +98,7 @@ class AnalyticsU3900H(AnalyticsTemplate):
         ),
         AnalyticalParameter(
             name="integration_upper_bound",
-            value=250,
+            value=600,
             min_value=190,
             max_value=1100,
             units="nm",
@@ -409,21 +409,25 @@ class AnalyticsU3900H(AnalyticsTemplate):
             yield_calculation_chemical = conditions.get(
                 "yield_calculation_chemical", None
             )
-            if yield_calculation_chemical is not None:
+            if yield_calculation_chemical is not None and yield_calculation_chemical.value:
                 reference_concentration = self.get_reference_concentration(
                     yield_calculation_chemical.value, recipe
                 )
                 self.log(
                     f"Reference concentration: {reference_concentration}"
                 )
+                # 如果有参考浓度，用归一化产率
+                if reference_concentration is not None and reference_concentration > 0:
+                    yield_value = (pi_conc / reference_concentration) if pi_conc is not None else None
+                else:
+                    yield_value = pi_conc
             else:
-                reference_concentration = 1.0
+                reference_concentration = None
+                yield_value = pi_conc
         except Exception as e:
             self.log(f"Error getting reference concentration: {e}", level="error")
             results["pass"] = False
             return results
-
-        yield_value = pi_conc if pi_conc is not None else None
         yield_variance = 0.01
         conversion_value = None
 

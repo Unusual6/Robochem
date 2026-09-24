@@ -22,8 +22,8 @@ def main():
     print(f"[TEST] Parameters: {[p.name for p in dev.parameters()]}")
 
     # 1. Open connection
-    print("\n[STEP 1] Opening TCP connection to localhost:9000 ...")
-    dev.open("localhost", 9000)
+    print("\n[STEP 1] Opening TCP connection to localhost:9100 ...")
+    dev.open("localhost", 9100)
     print(f"[STEP 1] is_open={dev.is_open()}")
 
     # 2. Initialize (sets _initialized=True so writes are allowed)

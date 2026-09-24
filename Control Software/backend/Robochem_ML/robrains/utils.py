@@ -11,7 +11,7 @@ Descr:
 import numpy as np
 import pandas as pd
 import torch
-from pydoe import lhs
+from pyDOE import lhs
 import random
 from botorch.acquisition.objective import MCAcquisitionObjective
 from gpytorch.kernels import (

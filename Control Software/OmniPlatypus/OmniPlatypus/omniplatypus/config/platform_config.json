@@ -383,7 +383,7 @@
         "class": "u3900h_spectrometer",
         "IP": {
           "host": "localhost",
-          "port": 9000
+          "port": 9100
         }
       }
     },

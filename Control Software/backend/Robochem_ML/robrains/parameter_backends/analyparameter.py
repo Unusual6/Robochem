@@ -66,6 +66,7 @@ class AnalyParameter(BaseParamClass):
                 min_value=json_data["min_value"],
                 max_value=json_data["max_value"],
                 unit=json_data["unit"],
+                omni_tag=json_data.get("omni_tag", None),
             )
             instance.value = json_data.get("value", None)
             instance.low_bound = json_data.get("low_bound", None)

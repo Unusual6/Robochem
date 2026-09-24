@@ -52,8 +52,33 @@ st.file_uploader(
     accept_multiple_files=False,
 )
 
+# 智能检测实验目录的默认值
+if "_exp_base_default" not in st.session_state:
+    _home_robochem = os.path.join(os.path.expanduser("~"), "Robochem")
+    # 项目根目录（session 路径 = base_dir / user_name / experiment_name）
+    _project_root = os.path.normpath(os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), ".."
+    ))
+    # 优先使用项目根目录（示例会话路径为 project_root/Examples/<experiment_name>）
+    if os.path.isdir(os.path.join(_project_root, "Examples")):
+        st.session_state["_exp_base_default"] = _project_root
+    elif os.path.isdir(_home_robochem):
+        st.session_state["_exp_base_default"] = _home_robochem
+    else:
+        st.session_state["_exp_base_default"] = _home_robochem
+
+st.text_input(
+    "实验目录（会话文件中的 CSV 将基于此目录解析，留空则使用 ~/Robochem/）",
+    key="exp_base_dir",
+    value=st.session_state["_exp_base_default"],
+)
+
 if st.session_state["session_file"] is not None:
-    ret, error_msg = backend.session_container.load_session(st.session_state["session_file"])
+    _base_dir = st.session_state.get("exp_base_dir", "").strip() or None
+    ret, error_msg = backend.session_container.load_session(
+        st.session_state["session_file"],
+        base_dir=_base_dir,
+    )
     if ret == "Success":
         st.success("会话加载成功！")
     elif ret == "Error":

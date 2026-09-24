@@ -136,6 +136,8 @@ platform_config_path = os.path.join(_base_dir, "OmniPlatypus", "OmniPlatypus", "
 
 ```bash
 source "Control Software/.venv/bin/activate"
+
+conda activate roboche_lt
 cd "Control Software"
 streamlit run robochem_flex.py
 ```

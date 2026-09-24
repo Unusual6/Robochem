@@ -25,12 +25,14 @@ from omniplatypus.procedures.analytics.hplc_analysis import dummyHPLCAnalysis
 from omniplatypus.procedures.analytics.raman_analysis import (
     AnalyticsRaman,
 )
+from omniplatypus.procedures.analytics.u3900h_analytics import AnalyticsU3900H
 from omniplatypus.procedures.experiments.chemistry import ChemicalReaction
 from omniplatypus.procedures.experiments.experiment_parameters import (
     ExperimentalParameter,
     NumericalParameter,
     RunResult,
 )
+from omniplatypus.utilities.general import dict_to_str
 from omniplatypus.procedures.experiments.base_experiment import (
     ExperimentAnalysisCoupler,
     BaseExperiment,
@@ -155,7 +157,8 @@ class PhotochemicalReaction(ChemicalReaction):
         turned off or reset.
         """
         self._stop_monitoring.set()
-        self._monitoring_thread.join(timeout=300)
+        if self._monitoring_thread is not None:
+            self._monitoring_thread.join(timeout=300)
         ChemicalReaction._procedure_shutdown(self)
 
 
@@ -175,6 +178,11 @@ class PhotochemicalReactionDryRun(PhotochemicalReaction):
             analysis_class=None,
             analytical_device=None,
             platform_constants_key="Human",
+        ),
+        "UV": ExperimentAnalysisCoupler(
+            analysis_class=AnalyticsU3900H,
+            analytical_device="UV_Spectrometer",
+            platform_constants_key="UV",
         ),
     }  # Analytical methods supported by the experiment
 
@@ -256,6 +264,19 @@ class PhotochemicalReactionDryRun(PhotochemicalReaction):
         ]
         time.sleep(0.1)
         results.collection_vial_id = collection_vial_id
+
+        # Call the analytical method to generate analysis results (e.g. yield)
+        if self._analytical_method is not None:
+            self._log(f"Run [{run_id}]: Dry-run analysis started...")
+            results.result = self._analytical_method.analyse(
+                conditions=conditions,
+                recipe=recipe,
+            )
+            self._log(
+                f"Run [{run_id}]: Dry-run analysis finished:\n{dict_to_str(results.result)}",
+                level="ok",
+            )
+
         results.success = True
 
     def _procedure_cleanup(self) -> None:
