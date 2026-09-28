@@ -1,5 +1,5 @@
 {
-    "experiment_path": "",
+    "experiment_path": "E:\\workspace\\Robochem\\Examples\\CS0_UV_optimisation",
     "user_name": "Examples",
     "platform_name": "Perry",
     "platform_experiment": "PhotochemicalReaction - dry run",
@@ -350,35 +350,31 @@
         "name": "SM",
         "identifier": "2700-22-3",
         "identifier_type": "CAS",
-        "_purpose": "Limiting Reagent",
-        "value": null
+        "_purpose": "Limiting Reagent"
     },
     "THF": {
         "class": "Chemical",
         "name": "THF",
         "identifier": "109-99-9",
         "identifier_type": "CAS",
-        "_purpose": "Excess Reagent",
-        "value": null
+        "_purpose": "Excess Reagent"
     },
     "TBADT": {
         "class": "Chemical",
         "name": "TBADT",
         "identifier": "68109-03-5",
         "identifier_type": "CAS",
-        "_purpose": "Catalyst",
-        "value": null
+        "_purpose": "Catalyst"
     },
     "MeCN": {
         "class": "Chemical",
         "name": "MeCN",
         "identifier": "75-05-8",
         "identifier_type": "CAS",
-        "_purpose": "Solvent",
-        "value": null
+        "_purpose": "Solvent"
     },
     "analysis_type": "UV",
-    "analysis_maths": "simple_integration",
+    "analysis_maths": "spectral_unmixing",
     "yield_calculation_chemical": {
         "class": "AnalyParameter",
         "name": "yield_calculation_chemical",
@@ -474,7 +470,7 @@
         "class": "AnalyParameter",
         "name": "molar_extinction_coefficient",
         "min_value": 0.0,
-        "max_value": 1.0e50,
+        "max_value": 1e+50,
         "unit": "L/(mol*cm)",
         "style": "constant",
         "omni_tag": "all",
@@ -491,7 +487,59 @@
         "unit": "",
         "style": "constant",
         "omni_tag": "all",
-        "value": "",
+        "value": "e:\\workspace\\Robochem\\unmix\\nowdata\\chem\\calibration.json",
+        "low_bound": null,
+        "high_bound": null,
+        "allowed_values": null
+    },
+    "product_chemical": {
+        "class": "AnalyParameter",
+        "name": "product_chemical",
+        "min_value": null,
+        "max_value": null,
+        "unit": "",
+        "style": "constant",
+        "omni_tag": "all",
+        "value": "DPB",
+        "low_bound": null,
+        "high_bound": null,
+        "allowed_values": null
+    },
+    "dilution_factor": {
+        "class": "AnalyParameter",
+        "name": "dilution_factor",
+        "min_value": 0.0,
+        "max_value": null,
+        "unit": "",
+        "style": "constant",
+        "omni_tag": "all",
+        "value": 100.0,
+        "low_bound": null,
+        "high_bound": null,
+        "allowed_values": null
+    },
+    "stoichiometry_product_coefficient": {
+        "class": "AnalyParameter",
+        "name": "stoichiometry_product_coefficient",
+        "min_value": 1e-12,
+        "max_value": null,
+        "unit": "",
+        "style": "constant",
+        "omni_tag": "all",
+        "value": 1.0,
+        "low_bound": null,
+        "high_bound": null,
+        "allowed_values": null
+    },
+    "stoichiometry_reactant_coefficient": {
+        "class": "AnalyParameter",
+        "name": "stoichiometry_reactant_coefficient",
+        "min_value": 1e-12,
+        "max_value": null,
+        "unit": "",
+        "style": "constant",
+        "omni_tag": "all",
+        "value": 1.0,
         "low_bound": null,
         "high_bound": null,
         "allowed_values": null
@@ -737,6 +785,8 @@
             "Resubmission of Failed N": 3
         },
         "added_keys": [],
+        "results_df": "@DataFrame]SingleBayesianOpti.csv",
+        "utilities_df": "@DataFrame]SingleBayesianOpti_utilities.csv",
         "ML_parameters": [
             "Limiting Reagent_ml",
             "Excess Reagent_ml",
@@ -746,6 +796,7 @@
         ],
         "targets": [
             "yield"
-        ]
+        ],
+        "path": "E:\\workspace\\Robochem\\Examples\\CS0_UV_optimisation"
     }
 }

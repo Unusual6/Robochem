@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """
 虚拟光谱仪服务端 (U3900H Virtual Spectrometer Server)
-- Flask HTTP (端口 5000): 服务端前端管理页面
+- Flask HTTP (端口 4090): 服务端前端管理页面
 - TCP Socket Server (端口 9100): 使用 U3900H 协议帧与客户端通信
   仅打印协议帧交互，不打印 HTTP 请求
+
+扫描测量不再生成随机光谱，而是按顺序依次返回 MIXTURE_FILES 中列出的
+真实混合光谱文件 (unmix/nowdata/chem 下的 TXT 导出数据)，供 CS0_UV_optimisation
+等实验进行模拟优化。每次收到 "00010500 开始扫描" 命令时切换到下一个混合光谱，
+循环使用。
 """
 
+import bisect
 import json
 import os
 import struct
@@ -29,6 +35,14 @@ logging.getLogger('flask.app').setLevel(logging.ERROR)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
+
+# ==================== 混合光谱数据源配置 ====================
+# 按顺序依次返回给客户端的混合光谱文件 (相对本文件位置)
+MIXTURE_DIR = os.path.normpath(os.path.join(BASE_DIR, "..", "unmix", "nowdata", "chem"))
+MIXTURE_FILES = [
+    "UV-1-DPB_0.00000938&DMSO_0.0001033(MeCN).TXT",
+    "UV-1-DPB_0.00001875&DMSO_0.0002065(MeCN).TXT",
+]
 
 app = Flask(__name__, template_folder=TEMPLATE_DIR)
 app.config["SECRET_KEY"] = "u3900h_virtual_secret"
@@ -117,8 +131,11 @@ class VirtualSpectrometer:
         self.current_absorbance = 0.0
         self.scan_progress = 0.0
 
-        # 随机光谱峰
-        self._peaks = []
+        # 混合光谱数据源 (按顺序循环返回)
+        self.mixture_spectra = []      # [(name, wavelengths, absorbances), ...]
+        self._mixture_index = 0
+        self._current_mixture = None  # (name, wavelengths, absorbances)
+        self._load_mixture_spectra()
 
         # 事件队列（供服务端前端 HTTP 轮询）
         self._events = []
@@ -198,33 +215,76 @@ class VirtualSpectrometer:
         self._push_event("params_updated", {"params": self.scan_params})
         print("[参数设置] 参数写入完成 (field4=00000200)")
 
-    # ---------- 光谱生成 ----------
-    def _generate_spectrum(self):
-        self._peaks = []
-        n_peaks = random.randint(3, 6)
-        candidates = []
-        attempts = 0
-        while len(candidates) < n_peaks and attempts < 200:
-            pos = random.uniform(200, 800)
-            if all(abs(pos - c) >= 30 for c in candidates):
-                candidates.append(pos)
-            attempts += 1
-        for pos in sorted(candidates):
-            height = random.uniform(0.15, 1.5)
-            sigma = random.uniform(8, 45)
-            self._peaks.append((pos, height, sigma))
-        print(f"[光谱生成] 随机峰: {[(p[0], round(p[1], 3), round(p[2], 1)) for p in self._peaks]}")
+    # ---------- 混合光谱数据源 ----------
 
-    def _calculate_absorbance(self, wavelength):
-        wv = wavelength
-        absorbance = 0.0
-        for pos, height, sigma in self._peaks:
-            absorbance += height * math.exp(-((wv - pos) ** 2) / (2 * sigma ** 2))
-        if wv < 300:
-            absorbance += 0.8 * math.exp(-(wv - 190.0) / 90.0)
-        absorbance += 0.015 * math.sin(wv / 80.0 + random.random())
-        absorbance += random.gauss(0, 0.0004)
-        return max(absorbance, -0.003)
+    @staticmethod
+    def _parse_spectrum_file(path):
+        """
+        解析 U3900H TXT 导出文件中的 nm/Abs 数据列。
+        自动跳过文件头中的元数据行，返回 (波长升序列表, 吸光度列表)。
+        """
+        pairs = []
+        with open(path, "r", encoding="utf-8", errors="replace") as f:
+            for line in f:
+                parts = line.split()
+                if len(parts) < 2:
+                    continue
+                try:
+                    wl = float(parts[0])
+                    ab = float(parts[1])
+                except ValueError:
+                    continue
+                pairs.append((wl, ab))
+        pairs.sort(key=lambda p: p[0])
+        return [p[0] for p in pairs], [p[1] for p in pairs]
+
+    def _load_mixture_spectra(self):
+        """加载 MIXTURE_FILES 列出的所有混合光谱文件"""
+        for name in MIXTURE_FILES:
+            path = os.path.join(MIXTURE_DIR, name)
+            try:
+                wavelengths, absorbances = self._parse_spectrum_file(path)
+                if wavelengths:
+                    self.mixture_spectra.append((name, wavelengths, absorbances))
+                    print(f"[光谱数据] 已加载混合光谱: {name} "
+                          f"({len(wavelengths)} 点, {wavelengths[0]:.1f}-{wavelengths[-1]:.1f} nm)")
+                else:
+                    print(f"[光谱数据] 警告: 混合光谱文件无有效数据: {path}")
+            except OSError as e:
+                print(f"[光谱数据] 错误: 无法读取混合光谱文件 {path}: {e}")
+        if self.mixture_spectra:
+            self._current_mixture = self.mixture_spectra[0]
+        else:
+            print("[光谱数据] 错误: 未加载到任何混合光谱, 扫描将返回 0 吸光度")
+
+    def _advance_mixture(self):
+        """切换到下一个混合光谱 (循环)"""
+        if not self.mixture_spectra:
+            return
+        self._current_mixture = self.mixture_spectra[self._mixture_index % len(self.mixture_spectra)]
+        self._mixture_index += 1
+        print(f"[光谱数据] 本次扫描使用混合光谱 [{self._mixture_index}]: {self._current_mixture[0]}")
+
+    def _interpolate_absorbance(self, wavelength):
+        """从当前混合光谱中线性插值得到指定波长的吸光度"""
+        if self._current_mixture is None:
+            return 0.0
+        _, wavelengths, absorbances = self._current_mixture
+        if not wavelengths:
+            return 0.0
+        if wavelength <= wavelengths[0]:
+            return absorbances[0]
+        if wavelength >= wavelengths[-1]:
+            return absorbances[-1]
+        i = bisect.bisect_left(wavelengths, wavelength)
+        if wavelengths[i] == wavelength:
+            return absorbances[i]
+        w0, w1 = wavelengths[i - 1], wavelengths[i]
+        a0, a1 = absorbances[i - 1], absorbances[i]
+        if w1 == w0:
+            return a0
+        t = (wavelength - w0) / (w1 - w0)
+        return a0 + t * (a1 - a0)
 
     @staticmethod
     def format_absorbance(value):
@@ -265,6 +325,8 @@ class VirtualSpectrometer:
             "current_absorbance": self.current_absorbance,
             "scan_progress": self.scan_progress,
             "scan_data_count": len(self.scan_data),
+            "current_mixture_file": self._current_mixture[0] if self._current_mixture else None,
+            "mixture_scan_count": self._mixture_index,
         }
 
     # ---------- 协议命令处理 ----------
@@ -356,10 +418,10 @@ class VirtualSpectrometer:
             return "00000600 00010323 02 00000A00"
 
         elif cmd == "00010500":
-            # 5.8 开始扫描测量
+            # 5.8 开始扫描测量 — 切换到下一个混合光谱文件
             self.clear_scan_data()
             self.scanning = True
-            self._generate_spectrum()
+            self._advance_mixture()
             self.field3 = "00"
             self.field4 = "00000200"
             self._push_event("scan_started", {"message": "扫描已开始"})
@@ -376,7 +438,7 @@ class VirtualSpectrometer:
             else:
                 wv = 600.0
 
-            absorbance = self._calculate_absorbance(wv)
+            absorbance = self._interpolate_absorbance(wv)
             if self.baseline_calibrated:
                 baseline_val = self.baseline_data.get(round(wv, 1), 0.0)
                 absorbance -= baseline_val

@@ -1,0 +1,17 @@
+{
+    "description": "UV-Vis 光谱解混校准配置：纯组分参考光谱 (mol/L) 与背景溶剂谱。文件路径相对于本文件所在目录。",
+    "background_file": "UV-1-MeCN(pure).TXT",
+    "reference_spectra": {
+        "DPB": {
+            "UV-1-DPB_0.00001875(MeCN).TXT": 1.875e-05,
+            "UV-1-DPB_0.0000375(MeCN).TXT": 3.75e-05,
+            "UV-1-DPB_0.000075(MeCN).TXT": 7.5e-05
+        },
+        "DMSO": {
+            "UV-1-DMSO_0.000075(MeCN).TXT": 7.5e-05,
+            "UV-1-DMSO_0.0002065(MeCN).TXT": 0.0002065,
+            "UV-1-DMSO_0.000413(MeCN).TXT": 0.000413,
+            "UV-1-DMSO_0.000826(MeCN).TXT": 0.000826
+        }
+    }
+}
