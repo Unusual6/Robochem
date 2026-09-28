@@ -13,7 +13,6 @@ once built.
 
 import json
 import os
-import subprocess
 import time
 
 import pandas as pd
@@ -144,15 +143,12 @@ class PlatformBackend(BaseLoggedClass):
     _platform_ready = False
     _results_df = None
     platform_experiment: BaseExperiment | None = None
-    _spectrometer_server_process: subprocess.Popen | None = None
-
     def __del__(self):
         try:
             if self.platform_experiment is not None:
                 self.platform_experiment.stop()
         except:
             pass
-        self._stop_spectrometer_server()
 
     def __init__(self, streamlit_session: SessionStateProxy) -> None:
         """Initialises the platform backend"""
@@ -725,9 +721,6 @@ class PlatformBackend(BaseLoggedClass):
             # get the DFA for the platform:
             samples_df = self.merge_dfs()
 
-            # 如果分析类型是 UV，自动启动虚拟光谱仪服务端
-            self._start_spectrometer_server_if_needed(analysis_type)
-
             # start the experiment:
             # optional arguments for Platform object, see Omniplatypus Platform.build() for details.
             ### this is a stupid workaround. MacOS requires the GUI to be opened in the main thread.
@@ -792,71 +785,11 @@ class PlatformBackend(BaseLoggedClass):
         self._emergency_stop.set()
         self.platform_experiment.stop()
 
-        # 停止虚拟光谱仪服务端子进程
-        self._stop_spectrometer_server()
-
         del self.platform_experiment
         self._platform_ready = False
         self._ml_ready = False
 
         self.log_mssg("平台已停止")
-
-    def _start_spectrometer_server_if_needed(self, analysis_type: str) -> None:
-        """如果分析类型是 UV，自动启动虚拟光谱仪服务端（TCP 端口 9100）。
-        确保驱动层客户端 (U3900HSpectrometer) 在平台构建时能够成功连接。"""
-        if analysis_type != "UV":
-            return
-        if self._spectrometer_server_process is not None:
-            # 检查是否已经在运行
-            poll = self._spectrometer_server_process.poll()
-            if poll is None:
-                self.log_mssg("虚拟光谱仪服务端已在运行", level="info")
-                return
-        # 先检测端口是否已有服务在运行（用户可能手动启动了）
-        import socket as _socket
-        port = 9100
-        try:
-            s = _socket.socket(_socket.AF_INET, _socket.SOCK_STREAM)
-            s.settimeout(1)
-            s.connect(("localhost", port))
-            s.close()
-            self.log_mssg(f"虚拟光谱仪服务端已在端口 {port} 运行（外部进程）", level="ok")
-            return
-        except Exception:
-            pass  # 端口无服务，需要启动
-        # 计算 virtual_spectrometer_server.py 的路径
-        server_script = os.path.join(
-            self._base_dir, "..", "U3900H", "virtual_spectrometer_server.py"
-        )
-        if not os.path.exists(server_script):
-            self.log_mssg(
-                f"虚拟光谱仪服务端脚本未找到: {server_script}", level="warning"
-            )
-            return
-        try:
-            self._spectrometer_server_process = subprocess.Popen(
-                [sys.executable, server_script],
-            )
-            # 等待服务端 TCP 端口就绪
-            self.log_mssg("正在启动虚拟光谱仪服务端...", level="info")
-            time.sleep(2)
-            self.log_mssg(f"虚拟光谱仪服务端已启动 (端口 {port})", level="ok")
-        except Exception as e:
-            self.log_mssg(f"启动虚拟光谱仪服务端失败: {e}", level="error")
-
-    def _stop_spectrometer_server(self) -> None:
-        """停止虚拟光谱仪服务端子进程。"""
-        if self._spectrometer_server_process is not None:
-            try:
-                self._spectrometer_server_process.terminate()
-                self._spectrometer_server_process.wait(timeout=5)
-            except Exception:
-                try:
-                    self._spectrometer_server_process.kill()
-                except Exception:
-                    pass
-            self._spectrometer_server_process = None
-            self.log_mssg("虚拟光谱仪服务端已停止", level="info")
 
     def validate_data(self):
         """Checks that all the required components of the data are initialised and ready to roll"""

@@ -6,8 +6,11 @@ Descr: Device driver for Hitachi U-3900H UV-Vis Spectrometer.
        Inherits BaseDevice to integrate with the OmniPlatypus platform.
 """
 
+import os
 import socket
 import struct
+import subprocess
+import sys
 import threading
 import time
 from typing import Any
@@ -96,6 +99,8 @@ class U3900HSpectrometer(BaseDevice):
         self._recv_thread = None
         self._host = None
         self._port = None
+        # 虚拟光谱仪服务端进程（仅当驱动自己启动时才负责清理）
+        self._virtual_server_process: subprocess.Popen | None = None
 
         # Internal state
         self._internal_scan_data = []
@@ -213,13 +218,94 @@ class U3900HSpectrometer(BaseDevice):
         self.add_parameter(parameter)
         print("U3900HSpectrometer driver initialized")
         
+    # ========== Virtual Server Management ==========
+
+    def _ensure_virtual_server(self, host: str, port: int) -> None:
+        """检测目标端口是否有服务在监听，若无则自动启动虚拟光谱仪服务端。
+        参照 RamaBerry._start_server 模式，将服务端生命周期管理下沉到驱动内部。"""
+        # 先探测端口是否已有服务（用户手动启动或外部进程）
+        try:
+            probe = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            probe.settimeout(1.0)
+            probe.connect((host, port))
+            probe.close()
+            self.log(f"虚拟光谱仪服务端已在端口 {port} 运行（外部进程）", level="ok")
+            return  # 端口已有服务，无需启动
+        except Exception:
+            pass  # 端口无服务，需要启动
+
+        # 检查是否已经由本驱动启动了一个实例
+        if self._virtual_server_process is not None:
+            poll = self._virtual_server_process.poll()
+            if poll is None:
+                self.log("虚拟光谱仪服务端已在运行（本驱动启动）", level="info")
+                return
+
+        # 计算 virtual_spectrometer_server.py 的路径
+        # 驱动文件位于: .../OmniPlatypus/omniplatypus/devices/nrg/u3900h_spectrometer.py
+        # 目标脚本位于: <project_root>/U3900H/virtual_spectrometer_server.py
+        driver_dir = os.path.dirname(os.path.abspath(__file__))
+        server_script = os.path.normpath(os.path.join(
+            driver_dir, "..", "..", "..", "..", "..", "..", "..",
+            "U3900H", "virtual_spectrometer_server.py"
+        ))
+        if not os.path.exists(server_script):
+            self.log(
+                f"虚拟光谱仪服务端脚本未找到: {server_script}，"
+                f"请手动启动 U3900H/virtual_spectrometer_server.py",
+                level="warning",
+            )
+            return
+
+        try:
+            self._virtual_server_process = subprocess.Popen(
+                [sys.executable, server_script],
+            )
+            self.log("正在启动虚拟光谱仪服务端...", level="info")
+            # 等待 TCP 端口就绪（轮询代替固定 sleep）
+            for _ in range(20):
+                time.sleep(0.5)
+                try:
+                    probe = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    probe.settimeout(1.0)
+                    probe.connect((host, port))
+                    probe.close()
+                    self.log(f"虚拟光谱仪服务端已启动 (端口 {port})", level="ok")
+                    return
+                except Exception:
+                    pass
+            self.log(
+                f"虚拟光谱仪服务端启动超时（端口 {port} 未就绪）",
+                level="warning",
+            )
+        except Exception as e:
+            self.log(f"启动虚拟光谱仪服务端失败: {e}", level="error")
+
+    def _stop_virtual_server(self) -> None:
+        """停止由本驱动启动的虚拟光谱仪服务端子进程。"""
+        if self._virtual_server_process is not None:
+            try:
+                self._virtual_server_process.terminate()
+                self._virtual_server_process.wait(timeout=5)
+            except Exception:
+                try:
+                    self._virtual_server_process.kill()
+                except Exception:
+                    pass
+            self._virtual_server_process = None
+            self.log("虚拟光谱仪服务端已停止", level="info")
+
     # ========== Connection Management ==========
 
     def open(self, host: str, port: int):
-        """Establish TCP connection to the U3900H spectrometer."""
+        """Establish TCP connection to the U3900H spectrometer.
+        If no server is listening on the target port, automatically starts
+        the virtual spectrometer server (参照 RamaBerry._start_server 模式)。"""
         print(f"Opening connection to {host}:{port}")
         self._host = host
         self._port = port
+        # 确保服务端已运行（若端口无服务则自动启动虚拟光谱仪）
+        self._ensure_virtual_server(host, port)
         try:
             self._sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self._sock.settimeout(5)
@@ -238,7 +324,7 @@ class U3900HSpectrometer(BaseDevice):
             raise ConnectionError(f"U3900H connection failed: {e}")
 
     def close(self):
-        """Close TCP connection."""
+        """Close TCP connection and stop virtual server if we started it."""
         self._connected = False
         if self._sock:
             try:
@@ -247,6 +333,8 @@ class U3900HSpectrometer(BaseDevice):
                 pass
             self._sock = None
         self._buffer = bytearray()
+        # 若驱动自己启动了虚拟服务端，则在此清理
+        self._stop_virtual_server()
 
     def is_open(self) -> bool:
         return self._connected and self._sock is not None
