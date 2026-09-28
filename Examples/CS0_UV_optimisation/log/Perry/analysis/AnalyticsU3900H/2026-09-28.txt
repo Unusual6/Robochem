@@ -1,0 +1,1006 @@
+          16:27:27[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:27:27[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:27:27[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:27:27[AnalyticsU3900H] └Parameters split successfully
+          16:27:27[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:27:27[AnalyticsU3900H] └U3900H parameters set successfully
+          16:27:27[AnalyticsU3900H] Starting U3900H acquisition
+          16:27:27[AnalyticsU3900H] ├Running self-test...
+          16:27:37[AnalyticsU3900H] ├Running baseline calibration...
+          16:27:44[AnalyticsU3900H] ├Starting scan acquisition...
+          16:27:57[AnalyticsU3900H] ├Polling U3900H data
+          16:27:57[AnalyticsU3900H] │ └Data polled successfully
+          16:27:57[AnalyticsU3900H] └Acquisition finished
+          16:27:57[AnalyticsU3900H] Processing UV data
+          16:27:57[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:27:57[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:27:57[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0664
+          16:27:57[AnalyticsU3900H] ├  DPB: 9.460067e-06 M (0.009460 mM)
+          16:27:57[AnalyticsU3900H] ├  DMSO: 1.074936e-04 M (0.107494 mM)
+          16:27:57[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:27:57[AnalyticsU3900H] Making results
+          16:27:57[AnalyticsU3900H] ├Reference concentration: 150.2 mM
+          16:27:57[AnalyticsU3900H] ├Yield calculation: c_product=9.460067e-03 mM x dilution=100.0 / (c_reference=1.502000e+02 mM x stoichiometry=1.0/1.0) = 0.006298313256950252
+     [OK] 16:27:57[AnalyticsU3900H] ├Pass status: PASS
+          16:27:57[AnalyticsU3900H] └Results generated
+          16:27:57[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run38_20260928162725.csv'.
+          16:27:57[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:27:57[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:27:57[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:27:57[AnalyticsU3900H] └Parameters split successfully
+          16:27:57[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:27:57[AnalyticsU3900H] └U3900H parameters set successfully
+          16:27:57[AnalyticsU3900H] Starting U3900H acquisition
+          16:27:57[AnalyticsU3900H] ├Running self-test...
+          16:28:08[AnalyticsU3900H] ├Running baseline calibration...
+          16:28:15[AnalyticsU3900H] ├Starting scan acquisition...
+          16:28:28[AnalyticsU3900H] ├Polling U3900H data
+          16:28:28[AnalyticsU3900H] │ └Data polled successfully
+          16:28:28[AnalyticsU3900H] └Acquisition finished
+          16:28:28[AnalyticsU3900H] Processing UV data
+          16:28:28[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:28:28[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:28:28[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          16:28:28[AnalyticsU3900H] ├  DPB: 1.698667e-05 M (0.016987 mM)
+          16:28:28[AnalyticsU3900H] ├  DMSO: 2.093784e-04 M (0.209378 mM)
+          16:28:28[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:28:28[AnalyticsU3900H] Making results
+          16:28:28[AnalyticsU3900H] ├Reference concentration: 62.8 mM
+          16:28:28[AnalyticsU3900H] ├Yield calculation: c_product=1.698667e-02 mM x dilution=100.0 / (c_reference=6.280000e+01 mM x stoichiometry=1.0/1.0) = 0.02704884318840443
+     [OK] 16:28:28[AnalyticsU3900H] ├Pass status: PASS
+          16:28:28[AnalyticsU3900H] └Results generated
+          16:28:28[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run39_20260928162725.csv'.
+          16:28:28[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:28:28[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:28:28[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:28:28[AnalyticsU3900H] └Parameters split successfully
+          16:28:28[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:28:28[AnalyticsU3900H] └U3900H parameters set successfully
+          16:28:28[AnalyticsU3900H] Starting U3900H acquisition
+          16:28:28[AnalyticsU3900H] ├Running self-test...
+          16:28:39[AnalyticsU3900H] ├Running baseline calibration...
+          16:28:46[AnalyticsU3900H] ├Starting scan acquisition...
+          16:28:59[AnalyticsU3900H] ├Polling U3900H data
+          16:28:59[AnalyticsU3900H] │ └Data polled successfully
+          16:28:59[AnalyticsU3900H] └Acquisition finished
+          16:28:59[AnalyticsU3900H] Processing UV data
+          16:28:59[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:28:59[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:28:59[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0666
+          16:28:59[AnalyticsU3900H] ├  DPB: 9.471589e-06 M (0.009472 mM)
+          16:28:59[AnalyticsU3900H] ├  DMSO: 1.073685e-04 M (0.107369 mM)
+          16:28:59[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:28:59[AnalyticsU3900H] Making results
+          16:28:59[AnalyticsU3900H] ├Reference concentration: 199.8 mM
+          16:28:59[AnalyticsU3900H] ├Yield calculation: c_product=9.471589e-03 mM x dilution=100.0 / (c_reference=1.998000e+02 mM x stoichiometry=1.0/1.0) = 0.004740534848766794
+     [OK] 16:28:59[AnalyticsU3900H] ├Pass status: PASS
+          16:28:59[AnalyticsU3900H] └Results generated
+          16:28:59[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run40_20260928162725.csv'.
+          16:28:59[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:28:59[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:28:59[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:28:59[AnalyticsU3900H] └Parameters split successfully
+          16:28:59[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:28:59[AnalyticsU3900H] └U3900H parameters set successfully
+          16:28:59[AnalyticsU3900H] Starting U3900H acquisition
+          16:28:59[AnalyticsU3900H] ├Running self-test...
+          16:29:10[AnalyticsU3900H] ├Running baseline calibration...
+          16:29:16[AnalyticsU3900H] ├Starting scan acquisition...
+          16:29:30[AnalyticsU3900H] ├Polling U3900H data
+          16:29:30[AnalyticsU3900H] │ └Data polled successfully
+          16:29:30[AnalyticsU3900H] └Acquisition finished
+          16:29:30[AnalyticsU3900H] Processing UV data
+          16:29:30[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:29:30[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:29:30[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          16:29:30[AnalyticsU3900H] ├  DPB: 1.697704e-05 M (0.016977 mM)
+          16:29:30[AnalyticsU3900H] ├  DMSO: 2.095242e-04 M (0.209524 mM)
+          16:29:30[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:29:30[AnalyticsU3900H] Making results
+          16:29:30[AnalyticsU3900H] ├Reference concentration: 99.8 mM
+          16:29:30[AnalyticsU3900H] ├Yield calculation: c_product=1.697704e-02 mM x dilution=100.0 / (c_reference=9.980000e+01 mM x stoichiometry=1.0/1.0) = 0.017011065880843515
+     [OK] 16:29:30[AnalyticsU3900H] ├Pass status: PASS
+          16:29:30[AnalyticsU3900H] └Results generated
+          16:29:30[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run41_20260928162725.csv'.
+          16:29:30[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:29:30[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:29:30[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:29:30[AnalyticsU3900H] └Parameters split successfully
+          16:29:30[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:29:30[AnalyticsU3900H] └U3900H parameters set successfully
+          16:29:30[AnalyticsU3900H] Starting U3900H acquisition
+          16:29:30[AnalyticsU3900H] ├Running self-test...
+          16:29:41[AnalyticsU3900H] ├Running baseline calibration...
+          16:29:47[AnalyticsU3900H] ├Starting scan acquisition...
+          16:30:00[AnalyticsU3900H] ├Polling U3900H data
+          16:30:00[AnalyticsU3900H] │ └Data polled successfully
+          16:30:00[AnalyticsU3900H] └Acquisition finished
+          16:30:00[AnalyticsU3900H] Processing UV data
+          16:30:00[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:30:00[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:30:00[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0663
+          16:30:00[AnalyticsU3900H] ├  DPB: 9.469255e-06 M (0.009469 mM)
+          16:30:00[AnalyticsU3900H] ├  DMSO: 1.073766e-04 M (0.107377 mM)
+          16:30:00[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:30:00[AnalyticsU3900H] Making results
+          16:30:00[AnalyticsU3900H] ├Reference concentration: 176.8 mM
+          16:30:00[AnalyticsU3900H] ├Yield calculation: c_product=9.469255e-03 mM x dilution=100.0 / (c_reference=1.768000e+02 mM x stoichiometry=1.0/1.0) = 0.005355913562084847
+     [OK] 16:30:00[AnalyticsU3900H] ├Pass status: PASS
+          16:30:00[AnalyticsU3900H] └Results generated
+          16:30:00[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run42_20260928162726.csv'.
+          16:30:01[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:30:01[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:30:01[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:30:01[AnalyticsU3900H] └Parameters split successfully
+          16:30:01[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:30:01[AnalyticsU3900H] └U3900H parameters set successfully
+          16:30:01[AnalyticsU3900H] Starting U3900H acquisition
+          16:30:01[AnalyticsU3900H] ├Running self-test...
+          16:30:12[AnalyticsU3900H] ├Running baseline calibration...
+          16:30:18[AnalyticsU3900H] ├Starting scan acquisition...
+          16:30:32[AnalyticsU3900H] ├Polling U3900H data
+          16:30:32[AnalyticsU3900H] │ └Data polled successfully
+          16:30:32[AnalyticsU3900H] └Acquisition finished
+          16:30:32[AnalyticsU3900H] Processing UV data
+          16:30:32[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:30:32[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:30:32[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          16:30:32[AnalyticsU3900H] ├  DPB: 1.699139e-05 M (0.016991 mM)
+          16:30:32[AnalyticsU3900H] ├  DMSO: 2.092666e-04 M (0.209267 mM)
+          16:30:32[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:30:32[AnalyticsU3900H] Making results
+          16:30:32[AnalyticsU3900H] ├Reference concentration: 145.2 mM
+          16:30:32[AnalyticsU3900H] ├Yield calculation: c_product=1.699139e-02 mM x dilution=100.0 / (c_reference=1.452000e+02 mM x stoichiometry=1.0/1.0) = 0.0117020607314556
+     [OK] 16:30:32[AnalyticsU3900H] ├Pass status: PASS
+          16:30:32[AnalyticsU3900H] └Results generated
+          16:30:32[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run43_20260928162726.csv'.
+          16:30:32[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:30:32[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:30:32[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:30:32[AnalyticsU3900H] └Parameters split successfully
+          16:30:32[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:30:32[AnalyticsU3900H] └U3900H parameters set successfully
+          16:30:32[AnalyticsU3900H] Starting U3900H acquisition
+          16:30:32[AnalyticsU3900H] ├Running self-test...
+          16:30:43[AnalyticsU3900H] ├Running baseline calibration...
+          16:30:49[AnalyticsU3900H] ├Starting scan acquisition...
+          16:31:03[AnalyticsU3900H] ├Polling U3900H data
+          16:31:03[AnalyticsU3900H] │ └Data polled successfully
+          16:31:03[AnalyticsU3900H] └Acquisition finished
+          16:31:03[AnalyticsU3900H] Processing UV data
+          16:31:03[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:31:03[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:31:03[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0666
+          16:31:03[AnalyticsU3900H] ├  DPB: 9.463961e-06 M (0.009464 mM)
+          16:31:03[AnalyticsU3900H] ├  DMSO: 1.073850e-04 M (0.107385 mM)
+          16:31:03[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:31:03[AnalyticsU3900H] Making results
+          16:31:03[AnalyticsU3900H] ├Reference concentration: 103.6 mM
+          16:31:03[AnalyticsU3900H] ├Yield calculation: c_product=9.463961e-03 mM x dilution=100.0 / (c_reference=1.036000e+02 mM x stoichiometry=1.0/1.0) = 0.009135097030797353
+     [OK] 16:31:03[AnalyticsU3900H] ├Pass status: PASS
+          16:31:03[AnalyticsU3900H] └Results generated
+          16:31:03[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run44_20260928162726.csv'.
+          16:31:03[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:31:03[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:31:03[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:31:03[AnalyticsU3900H] └Parameters split successfully
+          16:31:03[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:31:03[AnalyticsU3900H] └U3900H parameters set successfully
+          16:31:03[AnalyticsU3900H] Starting U3900H acquisition
+          16:31:03[AnalyticsU3900H] ├Running self-test...
+          16:31:14[AnalyticsU3900H] ├Running baseline calibration...
+          16:31:20[AnalyticsU3900H] ├Starting scan acquisition...
+          16:31:34[AnalyticsU3900H] ├Polling U3900H data
+          16:31:34[AnalyticsU3900H] │ └Data polled successfully
+          16:31:34[AnalyticsU3900H] └Acquisition finished
+          16:31:34[AnalyticsU3900H] Processing UV data
+          16:31:34[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:31:34[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:31:34[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0563
+          16:31:34[AnalyticsU3900H] ├  DPB: 1.697506e-05 M (0.016975 mM)
+          16:31:34[AnalyticsU3900H] ├  DMSO: 2.095413e-04 M (0.209541 mM)
+          16:31:34[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:31:34[AnalyticsU3900H] Making results
+          16:31:34[AnalyticsU3900H] ├Reference concentration: 128.6 mM
+          16:31:34[AnalyticsU3900H] ├Yield calculation: c_product=1.697506e-02 mM x dilution=100.0 / (c_reference=1.286000e+02 mM x stoichiometry=1.0/1.0) = 0.01319989046668024
+     [OK] 16:31:34[AnalyticsU3900H] ├Pass status: PASS
+          16:31:34[AnalyticsU3900H] └Results generated
+          16:31:34[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run45_20260928162726.csv'.
+          16:50:16[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:50:16[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:50:16[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:50:16[AnalyticsU3900H] └Parameters split successfully
+          16:50:16[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:50:16[AnalyticsU3900H] └U3900H parameters set successfully
+          16:50:16[AnalyticsU3900H] Starting U3900H acquisition
+          16:50:16[AnalyticsU3900H] ├Running self-test...
+          16:50:27[AnalyticsU3900H] ├Running baseline calibration...
+          16:50:33[AnalyticsU3900H] ├Starting scan acquisition...
+          16:50:47[AnalyticsU3900H] ├Polling U3900H data
+          16:50:47[AnalyticsU3900H] │ └Data polled successfully
+          16:50:47[AnalyticsU3900H] └Acquisition finished
+          16:50:47[AnalyticsU3900H] Processing UV data
+          16:50:47[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:50:47[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:50:47[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0667
+          16:50:47[AnalyticsU3900H] ├  DPB: 9.448738e-06 M (0.009449 mM)
+          16:50:47[AnalyticsU3900H] ├  DMSO: 1.075679e-04 M (0.107568 mM)
+          16:50:47[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:50:47[AnalyticsU3900H] Making results
+          16:50:47[AnalyticsU3900H] ├Reference concentration: 72.2 mM
+          16:50:47[AnalyticsU3900H] ├Yield calculation: c_product=9.448738e-03 mM x dilution=100.0 / (c_reference=7.220000e+01 mM x stoichiometry=1.0/1.0) = 0.013086895415991054
+     [OK] 16:50:47[AnalyticsU3900H] ├Pass status: PASS
+          16:50:47[AnalyticsU3900H] └Results generated
+          16:50:47[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run1_20260928165013.csv'.
+          16:50:47[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:50:47[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:50:47[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:50:47[AnalyticsU3900H] └Parameters split successfully
+          16:50:47[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:50:47[AnalyticsU3900H] └U3900H parameters set successfully
+          16:50:47[AnalyticsU3900H] Starting U3900H acquisition
+          16:50:47[AnalyticsU3900H] ├Running self-test...
+          16:50:58[AnalyticsU3900H] ├Running baseline calibration...
+          16:51:05[AnalyticsU3900H] ├Starting scan acquisition...
+          16:51:19[AnalyticsU3900H] ├Polling U3900H data
+          16:51:19[AnalyticsU3900H] │ └Data polled successfully
+          16:51:19[AnalyticsU3900H] └Acquisition finished
+          16:51:19[AnalyticsU3900H] Processing UV data
+          16:51:19[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:51:19[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:51:19[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          16:51:19[AnalyticsU3900H] ├  DPB: 1.698761e-05 M (0.016988 mM)
+          16:51:19[AnalyticsU3900H] ├  DMSO: 2.093437e-04 M (0.209344 mM)
+          16:51:19[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:51:19[AnalyticsU3900H] Making results
+          16:51:19[AnalyticsU3900H] ├Reference concentration: 85.6 mM
+          16:51:19[AnalyticsU3900H] ├Yield calculation: c_product=1.698761e-02 mM x dilution=100.0 / (c_reference=8.560000e+01 mM x stoichiometry=1.0/1.0) = 0.019845339647415295
+     [OK] 16:51:19[AnalyticsU3900H] ├Pass status: PASS
+          16:51:19[AnalyticsU3900H] └Results generated
+          16:51:19[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run2_20260928165014.csv'.
+          16:51:19[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:51:19[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:51:19[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:51:19[AnalyticsU3900H] └Parameters split successfully
+          16:51:19[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:51:19[AnalyticsU3900H] └U3900H parameters set successfully
+          16:51:19[AnalyticsU3900H] Starting U3900H acquisition
+          16:51:19[AnalyticsU3900H] ├Running self-test...
+          16:51:30[AnalyticsU3900H] ├Running baseline calibration...
+          16:51:37[AnalyticsU3900H] ├Starting scan acquisition...
+          16:51:51[AnalyticsU3900H] ├Polling U3900H data
+          16:51:51[AnalyticsU3900H] │ └Data polled successfully
+          16:51:51[AnalyticsU3900H] └Acquisition finished
+          16:51:51[AnalyticsU3900H] Processing UV data
+          16:51:51[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:51:51[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:51:51[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0664
+          16:51:51[AnalyticsU3900H] ├  DPB: 9.462765e-06 M (0.009463 mM)
+          16:51:51[AnalyticsU3900H] ├  DMSO: 1.073996e-04 M (0.107400 mM)
+          16:51:51[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:51:51[AnalyticsU3900H] Making results
+          16:51:51[AnalyticsU3900H] ├Reference concentration: 145.8 mM
+          16:51:51[AnalyticsU3900H] ├Yield calculation: c_product=9.462765e-03 mM x dilution=100.0 / (c_reference=1.458000e+02 mM x stoichiometry=1.0/1.0) = 0.006490236712712088
+     [OK] 16:51:51[AnalyticsU3900H] ├Pass status: PASS
+          16:51:51[AnalyticsU3900H] └Results generated
+          16:51:51[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run3_20260928165014.csv'.
+          16:51:52[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:51:52[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:51:52[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:51:52[AnalyticsU3900H] └Parameters split successfully
+          16:51:52[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:51:52[AnalyticsU3900H] └U3900H parameters set successfully
+          16:51:52[AnalyticsU3900H] Starting U3900H acquisition
+          16:51:52[AnalyticsU3900H] ├Running self-test...
+          16:52:02[AnalyticsU3900H] ├Running baseline calibration...
+          16:52:09[AnalyticsU3900H] ├Starting scan acquisition...
+          16:52:23[AnalyticsU3900H] ├Polling U3900H data
+          16:52:23[AnalyticsU3900H] │ └Data polled successfully
+          16:52:23[AnalyticsU3900H] └Acquisition finished
+          16:52:23[AnalyticsU3900H] Processing UV data
+          16:52:23[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:52:23[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:52:23[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0563
+          16:52:23[AnalyticsU3900H] ├  DPB: 1.697237e-05 M (0.016972 mM)
+          16:52:23[AnalyticsU3900H] ├  DMSO: 2.095910e-04 M (0.209591 mM)
+          16:52:23[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:52:23[AnalyticsU3900H] Making results
+          16:52:23[AnalyticsU3900H] ├Reference concentration: 139.6 mM
+          16:52:23[AnalyticsU3900H] ├Yield calculation: c_product=1.697237e-02 mM x dilution=100.0 / (c_reference=1.396000e+02 mM x stoichiometry=1.0/1.0) = 0.01215785959230591
+     [OK] 16:52:23[AnalyticsU3900H] ├Pass status: PASS
+          16:52:23[AnalyticsU3900H] └Results generated
+          16:52:23[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run4_20260928165014.csv'.
+          16:52:24[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:52:24[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:52:24[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:52:24[AnalyticsU3900H] └Parameters split successfully
+          16:52:24[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:52:24[AnalyticsU3900H] └U3900H parameters set successfully
+          16:52:24[AnalyticsU3900H] Starting U3900H acquisition
+          16:52:24[AnalyticsU3900H] ├Running self-test...
+          16:52:35[AnalyticsU3900H] ├Running baseline calibration...
+          16:52:41[AnalyticsU3900H] ├Starting scan acquisition...
+          16:52:56[AnalyticsU3900H] ├Polling U3900H data
+          16:52:56[AnalyticsU3900H] │ └Data polled successfully
+          16:52:56[AnalyticsU3900H] └Acquisition finished
+          16:52:56[AnalyticsU3900H] Processing UV data
+          16:52:56[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:52:56[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:52:56[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0666
+          16:52:56[AnalyticsU3900H] ├  DPB: 9.466396e-06 M (0.009466 mM)
+          16:52:56[AnalyticsU3900H] ├  DMSO: 1.074358e-04 M (0.107436 mM)
+          16:52:56[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:52:56[AnalyticsU3900H] Making results
+          16:52:56[AnalyticsU3900H] ├Reference concentration: 185.8 mM
+          16:52:56[AnalyticsU3900H] ├Yield calculation: c_product=9.466396e-03 mM x dilution=100.0 / (c_reference=1.858000e+02 mM x stoichiometry=1.0/1.0) = 0.005094938429430606
+     [OK] 16:52:56[AnalyticsU3900H] ├Pass status: PASS
+          16:52:56[AnalyticsU3900H] └Results generated
+          16:52:56[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run5_20260928165015.csv'.
+          16:52:56[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:52:56[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:52:56[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:52:56[AnalyticsU3900H] └Parameters split successfully
+          16:52:56[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:52:56[AnalyticsU3900H] └U3900H parameters set successfully
+          16:52:56[AnalyticsU3900H] Starting U3900H acquisition
+          16:52:56[AnalyticsU3900H] ├Running self-test...
+          16:53:07[AnalyticsU3900H] ├Running baseline calibration...
+          16:53:13[AnalyticsU3900H] ├Starting scan acquisition...
+          16:53:28[AnalyticsU3900H] ├Polling U3900H data
+          16:53:28[AnalyticsU3900H] │ └Data polled successfully
+          16:53:28[AnalyticsU3900H] └Acquisition finished
+          16:53:28[AnalyticsU3900H] Processing UV data
+          16:53:28[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:53:28[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:53:28[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          16:53:28[AnalyticsU3900H] ├  DPB: 1.698233e-05 M (0.016982 mM)
+          16:53:28[AnalyticsU3900H] ├  DMSO: 2.094230e-04 M (0.209423 mM)
+          16:53:28[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:53:28[AnalyticsU3900H] Making results
+          16:53:28[AnalyticsU3900H] ├Reference concentration: 191.4 mM
+          16:53:28[AnalyticsU3900H] ├Yield calculation: c_product=1.698233e-02 mM x dilution=100.0 / (c_reference=1.914000e+02 mM x stoichiometry=1.0/1.0) = 0.0088726882164809
+     [OK] 16:53:28[AnalyticsU3900H] ├Pass status: PASS
+          16:53:28[AnalyticsU3900H] └Results generated
+          16:53:28[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run6_20260928165015.csv'.
+          16:53:28[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:53:28[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:53:28[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:53:28[AnalyticsU3900H] └Parameters split successfully
+          16:53:28[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:53:28[AnalyticsU3900H] └U3900H parameters set successfully
+          16:53:28[AnalyticsU3900H] Starting U3900H acquisition
+          16:53:28[AnalyticsU3900H] ├Running self-test...
+          16:53:39[AnalyticsU3900H] ├Running baseline calibration...
+          16:53:46[AnalyticsU3900H] ├Starting scan acquisition...
+          16:54:01[AnalyticsU3900H] ├Polling U3900H data
+          16:54:01[AnalyticsU3900H] │ └Data polled successfully
+          16:54:01[AnalyticsU3900H] └Acquisition finished
+          16:54:01[AnalyticsU3900H] Processing UV data
+          16:54:01[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:54:01[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:54:01[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0664
+          16:54:01[AnalyticsU3900H] ├  DPB: 9.468009e-06 M (0.009468 mM)
+          16:54:01[AnalyticsU3900H] ├  DMSO: 1.073617e-04 M (0.107362 mM)
+          16:54:01[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:54:01[AnalyticsU3900H] Making results
+          16:54:01[AnalyticsU3900H] ├Reference concentration: 166.4 mM
+          16:54:01[AnalyticsU3900H] ├Yield calculation: c_product=9.468009e-03 mM x dilution=100.0 / (c_reference=1.664000e+02 mM x stoichiometry=1.0/1.0) = 0.005689908954446727
+     [OK] 16:54:01[AnalyticsU3900H] ├Pass status: PASS
+          16:54:01[AnalyticsU3900H] └Results generated
+          16:54:01[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run7_20260928165015.csv'.
+          16:54:01[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:54:01[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:54:01[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:54:01[AnalyticsU3900H] └Parameters split successfully
+          16:54:01[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:54:01[AnalyticsU3900H] └U3900H parameters set successfully
+          16:54:01[AnalyticsU3900H] Starting U3900H acquisition
+          16:54:01[AnalyticsU3900H] ├Running self-test...
+          16:54:12[AnalyticsU3900H] ├Running baseline calibration...
+          16:54:18[AnalyticsU3900H] ├Starting scan acquisition...
+          16:54:33[AnalyticsU3900H] ├Polling U3900H data
+          16:54:33[AnalyticsU3900H] │ └Data polled successfully
+          16:54:33[AnalyticsU3900H] └Acquisition finished
+          16:54:33[AnalyticsU3900H] Processing UV data
+          16:54:33[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:54:33[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:54:33[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0563
+          16:54:33[AnalyticsU3900H] ├  DPB: 1.697203e-05 M (0.016972 mM)
+          16:54:33[AnalyticsU3900H] ├  DMSO: 2.095785e-04 M (0.209579 mM)
+          16:54:33[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:54:33[AnalyticsU3900H] Making results
+          16:54:33[AnalyticsU3900H] ├Reference concentration: 161.6 mM
+          16:54:33[AnalyticsU3900H] ├Yield calculation: c_product=1.697203e-02 mM x dilution=100.0 / (c_reference=1.616000e+02 mM x stoichiometry=1.0/1.0) = 0.010502491949071996
+     [OK] 16:54:33[AnalyticsU3900H] ├Pass status: PASS
+          16:54:33[AnalyticsU3900H] └Results generated
+          16:54:33[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run8_20260928165015.csv'.
+          16:54:33[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:54:33[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:54:33[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:54:33[AnalyticsU3900H] └Parameters split successfully
+          16:54:33[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:54:33[AnalyticsU3900H] └U3900H parameters set successfully
+          16:54:33[AnalyticsU3900H] Starting U3900H acquisition
+          16:54:33[AnalyticsU3900H] ├Running self-test...
+          16:54:44[AnalyticsU3900H] ├Running baseline calibration...
+          16:54:50[AnalyticsU3900H] ├Starting scan acquisition...
+          16:55:04[AnalyticsU3900H] ├Polling U3900H data
+          16:55:04[AnalyticsU3900H] │ └Data polled successfully
+          16:55:04[AnalyticsU3900H] └Acquisition finished
+          16:55:04[AnalyticsU3900H] Processing UV data
+          16:55:04[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:55:04[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:55:04[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0664
+          16:55:04[AnalyticsU3900H] ├  DPB: 9.458457e-06 M (0.009458 mM)
+          16:55:04[AnalyticsU3900H] ├  DMSO: 1.074820e-04 M (0.107482 mM)
+          16:55:04[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:55:04[AnalyticsU3900H] Making results
+          16:55:04[AnalyticsU3900H] ├Reference concentration: 95.2 mM
+          16:55:04[AnalyticsU3900H] ├Yield calculation: c_product=9.458457e-03 mM x dilution=100.0 / (c_reference=9.520000e+01 mM x stoichiometry=1.0/1.0) = 0.009935353511649567
+     [OK] 16:55:04[AnalyticsU3900H] ├Pass status: PASS
+          16:55:04[AnalyticsU3900H] └Results generated
+          16:55:04[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run9_20260928165015.csv'.
+          16:55:04[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:55:04[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:55:04[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:55:04[AnalyticsU3900H] └Parameters split successfully
+          16:55:04[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:55:04[AnalyticsU3900H] └U3900H parameters set successfully
+          16:55:04[AnalyticsU3900H] Starting U3900H acquisition
+          16:55:04[AnalyticsU3900H] ├Running self-test...
+          16:55:15[AnalyticsU3900H] ├Running baseline calibration...
+          16:55:22[AnalyticsU3900H] ├Starting scan acquisition...
+          16:55:36[AnalyticsU3900H] ├Polling U3900H data
+          16:55:36[AnalyticsU3900H] │ └Data polled successfully
+          16:55:36[AnalyticsU3900H] └Acquisition finished
+          16:55:36[AnalyticsU3900H] Processing UV data
+          16:55:36[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:55:36[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:55:36[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0563
+          16:55:36[AnalyticsU3900H] ├  DPB: 1.698127e-05 M (0.016981 mM)
+          16:55:36[AnalyticsU3900H] ├  DMSO: 2.094820e-04 M (0.209482 mM)
+          16:55:36[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:55:36[AnalyticsU3900H] Making results
+          16:55:36[AnalyticsU3900H] ├Reference concentration: 175.8 mM
+          16:55:36[AnalyticsU3900H] ├Yield calculation: c_product=1.698127e-02 mM x dilution=100.0 / (c_reference=1.758000e+02 mM x stoichiometry=1.0/1.0) = 0.009659424491567993
+     [OK] 16:55:36[AnalyticsU3900H] ├Pass status: PASS
+          16:55:36[AnalyticsU3900H] └Results generated
+          16:55:36[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run10_20260928165016.csv'.
+          16:55:42[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:55:42[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:55:42[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:55:42[AnalyticsU3900H] └Parameters split successfully
+          16:55:42[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:55:42[AnalyticsU3900H] └U3900H parameters set successfully
+          16:55:42[AnalyticsU3900H] Starting U3900H acquisition
+          16:55:42[AnalyticsU3900H] ├Running self-test...
+          16:55:53[AnalyticsU3900H] ├Running baseline calibration...
+          16:55:59[AnalyticsU3900H] ├Starting scan acquisition...
+          16:56:14[AnalyticsU3900H] ├Polling U3900H data
+          16:56:14[AnalyticsU3900H] │ └Data polled successfully
+          16:56:14[AnalyticsU3900H] └Acquisition finished
+          16:56:14[AnalyticsU3900H] Processing UV data
+          16:56:14[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:56:14[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:56:14[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0665
+          16:56:14[AnalyticsU3900H] ├  DPB: 9.466239e-06 M (0.009466 mM)
+          16:56:14[AnalyticsU3900H] ├  DMSO: 1.074139e-04 M (0.107414 mM)
+          16:56:14[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:56:14[AnalyticsU3900H] Making results
+          16:56:14[AnalyticsU3900H] ├Reference concentration: 79.8 mM
+          16:56:14[AnalyticsU3900H] ├Yield calculation: c_product=9.466239e-03 mM x dilution=100.0 / (c_reference=7.980000e+01 mM x stoichiometry=1.0/1.0) = 0.011862454850934519
+     [OK] 16:56:14[AnalyticsU3900H] ├Pass status: PASS
+          16:56:14[AnalyticsU3900H] └Results generated
+          16:56:14[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run11_20260928165542.csv'.
+          16:56:19[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:56:19[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:56:19[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:56:19[AnalyticsU3900H] └Parameters split successfully
+          16:56:19[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:56:19[AnalyticsU3900H] └U3900H parameters set successfully
+          16:56:19[AnalyticsU3900H] Starting U3900H acquisition
+          16:56:19[AnalyticsU3900H] ├Running self-test...
+          16:56:30[AnalyticsU3900H] ├Running baseline calibration...
+          16:56:36[AnalyticsU3900H] ├Starting scan acquisition...
+          16:56:51[AnalyticsU3900H] ├Polling U3900H data
+          16:56:51[AnalyticsU3900H] │ └Data polled successfully
+          16:56:51[AnalyticsU3900H] └Acquisition finished
+          16:56:51[AnalyticsU3900H] Processing UV data
+          16:56:51[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:56:51[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:56:51[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0565
+          16:56:51[AnalyticsU3900H] ├  DPB: 1.697937e-05 M (0.016979 mM)
+          16:56:51[AnalyticsU3900H] ├  DMSO: 2.094553e-04 M (0.209455 mM)
+          16:56:51[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:56:51[AnalyticsU3900H] Making results
+          16:56:51[AnalyticsU3900H] ├Reference concentration: 85.0 mM
+          16:56:51[AnalyticsU3900H] ├Yield calculation: c_product=1.697937e-02 mM x dilution=100.0 / (c_reference=8.500000e+01 mM x stoichiometry=1.0/1.0) = 0.019975729783558976
+     [OK] 16:56:51[AnalyticsU3900H] ├Pass status: PASS
+          16:56:51[AnalyticsU3900H] └Results generated
+          16:56:51[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run12_20260928165618.csv'.
+          16:56:58[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:56:58[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:56:58[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:56:58[AnalyticsU3900H] └Parameters split successfully
+          16:56:58[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:56:58[AnalyticsU3900H] └U3900H parameters set successfully
+          16:56:58[AnalyticsU3900H] Starting U3900H acquisition
+          16:56:58[AnalyticsU3900H] ├Running self-test...
+          16:57:08[AnalyticsU3900H] ├Running baseline calibration...
+          16:57:15[AnalyticsU3900H] ├Starting scan acquisition...
+          16:57:30[AnalyticsU3900H] ├Polling U3900H data
+          16:57:30[AnalyticsU3900H] │ └Data polled successfully
+          16:57:30[AnalyticsU3900H] └Acquisition finished
+          16:57:30[AnalyticsU3900H] Processing UV data
+          16:57:30[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:57:30[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:57:30[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0665
+          16:57:30[AnalyticsU3900H] ├  DPB: 9.464939e-06 M (0.009465 mM)
+          16:57:30[AnalyticsU3900H] ├  DMSO: 1.074030e-04 M (0.107403 mM)
+          16:57:30[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:57:30[AnalyticsU3900H] Making results
+          16:57:30[AnalyticsU3900H] ├Reference concentration: 91.2 mM
+          16:57:30[AnalyticsU3900H] ├Yield calculation: c_product=9.464939e-03 mM x dilution=100.0 / (c_reference=9.120000e+01 mM x stoichiometry=1.0/1.0) = 0.010378222157902836
+     [OK] 16:57:30[AnalyticsU3900H] ├Pass status: PASS
+          16:57:30[AnalyticsU3900H] └Results generated
+          16:57:30[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run13_20260928165657.csv'.
+          16:57:34[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:57:34[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:57:34[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:57:34[AnalyticsU3900H] └Parameters split successfully
+          16:57:34[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:57:34[AnalyticsU3900H] └U3900H parameters set successfully
+          16:57:34[AnalyticsU3900H] Starting U3900H acquisition
+          16:57:34[AnalyticsU3900H] ├Running self-test...
+          16:57:45[AnalyticsU3900H] ├Running baseline calibration...
+          16:57:51[AnalyticsU3900H] ├Starting scan acquisition...
+          16:58:06[AnalyticsU3900H] ├Polling U3900H data
+          16:58:06[AnalyticsU3900H] │ └Data polled successfully
+          16:58:06[AnalyticsU3900H] └Acquisition finished
+          16:58:06[AnalyticsU3900H] Processing UV data
+          16:58:06[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:58:06[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:58:06[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          16:58:06[AnalyticsU3900H] ├  DPB: 1.696605e-05 M (0.016966 mM)
+          16:58:06[AnalyticsU3900H] ├  DMSO: 2.096650e-04 M (0.209665 mM)
+          16:58:06[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:58:06[AnalyticsU3900H] Making results
+          16:58:06[AnalyticsU3900H] ├Reference concentration: 58.4 mM
+          16:58:06[AnalyticsU3900H] ├Yield calculation: c_product=1.696605e-02 mM x dilution=100.0 / (c_reference=5.840000e+01 mM x stoichiometry=1.0/1.0) = 0.029051457472210274
+     [OK] 16:58:06[AnalyticsU3900H] ├Pass status: PASS
+          16:58:06[AnalyticsU3900H] └Results generated
+          16:58:06[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run14_20260928165734.csv'.
+          16:58:10[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:58:10[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:58:10[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:58:10[AnalyticsU3900H] └Parameters split successfully
+          16:58:10[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:58:10[AnalyticsU3900H] └U3900H parameters set successfully
+          16:58:10[AnalyticsU3900H] Starting U3900H acquisition
+          16:58:10[AnalyticsU3900H] ├Running self-test...
+          16:58:21[AnalyticsU3900H] ├Running baseline calibration...
+          16:58:28[AnalyticsU3900H] ├Starting scan acquisition...
+          16:58:42[AnalyticsU3900H] ├Polling U3900H data
+          16:58:42[AnalyticsU3900H] │ └Data polled successfully
+          16:58:42[AnalyticsU3900H] └Acquisition finished
+          16:58:42[AnalyticsU3900H] Processing UV data
+          16:58:42[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:58:42[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:58:42[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0662
+          16:58:42[AnalyticsU3900H] ├  DPB: 9.473129e-06 M (0.009473 mM)
+          16:58:42[AnalyticsU3900H] ├  DMSO: 1.072986e-04 M (0.107299 mM)
+          16:58:42[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:58:42[AnalyticsU3900H] Making results
+          16:58:42[AnalyticsU3900H] ├Reference concentration: 54.4 mM
+          16:58:42[AnalyticsU3900H] ├Yield calculation: c_product=9.473129e-03 mM x dilution=100.0 / (c_reference=5.440000e+01 mM x stoichiometry=1.0/1.0) = 0.017413839758288086
+     [OK] 16:58:42[AnalyticsU3900H] ├Pass status: PASS
+          16:58:42[AnalyticsU3900H] └Results generated
+          16:58:42[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run15_20260928165810.csv'.
+          16:58:46[AnalyticsU3900H] Splitting parameters
+[WARNING] 16:58:46[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 16:58:46[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 16:58:46[AnalyticsU3900H] └Parameters split successfully
+          16:58:46[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 16:58:46[AnalyticsU3900H] └U3900H parameters set successfully
+          16:58:46[AnalyticsU3900H] Starting U3900H acquisition
+          16:58:46[AnalyticsU3900H] ├Running self-test...
+          16:58:57[AnalyticsU3900H] ├Running baseline calibration...
+          16:59:03[AnalyticsU3900H] ├Starting scan acquisition...
+          16:59:18[AnalyticsU3900H] ├Polling U3900H data
+          16:59:18[AnalyticsU3900H] │ └Data polled successfully
+          16:59:18[AnalyticsU3900H] └Acquisition finished
+          16:59:18[AnalyticsU3900H] Processing UV data
+          16:59:18[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          16:59:18[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          16:59:18[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          16:59:18[AnalyticsU3900H] ├  DPB: 1.697588e-05 M (0.016976 mM)
+          16:59:18[AnalyticsU3900H] ├  DMSO: 2.095391e-04 M (0.209539 mM)
+          16:59:18[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          16:59:18[AnalyticsU3900H] Making results
+          16:59:18[AnalyticsU3900H] ├Reference concentration: 50.0 mM
+          16:59:18[AnalyticsU3900H] ├Yield calculation: c_product=1.697588e-02 mM x dilution=100.0 / (c_reference=5.000000e+01 mM x stoichiometry=1.0/1.0) = 0.033951759421591114
+     [OK] 16:59:18[AnalyticsU3900H] ├Pass status: PASS
+          16:59:18[AnalyticsU3900H] └Results generated
+          16:59:18[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run16_20260928165846.csv'.
+          17:08:23[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:08:23[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:08:23[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:08:23[AnalyticsU3900H] └Parameters split successfully
+          17:08:23[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:08:23[AnalyticsU3900H] └U3900H parameters set successfully
+          17:08:23[AnalyticsU3900H] Starting U3900H acquisition
+          17:08:23[AnalyticsU3900H] ├Running self-test...
+          17:08:34[AnalyticsU3900H] ├Running baseline calibration...
+          17:08:40[AnalyticsU3900H] ├Starting scan acquisition...
+          17:08:54[AnalyticsU3900H] ├Polling U3900H data
+          17:08:54[AnalyticsU3900H] │ └Data polled successfully
+          17:08:54[AnalyticsU3900H] └Acquisition finished
+          17:08:54[AnalyticsU3900H] Processing UV data
+          17:08:54[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:08:54[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:08:54[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0666
+          17:08:54[AnalyticsU3900H] ├  DPB: 9.471713e-06 M (0.009472 mM)
+          17:08:54[AnalyticsU3900H] ├  DMSO: 1.072738e-04 M (0.107274 mM)
+          17:08:54[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:08:54[AnalyticsU3900H] Making results
+          17:08:54[AnalyticsU3900H] ├Reference concentration: 83.0 mM
+          17:08:54[AnalyticsU3900H] ├Yield calculation: c_product=9.471713e-03 mM x dilution=100.0 / (c_reference=8.300000e+01 mM x stoichiometry=1.0/1.0) = 0.011411702326442775
+     [OK] 17:08:54[AnalyticsU3900H] ├Pass status: PASS
+          17:08:54[AnalyticsU3900H] └Results generated
+          17:08:54[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run1_20260928170821.csv'.
+          17:08:54[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:08:54[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:08:54[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:08:54[AnalyticsU3900H] └Parameters split successfully
+          17:08:54[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:08:54[AnalyticsU3900H] └U3900H parameters set successfully
+          17:08:54[AnalyticsU3900H] Starting U3900H acquisition
+          17:08:54[AnalyticsU3900H] ├Running self-test...
+          17:09:05[AnalyticsU3900H] ├Running baseline calibration...
+          17:09:11[AnalyticsU3900H] ├Starting scan acquisition...
+          17:09:25[AnalyticsU3900H] ├Polling U3900H data
+          17:09:25[AnalyticsU3900H] │ └Data polled successfully
+          17:09:25[AnalyticsU3900H] └Acquisition finished
+          17:09:25[AnalyticsU3900H] Processing UV data
+          17:09:25[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:09:25[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:09:25[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0565
+          17:09:25[AnalyticsU3900H] ├  DPB: 1.697726e-05 M (0.016977 mM)
+          17:09:25[AnalyticsU3900H] ├  DMSO: 2.095355e-04 M (0.209535 mM)
+          17:09:25[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:09:25[AnalyticsU3900H] Making results
+          17:09:25[AnalyticsU3900H] ├Reference concentration: 170.2 mM
+          17:09:25[AnalyticsU3900H] ├Yield calculation: c_product=1.697726e-02 mM x dilution=100.0 / (c_reference=1.702000e+02 mM x stoichiometry=1.0/1.0) = 0.009974889555141076
+     [OK] 17:09:25[AnalyticsU3900H] ├Pass status: PASS
+          17:09:25[AnalyticsU3900H] └Results generated
+          17:09:25[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run2_20260928170821.csv'.
+          17:09:25[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:09:25[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:09:25[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:09:25[AnalyticsU3900H] └Parameters split successfully
+          17:09:25[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:09:25[AnalyticsU3900H] └U3900H parameters set successfully
+          17:09:25[AnalyticsU3900H] Starting U3900H acquisition
+          17:09:25[AnalyticsU3900H] ├Running self-test...
+          17:09:36[AnalyticsU3900H] ├Running baseline calibration...
+          17:09:43[AnalyticsU3900H] ├Starting scan acquisition...
+          17:09:56[AnalyticsU3900H] ├Polling U3900H data
+          17:09:56[AnalyticsU3900H] │ └Data polled successfully
+          17:09:56[AnalyticsU3900H] └Acquisition finished
+          17:09:56[AnalyticsU3900H] Processing UV data
+          17:09:56[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:09:56[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:09:56[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0665
+          17:09:56[AnalyticsU3900H] ├  DPB: 9.483014e-06 M (0.009483 mM)
+          17:09:56[AnalyticsU3900H] ├  DMSO: 1.072020e-04 M (0.107202 mM)
+          17:09:56[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:09:56[AnalyticsU3900H] Making results
+          17:09:56[AnalyticsU3900H] ├Reference concentration: 142.4 mM
+          17:09:56[AnalyticsU3900H] ├Yield calculation: c_product=9.483014e-03 mM x dilution=100.0 / (c_reference=1.424000e+02 mM x stoichiometry=1.0/1.0) = 0.006659419648398218
+     [OK] 17:09:56[AnalyticsU3900H] ├Pass status: PASS
+          17:09:56[AnalyticsU3900H] └Results generated
+          17:09:56[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run3_20260928170821.csv'.
+          17:09:56[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:09:56[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:09:56[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:09:56[AnalyticsU3900H] └Parameters split successfully
+          17:09:56[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:09:56[AnalyticsU3900H] └U3900H parameters set successfully
+          17:09:56[AnalyticsU3900H] Starting U3900H acquisition
+          17:09:56[AnalyticsU3900H] ├Running self-test...
+          17:10:07[AnalyticsU3900H] ├Running baseline calibration...
+          17:10:14[AnalyticsU3900H] ├Starting scan acquisition...
+          17:10:27[AnalyticsU3900H] ├Polling U3900H data
+          17:10:27[AnalyticsU3900H] │ └Data polled successfully
+          17:10:27[AnalyticsU3900H] └Acquisition finished
+          17:10:27[AnalyticsU3900H] Processing UV data
+          17:10:27[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:10:27[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:10:27[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          17:10:27[AnalyticsU3900H] ├  DPB: 1.696992e-05 M (0.016970 mM)
+          17:10:27[AnalyticsU3900H] ├  DMSO: 2.095504e-04 M (0.209550 mM)
+          17:10:27[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:10:27[AnalyticsU3900H] Making results
+          17:10:27[AnalyticsU3900H] ├Reference concentration: 55.8 mM
+          17:10:27[AnalyticsU3900H] ├Yield calculation: c_product=1.696992e-02 mM x dilution=100.0 / (c_reference=5.580000e+01 mM x stoichiometry=1.0/1.0) = 0.030412041993004763
+     [OK] 17:10:27[AnalyticsU3900H] ├Pass status: PASS
+          17:10:27[AnalyticsU3900H] └Results generated
+          17:10:27[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run4_20260928170821.csv'.
+          17:10:27[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:10:27[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:10:27[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:10:27[AnalyticsU3900H] └Parameters split successfully
+          17:10:27[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:10:27[AnalyticsU3900H] └U3900H parameters set successfully
+          17:10:27[AnalyticsU3900H] Starting U3900H acquisition
+          17:10:27[AnalyticsU3900H] ├Running self-test...
+          17:10:38[AnalyticsU3900H] ├Running baseline calibration...
+          17:10:45[AnalyticsU3900H] ├Starting scan acquisition...
+          17:10:58[AnalyticsU3900H] ├Polling U3900H data
+          17:10:58[AnalyticsU3900H] │ └Data polled successfully
+          17:10:58[AnalyticsU3900H] └Acquisition finished
+          17:10:58[AnalyticsU3900H] Processing UV data
+          17:10:58[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:10:58[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:10:58[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0665
+          17:10:58[AnalyticsU3900H] ├  DPB: 9.452565e-06 M (0.009453 mM)
+          17:10:58[AnalyticsU3900H] ├  DMSO: 1.075854e-04 M (0.107585 mM)
+          17:10:58[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:10:58[AnalyticsU3900H] Making results
+          17:10:58[AnalyticsU3900H] ├Reference concentration: 68.8 mM
+          17:10:58[AnalyticsU3900H] ├Yield calculation: c_product=9.452565e-03 mM x dilution=100.0 / (c_reference=6.880000e+01 mM x stoichiometry=1.0/1.0) = 0.013739193265562732
+     [OK] 17:10:58[AnalyticsU3900H] ├Pass status: PASS
+          17:10:58[AnalyticsU3900H] └Results generated
+          17:10:58[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run5_20260928170822.csv'.
+          17:10:58[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:10:58[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:10:58[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:10:58[AnalyticsU3900H] └Parameters split successfully
+          17:10:58[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:10:58[AnalyticsU3900H] └U3900H parameters set successfully
+          17:10:58[AnalyticsU3900H] Starting U3900H acquisition
+          17:10:58[AnalyticsU3900H] ├Running self-test...
+          17:11:09[AnalyticsU3900H] ├Running baseline calibration...
+          17:11:16[AnalyticsU3900H] ├Starting scan acquisition...
+          17:11:30[AnalyticsU3900H] ├Polling U3900H data
+          17:11:30[AnalyticsU3900H] │ └Data polled successfully
+          17:11:30[AnalyticsU3900H] └Acquisition finished
+          17:11:30[AnalyticsU3900H] Processing UV data
+          17:11:30[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:11:30[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:11:30[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0565
+          17:11:30[AnalyticsU3900H] ├  DPB: 1.698487e-05 M (0.016985 mM)
+          17:11:30[AnalyticsU3900H] ├  DMSO: 2.094396e-04 M (0.209440 mM)
+          17:11:30[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:11:30[AnalyticsU3900H] Making results
+          17:11:30[AnalyticsU3900H] ├Reference concentration: 51.4 mM
+          17:11:30[AnalyticsU3900H] ├Yield calculation: c_product=1.698487e-02 mM x dilution=100.0 / (c_reference=5.140000e+01 mM x stoichiometry=1.0/1.0) = 0.03304449993923679
+     [OK] 17:11:30[AnalyticsU3900H] ├Pass status: PASS
+          17:11:30[AnalyticsU3900H] └Results generated
+          17:11:30[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run6_20260928170822.csv'.
+          17:11:30[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:11:30[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:11:30[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:11:30[AnalyticsU3900H] └Parameters split successfully
+          17:11:30[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:11:30[AnalyticsU3900H] └U3900H parameters set successfully
+          17:11:30[AnalyticsU3900H] Starting U3900H acquisition
+          17:11:30[AnalyticsU3900H] ├Running self-test...
+          17:11:41[AnalyticsU3900H] ├Running baseline calibration...
+          17:11:47[AnalyticsU3900H] ├Starting scan acquisition...
+          17:12:01[AnalyticsU3900H] ├Polling U3900H data
+          17:12:01[AnalyticsU3900H] │ └Data polled successfully
+          17:12:01[AnalyticsU3900H] └Acquisition finished
+          17:12:01[AnalyticsU3900H] Processing UV data
+          17:12:02[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:12:02[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:12:02[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0665
+          17:12:02[AnalyticsU3900H] ├  DPB: 9.459013e-06 M (0.009459 mM)
+          17:12:02[AnalyticsU3900H] ├  DMSO: 1.074481e-04 M (0.107448 mM)
+          17:12:02[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:12:02[AnalyticsU3900H] Making results
+          17:12:02[AnalyticsU3900H] ├Reference concentration: 178.0 mM
+          17:12:02[AnalyticsU3900H] ├Yield calculation: c_product=9.459013e-03 mM x dilution=100.0 / (c_reference=1.780000e+02 mM x stoichiometry=1.0/1.0) = 0.005314052067995781
+     [OK] 17:12:02[AnalyticsU3900H] ├Pass status: PASS
+          17:12:02[AnalyticsU3900H] └Results generated
+          17:12:02[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run7_20260928170822.csv'.
+          17:12:02[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:12:02[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:12:02[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:12:02[AnalyticsU3900H] └Parameters split successfully
+          17:12:02[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:12:02[AnalyticsU3900H] └U3900H parameters set successfully
+          17:12:02[AnalyticsU3900H] Starting U3900H acquisition
+          17:12:02[AnalyticsU3900H] ├Running self-test...
+          17:12:13[AnalyticsU3900H] ├Running baseline calibration...
+          17:12:19[AnalyticsU3900H] ├Starting scan acquisition...
+          17:12:32[AnalyticsU3900H] ├Polling U3900H data
+          17:12:33[AnalyticsU3900H] │ └Data polled successfully
+          17:12:33[AnalyticsU3900H] └Acquisition finished
+          17:12:33[AnalyticsU3900H] Processing UV data
+          17:12:33[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:12:33[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:12:33[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0562
+          17:12:33[AnalyticsU3900H] ├  DPB: 1.696688e-05 M (0.016967 mM)
+          17:12:33[AnalyticsU3900H] ├  DMSO: 2.096460e-04 M (0.209646 mM)
+          17:12:33[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:12:33[AnalyticsU3900H] Making results
+          17:12:33[AnalyticsU3900H] ├Reference concentration: 155.0 mM
+          17:12:33[AnalyticsU3900H] ├Yield calculation: c_product=1.696688e-02 mM x dilution=100.0 / (c_reference=1.550000e+02 mM x stoichiometry=1.0/1.0) = 0.010946372082086198
+     [OK] 17:12:33[AnalyticsU3900H] ├Pass status: PASS
+          17:12:33[AnalyticsU3900H] └Results generated
+          17:12:33[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run8_20260928170822.csv'.
+          17:12:33[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:12:33[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:12:33[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:12:33[AnalyticsU3900H] └Parameters split successfully
+          17:12:33[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:12:33[AnalyticsU3900H] └U3900H parameters set successfully
+          17:12:33[AnalyticsU3900H] Starting U3900H acquisition
+          17:12:33[AnalyticsU3900H] ├Running self-test...
+          17:12:43[AnalyticsU3900H] ├Running baseline calibration...
+          17:12:50[AnalyticsU3900H] ├Starting scan acquisition...
+          17:13:06[AnalyticsU3900H] ├Polling U3900H data
+          17:13:06[AnalyticsU3900H] │ └Data polled successfully
+          17:13:06[AnalyticsU3900H] └Acquisition finished
+          17:13:06[AnalyticsU3900H] Processing UV data
+          17:13:06[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:13:06[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:13:06[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0663
+          17:13:06[AnalyticsU3900H] ├  DPB: 9.453825e-06 M (0.009454 mM)
+          17:13:06[AnalyticsU3900H] ├  DMSO: 1.075658e-04 M (0.107566 mM)
+          17:13:06[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:13:06[AnalyticsU3900H] Making results
+          17:13:06[AnalyticsU3900H] ├Reference concentration: 86.4 mM
+          17:13:06[AnalyticsU3900H] ├Yield calculation: c_product=9.453825e-03 mM x dilution=100.0 / (c_reference=8.640000e+01 mM x stoichiometry=1.0/1.0) = 0.010941927197138651
+     [OK] 17:13:06[AnalyticsU3900H] ├Pass status: PASS
+          17:13:06[AnalyticsU3900H] └Results generated
+          17:13:06[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run9_20260928170823.csv'.
+          17:15:23[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:15:23[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:15:23[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:15:23[AnalyticsU3900H] └Parameters split successfully
+          17:15:23[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:15:23[AnalyticsU3900H] └U3900H parameters set successfully
+          17:15:23[AnalyticsU3900H] Starting U3900H acquisition
+          17:15:23[AnalyticsU3900H] ├Running self-test...
+          17:15:34[AnalyticsU3900H] ├Running baseline calibration...
+          17:15:40[AnalyticsU3900H] ├Starting scan acquisition...
+          17:15:54[AnalyticsU3900H] ├Polling U3900H data
+          17:15:54[AnalyticsU3900H] │ └Data polled successfully
+          17:15:54[AnalyticsU3900H] └Acquisition finished
+          17:15:54[AnalyticsU3900H] Processing UV data
+          17:15:54[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:15:54[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:15:54[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0665
+          17:15:54[AnalyticsU3900H] ├  DPB: 9.455602e-06 M (0.009456 mM)
+          17:15:54[AnalyticsU3900H] ├  DMSO: 1.075052e-04 M (0.107505 mM)
+          17:15:54[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:15:54[AnalyticsU3900H] Making results
+          17:15:54[AnalyticsU3900H] ├Reference concentration: 165.2 mM
+          17:15:54[AnalyticsU3900H] ├Yield calculation: c_product=9.455602e-03 mM x dilution=100.0 / (c_reference=1.652000e+02 mM x stoichiometry=1.0/1.0) = 0.0057237302124719235
+     [OK] 17:15:54[AnalyticsU3900H] ├Pass status: PASS
+          17:15:54[AnalyticsU3900H] └Results generated
+          17:15:54[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run1_20260928171520.csv'.
+          17:15:54[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:15:54[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:15:54[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:15:54[AnalyticsU3900H] └Parameters split successfully
+          17:15:54[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:15:54[AnalyticsU3900H] └U3900H parameters set successfully
+          17:15:54[AnalyticsU3900H] Starting U3900H acquisition
+          17:15:54[AnalyticsU3900H] ├Running self-test...
+          17:16:05[AnalyticsU3900H] ├Running baseline calibration...
+          17:16:12[AnalyticsU3900H] ├Starting scan acquisition...
+          17:16:26[AnalyticsU3900H] ├Polling U3900H data
+          17:16:26[AnalyticsU3900H] │ └Data polled successfully
+          17:16:26[AnalyticsU3900H] └Acquisition finished
+          17:16:26[AnalyticsU3900H] Processing UV data
+          17:16:26[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:16:26[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:16:26[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          17:16:26[AnalyticsU3900H] ├  DPB: 1.699377e-05 M (0.016994 mM)
+          17:16:26[AnalyticsU3900H] ├  DMSO: 2.092789e-04 M (0.209279 mM)
+          17:16:26[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:16:26[AnalyticsU3900H] Making results
+          17:16:26[AnalyticsU3900H] ├Reference concentration: 100.2 mM
+          17:16:26[AnalyticsU3900H] ├Yield calculation: c_product=1.699377e-02 mM x dilution=100.0 / (c_reference=1.002000e+02 mM x stoichiometry=1.0/1.0) = 0.016959853721447055
+     [OK] 17:16:26[AnalyticsU3900H] ├Pass status: PASS
+          17:16:26[AnalyticsU3900H] └Results generated
+          17:16:26[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run2_20260928171521.csv'.
+          17:16:26[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:16:26[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:16:26[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:16:26[AnalyticsU3900H] └Parameters split successfully
+          17:16:26[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:16:26[AnalyticsU3900H] └U3900H parameters set successfully
+          17:16:26[AnalyticsU3900H] Starting U3900H acquisition
+          17:16:26[AnalyticsU3900H] ├Running self-test...
+          17:16:37[AnalyticsU3900H] ├Running baseline calibration...
+          17:16:44[AnalyticsU3900H] ├Starting scan acquisition...
+          17:16:59[AnalyticsU3900H] ├Polling U3900H data
+          17:16:59[AnalyticsU3900H] │ └Data polled successfully
+          17:16:59[AnalyticsU3900H] └Acquisition finished
+          17:16:59[AnalyticsU3900H] Processing UV data
+          17:16:59[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:16:59[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:16:59[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0665
+          17:16:59[AnalyticsU3900H] ├  DPB: 9.472858e-06 M (0.009473 mM)
+          17:16:59[AnalyticsU3900H] ├  DMSO: 1.072689e-04 M (0.107269 mM)
+          17:16:59[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:16:59[AnalyticsU3900H] Making results
+          17:16:59[AnalyticsU3900H] ├Reference concentration: 187.8 mM
+          17:16:59[AnalyticsU3900H] ├Yield calculation: c_product=9.472858e-03 mM x dilution=100.0 / (c_reference=1.878000e+02 mM x stoichiometry=1.0/1.0) = 0.005044120557664038
+     [OK] 17:16:59[AnalyticsU3900H] ├Pass status: PASS
+          17:16:59[AnalyticsU3900H] └Results generated
+          17:16:59[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run3_20260928171521.csv'.
+          17:16:59[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:16:59[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:16:59[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:16:59[AnalyticsU3900H] └Parameters split successfully
+          17:16:59[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:16:59[AnalyticsU3900H] └U3900H parameters set successfully
+          17:16:59[AnalyticsU3900H] Starting U3900H acquisition
+          17:16:59[AnalyticsU3900H] ├Running self-test...
+          17:17:10[AnalyticsU3900H] ├Running baseline calibration...
+          17:17:16[AnalyticsU3900H] ├Starting scan acquisition...
+          17:18:23[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:18:23[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:18:23[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:18:23[AnalyticsU3900H] └Parameters split successfully
+          17:18:23[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:18:23[AnalyticsU3900H] └U3900H parameters set successfully
+          17:18:23[AnalyticsU3900H] Starting U3900H acquisition
+          17:18:23[AnalyticsU3900H] ├Running self-test...
+          17:18:34[AnalyticsU3900H] ├Running baseline calibration...
+          17:18:41[AnalyticsU3900H] ├Starting scan acquisition...
+          17:18:55[AnalyticsU3900H] ├Polling U3900H data
+          17:18:55[AnalyticsU3900H] │ └Data polled successfully
+          17:18:55[AnalyticsU3900H] └Acquisition finished
+          17:18:55[AnalyticsU3900H] Processing UV data
+          17:18:55[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:18:55[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:18:55[AnalyticsU3900H] ├Unmixing results: R2=0.9951, relative residual=0.0666
+          17:18:55[AnalyticsU3900H] ├  DPB: 9.457471e-06 M (0.009457 mM)
+          17:18:55[AnalyticsU3900H] ├  DMSO: 1.075339e-04 M (0.107534 mM)
+          17:18:55[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:18:55[AnalyticsU3900H] Making results
+          17:18:55[AnalyticsU3900H] ├Reference concentration: 190.6 mM
+          17:18:55[AnalyticsU3900H] ├Yield calculation: c_product=9.457471e-03 mM x dilution=100.0 / (c_reference=1.906000e+02 mM x stoichiometry=1.0/1.0) = 0.004961946907093275
+     [OK] 17:18:55[AnalyticsU3900H] ├Pass status: PASS
+          17:18:55[AnalyticsU3900H] └Results generated
+          17:18:55[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run1_20260928171821.csv'.
+          17:18:55[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:18:55[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:18:55[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:18:55[AnalyticsU3900H] └Parameters split successfully
+          17:18:55[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:18:55[AnalyticsU3900H] └U3900H parameters set successfully
+          17:18:55[AnalyticsU3900H] Starting U3900H acquisition
+          17:18:55[AnalyticsU3900H] ├Running self-test...
+          17:19:06[AnalyticsU3900H] ├Running baseline calibration...
+          17:19:12[AnalyticsU3900H] ├Starting scan acquisition...
+          17:19:26[AnalyticsU3900H] ├Polling U3900H data
+          17:19:26[AnalyticsU3900H] │ └Data polled successfully
+          17:19:26[AnalyticsU3900H] └Acquisition finished
+          17:19:26[AnalyticsU3900H] Processing UV data
+          17:19:26[AnalyticsU3900H] ├Loaded calibration for 'DPB' (3 reference spectra, basis concentration 7.500e-05 mol/L).
+          17:19:26[AnalyticsU3900H] ├Loaded calibration for 'DMSO' (4 reference spectra, basis concentration 8.260e-04 mol/L).
+          17:19:26[AnalyticsU3900H] ├Unmixing results: R2=0.9965, relative residual=0.0564
+          17:19:26[AnalyticsU3900H] ├  DPB: 1.699737e-05 M (0.016997 mM)
+          17:19:26[AnalyticsU3900H] ├  DMSO: 2.091655e-04 M (0.209166 mM)
+          17:19:26[AnalyticsU3900H] └Data processed successfully (spectral unmixing)
+          17:19:26[AnalyticsU3900H] Making results
+          17:19:26[AnalyticsU3900H] ├Reference concentration: 99.6 mM
+          17:19:26[AnalyticsU3900H] ├Yield calculation: c_product=1.699737e-02 mM x dilution=100.0 / (c_reference=9.960000e+01 mM x stoichiometry=1.0/1.0) = 0.017065629424196444
+     [OK] 17:19:26[AnalyticsU3900H] ├Pass status: PASS
+          17:19:26[AnalyticsU3900H] └Results generated
+          17:19:26[AnalyticsU3900H] Saved spectrum 'E:\workspace\Robochem\Examples\CS0_UV_optimisation\raw_data_analysis\Examples_CS0_UV_optimisation_run2_20260928171821.csv'.
+          17:19:26[AnalyticsU3900H] Splitting parameters
+[WARNING] 17:19:26[AnalyticsU3900H] ├Parameter sample_name has no recognized tag, skipping
+[WARNING] 17:19:26[AnalyticsU3900H] ├Parameter data_folder has no recognized tag, skipping
+     [OK] 17:19:26[AnalyticsU3900H] └Parameters split successfully
+          17:19:26[AnalyticsU3900H] Setting U3900H parameters
+     [OK] 17:19:26[AnalyticsU3900H] └U3900H parameters set successfully
+          17:19:26[AnalyticsU3900H] Starting U3900H acquisition
+          17:19:26[AnalyticsU3900H] ├Running self-test...

@@ -13,6 +13,7 @@ once built.
 
 import json
 import os
+import shutil
 import subprocess
 import time
 
@@ -594,8 +595,15 @@ class PlatformBackend(BaseLoggedClass):
         for now: the only thing we need to change is give a base_name and the position for the data
 
         """
-        if not hasattr(self, "parameter_machine"):
-            self.parameter_machine = []
+        if not hasattr(self, "parameter_machine") or not self.parameter_machine:
+            # parameter_machine 仅在 05_分析页面调用 get_analytic_parameters 时构建；
+            # 若用户加载会话后未访问 05 页面就直接启动实验，需在此自动构建，
+            # 否则 ML 提交的实验会缺少 sample_name / data_folder 等必需参数
+            self.log_mssg(
+                "参数机器为空（可能未访问分析页面），正在自动构建...",
+                level="ok",
+            )
+            self.get_analytic_parameters()
         for param in self.parameter_machine:
             match param.name:
                 case "sample_name":
@@ -760,6 +768,110 @@ class PlatformBackend(BaseLoggedClass):
             self._platform_ready = False
             raise e
 
+    def _clear_previous_campaign_data(self):
+        """实验重新开始时清除上一次实验的编号索引与结果数据并重置样品瓶，
+        使实验编号重新从 1 开始且所有样品瓶恢复为空瓶可用。
+
+        CSV 文件名通过 session.json 中 experiment_class 的 "@DataFrame]" 标记定位，
+        因此对任何 ML 后端（SingleBayesianOpti、EfficientBatchedBO 等）都适用。
+        """
+        cleared_files = []
+        vials_reset = False
+        experiment_path = self.session_container.get("experiment_path", None)
+
+        # 1. 重置磁盘上的 CSV 文件（结果文件仅保留表头，样品瓶恢复为空瓶）
+        if experiment_path:
+            session_file = os.path.join(experiment_path, "session.json")
+            try:
+                with open(session_file, "r", encoding="utf-8") as f:
+                    session_data = json.load(f)
+                experiment_class_data = session_data.get("experiment_class", {})
+                if isinstance(experiment_class_data, dict):
+                    for key in ("results_df", "utilities_df"):
+                        marker = experiment_class_data.get(key)
+                        if isinstance(marker, str) and marker.startswith("@DataFrame]"):
+                            csv_path = os.path.join(
+                                experiment_path, marker.split("]", 1)[1]
+                            )
+                            if os.path.isfile(csv_path):
+                                pd.read_csv(csv_path, nrows=0).to_csv(
+                                    csv_path, index=False
+                                )
+                                cleared_files.append(os.path.basename(csv_path))
+
+                # 重置磁盘上的样品瓶文件（Sample 类型瓶恢复为空瓶）
+                vial_marker = session_data.get("VialDF", {}).get("df")
+                if (
+                    isinstance(vial_marker, str)
+                    and vial_marker.startswith("@DataFrame]")
+                ):
+                    vial_csv = os.path.join(
+                        experiment_path, vial_marker.split("]", 1)[1]
+                    )
+                    if os.path.isfile(vial_csv):
+                        vial_csv_df = pd.read_csv(vial_csv)
+                        if "Type" in vial_csv_df.columns:
+                            sample_mask = vial_csv_df["Type"] == "Sample"
+                            vial_csv_df.loc[sample_mask, "Volume"] = 0
+                            if "Viable" in vial_csv_df.columns:
+                                vial_csv_df.loc[sample_mask, "Viable"] = True
+                            vial_csv_df.to_csv(vial_csv, index=False)
+                            vials_reset = True
+            except (OSError, json.JSONDecodeError, ValueError) as e:
+                self.log_mssg(f"清除历史结果 CSV 文件时出错: {e}", level="warning")
+
+        # 2. 清空 ML 后端内存中的结果 DataFrame（保留表头结构）并重置运行编号
+        experiment_class = self.session_container.get("experiment_class", None)
+        if experiment_class is not None:
+            for attr in ("results_df", "utilities_df"):
+                df = getattr(experiment_class, attr, None)
+                if isinstance(df, pd.DataFrame) and not df.empty:
+                    setattr(experiment_class, attr, df.iloc[0:0].copy())
+            if getattr(experiment_class, "run_index", None):
+                experiment_class.run_index = 0
+
+        # 3. 重置内存中的样品瓶（Sample 类型瓶恢复为空瓶，平台构建时即可用）
+        vial_df_wrapper = self.session_container.get("VialDF", None)
+        if vial_df_wrapper is not None and hasattr(vial_df_wrapper, "df"):
+            vial_df = vial_df_wrapper.df
+            if "Type" in vial_df.columns:
+                sample_mask = vial_df["Type"] == "Sample"
+                if sample_mask.any():
+                    vial_df.loc[sample_mask, "Volume"] = 0
+                    if "Viable" in vial_df.columns:
+                        vial_df.loc[sample_mask, "Viable"] = True
+                    vials_reset = True
+
+        # 4. 清除上一次实验的分析原始数据（raw_data_analysis 文件夹内容，保留文件夹本身）
+        raw_data_cleared = False
+        if experiment_path:
+            raw_data_dir = os.path.join(experiment_path, "raw_data_analysis")
+            if os.path.isdir(raw_data_dir):
+                for entry in os.listdir(raw_data_dir):
+                    entry_path = os.path.join(raw_data_dir, entry)
+                    try:
+                        if os.path.isfile(entry_path) or os.path.islink(entry_path):
+                            os.remove(entry_path)
+                        elif os.path.isdir(entry_path):
+                            shutil.rmtree(entry_path)
+                        raw_data_cleared = True
+                    except OSError as e:
+                        self.log_mssg(f"清除分析原始数据时出错: {e}", level="warning")
+
+        if cleared_files or vials_reset or raw_data_cleared:
+            summary_parts = []
+            if cleared_files:
+                summary_parts.append(f"结果数据（{', '.join(cleared_files)}）")
+            if vials_reset:
+                summary_parts.append("样品瓶")
+            if raw_data_cleared:
+                summary_parts.append("分析原始数据（raw_data_analysis）")
+            self.log_mssg(
+                f"已清除上一次实验的{'、'.join(summary_parts)}，"
+                f"实验编号将从 1 重新开始",
+                level="ok",
+            )
+
     def start(self):
         """initialises the ML side, initialises the platform, decides the first experiments, runs them, then
         used the ML_backend to run further experiment, handles saving, basically is the central function when
@@ -770,6 +882,8 @@ class PlatformBackend(BaseLoggedClass):
         # initialise the ML backend and platform:
 
         if not self._platform_ready:
+            # 实验重新开始：清除上一次实验的结果数据，使实验编号从 1 重新开始
+            self._clear_previous_campaign_data()
             self.initialise_platform()
         else:
             self.platform_experiment.resume()
@@ -790,12 +904,15 @@ class PlatformBackend(BaseLoggedClass):
         """stops the platform after the current run"""
         self._rolling.clear()
         self._emergency_stop.set()
-        self.platform_experiment.stop()
+        if self.platform_experiment is not None:
+            self.platform_experiment.stop()
+            del self.platform_experiment
+        else:
+            self.log_mssg("平台未在运行，无需停止", level="warning")
 
         # 停止虚拟光谱仪服务端子进程
         self._stop_spectrometer_server()
 
-        del self.platform_experiment
         self._platform_ready = False
         self._ml_ready = False
 
@@ -810,7 +927,7 @@ class PlatformBackend(BaseLoggedClass):
             # 检查是否已经在运行
             poll = self._spectrometer_server_process.poll()
             if poll is None:
-                self.log_mssg("虚拟光谱仪服务端已在运行", level="info")
+                self.log_mssg("虚拟光谱仪服务端已在运行", level="ok")
                 return
         # 先检测端口是否已有服务在运行（用户可能手动启动了）
         import socket as _socket
@@ -838,7 +955,7 @@ class PlatformBackend(BaseLoggedClass):
                 [sys.executable, server_script],
             )
             # 等待服务端 TCP 端口就绪
-            self.log_mssg("正在启动虚拟光谱仪服务端...", level="info")
+            self.log_mssg("正在启动虚拟光谱仪服务端...", level="ok")
             time.sleep(2)
             self.log_mssg(f"虚拟光谱仪服务端已启动 (端口 {port})", level="ok")
         except Exception as e:
@@ -856,7 +973,7 @@ class PlatformBackend(BaseLoggedClass):
                 except Exception:
                     pass
             self._spectrometer_server_process = None
-            self.log_mssg("虚拟光谱仪服务端已停止", level="info")
+            self.log_mssg("虚拟光谱仪服务端已停止", level="ok")
 
     def validate_data(self):
         """Checks that all the required components of the data are initialised and ready to roll"""

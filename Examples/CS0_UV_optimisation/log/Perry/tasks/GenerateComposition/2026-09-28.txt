@@ -1,0 +1,490 @@
+          15:49:10[GenerateComposition] Started...
+          15:49:10[GenerateComposition] ├platform: Perry
+          15:49:10[GenerateComposition] ├experiment_recipe: [SM: 50 mM, THF: 900 mM, TBADT: 1.5 mM]
+          15:49:10[GenerateComposition] ├slug_volume: 500
+          15:49:10[GenerateComposition] ├sampler_name: Sampler_cnc
+          15:49:10[GenerateComposition] ├max_relative_error: 0.05
+          15:49:10[GenerateComposition] ├min_volume: 0.5
+          15:49:10[GenerateComposition] ├min_accurate_volume: 20
+          15:49:10[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 374.63 uL], [SM: 50 mM, THF: 899.2 mM, TBADT: 1.499 mM])
+     [OK] 15:49:10[GenerateComposition] └Completed.
+          15:52:23[GenerateComposition] Started...
+          15:52:23[GenerateComposition] ├platform: Perry
+          15:52:23[GenerateComposition] ├experiment_recipe: [SM: 50 mM, THF: 900 mM, TBADT: 1.5 mM]
+          15:52:23[GenerateComposition] ├slug_volume: 500
+          15:52:23[GenerateComposition] ├sampler_name: Sampler_cnc
+          15:52:23[GenerateComposition] ├max_relative_error: 0.05
+          15:52:23[GenerateComposition] ├min_volume: 0.5
+          15:52:23[GenerateComposition] ├min_accurate_volume: 20
+          15:52:23[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 374.63 uL], [SM: 50 mM, THF: 899.2 mM, TBADT: 1.499 mM])
+     [OK] 15:52:23[GenerateComposition] └Completed.
+          16:02:46[GenerateComposition] Started...
+          16:02:46[GenerateComposition] ├platform: Perry
+          16:02:46[GenerateComposition] ├experiment_recipe: [SM: 50 mM, THF: 900 mM, TBADT: 1.5 mM]
+          16:02:46[GenerateComposition] ├slug_volume: 500
+          16:02:46[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:02:46[GenerateComposition] ├max_relative_error: 0.05
+          16:02:46[GenerateComposition] ├min_volume: 0.5
+          16:02:46[GenerateComposition] ├min_accurate_volume: 20
+          16:02:46[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 374.63 uL], [SM: 50 mM, THF: 899.2 mM, TBADT: 1.499 mM])
+     [OK] 16:02:46[GenerateComposition] └Completed.
+          16:27:26[GenerateComposition] Started...
+          16:27:26[GenerateComposition] ├platform: Perry
+          16:27:26[GenerateComposition] ├experiment_recipe: [SM: 150.1 mM, THF: 451 mM, TBADT: 4.268 mM]
+          16:27:26[GenerateComposition] ├slug_volume: 500
+          16:27:26[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:27:26[GenerateComposition] ├max_relative_error: 0.05
+          16:27:26[GenerateComposition] ├min_volume: 0.5
+          16:27:26[GenerateComposition] ├min_accurate_volume: 20
+          16:27:26[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 75.06 uL, THF @[Sampler_cnc, holder_D, A3]: 28.19 uL, TBADT @[Sampler_cnc, holder_E, C1]: 125.52 uL, MeCN @[Sampler_cnc, holder_F, C1]: 271.23 uL], [SM: 150.2 mM, THF: 451.2 mM, TBADT: 4.267 mM])
+     [OK] 16:27:26[GenerateComposition] └Completed.
+          16:27:57[GenerateComposition] Started...
+          16:27:57[GenerateComposition] ├platform: Perry
+          16:27:57[GenerateComposition] ├experiment_recipe: [SM: 62.87 mM, THF: 158 mM, TBADT: 0.7264 mM]
+          16:27:57[GenerateComposition] ├slug_volume: 500
+          16:27:57[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:27:57[GenerateComposition] ├max_relative_error: 0.05
+          16:27:57[GenerateComposition] ├min_volume: 0.5
+          16:27:57[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:27:57[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 9.8740869590625 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:27:57[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 31.44 uL, THF @[Sampler_cnc, holder_D, A3]: 9.87 uL, TBADT @[Sampler_cnc, holder_E, C1]: 21.37 uL, MeCN @[Sampler_cnc, holder_F, C1]: 437.32 uL], [SM: 62.8 mM, THF: 158.4 mM, TBADT: 0.7276 mM])
+     [OK] 16:27:57[GenerateComposition] └Completed.
+          16:28:28[GenerateComposition] Started...
+          16:28:28[GenerateComposition] ├platform: Perry
+          16:28:28[GenerateComposition] ├experiment_recipe: [SM: 199.7 mM, THF: 1341 mM, TBADT: 1.752 mM]
+          16:28:28[GenerateComposition] ├slug_volume: 500
+          16:28:28[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:28:28[GenerateComposition] ├max_relative_error: 0.05
+          16:28:28[GenerateComposition] ├min_volume: 0.5
+          16:28:28[GenerateComposition] ├min_accurate_volume: 20
+          16:28:28[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 99.86 uL, THF @[Sampler_cnc, holder_D, A3]: 83.81 uL, TBADT @[Sampler_cnc, holder_E, C1]: 51.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 264.78 uL], [SM: 199.8 mM, THF: 1341 mM, TBADT: 1.751 mM])
+     [OK] 16:28:28[GenerateComposition] └Completed.
+          16:28:59[GenerateComposition] Started...
+          16:28:59[GenerateComposition] ├platform: Perry
+          16:28:59[GenerateComposition] ├experiment_recipe: [SM: 99.89 mM, THF: 1411 mM, TBADT: 0.5207 mM]
+          16:28:59[GenerateComposition] ├slug_volume: 500
+          16:28:59[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:28:59[GenerateComposition] ├max_relative_error: 0.05
+          16:28:59[GenerateComposition] ├min_volume: 0.5
+          16:28:59[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:28:59[GenerateComposition] ├Recipe component 'TBADT @[Sampler_cnc, holder_E, C1]' has volume below recommended limit: (volume 15.315212816176473 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:28:59[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 49.95 uL, THF @[Sampler_cnc, holder_D, A3]: 88.2 uL, TBADT @[Sampler_cnc, holder_E, C1]: 15.32 uL, MeCN @[Sampler_cnc, holder_F, C1]: 346.54 uL], [SM: 99.8 mM, THF: 1411 mM, TBADT: 0.5202 mM])
+     [OK] 16:28:59[GenerateComposition] └Completed.
+          16:29:30[GenerateComposition] Started...
+          16:29:30[GenerateComposition] ├platform: Perry
+          16:29:30[GenerateComposition] ├experiment_recipe: [SM: 176.8 mM, THF: 844 mM, TBADT: 5.207 mM]
+          16:29:30[GenerateComposition] ├slug_volume: 500
+          16:29:30[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:29:30[GenerateComposition] ├max_relative_error: 0.05
+          16:29:30[GenerateComposition] ├min_volume: 0.5
+          16:29:30[GenerateComposition] ├min_accurate_volume: 20
+          16:29:30[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 88.41 uL, THF @[Sampler_cnc, holder_D, A3]: 52.75 uL, TBADT @[Sampler_cnc, holder_E, C1]: 153.14 uL, MeCN @[Sampler_cnc, holder_F, C1]: 205.69 uL], [SM: 176.8 mM, THF: 843.2 mM, TBADT: 5.205 mM])
+     [OK] 16:29:30[GenerateComposition] └Completed.
+          16:30:00[GenerateComposition] Started...
+          16:30:00[GenerateComposition] ├platform: Perry
+          16:30:00[GenerateComposition] ├experiment_recipe: [SM: 145.1 mM, THF: 2589 mM, TBADT: 2.727 mM]
+          16:30:00[GenerateComposition] ├slug_volume: 500
+          16:30:00[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:30:00[GenerateComposition] ├max_relative_error: 0.05
+          16:30:00[GenerateComposition] ├min_volume: 0.5
+          16:30:00[GenerateComposition] ├min_accurate_volume: 20
+          16:30:00[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 72.56 uL, THF @[Sampler_cnc, holder_D, A3]: 161.81 uL, TBADT @[Sampler_cnc, holder_E, C1]: 80.2 uL, MeCN @[Sampler_cnc, holder_F, C1]: 185.43 uL], [SM: 145.2 mM, THF: 2589 mM, TBADT: 2.727 mM])
+     [OK] 16:30:00[GenerateComposition] └Completed.
+          16:30:32[GenerateComposition] Started...
+          16:30:32[GenerateComposition] ├platform: Perry
+          16:30:32[GenerateComposition] ├experiment_recipe: [SM: 103.5 mM, THF: 1633 mM, TBADT: 2.736 mM]
+          16:30:32[GenerateComposition] ├slug_volume: 500
+          16:30:32[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:30:32[GenerateComposition] ├max_relative_error: 0.05
+          16:30:32[GenerateComposition] ├min_volume: 0.5
+          16:30:32[GenerateComposition] ├min_accurate_volume: 20
+          16:30:32[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 51.76 uL, THF @[Sampler_cnc, holder_D, A3]: 102.05 uL, TBADT @[Sampler_cnc, holder_E, C1]: 80.46 uL, MeCN @[Sampler_cnc, holder_F, C1]: 265.73 uL], [SM: 103.6 mM, THF: 1634 mM, TBADT: 2.737 mM])
+     [OK] 16:30:32[GenerateComposition] └Completed.
+          16:31:03[GenerateComposition] Started...
+          16:31:03[GenerateComposition] ├platform: Perry
+          16:31:03[GenerateComposition] ├experiment_recipe: [SM: 128.7 mM, THF: 160.5 mM, TBADT: 1.312 mM]
+          16:31:03[GenerateComposition] ├slug_volume: 500
+          16:31:03[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:31:03[GenerateComposition] ├max_relative_error: 0.05
+          16:31:03[GenerateComposition] ├min_volume: 0.5
+          16:31:03[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:31:03[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 10.033769290625001 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:31:03[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 64.33 uL, THF @[Sampler_cnc, holder_D, A3]: 10.03 uL, TBADT @[Sampler_cnc, holder_E, C1]: 38.59 uL, MeCN @[Sampler_cnc, holder_F, C1]: 387.05 uL], [SM: 128.6 mM, THF: 160 mM, TBADT: 1.312 mM])
+     [OK] 16:31:03[GenerateComposition] └Completed.
+          16:50:16[GenerateComposition] Started...
+          16:50:16[GenerateComposition] ├platform: Perry
+          16:50:16[GenerateComposition] ├experiment_recipe: [SM: 72.19 mM, THF: 1080 mM, TBADT: 1.123 mM]
+          16:50:16[GenerateComposition] ├slug_volume: 500
+          16:50:16[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:50:16[GenerateComposition] ├max_relative_error: 0.05
+          16:50:16[GenerateComposition] ├min_volume: 0.5
+          16:50:16[GenerateComposition] ├min_accurate_volume: 20
+          16:50:16[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 36.09 uL, THF @[Sampler_cnc, holder_D, A3]: 67.5 uL, TBADT @[Sampler_cnc, holder_E, C1]: 33.04 uL, MeCN @[Sampler_cnc, holder_F, C1]: 363.37 uL], [SM: 72.2 mM, THF: 1080 mM, TBADT: 1.122 mM])
+     [OK] 16:50:16[GenerateComposition] └Completed.
+          16:50:47[GenerateComposition] Started...
+          16:50:47[GenerateComposition] ├platform: Perry
+          16:50:47[GenerateComposition] ├experiment_recipe: [SM: 85.55 mM, THF: 106.7 mM, TBADT: 1.063 mM]
+          16:50:47[GenerateComposition] ├slug_volume: 500
+          16:50:47[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:50:47[GenerateComposition] ├max_relative_error: 0.05
+          16:50:47[GenerateComposition] ├min_volume: 0.5
+          16:50:47[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:50:47[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 6.670684364999999 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:50:47[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 42.78 uL, THF @[Sampler_cnc, holder_D, A3]: 6.67 uL, TBADT @[Sampler_cnc, holder_E, C1]: 31.26 uL, MeCN @[Sampler_cnc, holder_F, C1]: 419.3 uL], [SM: 85.6 mM, THF: 107.2 mM, TBADT: 1.064 mM])
+     [OK] 16:50:47[GenerateComposition] └Completed.
+          16:51:19[GenerateComposition] Started...
+          16:51:19[GenerateComposition] ├platform: Perry
+          16:51:19[GenerateComposition] ├experiment_recipe: [SM: 145.8 mM, THF: 2025 mM, TBADT: 4.131 mM]
+          16:51:19[GenerateComposition] ├slug_volume: 500
+          16:51:19[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:51:19[GenerateComposition] ├max_relative_error: 0.05
+          16:51:19[GenerateComposition] ├min_volume: 0.5
+          16:51:19[GenerateComposition] ├min_accurate_volume: 20
+          16:51:19[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 72.88 uL, THF @[Sampler_cnc, holder_D, A3]: 126.56 uL, TBADT @[Sampler_cnc, holder_E, C1]: 121.49 uL, MeCN @[Sampler_cnc, holder_F, C1]: 179.06 uL], [SM: 145.8 mM, THF: 2026 mM, TBADT: 4.131 mM])
+     [OK] 16:51:19[GenerateComposition] └Completed.
+          16:51:51[GenerateComposition] Started...
+          16:51:51[GenerateComposition] ├platform: Perry
+          16:51:51[GenerateComposition] ├experiment_recipe: [SM: 139.5 mM, THF: 303.4 mM, TBADT: 3.885 mM]
+          16:51:51[GenerateComposition] ├slug_volume: 500
+          16:51:51[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:51:51[GenerateComposition] ├max_relative_error: 0.05
+          16:51:51[GenerateComposition] ├min_volume: 0.5
+          16:51:51[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:51:51[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 18.961956853125 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:51:51[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 69.75 uL, THF @[Sampler_cnc, holder_D, A3]: 18.96 uL, TBADT @[Sampler_cnc, holder_E, C1]: 114.25 uL, MeCN @[Sampler_cnc, holder_F, C1]: 297.03 uL], [SM: 139.6 mM, THF: 304 mM, TBADT: 3.886 mM])
+     [OK] 16:51:51[GenerateComposition] └Completed.
+          16:52:23[GenerateComposition] Started...
+          16:52:23[GenerateComposition] ├platform: Perry
+          16:52:23[GenerateComposition] ├experiment_recipe: [SM: 185.8 mM, THF: 3140 mM, TBADT: 0.9749 mM]
+          16:52:23[GenerateComposition] ├slug_volume: 500
+          16:52:23[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:52:23[GenerateComposition] ├max_relative_error: 0.05
+          16:52:23[GenerateComposition] ├min_volume: 0.5
+          16:52:23[GenerateComposition] ├min_accurate_volume: 20
+          16:52:24[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 92.88 uL, THF @[Sampler_cnc, holder_D, A3]: 196.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 28.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 182.19 uL], [SM: 185.8 mM, THF: 3141 mM, TBADT: 0.9758 mM])
+     [OK] 16:52:24[GenerateComposition] └Completed.
+          16:52:56[GenerateComposition] Started...
+          16:52:56[GenerateComposition] ├platform: Perry
+          16:52:56[GenerateComposition] ├experiment_recipe: [SM: 191.4 mM, THF: 648.3 mM, TBADT: 4.453 mM]
+          16:52:56[GenerateComposition] ├slug_volume: 500
+          16:52:56[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:52:56[GenerateComposition] ├max_relative_error: 0.05
+          16:52:56[GenerateComposition] ├min_volume: 0.5
+          16:52:56[GenerateComposition] ├min_accurate_volume: 20
+          16:52:56[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 95.72 uL, THF @[Sampler_cnc, holder_D, A3]: 40.52 uL, TBADT @[Sampler_cnc, holder_E, C1]: 130.96 uL, MeCN @[Sampler_cnc, holder_F, C1]: 232.8 uL], [SM: 191.4 mM, THF: 648 mM, TBADT: 4.454 mM])
+     [OK] 16:52:56[GenerateComposition] └Completed.
+          16:53:28[GenerateComposition] Started...
+          16:53:28[GenerateComposition] ├platform: Perry
+          16:53:28[GenerateComposition] ├experiment_recipe: [SM: 166.4 mM, THF: 2348 mM, TBADT: 1.612 mM]
+          16:53:28[GenerateComposition] ├slug_volume: 500
+          16:53:28[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:53:28[GenerateComposition] ├max_relative_error: 0.05
+          16:53:28[GenerateComposition] ├min_volume: 0.5
+          16:53:28[GenerateComposition] ├min_accurate_volume: 20
+          16:53:28[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 83.2 uL, THF @[Sampler_cnc, holder_D, A3]: 146.75 uL, TBADT @[Sampler_cnc, holder_E, C1]: 47.4 uL, MeCN @[Sampler_cnc, holder_F, C1]: 222.64 uL], [SM: 166.4 mM, THF: 2349 mM, TBADT: 1.612 mM])
+     [OK] 16:53:28[GenerateComposition] └Completed.
+          16:54:01[GenerateComposition] Started...
+          16:54:01[GenerateComposition] ├platform: Perry
+          16:54:01[GenerateComposition] ├experiment_recipe: [SM: 161.7 mM, THF: 1776 mM, TBADT: 4.646 mM]
+          16:54:01[GenerateComposition] ├slug_volume: 500
+          16:54:01[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:54:01[GenerateComposition] ├max_relative_error: 0.05
+          16:54:01[GenerateComposition] ├min_volume: 0.5
+          16:54:01[GenerateComposition] ├min_accurate_volume: 20
+          16:54:01[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 80.84 uL, THF @[Sampler_cnc, holder_D, A3]: 111.01 uL, TBADT @[Sampler_cnc, holder_E, C1]: 136.64 uL, MeCN @[Sampler_cnc, holder_F, C1]: 171.51 uL], [SM: 161.6 mM, THF: 1776 mM, TBADT: 4.644 mM])
+     [OK] 16:54:01[GenerateComposition] └Completed.
+          16:54:33[GenerateComposition] Started...
+          16:54:33[GenerateComposition] ├platform: Perry
+          16:54:33[GenerateComposition] ├experiment_recipe: [SM: 95.11 mM, THF: 185.5 mM, TBADT: 1.555 mM]
+          16:54:33[GenerateComposition] ├slug_volume: 500
+          16:54:33[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:54:33[GenerateComposition] ├max_relative_error: 0.05
+          16:54:33[GenerateComposition] ├min_volume: 0.5
+          16:54:33[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:54:33[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 11.590866921249999 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:54:33[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 47.55 uL, THF @[Sampler_cnc, holder_D, A3]: 11.59 uL, TBADT @[Sampler_cnc, holder_E, C1]: 45.73 uL, MeCN @[Sampler_cnc, holder_F, C1]: 395.13 uL], [SM: 95.2 mM, THF: 185.6 mM, TBADT: 1.554 mM])
+     [OK] 16:54:33[GenerateComposition] └Completed.
+          16:55:04[GenerateComposition] Started...
+          16:55:04[GenerateComposition] ├platform: Perry
+          16:55:04[GenerateComposition] ├experiment_recipe: [SM: 175.7 mM, THF: 774.9 mM, TBADT: 1.93 mM]
+          16:55:04[GenerateComposition] ├slug_volume: 500
+          16:55:04[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:55:04[GenerateComposition] ├max_relative_error: 0.05
+          16:55:04[GenerateComposition] ├min_volume: 0.5
+          16:55:04[GenerateComposition] ├min_accurate_volume: 20
+          16:55:04[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 87.86 uL, THF @[Sampler_cnc, holder_D, A3]: 48.43 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.76 uL, MeCN @[Sampler_cnc, holder_F, C1]: 306.94 uL], [SM: 175.8 mM, THF: 774.4 mM, TBADT: 1.931 mM])
+     [OK] 16:55:04[GenerateComposition] └Completed.
+          16:55:42[GenerateComposition] Started...
+          16:55:42[GenerateComposition] ├platform: Perry
+          16:55:42[GenerateComposition] ├experiment_recipe: [SM: 79.87 mM, THF: 79.87 mM, TBADT: 0.8819 mM]
+          16:55:42[GenerateComposition] ├slug_volume: 500
+          16:55:42[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:55:42[GenerateComposition] ├max_relative_error: 0.05
+          16:55:42[GenerateComposition] ├min_volume: 0.5
+          16:55:42[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:55:42[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 4.99165625 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:55:42[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 39.93 uL, THF @[Sampler_cnc, holder_D, A3]: 4.99 uL, TBADT @[Sampler_cnc, holder_E, C1]: 25.94 uL, MeCN @[Sampler_cnc, holder_F, C1]: 429.14 uL], [SM: 79.8 mM, THF: 80 mM, TBADT: 0.8806 mM])
+     [OK] 16:55:42[GenerateComposition] └Completed.
+          16:56:18[GenerateComposition] Started...
+          16:56:18[GenerateComposition] ├platform: Perry
+          16:56:18[GenerateComposition] ├experiment_recipe: [SM: 84.94 mM, THF: 101 mM, TBADT: 1.055 mM]
+          16:56:18[GenerateComposition] ├slug_volume: 500
+          16:56:18[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:56:18[GenerateComposition] ├max_relative_error: 0.05
+          16:56:18[GenerateComposition] ├min_volume: 0.5
+          16:56:18[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:56:19[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 6.3111535471875 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:56:19[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 42.47 uL, THF @[Sampler_cnc, holder_D, A3]: 6.31 uL, TBADT @[Sampler_cnc, holder_E, C1]: 31.02 uL, MeCN @[Sampler_cnc, holder_F, C1]: 420.2 uL], [SM: 85 mM, THF: 100.8 mM, TBADT: 1.054 mM])
+     [OK] 16:56:19[GenerateComposition] └Completed.
+          16:56:57[GenerateComposition] Started...
+          16:56:57[GenerateComposition] ├platform: Perry
+          16:56:57[GenerateComposition] ├experiment_recipe: [SM: 91.14 mM, THF: 140.6 mM, TBADT: 1.217 mM]
+          16:56:57[GenerateComposition] ├slug_volume: 500
+          16:56:57[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:56:57[GenerateComposition] ├max_relative_error: 0.05
+          16:56:57[GenerateComposition] ├min_volume: 0.5
+          16:56:57[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:56:58[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 8.785229981250001 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:56:58[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 45.57 uL, THF @[Sampler_cnc, holder_D, A3]: 8.79 uL, TBADT @[Sampler_cnc, holder_E, C1]: 35.8 uL, MeCN @[Sampler_cnc, holder_F, C1]: 409.85 uL], [SM: 91.2 mM, THF: 140.8 mM, TBADT: 1.217 mM])
+     [OK] 16:56:58[GenerateComposition] └Completed.
+          16:57:34[GenerateComposition] Started...
+          16:57:34[GenerateComposition] ├platform: Perry
+          16:57:34[GenerateComposition] ├experiment_recipe: [SM: 58.41 mM, THF: 58.41 mM, TBADT: 0.7603 mM]
+          16:57:34[GenerateComposition] ├slug_volume: 500
+          16:57:34[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:57:34[GenerateComposition] ├max_relative_error: 0.05
+          16:57:34[GenerateComposition] ├min_volume: 0.5
+          16:57:34[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:57:34[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 3.65075 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:57:34[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 29.21 uL, THF @[Sampler_cnc, holder_D, A3]: 3.65 uL, TBADT @[Sampler_cnc, holder_E, C1]: 22.36 uL, MeCN @[Sampler_cnc, holder_F, C1]: 444.78 uL], [SM: 58.4 mM, THF: 59.2 mM, TBADT: 0.7616 mM])
+     [OK] 16:57:34[GenerateComposition] └Completed.
+          16:58:10[GenerateComposition] Started...
+          16:58:10[GenerateComposition] ├platform: Perry
+          16:58:10[GenerateComposition] ├experiment_recipe: [SM: 54.36 mM, THF: 54.36 mM, TBADT: 0.6658 mM]
+          16:58:10[GenerateComposition] ├slug_volume: 500
+          16:58:10[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:58:10[GenerateComposition] ├max_relative_error: 0.05
+          16:58:10[GenerateComposition] ├min_volume: 0.5
+          16:58:10[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:58:10[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 3.39725 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+[WARNING] 16:58:10[GenerateComposition] ├Recipe component 'TBADT @[Sampler_cnc, holder_E, C1]' has volume below recommended limit: (volume 19.58374738235294 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:58:10[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 27.18 uL, THF @[Sampler_cnc, holder_D, A3]: 3.4 uL, TBADT @[Sampler_cnc, holder_E, C1]: 19.58 uL, MeCN @[Sampler_cnc, holder_F, C1]: 449.84 uL], [SM: 54.4 mM, THF: 54.4 mM, TBADT: 0.6664 mM])
+     [OK] 16:58:10[GenerateComposition] └Completed.
+          16:58:46[GenerateComposition] Started...
+          16:58:46[GenerateComposition] ├platform: Perry
+          16:58:46[GenerateComposition] ├experiment_recipe: [SM: 50 mM, THF: 50 mM, TBADT: 0.7118 mM]
+          16:58:46[GenerateComposition] ├slug_volume: 500
+          16:58:46[GenerateComposition] ├sampler_name: Sampler_cnc
+          16:58:46[GenerateComposition] ├max_relative_error: 0.05
+          16:58:46[GenerateComposition] ├min_volume: 0.5
+          16:58:46[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 16:58:46[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 3.125 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          16:58:46[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 3.12 uL, TBADT @[Sampler_cnc, holder_E, C1]: 20.94 uL, MeCN @[Sampler_cnc, holder_F, C1]: 450.94 uL], [SM: 50 mM, THF: 49.6 mM, TBADT: 0.7106 mM])
+     [OK] 16:58:46[GenerateComposition] └Completed.
+          17:08:23[GenerateComposition] Started...
+          17:08:23[GenerateComposition] ├platform: Perry
+          17:08:23[GenerateComposition] ├experiment_recipe: [SM: 83 mM, THF: 1359 mM, TBADT: 2.324 mM]
+          17:08:23[GenerateComposition] ├slug_volume: 500
+          17:08:23[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:08:23[GenerateComposition] ├max_relative_error: 0.05
+          17:08:23[GenerateComposition] ├min_volume: 0.5
+          17:08:23[GenerateComposition] ├min_accurate_volume: 20
+          17:08:23[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 41.5 uL, THF @[Sampler_cnc, holder_D, A3]: 84.91 uL, TBADT @[Sampler_cnc, holder_E, C1]: 68.36 uL, MeCN @[Sampler_cnc, holder_F, C1]: 305.23 uL], [SM: 83 mM, THF: 1358 mM, TBADT: 2.326 mM])
+     [OK] 17:08:23[GenerateComposition] └Completed.
+          17:08:54[GenerateComposition] Started...
+          17:08:54[GenerateComposition] ├platform: Perry
+          17:08:54[GenerateComposition] ├experiment_recipe: [SM: 170.2 mM, THF: 500.7 mM, TBADT: 1.825 mM]
+          17:08:54[GenerateComposition] ├slug_volume: 500
+          17:08:54[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:08:54[GenerateComposition] ├max_relative_error: 0.05
+          17:08:54[GenerateComposition] ├min_volume: 0.5
+          17:08:54[GenerateComposition] ├min_accurate_volume: 20
+          17:08:54[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 85.12 uL, THF @[Sampler_cnc, holder_D, A3]: 31.3 uL, TBADT @[Sampler_cnc, holder_E, C1]: 53.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 329.91 uL], [SM: 170.2 mM, THF: 500.8 mM, TBADT: 1.826 mM])
+     [OK] 17:08:54[GenerateComposition] └Completed.
+          17:09:25[GenerateComposition] Started...
+          17:09:25[GenerateComposition] ├platform: Perry
+          17:09:25[GenerateComposition] ├experiment_recipe: [SM: 142.5 mM, THF: 2042 mM, TBADT: 1.922 mM]
+          17:09:25[GenerateComposition] ├slug_volume: 500
+          17:09:25[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:09:25[GenerateComposition] ├max_relative_error: 0.05
+          17:09:25[GenerateComposition] ├min_volume: 0.5
+          17:09:25[GenerateComposition] ├min_accurate_volume: 20
+          17:09:25[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 71.24 uL, THF @[Sampler_cnc, holder_D, A3]: 127.62 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.52 uL, MeCN @[Sampler_cnc, holder_F, C1]: 244.61 uL], [SM: 142.4 mM, THF: 2042 mM, TBADT: 1.921 mM])
+     [OK] 17:09:25[GenerateComposition] └Completed.
+          17:09:56[GenerateComposition] Started...
+          17:09:56[GenerateComposition] ├platform: Perry
+          17:09:56[GenerateComposition] ├experiment_recipe: [SM: 55.84 mM, THF: 60.11 mM, TBADT: 0.8303 mM]
+          17:09:56[GenerateComposition] ├slug_volume: 500
+          17:09:56[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:09:56[GenerateComposition] ├max_relative_error: 0.05
+          17:09:56[GenerateComposition] ├min_volume: 0.5
+          17:09:56[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 17:09:56[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 3.756951359375 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          17:09:56[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 27.92 uL, THF @[Sampler_cnc, holder_D, A3]: 3.76 uL, TBADT @[Sampler_cnc, holder_E, C1]: 24.42 uL, MeCN @[Sampler_cnc, holder_F, C1]: 443.9 uL], [SM: 55.8 mM, THF: 60.8 mM, TBADT: 0.8296 mM])
+     [OK] 17:09:56[GenerateComposition] └Completed.
+          17:10:27[GenerateComposition] Started...
+          17:10:27[GenerateComposition] ├platform: Perry
+          17:10:27[GenerateComposition] ├experiment_recipe: [SM: 68.75 mM, THF: 142.6 mM, TBADT: 1.922 mM]
+          17:10:27[GenerateComposition] ├slug_volume: 500
+          17:10:27[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:10:27[GenerateComposition] ├max_relative_error: 0.05
+          17:10:27[GenerateComposition] ├min_volume: 0.5
+          17:10:27[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 17:10:27[GenerateComposition] ├Recipe component 'THF @[Sampler_cnc, holder_D, A3]' has volume below recommended limit: (volume 8.9135844959375 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          17:10:27[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 34.37 uL, THF @[Sampler_cnc, holder_D, A3]: 8.91 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 400.17 uL], [SM: 68.8 mM, THF: 142.4 mM, TBADT: 1.921 mM])
+     [OK] 17:10:27[GenerateComposition] └Completed.
+          17:10:58[GenerateComposition] Started...
+          17:10:58[GenerateComposition] ├platform: Perry
+          17:10:58[GenerateComposition] ├experiment_recipe: [SM: 51.35 mM, THF: 719.7 mM, TBADT: 0.5327 mM]
+          17:10:58[GenerateComposition] ├slug_volume: 500
+          17:10:58[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:10:58[GenerateComposition] ├max_relative_error: 0.05
+          17:10:58[GenerateComposition] ├min_volume: 0.5
+          17:10:58[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 17:10:58[GenerateComposition] ├Recipe component 'TBADT @[Sampler_cnc, holder_E, C1]' has volume below recommended limit: (volume 15.668786599264706 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          17:10:58[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 25.68 uL, THF @[Sampler_cnc, holder_D, A3]: 44.98 uL, TBADT @[Sampler_cnc, holder_E, C1]: 15.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 413.67 uL], [SM: 51.4 mM, THF: 720 mM, TBADT: 0.5338 mM])
+     [OK] 17:10:58[GenerateComposition] └Completed.
+          17:11:30[GenerateComposition] Started...
+          17:11:30[GenerateComposition] ├platform: Perry
+          17:11:30[GenerateComposition] ├experiment_recipe: [SM: 178.1 mM, THF: 1995 mM, TBADT: 5.297 mM]
+          17:11:30[GenerateComposition] ├slug_volume: 500
+          17:11:30[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:11:30[GenerateComposition] ├max_relative_error: 0.05
+          17:11:30[GenerateComposition] ├min_volume: 0.5
+          17:11:30[GenerateComposition] ├min_accurate_volume: 20
+          17:11:30[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 89.04 uL, THF @[Sampler_cnc, holder_D, A3]: 124.71 uL, TBADT @[Sampler_cnc, holder_E, C1]: 155.79 uL, MeCN @[Sampler_cnc, holder_F, C1]: 130.47 uL], [SM: 178 mM, THF: 1995 mM, TBADT: 5.297 mM])
+     [OK] 17:11:30[GenerateComposition] └Completed.
+          17:12:02[GenerateComposition] Started...
+          17:12:02[GenerateComposition] ├platform: Perry
+          17:12:02[GenerateComposition] ├experiment_recipe: [SM: 155.1 mM, THF: 2274 mM, TBADT: 1.741 mM]
+          17:12:02[GenerateComposition] ├slug_volume: 500
+          17:12:02[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:12:02[GenerateComposition] ├max_relative_error: 0.05
+          17:12:02[GenerateComposition] ├min_volume: 0.5
+          17:12:02[GenerateComposition] ├min_accurate_volume: 20
+          17:12:02[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 77.55 uL, THF @[Sampler_cnc, holder_D, A3]: 142.13 uL, TBADT @[Sampler_cnc, holder_E, C1]: 51.21 uL, MeCN @[Sampler_cnc, holder_F, C1]: 229.1 uL], [SM: 155 mM, THF: 2274 mM, TBADT: 1.741 mM])
+     [OK] 17:12:02[GenerateComposition] └Completed.
+          17:12:33[GenerateComposition] Started...
+          17:12:33[GenerateComposition] ├platform: Perry
+          17:12:33[GenerateComposition] ├experiment_recipe: [SM: 86.4 mM, THF: 1098 mM, TBADT: 0.5964 mM]
+          17:12:33[GenerateComposition] ├slug_volume: 500
+          17:12:33[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:12:33[GenerateComposition] ├max_relative_error: 0.05
+          17:12:33[GenerateComposition] ├min_volume: 0.5
+          17:12:33[GenerateComposition] ├min_accurate_volume: 20
+[WARNING] 17:12:33[GenerateComposition] ├Recipe component 'TBADT @[Sampler_cnc, holder_E, C1]' has volume below recommended limit: (volume 17.540876617647058 uL < accuracy limit 20.0 uL).Trying again (attempts left: 99).
+          17:12:33[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 43.2 uL, THF @[Sampler_cnc, holder_D, A3]: 68.65 uL, TBADT @[Sampler_cnc, holder_E, C1]: 17.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 370.6 uL], [SM: 86.4 mM, THF: 1099 mM, TBADT: 0.595 mM])
+     [OK] 17:12:33[GenerateComposition] └Completed.
+          17:15:23[GenerateComposition] Started...
+          17:15:23[GenerateComposition] ├platform: Perry
+          17:15:23[GenerateComposition] ├experiment_recipe: [SM: 165.1 mM, THF: 807.5 mM, TBADT: 4.572 mM]
+          17:15:23[GenerateComposition] ├slug_volume: 500
+          17:15:23[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:15:23[GenerateComposition] ├max_relative_error: 0.05
+          17:15:23[GenerateComposition] ├min_volume: 0.5
+          17:15:23[GenerateComposition] ├min_accurate_volume: 20
+          17:15:23[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 82.57 uL, THF @[Sampler_cnc, holder_D, A3]: 50.47 uL, TBADT @[Sampler_cnc, holder_E, C1]: 134.46 uL, MeCN @[Sampler_cnc, holder_F, C1]: 232.5 uL], [SM: 165.2 mM, THF: 808 mM, TBADT: 4.573 mM])
+     [OK] 17:15:23[GenerateComposition] └Completed.
+          17:15:54[GenerateComposition] Started...
+          17:15:54[GenerateComposition] ├platform: Perry
+          17:15:54[GenerateComposition] ├experiment_recipe: [SM: 100.1 mM, THF: 1648 mM, TBADT: 0.8174 mM]
+          17:15:54[GenerateComposition] ├slug_volume: 500
+          17:15:54[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:15:54[GenerateComposition] ├max_relative_error: 0.05
+          17:15:54[GenerateComposition] ├min_volume: 0.5
+          17:15:54[GenerateComposition] ├min_accurate_volume: 20
+          17:15:54[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 50.06 uL, THF @[Sampler_cnc, holder_D, A3]: 102.99 uL, TBADT @[Sampler_cnc, holder_E, C1]: 24.04 uL, MeCN @[Sampler_cnc, holder_F, C1]: 322.91 uL], [SM: 100.2 mM, THF: 1648 mM, TBADT: 0.816 mM])
+     [OK] 17:15:54[GenerateComposition] └Completed.
+          17:16:26[GenerateComposition] Started...
+          17:16:26[GenerateComposition] ├platform: Perry
+          17:16:26[GenerateComposition] ├experiment_recipe: [SM: 187.8 mM, THF: 1938 mM, TBADT: 2.641 mM]
+          17:16:26[GenerateComposition] ├slug_volume: 500
+          17:16:26[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:16:26[GenerateComposition] ├max_relative_error: 0.05
+          17:16:26[GenerateComposition] ├min_volume: 0.5
+          17:16:26[GenerateComposition] ├min_accurate_volume: 20
+          17:16:26[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 93.92 uL, THF @[Sampler_cnc, holder_D, A3]: 121.16 uL, TBADT @[Sampler_cnc, holder_E, C1]: 77.68 uL, MeCN @[Sampler_cnc, holder_F, C1]: 207.25 uL], [SM: 187.8 mM, THF: 1939 mM, TBADT: 2.642 mM])
+     [OK] 17:16:26[GenerateComposition] └Completed.
+          17:16:59[GenerateComposition] Started...
+          17:16:59[GenerateComposition] ├platform: Perry
+          17:16:59[GenerateComposition] ├experiment_recipe: [SM: 56.44 mM, THF: 676.9 mM, TBADT: 1.506 mM]
+          17:16:59[GenerateComposition] ├slug_volume: 500
+          17:16:59[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:16:59[GenerateComposition] ├max_relative_error: 0.05
+          17:16:59[GenerateComposition] ├min_volume: 0.5
+          17:16:59[GenerateComposition] ├min_accurate_volume: 20
+          17:16:59[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 28.22 uL, THF @[Sampler_cnc, holder_D, A3]: 42.31 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.28 uL, MeCN @[Sampler_cnc, holder_F, C1]: 385.19 uL], [SM: 56.4 mM, THF: 676.8 mM, TBADT: 1.506 mM])
+     [OK] 17:16:59[GenerateComposition] └Completed.
+          17:18:23[GenerateComposition] Started...
+          17:18:23[GenerateComposition] ├platform: Perry
+          17:18:23[GenerateComposition] ├experiment_recipe: [SM: 190.6 mM, THF: 1711 mM, TBADT: 0.9887 mM]
+          17:18:23[GenerateComposition] ├slug_volume: 500
+          17:18:23[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:18:23[GenerateComposition] ├max_relative_error: 0.05
+          17:18:23[GenerateComposition] ├min_volume: 0.5
+          17:18:23[GenerateComposition] ├min_accurate_volume: 20
+          17:18:23[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 95.3 uL, THF @[Sampler_cnc, holder_D, A3]: 106.94 uL, TBADT @[Sampler_cnc, holder_E, C1]: 29.08 uL, MeCN @[Sampler_cnc, holder_F, C1]: 268.67 uL], [SM: 190.6 mM, THF: 1710 mM, TBADT: 0.9894 mM])
+     [OK] 17:18:23[GenerateComposition] └Completed.
+          17:18:55[GenerateComposition] Started...
+          17:18:55[GenerateComposition] ├platform: Perry
+          17:18:55[GenerateComposition] ├experiment_recipe: [SM: 99.61 mM, THF: 580.8 mM, TBADT: 2.527 mM]
+          17:18:55[GenerateComposition] ├slug_volume: 500
+          17:18:55[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:18:55[GenerateComposition] ├max_relative_error: 0.05
+          17:18:55[GenerateComposition] ├min_volume: 0.5
+          17:18:55[GenerateComposition] ├min_accurate_volume: 20
+          17:18:55[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 49.81 uL, THF @[Sampler_cnc, holder_D, A3]: 36.3 uL, TBADT @[Sampler_cnc, holder_E, C1]: 74.32 uL, MeCN @[Sampler_cnc, holder_F, C1]: 339.57 uL], [SM: 99.6 mM, THF: 580.8 mM, TBADT: 2.526 mM])
+     [OK] 17:18:55[GenerateComposition] └Completed.
+          17:19:26[GenerateComposition] Started...
+          17:19:26[GenerateComposition] ├platform: Perry
+          17:19:26[GenerateComposition] ├experiment_recipe: [SM: 199 mM, THF: 3443 mM, TBADT: 3.618 mM]
+          17:19:26[GenerateComposition] ├slug_volume: 500
+          17:19:26[GenerateComposition] ├sampler_name: Sampler_cnc
+          17:19:26[GenerateComposition] ├max_relative_error: 0.05
+          17:19:26[GenerateComposition] ├min_volume: 0.5
+          17:19:26[GenerateComposition] ├min_accurate_volume: 20
+          17:19:26[GenerateComposition] ├Result:
+                                        ├([SM @[Sampler_cnc, holder_D, A1]: 99.48 uL, THF @[Sampler_cnc, holder_D, A3]: 215.21 uL, TBADT @[Sampler_cnc, holder_E, C1]: 106.43 uL, MeCN @[Sampler_cnc, holder_F, C1]: 78.88 uL], [SM: 199 mM, THF: 3443 mM, TBADT: 3.618 mM])
+     [OK] 17:19:26[GenerateComposition] └Completed.

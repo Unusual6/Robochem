@@ -1,0 +1,16 @@
+          15:49:01[Logger] Logger started.
+[WARNING] 15:52:18[Logger] Attempt to start Logger thread while it is already running.
+          15:57:32[Logger] Logger started.
+          15:59:04[Logger] Logger started.
+          [Logger] Logger stopped.
+          16:02:41[Logger] Logger started.
+          16:25:29[Logger] Logger started.
+          16:27:24[Logger] Logger started.
+          16:50:13[Logger] Logger started.
+          [Logger] Logger stopped.
+          16:59:37[Logger] Logger started.
+          17:05:49[Logger] Logger started.
+          17:08:20[Logger] Logger started.
+          [Logger] Logger stopped.
+          17:15:20[Logger] Logger started.
+          17:18:20[Logger] Logger started.

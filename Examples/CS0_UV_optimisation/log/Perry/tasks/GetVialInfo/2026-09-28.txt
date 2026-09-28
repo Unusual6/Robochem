@@ -1,0 +1,2374 @@
+          15:49:10[GetVialInfo] Started...
+          15:49:10[GetVialInfo] ├vial_id: 0x001
+          15:49:10[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       A1       SM
+                                ├0x002   holder_D  Sampler_cnc       A3      THF
+                                ├0x003   holder_E  Sampler_cnc       C1    TBADT
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+                                ├0x005   holder_F  Sampler_cnc       B1     wash
+                                ├0x006   holder_A  Sampler_cnc       D1       N2
+                                ├0x007   holder_A  Sampler_cnc       D2   Mixing
+          15:49:10[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 15:49:10[GetVialInfo] └Completed.
+          15:49:10[GetVialInfo] Started...
+          15:49:10[GetVialInfo] ├vial_id: 0x002
+          15:49:10[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       A1       SM
+                                ├0x002   holder_D  Sampler_cnc       A3      THF
+                                ├0x003   holder_E  Sampler_cnc       C1    TBADT
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+                                ├0x005   holder_F  Sampler_cnc       B1     wash
+                                ├0x006   holder_A  Sampler_cnc       D1       N2
+                                ├0x007   holder_A  Sampler_cnc       D2   Mixing
+          15:49:10[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 15:49:10[GetVialInfo] └Completed.
+          15:49:10[GetVialInfo] Started...
+          15:49:10[GetVialInfo] ├vial_id: 0x003
+          15:49:10[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       A1       SM
+                                ├0x002   holder_D  Sampler_cnc       A3      THF
+                                ├0x003   holder_E  Sampler_cnc       C1    TBADT
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+                                ├0x005   holder_F  Sampler_cnc       B1     wash
+                                ├0x006   holder_A  Sampler_cnc       D1       N2
+                                ├0x007   holder_A  Sampler_cnc       D2   Mixing
+          15:49:10[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 15:49:10[GetVialInfo] └Completed.
+          15:49:10[GetVialInfo] Started...
+          15:49:10[GetVialInfo] ├vial_id: 0x004
+          15:49:10[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+          15:49:10[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 15:49:10[GetVialInfo] └Completed.
+          15:52:23[GetVialInfo] Started...
+          15:52:23[GetVialInfo] ├vial_id: 0x001
+          15:52:23[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       A1       SM
+                                ├0x002   holder_D  Sampler_cnc       A3      THF
+                                ├0x003   holder_E  Sampler_cnc       C1    TBADT
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+                                ├0x005   holder_F  Sampler_cnc       B1     wash
+                                ├0x006   holder_A  Sampler_cnc       D1       N2
+                                ├0x007   holder_A  Sampler_cnc       D2   Mixing
+          15:52:23[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 15:52:23[GetVialInfo] └Completed.
+          15:52:23[GetVialInfo] Started...
+          15:52:23[GetVialInfo] ├vial_id: 0x002
+          15:52:23[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       A1       SM
+                                ├0x002   holder_D  Sampler_cnc       A3      THF
+                                ├0x003   holder_E  Sampler_cnc       C1    TBADT
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+                                ├0x005   holder_F  Sampler_cnc       B1     wash
+                                ├0x006   holder_A  Sampler_cnc       D1       N2
+                                ├0x007   holder_A  Sampler_cnc       D2   Mixing
+          15:52:23[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 15:52:23[GetVialInfo] └Completed.
+          15:52:23[GetVialInfo] Started...
+          15:52:23[GetVialInfo] ├vial_id: 0x003
+          15:52:23[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       A1       SM
+                                ├0x002   holder_D  Sampler_cnc       A3      THF
+                                ├0x003   holder_E  Sampler_cnc       C1    TBADT
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+                                ├0x005   holder_F  Sampler_cnc       B1     wash
+                                ├0x006   holder_A  Sampler_cnc       D1       N2
+                                ├0x007   holder_A  Sampler_cnc       D2   Mixing
+          15:52:23[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 15:52:23[GetVialInfo] └Completed.
+          15:52:23[GetVialInfo] Started...
+          15:52:23[GetVialInfo] ├vial_id: 0x004
+          15:52:23[GetVialInfo] ├samples:
+                                ├          Holder      Sampler Position VialName
+                                ├VialID                                         
+                                ├0x004   holder_F  Sampler_cnc       C1     MeCN
+          15:52:23[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 15:52:23[GetVialInfo] └Completed.
+          16:02:46[GetVialInfo] Started...
+          16:02:46[GetVialInfo] ├vial_id: 0x001
+          16:02:46[GetVialInfo] ├samples:
+                                ├          Holder      Sampler VialName Position
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       SM       A1
+                                ├0x002   holder_D  Sampler_cnc      THF       A3
+                                ├0x003   holder_E  Sampler_cnc    TBADT       C1
+                                ├0x004   holder_F  Sampler_cnc     MeCN       C1
+                                ├0x005   holder_F  Sampler_cnc     wash       B1
+                                ├0x006   holder_A  Sampler_cnc       N2       D1
+                                ├0x007   holder_A  Sampler_cnc   Mixing       D2
+          16:02:46[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:02:46[GetVialInfo] └Completed.
+          16:02:46[GetVialInfo] Started...
+          16:02:46[GetVialInfo] ├vial_id: 0x002
+          16:02:46[GetVialInfo] ├samples:
+                                ├          Holder      Sampler VialName Position
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       SM       A1
+                                ├0x002   holder_D  Sampler_cnc      THF       A3
+                                ├0x003   holder_E  Sampler_cnc    TBADT       C1
+                                ├0x004   holder_F  Sampler_cnc     MeCN       C1
+                                ├0x005   holder_F  Sampler_cnc     wash       B1
+                                ├0x006   holder_A  Sampler_cnc       N2       D1
+                                ├0x007   holder_A  Sampler_cnc   Mixing       D2
+          16:02:46[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:02:46[GetVialInfo] └Completed.
+          16:02:46[GetVialInfo] Started...
+          16:02:46[GetVialInfo] ├vial_id: 0x003
+          16:02:46[GetVialInfo] ├samples:
+                                ├          Holder      Sampler VialName Position
+                                ├VialID                                         
+                                ├0x001   holder_D  Sampler_cnc       SM       A1
+                                ├0x002   holder_D  Sampler_cnc      THF       A3
+                                ├0x003   holder_E  Sampler_cnc    TBADT       C1
+                                ├0x004   holder_F  Sampler_cnc     MeCN       C1
+                                ├0x005   holder_F  Sampler_cnc     wash       B1
+                                ├0x006   holder_A  Sampler_cnc       N2       D1
+                                ├0x007   holder_A  Sampler_cnc   Mixing       D2
+          16:02:46[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:02:46[GetVialInfo] └Completed.
+          16:02:46[GetVialInfo] Started...
+          16:02:46[GetVialInfo] ├vial_id: 0x004
+          16:02:46[GetVialInfo] ├samples:
+                                ├          Holder      Sampler VialName Position
+                                ├VialID                                         
+                                ├0x004   holder_F  Sampler_cnc     MeCN       C1
+          16:02:46[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:02:46[GetVialInfo] └Completed.
+          16:27:26[GetVialInfo] Started...
+          16:27:26[GetVialInfo] ├vial_id: 0x001
+          16:27:26[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:27:26[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:27:26[GetVialInfo] └Completed.
+          16:27:26[GetVialInfo] Started...
+          16:27:26[GetVialInfo] ├vial_id: 0x002
+          16:27:26[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:27:26[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:27:26[GetVialInfo] └Completed.
+          16:27:26[GetVialInfo] Started...
+          16:27:26[GetVialInfo] ├vial_id: 0x003
+          16:27:26[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:27:26[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:27:26[GetVialInfo] └Completed.
+          16:27:26[GetVialInfo] Started...
+          16:27:26[GetVialInfo] ├vial_id: 0x004
+          16:27:26[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:27:26[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:27:26[GetVialInfo] └Completed.
+          16:27:57[GetVialInfo] Started...
+          16:27:57[GetVialInfo] ├vial_id: 0x001
+          16:27:57[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:27:57[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:27:57[GetVialInfo] └Completed.
+          16:27:57[GetVialInfo] Started...
+          16:27:57[GetVialInfo] ├vial_id: 0x002
+          16:27:57[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:27:57[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:27:57[GetVialInfo] └Completed.
+          16:27:57[GetVialInfo] Started...
+          16:27:57[GetVialInfo] ├vial_id: 0x002
+          16:27:57[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:27:57[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:27:57[GetVialInfo] └Completed.
+          16:27:57[GetVialInfo] Started...
+          16:27:57[GetVialInfo] ├vial_id: 0x003
+          16:27:57[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:27:57[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:27:57[GetVialInfo] └Completed.
+          16:27:57[GetVialInfo] Started...
+          16:27:57[GetVialInfo] ├vial_id: 0x004
+          16:27:57[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:27:57[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:27:57[GetVialInfo] └Completed.
+          16:28:28[GetVialInfo] Started...
+          16:28:28[GetVialInfo] ├vial_id: 0x001
+          16:28:28[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:28:28[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:28:28[GetVialInfo] └Completed.
+          16:28:28[GetVialInfo] Started...
+          16:28:28[GetVialInfo] ├vial_id: 0x002
+          16:28:28[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:28:28[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:28:28[GetVialInfo] └Completed.
+          16:28:28[GetVialInfo] Started...
+          16:28:28[GetVialInfo] ├vial_id: 0x003
+          16:28:28[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:28:28[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:28:28[GetVialInfo] └Completed.
+          16:28:28[GetVialInfo] Started...
+          16:28:28[GetVialInfo] ├vial_id: 0x004
+          16:28:28[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:28:28[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:28:28[GetVialInfo] └Completed.
+          16:28:59[GetVialInfo] Started...
+          16:28:59[GetVialInfo] ├vial_id: 0x001
+          16:28:59[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:28:59[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:28:59[GetVialInfo] └Completed.
+          16:28:59[GetVialInfo] Started...
+          16:28:59[GetVialInfo] ├vial_id: 0x002
+          16:28:59[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:28:59[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:28:59[GetVialInfo] └Completed.
+          16:28:59[GetVialInfo] Started...
+          16:28:59[GetVialInfo] ├vial_id: 0x003
+          16:28:59[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:28:59[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:28:59[GetVialInfo] └Completed.
+          16:28:59[GetVialInfo] Started...
+          16:28:59[GetVialInfo] ├vial_id: 0x003
+          16:28:59[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:28:59[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:28:59[GetVialInfo] └Completed.
+          16:28:59[GetVialInfo] Started...
+          16:28:59[GetVialInfo] ├vial_id: 0x004
+          16:28:59[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:28:59[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:28:59[GetVialInfo] └Completed.
+          16:29:30[GetVialInfo] Started...
+          16:29:30[GetVialInfo] ├vial_id: 0x001
+          16:29:30[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:29:30[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:29:30[GetVialInfo] └Completed.
+          16:29:30[GetVialInfo] Started...
+          16:29:30[GetVialInfo] ├vial_id: 0x002
+          16:29:30[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:29:30[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:29:30[GetVialInfo] └Completed.
+          16:29:30[GetVialInfo] Started...
+          16:29:30[GetVialInfo] ├vial_id: 0x003
+          16:29:30[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:29:30[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:29:30[GetVialInfo] └Completed.
+          16:29:30[GetVialInfo] Started...
+          16:29:30[GetVialInfo] ├vial_id: 0x004
+          16:29:30[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:29:30[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:29:30[GetVialInfo] └Completed.
+          16:30:00[GetVialInfo] Started...
+          16:30:00[GetVialInfo] ├vial_id: 0x001
+          16:30:00[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:30:00[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:30:00[GetVialInfo] └Completed.
+          16:30:00[GetVialInfo] Started...
+          16:30:00[GetVialInfo] ├vial_id: 0x002
+          16:30:00[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:30:00[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:30:00[GetVialInfo] └Completed.
+          16:30:00[GetVialInfo] Started...
+          16:30:00[GetVialInfo] ├vial_id: 0x003
+          16:30:00[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:30:00[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:30:00[GetVialInfo] └Completed.
+          16:30:00[GetVialInfo] Started...
+          16:30:00[GetVialInfo] ├vial_id: 0x004
+          16:30:00[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:30:00[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:30:00[GetVialInfo] └Completed.
+          16:30:32[GetVialInfo] Started...
+          16:30:32[GetVialInfo] ├vial_id: 0x001
+          16:30:32[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:30:32[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:30:32[GetVialInfo] └Completed.
+          16:30:32[GetVialInfo] Started...
+          16:30:32[GetVialInfo] ├vial_id: 0x002
+          16:30:32[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:30:32[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:30:32[GetVialInfo] └Completed.
+          16:30:32[GetVialInfo] Started...
+          16:30:32[GetVialInfo] ├vial_id: 0x003
+          16:30:32[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:30:32[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:30:32[GetVialInfo] └Completed.
+          16:30:32[GetVialInfo] Started...
+          16:30:32[GetVialInfo] ├vial_id: 0x004
+          16:30:32[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:30:32[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:30:32[GetVialInfo] └Completed.
+          16:31:03[GetVialInfo] Started...
+          16:31:03[GetVialInfo] ├vial_id: 0x001
+          16:31:03[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:31:03[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:31:03[GetVialInfo] └Completed.
+          16:31:03[GetVialInfo] Started...
+          16:31:03[GetVialInfo] ├vial_id: 0x002
+          16:31:03[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:31:03[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:31:03[GetVialInfo] └Completed.
+          16:31:03[GetVialInfo] Started...
+          16:31:03[GetVialInfo] ├vial_id: 0x002
+          16:31:03[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x002        A3  Sampler_cnc  holder_D      THF
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:31:03[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:31:03[GetVialInfo] └Completed.
+          16:31:03[GetVialInfo] Started...
+          16:31:03[GetVialInfo] ├vial_id: 0x003
+          16:31:03[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x001        A1  Sampler_cnc  holder_D       SM
+                                ├0x003        C1  Sampler_cnc  holder_E    TBADT
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+                                ├0x005        B1  Sampler_cnc  holder_F     wash
+                                ├0x006        D1  Sampler_cnc  holder_A       N2
+                                ├0x007        D2  Sampler_cnc  holder_A   Mixing
+          16:31:03[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:31:03[GetVialInfo] └Completed.
+          16:31:03[GetVialInfo] Started...
+          16:31:03[GetVialInfo] ├vial_id: 0x004
+          16:31:03[GetVialInfo] ├samples:
+                                ├       Position      Sampler    Holder VialName
+                                ├VialID                                         
+                                ├0x004        C1  Sampler_cnc  holder_F     MeCN
+          16:31:03[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:31:03[GetVialInfo] └Completed.
+          16:50:16[GetVialInfo] Started...
+          16:50:16[GetVialInfo] ├vial_id: 0x001
+          16:50:16[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:50:16[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:50:16[GetVialInfo] └Completed.
+          16:50:16[GetVialInfo] Started...
+          16:50:16[GetVialInfo] ├vial_id: 0x002
+          16:50:16[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:50:16[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:50:16[GetVialInfo] └Completed.
+          16:50:16[GetVialInfo] Started...
+          16:50:16[GetVialInfo] ├vial_id: 0x003
+          16:50:16[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:50:16[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:50:16[GetVialInfo] └Completed.
+          16:50:16[GetVialInfo] Started...
+          16:50:16[GetVialInfo] ├vial_id: 0x004
+          16:50:16[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:50:16[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:50:16[GetVialInfo] └Completed.
+          16:50:47[GetVialInfo] Started...
+          16:50:47[GetVialInfo] ├vial_id: 0x001
+          16:50:47[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:50:47[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:50:47[GetVialInfo] └Completed.
+          16:50:47[GetVialInfo] Started...
+          16:50:47[GetVialInfo] ├vial_id: 0x002
+          16:50:47[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:50:47[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:50:47[GetVialInfo] └Completed.
+          16:50:47[GetVialInfo] Started...
+          16:50:47[GetVialInfo] ├vial_id: 0x002
+          16:50:47[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:50:47[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:50:47[GetVialInfo] └Completed.
+          16:50:47[GetVialInfo] Started...
+          16:50:47[GetVialInfo] ├vial_id: 0x003
+          16:50:47[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:50:47[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:50:47[GetVialInfo] └Completed.
+          16:50:47[GetVialInfo] Started...
+          16:50:47[GetVialInfo] ├vial_id: 0x004
+          16:50:47[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:50:47[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:50:47[GetVialInfo] └Completed.
+          16:51:19[GetVialInfo] Started...
+          16:51:19[GetVialInfo] ├vial_id: 0x001
+          16:51:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:51:19[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:51:19[GetVialInfo] └Completed.
+          16:51:19[GetVialInfo] Started...
+          16:51:19[GetVialInfo] ├vial_id: 0x002
+          16:51:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:51:19[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:51:19[GetVialInfo] └Completed.
+          16:51:19[GetVialInfo] Started...
+          16:51:19[GetVialInfo] ├vial_id: 0x003
+          16:51:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:51:19[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:51:19[GetVialInfo] └Completed.
+          16:51:19[GetVialInfo] Started...
+          16:51:19[GetVialInfo] ├vial_id: 0x004
+          16:51:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:51:19[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:51:19[GetVialInfo] └Completed.
+          16:51:51[GetVialInfo] Started...
+          16:51:51[GetVialInfo] ├vial_id: 0x001
+          16:51:51[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:51:51[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:51:51[GetVialInfo] └Completed.
+          16:51:51[GetVialInfo] Started...
+          16:51:51[GetVialInfo] ├vial_id: 0x002
+          16:51:51[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:51:51[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:51:51[GetVialInfo] └Completed.
+          16:51:51[GetVialInfo] Started...
+          16:51:51[GetVialInfo] ├vial_id: 0x002
+          16:51:51[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:51:51[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:51:51[GetVialInfo] └Completed.
+          16:51:51[GetVialInfo] Started...
+          16:51:51[GetVialInfo] ├vial_id: 0x003
+          16:51:51[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:51:51[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:51:51[GetVialInfo] └Completed.
+          16:51:51[GetVialInfo] Started...
+          16:51:51[GetVialInfo] ├vial_id: 0x004
+          16:51:51[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:51:51[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:51:51[GetVialInfo] └Completed.
+          16:52:24[GetVialInfo] Started...
+          16:52:24[GetVialInfo] ├vial_id: 0x001
+          16:52:24[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:52:24[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:52:24[GetVialInfo] └Completed.
+          16:52:24[GetVialInfo] Started...
+          16:52:24[GetVialInfo] ├vial_id: 0x002
+          16:52:24[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:52:24[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:52:24[GetVialInfo] └Completed.
+          16:52:24[GetVialInfo] Started...
+          16:52:24[GetVialInfo] ├vial_id: 0x003
+          16:52:24[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:52:24[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:52:24[GetVialInfo] └Completed.
+          16:52:24[GetVialInfo] Started...
+          16:52:24[GetVialInfo] ├vial_id: 0x004
+          16:52:24[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:52:24[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:52:24[GetVialInfo] └Completed.
+          16:52:56[GetVialInfo] Started...
+          16:52:56[GetVialInfo] ├vial_id: 0x001
+          16:52:56[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:52:56[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:52:56[GetVialInfo] └Completed.
+          16:52:56[GetVialInfo] Started...
+          16:52:56[GetVialInfo] ├vial_id: 0x002
+          16:52:56[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:52:56[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:52:56[GetVialInfo] └Completed.
+          16:52:56[GetVialInfo] Started...
+          16:52:56[GetVialInfo] ├vial_id: 0x003
+          16:52:56[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:52:56[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:52:56[GetVialInfo] └Completed.
+          16:52:56[GetVialInfo] Started...
+          16:52:56[GetVialInfo] ├vial_id: 0x004
+          16:52:56[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:52:56[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:52:56[GetVialInfo] └Completed.
+          16:53:28[GetVialInfo] Started...
+          16:53:28[GetVialInfo] ├vial_id: 0x001
+          16:53:28[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:53:28[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:53:28[GetVialInfo] └Completed.
+          16:53:28[GetVialInfo] Started...
+          16:53:28[GetVialInfo] ├vial_id: 0x002
+          16:53:28[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:53:28[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:53:28[GetVialInfo] └Completed.
+          16:53:28[GetVialInfo] Started...
+          16:53:28[GetVialInfo] ├vial_id: 0x003
+          16:53:28[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:53:28[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:53:28[GetVialInfo] └Completed.
+          16:53:28[GetVialInfo] Started...
+          16:53:28[GetVialInfo] ├vial_id: 0x004
+          16:53:28[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:53:28[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:53:28[GetVialInfo] └Completed.
+          16:54:01[GetVialInfo] Started...
+          16:54:01[GetVialInfo] ├vial_id: 0x001
+          16:54:01[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:54:01[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:54:01[GetVialInfo] └Completed.
+          16:54:01[GetVialInfo] Started...
+          16:54:01[GetVialInfo] ├vial_id: 0x002
+          16:54:01[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:54:01[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:54:01[GetVialInfo] └Completed.
+          16:54:01[GetVialInfo] Started...
+          16:54:01[GetVialInfo] ├vial_id: 0x003
+          16:54:01[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:54:01[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:54:01[GetVialInfo] └Completed.
+          16:54:01[GetVialInfo] Started...
+          16:54:01[GetVialInfo] ├vial_id: 0x004
+          16:54:01[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:54:01[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:54:01[GetVialInfo] └Completed.
+          16:54:33[GetVialInfo] Started...
+          16:54:33[GetVialInfo] ├vial_id: 0x001
+          16:54:33[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:54:33[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:54:33[GetVialInfo] └Completed.
+          16:54:33[GetVialInfo] Started...
+          16:54:33[GetVialInfo] ├vial_id: 0x002
+          16:54:33[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:54:33[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:54:33[GetVialInfo] └Completed.
+          16:54:33[GetVialInfo] Started...
+          16:54:33[GetVialInfo] ├vial_id: 0x002
+          16:54:33[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:54:33[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:54:33[GetVialInfo] └Completed.
+          16:54:33[GetVialInfo] Started...
+          16:54:33[GetVialInfo] ├vial_id: 0x003
+          16:54:33[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:54:33[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:54:33[GetVialInfo] └Completed.
+          16:54:33[GetVialInfo] Started...
+          16:54:33[GetVialInfo] ├vial_id: 0x004
+          16:54:33[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:54:33[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:54:33[GetVialInfo] └Completed.
+          16:55:04[GetVialInfo] Started...
+          16:55:04[GetVialInfo] ├vial_id: 0x001
+          16:55:04[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:55:04[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:55:04[GetVialInfo] └Completed.
+          16:55:04[GetVialInfo] Started...
+          16:55:04[GetVialInfo] ├vial_id: 0x002
+          16:55:04[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:55:04[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:55:04[GetVialInfo] └Completed.
+          16:55:04[GetVialInfo] Started...
+          16:55:04[GetVialInfo] ├vial_id: 0x003
+          16:55:04[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:55:04[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:55:04[GetVialInfo] └Completed.
+          16:55:04[GetVialInfo] Started...
+          16:55:04[GetVialInfo] ├vial_id: 0x004
+          16:55:04[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:55:04[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:55:04[GetVialInfo] └Completed.
+          16:55:42[GetVialInfo] Started...
+          16:55:42[GetVialInfo] ├vial_id: 0x001
+          16:55:42[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:55:42[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:55:42[GetVialInfo] └Completed.
+          16:55:42[GetVialInfo] Started...
+          16:55:42[GetVialInfo] ├vial_id: 0x002
+          16:55:42[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:55:42[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:55:42[GetVialInfo] └Completed.
+          16:55:42[GetVialInfo] Started...
+          16:55:42[GetVialInfo] ├vial_id: 0x002
+          16:55:42[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:55:42[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:55:42[GetVialInfo] └Completed.
+          16:55:42[GetVialInfo] Started...
+          16:55:42[GetVialInfo] ├vial_id: 0x003
+          16:55:42[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:55:42[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:55:42[GetVialInfo] └Completed.
+          16:55:42[GetVialInfo] Started...
+          16:55:42[GetVialInfo] ├vial_id: 0x004
+          16:55:42[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:55:42[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:55:42[GetVialInfo] └Completed.
+          16:56:19[GetVialInfo] Started...
+          16:56:19[GetVialInfo] ├vial_id: 0x001
+          16:56:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:19[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:56:19[GetVialInfo] └Completed.
+          16:56:19[GetVialInfo] Started...
+          16:56:19[GetVialInfo] ├vial_id: 0x002
+          16:56:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:19[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:56:19[GetVialInfo] └Completed.
+          16:56:19[GetVialInfo] Started...
+          16:56:19[GetVialInfo] ├vial_id: 0x002
+          16:56:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:19[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:56:19[GetVialInfo] └Completed.
+          16:56:19[GetVialInfo] Started...
+          16:56:19[GetVialInfo] ├vial_id: 0x003
+          16:56:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:19[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:56:19[GetVialInfo] └Completed.
+          16:56:19[GetVialInfo] Started...
+          16:56:19[GetVialInfo] ├vial_id: 0x004
+          16:56:19[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:56:19[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:56:19[GetVialInfo] └Completed.
+          16:56:58[GetVialInfo] Started...
+          16:56:58[GetVialInfo] ├vial_id: 0x001
+          16:56:58[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:58[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:56:58[GetVialInfo] └Completed.
+          16:56:58[GetVialInfo] Started...
+          16:56:58[GetVialInfo] ├vial_id: 0x002
+          16:56:58[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:58[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:56:58[GetVialInfo] └Completed.
+          16:56:58[GetVialInfo] Started...
+          16:56:58[GetVialInfo] ├vial_id: 0x002
+          16:56:58[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:58[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:56:58[GetVialInfo] └Completed.
+          16:56:58[GetVialInfo] Started...
+          16:56:58[GetVialInfo] ├vial_id: 0x003
+          16:56:58[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:56:58[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:56:58[GetVialInfo] └Completed.
+          16:56:58[GetVialInfo] Started...
+          16:56:58[GetVialInfo] ├vial_id: 0x004
+          16:56:58[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:56:58[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:56:58[GetVialInfo] └Completed.
+          16:57:34[GetVialInfo] Started...
+          16:57:34[GetVialInfo] ├vial_id: 0x001
+          16:57:34[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:57:34[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:57:34[GetVialInfo] └Completed.
+          16:57:34[GetVialInfo] Started...
+          16:57:34[GetVialInfo] ├vial_id: 0x002
+          16:57:34[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:57:34[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:57:34[GetVialInfo] └Completed.
+          16:57:34[GetVialInfo] Started...
+          16:57:34[GetVialInfo] ├vial_id: 0x002
+          16:57:34[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:57:34[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:57:34[GetVialInfo] └Completed.
+          16:57:34[GetVialInfo] Started...
+          16:57:34[GetVialInfo] ├vial_id: 0x003
+          16:57:34[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:57:34[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:57:34[GetVialInfo] └Completed.
+          16:57:34[GetVialInfo] Started...
+          16:57:34[GetVialInfo] ├vial_id: 0x004
+          16:57:34[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:57:34[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:57:34[GetVialInfo] └Completed.
+          16:58:10[GetVialInfo] Started...
+          16:58:10[GetVialInfo] ├vial_id: 0x001
+          16:58:10[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:10[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:58:10[GetVialInfo] └Completed.
+          16:58:10[GetVialInfo] Started...
+          16:58:10[GetVialInfo] ├vial_id: 0x002
+          16:58:10[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:10[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:58:10[GetVialInfo] └Completed.
+          16:58:10[GetVialInfo] Started...
+          16:58:10[GetVialInfo] ├vial_id: 0x002
+          16:58:10[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:10[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:58:10[GetVialInfo] └Completed.
+          16:58:10[GetVialInfo] Started...
+          16:58:10[GetVialInfo] ├vial_id: 0x003
+          16:58:10[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:10[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:58:10[GetVialInfo] └Completed.
+          16:58:10[GetVialInfo] Started...
+          16:58:10[GetVialInfo] ├vial_id: 0x003
+          16:58:10[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:10[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:58:10[GetVialInfo] └Completed.
+          16:58:10[GetVialInfo] Started...
+          16:58:10[GetVialInfo] ├vial_id: 0x004
+          16:58:10[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:58:10[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:58:10[GetVialInfo] └Completed.
+          16:58:46[GetVialInfo] Started...
+          16:58:46[GetVialInfo] ├vial_id: 0x001
+          16:58:46[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:46[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 16:58:46[GetVialInfo] └Completed.
+          16:58:46[GetVialInfo] Started...
+          16:58:46[GetVialInfo] ├vial_id: 0x002
+          16:58:46[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:46[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:58:46[GetVialInfo] └Completed.
+          16:58:46[GetVialInfo] Started...
+          16:58:46[GetVialInfo] ├vial_id: 0x002
+          16:58:46[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x002        A3  holder_D      THF  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:46[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 16:58:46[GetVialInfo] └Completed.
+          16:58:46[GetVialInfo] Started...
+          16:58:46[GetVialInfo] ├vial_id: 0x003
+          16:58:46[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x001        A1  holder_D       SM  Sampler_cnc
+                                ├0x003        C1  holder_E    TBADT  Sampler_cnc
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+                                ├0x005        B1  holder_F     wash  Sampler_cnc
+                                ├0x006        D1  holder_A       N2  Sampler_cnc
+                                ├0x007        D2  holder_A   Mixing  Sampler_cnc
+          16:58:46[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 16:58:46[GetVialInfo] └Completed.
+          16:58:46[GetVialInfo] Started...
+          16:58:46[GetVialInfo] ├vial_id: 0x004
+          16:58:46[GetVialInfo] ├samples:
+                                ├       Position    Holder VialName      Sampler
+                                ├VialID                                         
+                                ├0x004        C1  holder_F     MeCN  Sampler_cnc
+          16:58:46[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 16:58:46[GetVialInfo] └Completed.
+          17:08:23[GetVialInfo] Started...
+          17:08:23[GetVialInfo] ├vial_id: 0x001
+          17:08:23[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:08:23[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:08:23[GetVialInfo] └Completed.
+          17:08:23[GetVialInfo] Started...
+          17:08:23[GetVialInfo] ├vial_id: 0x002
+          17:08:23[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:08:23[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:08:23[GetVialInfo] └Completed.
+          17:08:23[GetVialInfo] Started...
+          17:08:23[GetVialInfo] ├vial_id: 0x003
+          17:08:23[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:08:23[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:08:23[GetVialInfo] └Completed.
+          17:08:23[GetVialInfo] Started...
+          17:08:23[GetVialInfo] ├vial_id: 0x004
+          17:08:23[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:08:23[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:08:23[GetVialInfo] └Completed.
+          17:08:54[GetVialInfo] Started...
+          17:08:54[GetVialInfo] ├vial_id: 0x001
+          17:08:54[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:08:54[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:08:54[GetVialInfo] └Completed.
+          17:08:54[GetVialInfo] Started...
+          17:08:54[GetVialInfo] ├vial_id: 0x002
+          17:08:54[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:08:54[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:08:54[GetVialInfo] └Completed.
+          17:08:54[GetVialInfo] Started...
+          17:08:54[GetVialInfo] ├vial_id: 0x003
+          17:08:54[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:08:54[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:08:54[GetVialInfo] └Completed.
+          17:08:54[GetVialInfo] Started...
+          17:08:54[GetVialInfo] ├vial_id: 0x004
+          17:08:54[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:08:54[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:08:54[GetVialInfo] └Completed.
+          17:09:25[GetVialInfo] Started...
+          17:09:25[GetVialInfo] ├vial_id: 0x001
+          17:09:25[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:09:25[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:09:25[GetVialInfo] └Completed.
+          17:09:25[GetVialInfo] Started...
+          17:09:25[GetVialInfo] ├vial_id: 0x002
+          17:09:25[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:09:25[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:09:25[GetVialInfo] └Completed.
+          17:09:25[GetVialInfo] Started...
+          17:09:25[GetVialInfo] ├vial_id: 0x003
+          17:09:25[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:09:25[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:09:25[GetVialInfo] └Completed.
+          17:09:25[GetVialInfo] Started...
+          17:09:25[GetVialInfo] ├vial_id: 0x004
+          17:09:25[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:09:25[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:09:25[GetVialInfo] └Completed.
+          17:09:56[GetVialInfo] Started...
+          17:09:56[GetVialInfo] ├vial_id: 0x001
+          17:09:56[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:09:56[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:09:56[GetVialInfo] └Completed.
+          17:09:56[GetVialInfo] Started...
+          17:09:56[GetVialInfo] ├vial_id: 0x002
+          17:09:56[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:09:56[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:09:56[GetVialInfo] └Completed.
+          17:09:56[GetVialInfo] Started...
+          17:09:56[GetVialInfo] ├vial_id: 0x002
+          17:09:56[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:09:56[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:09:56[GetVialInfo] └Completed.
+          17:09:56[GetVialInfo] Started...
+          17:09:56[GetVialInfo] ├vial_id: 0x003
+          17:09:56[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:09:56[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:09:56[GetVialInfo] └Completed.
+          17:09:56[GetVialInfo] Started...
+          17:09:56[GetVialInfo] ├vial_id: 0x004
+          17:09:56[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:09:56[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:09:56[GetVialInfo] └Completed.
+          17:10:27[GetVialInfo] Started...
+          17:10:27[GetVialInfo] ├vial_id: 0x001
+          17:10:27[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:27[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:10:27[GetVialInfo] └Completed.
+          17:10:27[GetVialInfo] Started...
+          17:10:27[GetVialInfo] ├vial_id: 0x002
+          17:10:27[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:27[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:10:27[GetVialInfo] └Completed.
+          17:10:27[GetVialInfo] Started...
+          17:10:27[GetVialInfo] ├vial_id: 0x002
+          17:10:27[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:27[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:10:27[GetVialInfo] └Completed.
+          17:10:27[GetVialInfo] Started...
+          17:10:27[GetVialInfo] ├vial_id: 0x003
+          17:10:27[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:27[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:10:27[GetVialInfo] └Completed.
+          17:10:27[GetVialInfo] Started...
+          17:10:27[GetVialInfo] ├vial_id: 0x004
+          17:10:27[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:10:27[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:10:27[GetVialInfo] └Completed.
+          17:10:58[GetVialInfo] Started...
+          17:10:58[GetVialInfo] ├vial_id: 0x001
+          17:10:58[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:58[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:10:58[GetVialInfo] └Completed.
+          17:10:58[GetVialInfo] Started...
+          17:10:58[GetVialInfo] ├vial_id: 0x002
+          17:10:58[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:58[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:10:58[GetVialInfo] └Completed.
+          17:10:58[GetVialInfo] Started...
+          17:10:58[GetVialInfo] ├vial_id: 0x003
+          17:10:58[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:58[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:10:58[GetVialInfo] └Completed.
+          17:10:58[GetVialInfo] Started...
+          17:10:58[GetVialInfo] ├vial_id: 0x003
+          17:10:58[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:10:58[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:10:58[GetVialInfo] └Completed.
+          17:10:58[GetVialInfo] Started...
+          17:10:58[GetVialInfo] ├vial_id: 0x004
+          17:10:58[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:10:58[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:10:58[GetVialInfo] └Completed.
+          17:11:30[GetVialInfo] Started...
+          17:11:30[GetVialInfo] ├vial_id: 0x001
+          17:11:30[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:11:30[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:11:30[GetVialInfo] └Completed.
+          17:11:30[GetVialInfo] Started...
+          17:11:30[GetVialInfo] ├vial_id: 0x002
+          17:11:30[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:11:30[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:11:30[GetVialInfo] └Completed.
+          17:11:30[GetVialInfo] Started...
+          17:11:30[GetVialInfo] ├vial_id: 0x003
+          17:11:30[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:11:30[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:11:30[GetVialInfo] └Completed.
+          17:11:30[GetVialInfo] Started...
+          17:11:30[GetVialInfo] ├vial_id: 0x004
+          17:11:30[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:11:30[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:11:30[GetVialInfo] └Completed.
+          17:12:02[GetVialInfo] Started...
+          17:12:02[GetVialInfo] ├vial_id: 0x001
+          17:12:02[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:12:02[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:12:02[GetVialInfo] └Completed.
+          17:12:02[GetVialInfo] Started...
+          17:12:02[GetVialInfo] ├vial_id: 0x002
+          17:12:02[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:12:02[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:12:02[GetVialInfo] └Completed.
+          17:12:02[GetVialInfo] Started...
+          17:12:02[GetVialInfo] ├vial_id: 0x003
+          17:12:02[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:12:02[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:12:02[GetVialInfo] └Completed.
+          17:12:02[GetVialInfo] Started...
+          17:12:02[GetVialInfo] ├vial_id: 0x004
+          17:12:02[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:12:02[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:12:02[GetVialInfo] └Completed.
+          17:12:33[GetVialInfo] Started...
+          17:12:33[GetVialInfo] ├vial_id: 0x001
+          17:12:33[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:12:33[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:12:33[GetVialInfo] └Completed.
+          17:12:33[GetVialInfo] Started...
+          17:12:33[GetVialInfo] ├vial_id: 0x002
+          17:12:33[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:12:33[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:12:33[GetVialInfo] └Completed.
+          17:12:33[GetVialInfo] Started...
+          17:12:33[GetVialInfo] ├vial_id: 0x003
+          17:12:33[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:12:33[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:12:33[GetVialInfo] └Completed.
+          17:12:33[GetVialInfo] Started...
+          17:12:33[GetVialInfo] ├vial_id: 0x003
+          17:12:33[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x001   holder_D       SM       A1  Sampler_cnc
+                                ├0x002   holder_D      THF       A3  Sampler_cnc
+                                ├0x003   holder_E    TBADT       C1  Sampler_cnc
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+                                ├0x005   holder_F     wash       B1  Sampler_cnc
+                                ├0x006   holder_A       N2       D1  Sampler_cnc
+                                ├0x007   holder_A   Mixing       D2  Sampler_cnc
+          17:12:33[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:12:33[GetVialInfo] └Completed.
+          17:12:33[GetVialInfo] Started...
+          17:12:33[GetVialInfo] ├vial_id: 0x004
+          17:12:33[GetVialInfo] ├samples:
+                                ├          Holder VialName Position      Sampler
+                                ├VialID                                         
+                                ├0x004   holder_F     MeCN       C1  Sampler_cnc
+          17:12:33[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:12:33[GetVialInfo] └Completed.
+          17:15:23[GetVialInfo] Started...
+          17:15:23[GetVialInfo] ├vial_id: 0x001
+          17:15:23[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:15:23[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:15:23[GetVialInfo] └Completed.
+          17:15:23[GetVialInfo] Started...
+          17:15:23[GetVialInfo] ├vial_id: 0x002
+          17:15:23[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:15:23[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:15:23[GetVialInfo] └Completed.
+          17:15:23[GetVialInfo] Started...
+          17:15:23[GetVialInfo] ├vial_id: 0x003
+          17:15:23[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:15:23[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:15:23[GetVialInfo] └Completed.
+          17:15:23[GetVialInfo] Started...
+          17:15:23[GetVialInfo] ├vial_id: 0x004
+          17:15:23[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+          17:15:23[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:15:23[GetVialInfo] └Completed.
+          17:15:54[GetVialInfo] Started...
+          17:15:54[GetVialInfo] ├vial_id: 0x001
+          17:15:54[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:15:54[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:15:54[GetVialInfo] └Completed.
+          17:15:54[GetVialInfo] Started...
+          17:15:54[GetVialInfo] ├vial_id: 0x002
+          17:15:54[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:15:54[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:15:54[GetVialInfo] └Completed.
+          17:15:54[GetVialInfo] Started...
+          17:15:54[GetVialInfo] ├vial_id: 0x003
+          17:15:54[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:15:54[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:15:54[GetVialInfo] └Completed.
+          17:15:54[GetVialInfo] Started...
+          17:15:54[GetVialInfo] ├vial_id: 0x004
+          17:15:54[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+          17:15:54[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:15:54[GetVialInfo] └Completed.
+          17:16:26[GetVialInfo] Started...
+          17:16:26[GetVialInfo] ├vial_id: 0x001
+          17:16:26[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:16:26[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:16:26[GetVialInfo] └Completed.
+          17:16:26[GetVialInfo] Started...
+          17:16:26[GetVialInfo] ├vial_id: 0x002
+          17:16:26[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:16:26[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:16:26[GetVialInfo] └Completed.
+          17:16:26[GetVialInfo] Started...
+          17:16:26[GetVialInfo] ├vial_id: 0x003
+          17:16:26[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:16:26[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:16:26[GetVialInfo] └Completed.
+          17:16:26[GetVialInfo] Started...
+          17:16:26[GetVialInfo] ├vial_id: 0x004
+          17:16:26[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+          17:16:26[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:16:26[GetVialInfo] └Completed.
+          17:16:59[GetVialInfo] Started...
+          17:16:59[GetVialInfo] ├vial_id: 0x001
+          17:16:59[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:16:59[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:16:59[GetVialInfo] └Completed.
+          17:16:59[GetVialInfo] Started...
+          17:16:59[GetVialInfo] ├vial_id: 0x002
+          17:16:59[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:16:59[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:16:59[GetVialInfo] └Completed.
+          17:16:59[GetVialInfo] Started...
+          17:16:59[GetVialInfo] ├vial_id: 0x003
+          17:16:59[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        SM       A1  Sampler_cnc  holder_D
+                                ├0x002       THF       A3  Sampler_cnc  holder_D
+                                ├0x003     TBADT       C1  Sampler_cnc  holder_E
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+                                ├0x005      wash       B1  Sampler_cnc  holder_F
+                                ├0x006        N2       D1  Sampler_cnc  holder_A
+                                ├0x007    Mixing       D2  Sampler_cnc  holder_A
+          17:16:59[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:16:59[GetVialInfo] └Completed.
+          17:16:59[GetVialInfo] Started...
+          17:16:59[GetVialInfo] ├vial_id: 0x004
+          17:16:59[GetVialInfo] ├samples:
+                                ├       VialName Position      Sampler    Holder
+                                ├VialID                                         
+                                ├0x004      MeCN       C1  Sampler_cnc  holder_F
+          17:16:59[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:16:59[GetVialInfo] └Completed.
+          17:18:23[GetVialInfo] Started...
+          17:18:23[GetVialInfo] ├vial_id: 0x001
+          17:18:23[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:18:23[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:18:23[GetVialInfo] └Completed.
+          17:18:23[GetVialInfo] Started...
+          17:18:23[GetVialInfo] ├vial_id: 0x002
+          17:18:23[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:18:23[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:18:23[GetVialInfo] └Completed.
+          17:18:23[GetVialInfo] Started...
+          17:18:23[GetVialInfo] ├vial_id: 0x003
+          17:18:23[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:18:23[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:18:23[GetVialInfo] └Completed.
+          17:18:23[GetVialInfo] Started...
+          17:18:23[GetVialInfo] ├vial_id: 0x004
+          17:18:23[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+          17:18:23[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:18:23[GetVialInfo] └Completed.
+          17:18:55[GetVialInfo] Started...
+          17:18:55[GetVialInfo] ├vial_id: 0x001
+          17:18:55[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:18:55[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:18:55[GetVialInfo] └Completed.
+          17:18:55[GetVialInfo] Started...
+          17:18:55[GetVialInfo] ├vial_id: 0x002
+          17:18:55[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:18:55[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:18:55[GetVialInfo] └Completed.
+          17:18:55[GetVialInfo] Started...
+          17:18:55[GetVialInfo] ├vial_id: 0x003
+          17:18:55[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:18:55[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:18:55[GetVialInfo] └Completed.
+          17:18:55[GetVialInfo] Started...
+          17:18:55[GetVialInfo] ├vial_id: 0x004
+          17:18:55[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+          17:18:55[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:18:55[GetVialInfo] └Completed.
+          17:19:26[GetVialInfo] Started...
+          17:19:26[GetVialInfo] ├vial_id: 0x001
+          17:19:26[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:19:26[GetVialInfo] ├Result: SM @[Sampler_cnc, holder_D, A1]
+     [OK] 17:19:26[GetVialInfo] └Completed.
+          17:19:26[GetVialInfo] Started...
+          17:19:26[GetVialInfo] ├vial_id: 0x002
+          17:19:26[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:19:26[GetVialInfo] ├Result: THF @[Sampler_cnc, holder_D, A3]
+     [OK] 17:19:26[GetVialInfo] └Completed.
+          17:19:26[GetVialInfo] Started...
+          17:19:26[GetVialInfo] ├vial_id: 0x003
+          17:19:26[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x001        A1       SM  Sampler_cnc  holder_D
+                                ├0x002        A3      THF  Sampler_cnc  holder_D
+                                ├0x003        C1    TBADT  Sampler_cnc  holder_E
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+                                ├0x005        B1     wash  Sampler_cnc  holder_F
+                                ├0x006        D1       N2  Sampler_cnc  holder_A
+                                ├0x007        D2   Mixing  Sampler_cnc  holder_A
+          17:19:26[GetVialInfo] ├Result: TBADT @[Sampler_cnc, holder_E, C1]
+     [OK] 17:19:26[GetVialInfo] └Completed.
+          17:19:26[GetVialInfo] Started...
+          17:19:26[GetVialInfo] ├vial_id: 0x004
+          17:19:26[GetVialInfo] ├samples:
+                                ├       Position VialName      Sampler    Holder
+                                ├VialID                                         
+                                ├0x004        C1     MeCN  Sampler_cnc  holder_F
+          17:19:26[GetVialInfo] ├Result: MeCN @[Sampler_cnc, holder_F, C1]
+     [OK] 17:19:26[GetVialInfo] └Completed.

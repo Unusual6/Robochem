@@ -1,0 +1,301 @@
+          15:49:10[OrderRecipe] Started...
+          15:49:10[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 374.63 uL]
+          15:49:10[OrderRecipe] ├method: middle
+          15:49:10[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 187.32 uL, SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 187.32 uL]
+     [OK] 15:49:10[OrderRecipe] └Completed.
+          15:52:23[OrderRecipe] Started...
+          15:52:23[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 374.63 uL]
+          15:52:23[OrderRecipe] ├method: middle
+          15:52:23[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 187.32 uL, SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 187.32 uL]
+     [OK] 15:52:23[OrderRecipe] └Completed.
+          16:02:46[OrderRecipe] Started...
+          16:02:46[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 374.63 uL]
+          16:02:46[OrderRecipe] ├method: middle
+          16:02:46[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 187.32 uL, SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 56.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.12 uL, MeCN @[Sampler_cnc, holder_F, C1]: 187.32 uL]
+     [OK] 16:02:46[OrderRecipe] └Completed.
+          16:27:26[OrderRecipe] Started...
+          16:27:26[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 75.06 uL, THF @[Sampler_cnc, holder_D, A3]: 28.19 uL, TBADT @[Sampler_cnc, holder_E, C1]: 125.52 uL, MeCN @[Sampler_cnc, holder_F, C1]: 271.23 uL]
+          16:27:26[OrderRecipe] ├method: middle
+          16:27:26[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 135.61 uL, SM @[Sampler_cnc, holder_D, A1]: 75.06 uL, THF @[Sampler_cnc, holder_D, A3]: 28.19 uL, TBADT @[Sampler_cnc, holder_E, C1]: 125.52 uL, MeCN @[Sampler_cnc, holder_F, C1]: 135.61 uL]
+     [OK] 16:27:26[OrderRecipe] └Completed.
+          16:27:57[OrderRecipe] Started...
+          16:27:57[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 31.44 uL, THF @[Sampler_cnc, holder_D, A3]: 9.87 uL, TBADT @[Sampler_cnc, holder_E, C1]: 21.37 uL, MeCN @[Sampler_cnc, holder_F, C1]: 437.32 uL]
+          16:27:57[OrderRecipe] ├method: middle
+          16:27:57[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 218.66 uL, SM @[Sampler_cnc, holder_D, A1]: 31.44 uL, THF @[Sampler_cnc, holder_D, A3]: 9.87 uL, TBADT @[Sampler_cnc, holder_E, C1]: 21.37 uL, MeCN @[Sampler_cnc, holder_F, C1]: 218.66 uL]
+     [OK] 16:27:57[OrderRecipe] └Completed.
+          16:28:28[OrderRecipe] Started...
+          16:28:28[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 99.86 uL, THF @[Sampler_cnc, holder_D, A3]: 83.81 uL, TBADT @[Sampler_cnc, holder_E, C1]: 51.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 264.78 uL]
+          16:28:28[OrderRecipe] ├method: middle
+          16:28:28[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 132.39 uL, SM @[Sampler_cnc, holder_D, A1]: 99.86 uL, THF @[Sampler_cnc, holder_D, A3]: 83.81 uL, TBADT @[Sampler_cnc, holder_E, C1]: 51.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 132.39 uL]
+     [OK] 16:28:28[OrderRecipe] └Completed.
+          16:28:59[OrderRecipe] Started...
+          16:28:59[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 49.95 uL, THF @[Sampler_cnc, holder_D, A3]: 88.2 uL, TBADT @[Sampler_cnc, holder_E, C1]: 15.32 uL, MeCN @[Sampler_cnc, holder_F, C1]: 346.54 uL]
+          16:28:59[OrderRecipe] ├method: middle
+          16:28:59[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 173.27 uL, SM @[Sampler_cnc, holder_D, A1]: 49.95 uL, THF @[Sampler_cnc, holder_D, A3]: 88.2 uL, TBADT @[Sampler_cnc, holder_E, C1]: 15.32 uL, MeCN @[Sampler_cnc, holder_F, C1]: 173.27 uL]
+     [OK] 16:28:59[OrderRecipe] └Completed.
+          16:29:30[OrderRecipe] Started...
+          16:29:30[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 88.41 uL, THF @[Sampler_cnc, holder_D, A3]: 52.75 uL, TBADT @[Sampler_cnc, holder_E, C1]: 153.14 uL, MeCN @[Sampler_cnc, holder_F, C1]: 205.69 uL]
+          16:29:30[OrderRecipe] ├method: middle
+          16:29:30[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 102.85 uL, SM @[Sampler_cnc, holder_D, A1]: 88.41 uL, THF @[Sampler_cnc, holder_D, A3]: 52.75 uL, TBADT @[Sampler_cnc, holder_E, C1]: 153.14 uL, MeCN @[Sampler_cnc, holder_F, C1]: 102.85 uL]
+     [OK] 16:29:30[OrderRecipe] └Completed.
+          16:30:00[OrderRecipe] Started...
+          16:30:00[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 72.56 uL, THF @[Sampler_cnc, holder_D, A3]: 161.81 uL, TBADT @[Sampler_cnc, holder_E, C1]: 80.2 uL, MeCN @[Sampler_cnc, holder_F, C1]: 185.43 uL]
+          16:30:00[OrderRecipe] ├method: middle
+          16:30:00[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 92.71 uL, SM @[Sampler_cnc, holder_D, A1]: 72.56 uL, THF @[Sampler_cnc, holder_D, A3]: 161.81 uL, TBADT @[Sampler_cnc, holder_E, C1]: 80.2 uL, MeCN @[Sampler_cnc, holder_F, C1]: 92.71 uL]
+     [OK] 16:30:00[OrderRecipe] └Completed.
+          16:30:32[OrderRecipe] Started...
+          16:30:32[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 51.76 uL, THF @[Sampler_cnc, holder_D, A3]: 102.05 uL, TBADT @[Sampler_cnc, holder_E, C1]: 80.46 uL, MeCN @[Sampler_cnc, holder_F, C1]: 265.73 uL]
+          16:30:32[OrderRecipe] ├method: middle
+          16:30:32[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 132.86 uL, SM @[Sampler_cnc, holder_D, A1]: 51.76 uL, THF @[Sampler_cnc, holder_D, A3]: 102.05 uL, TBADT @[Sampler_cnc, holder_E, C1]: 80.46 uL, MeCN @[Sampler_cnc, holder_F, C1]: 132.86 uL]
+     [OK] 16:30:32[OrderRecipe] └Completed.
+          16:31:03[OrderRecipe] Started...
+          16:31:03[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 64.33 uL, THF @[Sampler_cnc, holder_D, A3]: 10.03 uL, TBADT @[Sampler_cnc, holder_E, C1]: 38.59 uL, MeCN @[Sampler_cnc, holder_F, C1]: 387.05 uL]
+          16:31:03[OrderRecipe] ├method: middle
+          16:31:03[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 193.53 uL, SM @[Sampler_cnc, holder_D, A1]: 64.33 uL, THF @[Sampler_cnc, holder_D, A3]: 10.03 uL, TBADT @[Sampler_cnc, holder_E, C1]: 38.59 uL, MeCN @[Sampler_cnc, holder_F, C1]: 193.53 uL]
+     [OK] 16:31:03[OrderRecipe] └Completed.
+          16:50:16[OrderRecipe] Started...
+          16:50:16[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 36.09 uL, THF @[Sampler_cnc, holder_D, A3]: 67.5 uL, TBADT @[Sampler_cnc, holder_E, C1]: 33.04 uL, MeCN @[Sampler_cnc, holder_F, C1]: 363.37 uL]
+          16:50:16[OrderRecipe] ├method: middle
+          16:50:16[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 181.69 uL, SM @[Sampler_cnc, holder_D, A1]: 36.09 uL, THF @[Sampler_cnc, holder_D, A3]: 67.5 uL, TBADT @[Sampler_cnc, holder_E, C1]: 33.04 uL, MeCN @[Sampler_cnc, holder_F, C1]: 181.69 uL]
+     [OK] 16:50:16[OrderRecipe] └Completed.
+          16:50:47[OrderRecipe] Started...
+          16:50:47[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 42.78 uL, THF @[Sampler_cnc, holder_D, A3]: 6.67 uL, TBADT @[Sampler_cnc, holder_E, C1]: 31.26 uL, MeCN @[Sampler_cnc, holder_F, C1]: 419.3 uL]
+          16:50:47[OrderRecipe] ├method: middle
+          16:50:47[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 209.65 uL, SM @[Sampler_cnc, holder_D, A1]: 42.78 uL, THF @[Sampler_cnc, holder_D, A3]: 6.67 uL, TBADT @[Sampler_cnc, holder_E, C1]: 31.26 uL, MeCN @[Sampler_cnc, holder_F, C1]: 209.65 uL]
+     [OK] 16:50:47[OrderRecipe] └Completed.
+          16:51:19[OrderRecipe] Started...
+          16:51:19[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 72.88 uL, THF @[Sampler_cnc, holder_D, A3]: 126.56 uL, TBADT @[Sampler_cnc, holder_E, C1]: 121.49 uL, MeCN @[Sampler_cnc, holder_F, C1]: 179.06 uL]
+          16:51:19[OrderRecipe] ├method: middle
+          16:51:19[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 89.53 uL, SM @[Sampler_cnc, holder_D, A1]: 72.88 uL, THF @[Sampler_cnc, holder_D, A3]: 126.56 uL, TBADT @[Sampler_cnc, holder_E, C1]: 121.49 uL, MeCN @[Sampler_cnc, holder_F, C1]: 89.53 uL]
+     [OK] 16:51:19[OrderRecipe] └Completed.
+          16:51:51[OrderRecipe] Started...
+          16:51:51[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 69.75 uL, THF @[Sampler_cnc, holder_D, A3]: 18.96 uL, TBADT @[Sampler_cnc, holder_E, C1]: 114.25 uL, MeCN @[Sampler_cnc, holder_F, C1]: 297.03 uL]
+          16:51:51[OrderRecipe] ├method: middle
+          16:51:51[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 148.52 uL, SM @[Sampler_cnc, holder_D, A1]: 69.75 uL, THF @[Sampler_cnc, holder_D, A3]: 18.96 uL, TBADT @[Sampler_cnc, holder_E, C1]: 114.25 uL, MeCN @[Sampler_cnc, holder_F, C1]: 148.52 uL]
+     [OK] 16:51:51[OrderRecipe] └Completed.
+          16:52:24[OrderRecipe] Started...
+          16:52:24[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 92.88 uL, THF @[Sampler_cnc, holder_D, A3]: 196.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 28.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 182.19 uL]
+          16:52:24[OrderRecipe] ├method: middle
+          16:52:24[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 91.1 uL, SM @[Sampler_cnc, holder_D, A1]: 92.88 uL, THF @[Sampler_cnc, holder_D, A3]: 196.25 uL, TBADT @[Sampler_cnc, holder_E, C1]: 28.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 91.1 uL]
+     [OK] 16:52:24[OrderRecipe] └Completed.
+          16:52:56[OrderRecipe] Started...
+          16:52:56[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 95.72 uL, THF @[Sampler_cnc, holder_D, A3]: 40.52 uL, TBADT @[Sampler_cnc, holder_E, C1]: 130.96 uL, MeCN @[Sampler_cnc, holder_F, C1]: 232.8 uL]
+          16:52:56[OrderRecipe] ├method: middle
+          16:52:56[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 116.4 uL, SM @[Sampler_cnc, holder_D, A1]: 95.72 uL, THF @[Sampler_cnc, holder_D, A3]: 40.52 uL, TBADT @[Sampler_cnc, holder_E, C1]: 130.96 uL, MeCN @[Sampler_cnc, holder_F, C1]: 116.4 uL]
+     [OK] 16:52:56[OrderRecipe] └Completed.
+          16:53:28[OrderRecipe] Started...
+          16:53:28[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 83.2 uL, THF @[Sampler_cnc, holder_D, A3]: 146.75 uL, TBADT @[Sampler_cnc, holder_E, C1]: 47.4 uL, MeCN @[Sampler_cnc, holder_F, C1]: 222.64 uL]
+          16:53:28[OrderRecipe] ├method: middle
+          16:53:28[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 111.32 uL, SM @[Sampler_cnc, holder_D, A1]: 83.2 uL, THF @[Sampler_cnc, holder_D, A3]: 146.75 uL, TBADT @[Sampler_cnc, holder_E, C1]: 47.4 uL, MeCN @[Sampler_cnc, holder_F, C1]: 111.32 uL]
+     [OK] 16:53:28[OrderRecipe] └Completed.
+          16:54:01[OrderRecipe] Started...
+          16:54:01[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 80.84 uL, THF @[Sampler_cnc, holder_D, A3]: 111.01 uL, TBADT @[Sampler_cnc, holder_E, C1]: 136.64 uL, MeCN @[Sampler_cnc, holder_F, C1]: 171.51 uL]
+          16:54:01[OrderRecipe] ├method: middle
+          16:54:01[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 85.76 uL, SM @[Sampler_cnc, holder_D, A1]: 80.84 uL, THF @[Sampler_cnc, holder_D, A3]: 111.01 uL, TBADT @[Sampler_cnc, holder_E, C1]: 136.64 uL, MeCN @[Sampler_cnc, holder_F, C1]: 85.76 uL]
+     [OK] 16:54:01[OrderRecipe] └Completed.
+          16:54:33[OrderRecipe] Started...
+          16:54:33[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 47.55 uL, THF @[Sampler_cnc, holder_D, A3]: 11.59 uL, TBADT @[Sampler_cnc, holder_E, C1]: 45.73 uL, MeCN @[Sampler_cnc, holder_F, C1]: 395.13 uL]
+          16:54:33[OrderRecipe] ├method: middle
+          16:54:33[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 197.56 uL, SM @[Sampler_cnc, holder_D, A1]: 47.55 uL, THF @[Sampler_cnc, holder_D, A3]: 11.59 uL, TBADT @[Sampler_cnc, holder_E, C1]: 45.73 uL, MeCN @[Sampler_cnc, holder_F, C1]: 197.56 uL]
+     [OK] 16:54:33[OrderRecipe] └Completed.
+          16:55:04[OrderRecipe] Started...
+          16:55:04[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 87.86 uL, THF @[Sampler_cnc, holder_D, A3]: 48.43 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.76 uL, MeCN @[Sampler_cnc, holder_F, C1]: 306.94 uL]
+          16:55:04[OrderRecipe] ├method: middle
+          16:55:04[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 153.47 uL, SM @[Sampler_cnc, holder_D, A1]: 87.86 uL, THF @[Sampler_cnc, holder_D, A3]: 48.43 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.76 uL, MeCN @[Sampler_cnc, holder_F, C1]: 153.47 uL]
+     [OK] 16:55:04[OrderRecipe] └Completed.
+          16:55:42[OrderRecipe] Started...
+          16:55:42[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 39.93 uL, THF @[Sampler_cnc, holder_D, A3]: 4.99 uL, TBADT @[Sampler_cnc, holder_E, C1]: 25.94 uL, MeCN @[Sampler_cnc, holder_F, C1]: 429.14 uL]
+          16:55:42[OrderRecipe] ├method: middle
+          16:55:42[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 214.57 uL, SM @[Sampler_cnc, holder_D, A1]: 39.93 uL, THF @[Sampler_cnc, holder_D, A3]: 4.99 uL, TBADT @[Sampler_cnc, holder_E, C1]: 25.94 uL, MeCN @[Sampler_cnc, holder_F, C1]: 214.57 uL]
+     [OK] 16:55:42[OrderRecipe] └Completed.
+          16:56:19[OrderRecipe] Started...
+          16:56:19[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 42.47 uL, THF @[Sampler_cnc, holder_D, A3]: 6.31 uL, TBADT @[Sampler_cnc, holder_E, C1]: 31.02 uL, MeCN @[Sampler_cnc, holder_F, C1]: 420.2 uL]
+          16:56:19[OrderRecipe] ├method: middle
+          16:56:19[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 210.1 uL, SM @[Sampler_cnc, holder_D, A1]: 42.47 uL, THF @[Sampler_cnc, holder_D, A3]: 6.31 uL, TBADT @[Sampler_cnc, holder_E, C1]: 31.02 uL, MeCN @[Sampler_cnc, holder_F, C1]: 210.1 uL]
+     [OK] 16:56:19[OrderRecipe] └Completed.
+          16:56:58[OrderRecipe] Started...
+          16:56:58[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 45.57 uL, THF @[Sampler_cnc, holder_D, A3]: 8.79 uL, TBADT @[Sampler_cnc, holder_E, C1]: 35.8 uL, MeCN @[Sampler_cnc, holder_F, C1]: 409.85 uL]
+          16:56:58[OrderRecipe] ├method: middle
+          16:56:58[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 204.92 uL, SM @[Sampler_cnc, holder_D, A1]: 45.57 uL, THF @[Sampler_cnc, holder_D, A3]: 8.79 uL, TBADT @[Sampler_cnc, holder_E, C1]: 35.8 uL, MeCN @[Sampler_cnc, holder_F, C1]: 204.92 uL]
+     [OK] 16:56:58[OrderRecipe] └Completed.
+          16:57:34[OrderRecipe] Started...
+          16:57:34[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 29.21 uL, THF @[Sampler_cnc, holder_D, A3]: 3.65 uL, TBADT @[Sampler_cnc, holder_E, C1]: 22.36 uL, MeCN @[Sampler_cnc, holder_F, C1]: 444.78 uL]
+          16:57:34[OrderRecipe] ├method: middle
+          16:57:34[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 222.39 uL, SM @[Sampler_cnc, holder_D, A1]: 29.21 uL, THF @[Sampler_cnc, holder_D, A3]: 3.65 uL, TBADT @[Sampler_cnc, holder_E, C1]: 22.36 uL, MeCN @[Sampler_cnc, holder_F, C1]: 222.39 uL]
+     [OK] 16:57:34[OrderRecipe] └Completed.
+          16:58:10[OrderRecipe] Started...
+          16:58:10[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 27.18 uL, THF @[Sampler_cnc, holder_D, A3]: 3.4 uL, TBADT @[Sampler_cnc, holder_E, C1]: 19.58 uL, MeCN @[Sampler_cnc, holder_F, C1]: 449.84 uL]
+          16:58:10[OrderRecipe] ├method: middle
+          16:58:10[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 224.92 uL, SM @[Sampler_cnc, holder_D, A1]: 27.18 uL, THF @[Sampler_cnc, holder_D, A3]: 3.4 uL, TBADT @[Sampler_cnc, holder_E, C1]: 19.58 uL, MeCN @[Sampler_cnc, holder_F, C1]: 224.92 uL]
+     [OK] 16:58:10[OrderRecipe] └Completed.
+          16:58:46[OrderRecipe] Started...
+          16:58:46[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 3.12 uL, TBADT @[Sampler_cnc, holder_E, C1]: 20.94 uL, MeCN @[Sampler_cnc, holder_F, C1]: 450.94 uL]
+          16:58:46[OrderRecipe] ├method: middle
+          16:58:46[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 225.47 uL, SM @[Sampler_cnc, holder_D, A1]: 25.0 uL, THF @[Sampler_cnc, holder_D, A3]: 3.12 uL, TBADT @[Sampler_cnc, holder_E, C1]: 20.94 uL, MeCN @[Sampler_cnc, holder_F, C1]: 225.47 uL]
+     [OK] 16:58:46[OrderRecipe] └Completed.
+          17:08:23[OrderRecipe] Started...
+          17:08:23[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 41.5 uL, THF @[Sampler_cnc, holder_D, A3]: 84.91 uL, TBADT @[Sampler_cnc, holder_E, C1]: 68.36 uL, MeCN @[Sampler_cnc, holder_F, C1]: 305.23 uL]
+          17:08:23[OrderRecipe] ├method: middle
+          17:08:23[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 152.62 uL, SM @[Sampler_cnc, holder_D, A1]: 41.5 uL, THF @[Sampler_cnc, holder_D, A3]: 84.91 uL, TBADT @[Sampler_cnc, holder_E, C1]: 68.36 uL, MeCN @[Sampler_cnc, holder_F, C1]: 152.62 uL]
+     [OK] 17:08:23[OrderRecipe] └Completed.
+          17:08:54[OrderRecipe] Started...
+          17:08:54[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 85.12 uL, THF @[Sampler_cnc, holder_D, A3]: 31.3 uL, TBADT @[Sampler_cnc, holder_E, C1]: 53.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 329.91 uL]
+          17:08:54[OrderRecipe] ├method: middle
+          17:08:54[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 164.96 uL, SM @[Sampler_cnc, holder_D, A1]: 85.12 uL, THF @[Sampler_cnc, holder_D, A3]: 31.3 uL, TBADT @[Sampler_cnc, holder_E, C1]: 53.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 164.96 uL]
+     [OK] 17:08:54[OrderRecipe] └Completed.
+          17:09:25[OrderRecipe] Started...
+          17:09:25[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 71.24 uL, THF @[Sampler_cnc, holder_D, A3]: 127.62 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.52 uL, MeCN @[Sampler_cnc, holder_F, C1]: 244.61 uL]
+          17:09:25[OrderRecipe] ├method: middle
+          17:09:25[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 122.31 uL, SM @[Sampler_cnc, holder_D, A1]: 71.24 uL, THF @[Sampler_cnc, holder_D, A3]: 127.62 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.52 uL, MeCN @[Sampler_cnc, holder_F, C1]: 122.31 uL]
+     [OK] 17:09:25[OrderRecipe] └Completed.
+          17:09:56[OrderRecipe] Started...
+          17:09:56[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 27.92 uL, THF @[Sampler_cnc, holder_D, A3]: 3.76 uL, TBADT @[Sampler_cnc, holder_E, C1]: 24.42 uL, MeCN @[Sampler_cnc, holder_F, C1]: 443.9 uL]
+          17:09:56[OrderRecipe] ├method: middle
+          17:09:56[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 221.95 uL, SM @[Sampler_cnc, holder_D, A1]: 27.92 uL, THF @[Sampler_cnc, holder_D, A3]: 3.76 uL, TBADT @[Sampler_cnc, holder_E, C1]: 24.42 uL, MeCN @[Sampler_cnc, holder_F, C1]: 221.95 uL]
+     [OK] 17:09:56[OrderRecipe] └Completed.
+          17:10:27[OrderRecipe] Started...
+          17:10:27[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 34.37 uL, THF @[Sampler_cnc, holder_D, A3]: 8.91 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 400.17 uL]
+          17:10:27[OrderRecipe] ├method: middle
+          17:10:27[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 200.09 uL, SM @[Sampler_cnc, holder_D, A1]: 34.37 uL, THF @[Sampler_cnc, holder_D, A3]: 8.91 uL, TBADT @[Sampler_cnc, holder_E, C1]: 56.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 200.09 uL]
+     [OK] 17:10:27[OrderRecipe] └Completed.
+          17:10:58[OrderRecipe] Started...
+          17:10:58[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 25.68 uL, THF @[Sampler_cnc, holder_D, A3]: 44.98 uL, TBADT @[Sampler_cnc, holder_E, C1]: 15.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 413.67 uL]
+          17:10:58[OrderRecipe] ├method: middle
+          17:10:58[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 206.84 uL, SM @[Sampler_cnc, holder_D, A1]: 25.68 uL, THF @[Sampler_cnc, holder_D, A3]: 44.98 uL, TBADT @[Sampler_cnc, holder_E, C1]: 15.67 uL, MeCN @[Sampler_cnc, holder_F, C1]: 206.84 uL]
+     [OK] 17:10:58[OrderRecipe] └Completed.
+          17:11:30[OrderRecipe] Started...
+          17:11:30[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 89.04 uL, THF @[Sampler_cnc, holder_D, A3]: 124.71 uL, TBADT @[Sampler_cnc, holder_E, C1]: 155.79 uL, MeCN @[Sampler_cnc, holder_F, C1]: 130.47 uL]
+          17:11:30[OrderRecipe] ├method: middle
+          17:11:30[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 65.23 uL, SM @[Sampler_cnc, holder_D, A1]: 89.04 uL, THF @[Sampler_cnc, holder_D, A3]: 124.71 uL, TBADT @[Sampler_cnc, holder_E, C1]: 155.79 uL, MeCN @[Sampler_cnc, holder_F, C1]: 65.23 uL]
+     [OK] 17:11:30[OrderRecipe] └Completed.
+          17:12:02[OrderRecipe] Started...
+          17:12:02[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 77.55 uL, THF @[Sampler_cnc, holder_D, A3]: 142.13 uL, TBADT @[Sampler_cnc, holder_E, C1]: 51.21 uL, MeCN @[Sampler_cnc, holder_F, C1]: 229.1 uL]
+          17:12:02[OrderRecipe] ├method: middle
+          17:12:02[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 114.55 uL, SM @[Sampler_cnc, holder_D, A1]: 77.55 uL, THF @[Sampler_cnc, holder_D, A3]: 142.13 uL, TBADT @[Sampler_cnc, holder_E, C1]: 51.21 uL, MeCN @[Sampler_cnc, holder_F, C1]: 114.55 uL]
+     [OK] 17:12:02[OrderRecipe] └Completed.
+          17:12:33[OrderRecipe] Started...
+          17:12:33[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 43.2 uL, THF @[Sampler_cnc, holder_D, A3]: 68.65 uL, TBADT @[Sampler_cnc, holder_E, C1]: 17.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 370.6 uL]
+          17:12:33[OrderRecipe] ├method: middle
+          17:12:33[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 185.3 uL, SM @[Sampler_cnc, holder_D, A1]: 43.2 uL, THF @[Sampler_cnc, holder_D, A3]: 68.65 uL, TBADT @[Sampler_cnc, holder_E, C1]: 17.54 uL, MeCN @[Sampler_cnc, holder_F, C1]: 185.3 uL]
+     [OK] 17:12:33[OrderRecipe] └Completed.
+          17:15:23[OrderRecipe] Started...
+          17:15:23[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 82.57 uL, THF @[Sampler_cnc, holder_D, A3]: 50.47 uL, TBADT @[Sampler_cnc, holder_E, C1]: 134.46 uL, MeCN @[Sampler_cnc, holder_F, C1]: 232.5 uL]
+          17:15:23[OrderRecipe] ├method: middle
+          17:15:23[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 116.25 uL, SM @[Sampler_cnc, holder_D, A1]: 82.57 uL, THF @[Sampler_cnc, holder_D, A3]: 50.47 uL, TBADT @[Sampler_cnc, holder_E, C1]: 134.46 uL, MeCN @[Sampler_cnc, holder_F, C1]: 116.25 uL]
+     [OK] 17:15:23[OrderRecipe] └Completed.
+          17:15:54[OrderRecipe] Started...
+          17:15:54[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 50.06 uL, THF @[Sampler_cnc, holder_D, A3]: 102.99 uL, TBADT @[Sampler_cnc, holder_E, C1]: 24.04 uL, MeCN @[Sampler_cnc, holder_F, C1]: 322.91 uL]
+          17:15:54[OrderRecipe] ├method: middle
+          17:15:54[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 161.46 uL, SM @[Sampler_cnc, holder_D, A1]: 50.06 uL, THF @[Sampler_cnc, holder_D, A3]: 102.99 uL, TBADT @[Sampler_cnc, holder_E, C1]: 24.04 uL, MeCN @[Sampler_cnc, holder_F, C1]: 161.46 uL]
+     [OK] 17:15:54[OrderRecipe] └Completed.
+          17:16:26[OrderRecipe] Started...
+          17:16:26[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 93.92 uL, THF @[Sampler_cnc, holder_D, A3]: 121.16 uL, TBADT @[Sampler_cnc, holder_E, C1]: 77.68 uL, MeCN @[Sampler_cnc, holder_F, C1]: 207.25 uL]
+          17:16:26[OrderRecipe] ├method: middle
+          17:16:26[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 103.63 uL, SM @[Sampler_cnc, holder_D, A1]: 93.92 uL, THF @[Sampler_cnc, holder_D, A3]: 121.16 uL, TBADT @[Sampler_cnc, holder_E, C1]: 77.68 uL, MeCN @[Sampler_cnc, holder_F, C1]: 103.63 uL]
+     [OK] 17:16:26[OrderRecipe] └Completed.
+          17:16:59[OrderRecipe] Started...
+          17:16:59[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 28.22 uL, THF @[Sampler_cnc, holder_D, A3]: 42.31 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.28 uL, MeCN @[Sampler_cnc, holder_F, C1]: 385.19 uL]
+          17:16:59[OrderRecipe] ├method: middle
+          17:16:59[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 192.6 uL, SM @[Sampler_cnc, holder_D, A1]: 28.22 uL, THF @[Sampler_cnc, holder_D, A3]: 42.31 uL, TBADT @[Sampler_cnc, holder_E, C1]: 44.28 uL, MeCN @[Sampler_cnc, holder_F, C1]: 192.6 uL]
+     [OK] 17:16:59[OrderRecipe] └Completed.
+          17:18:23[OrderRecipe] Started...
+          17:18:23[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 95.3 uL, THF @[Sampler_cnc, holder_D, A3]: 106.94 uL, TBADT @[Sampler_cnc, holder_E, C1]: 29.08 uL, MeCN @[Sampler_cnc, holder_F, C1]: 268.67 uL]
+          17:18:23[OrderRecipe] ├method: middle
+          17:18:23[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 134.34 uL, SM @[Sampler_cnc, holder_D, A1]: 95.3 uL, THF @[Sampler_cnc, holder_D, A3]: 106.94 uL, TBADT @[Sampler_cnc, holder_E, C1]: 29.08 uL, MeCN @[Sampler_cnc, holder_F, C1]: 134.34 uL]
+     [OK] 17:18:23[OrderRecipe] └Completed.
+          17:18:55[OrderRecipe] Started...
+          17:18:55[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 49.81 uL, THF @[Sampler_cnc, holder_D, A3]: 36.3 uL, TBADT @[Sampler_cnc, holder_E, C1]: 74.32 uL, MeCN @[Sampler_cnc, holder_F, C1]: 339.57 uL]
+          17:18:55[OrderRecipe] ├method: middle
+          17:18:55[OrderRecipe] ├Result:
+                                ├[MeCN @[Sampler_cnc, holder_F, C1]: 169.79 uL, SM @[Sampler_cnc, holder_D, A1]: 49.81 uL, THF @[Sampler_cnc, holder_D, A3]: 36.3 uL, TBADT @[Sampler_cnc, holder_E, C1]: 74.32 uL, MeCN @[Sampler_cnc, holder_F, C1]: 169.79 uL]
+     [OK] 17:18:55[OrderRecipe] └Completed.
+          17:19:26[OrderRecipe] Started...
+          17:19:26[OrderRecipe] ├recipe:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 99.48 uL, THF @[Sampler_cnc, holder_D, A3]: 215.21 uL, TBADT @[Sampler_cnc, holder_E, C1]: 106.43 uL, MeCN @[Sampler_cnc, holder_F, C1]: 78.88 uL]
+          17:19:26[OrderRecipe] ├method: middle
+          17:19:26[OrderRecipe] ├Result:
+                                ├[SM @[Sampler_cnc, holder_D, A1]: 99.48 uL, THF @[Sampler_cnc, holder_D, A3]: 215.21 uL, TBADT @[Sampler_cnc, holder_E, C1]: 106.43 uL, MeCN @[Sampler_cnc, holder_F, C1]: 78.88 uL]
+     [OK] 17:19:26[OrderRecipe] └Completed.

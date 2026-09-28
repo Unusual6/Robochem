@@ -1,0 +1,1327 @@
+          15:49:01[GenerateSampleDataframe] Started...
+          15:49:01[GenerateSampleDataframe] ├platform: Perry
+          15:49:01[GenerateSampleDataframe] ├samples:
+                                            ├          Holder        Sampler Position   VialName
+                                            ├VialID                                             
+                                            ├0x001   holder_D    Sampler_cnc       A1         SM
+                                            ├0x002   holder_D    Sampler_cnc       A3        THF
+                                            ├0x003   holder_E    Sampler_cnc       C1      TBADT
+                                            ├0x004   holder_F    Sampler_cnc       C1       MeCN
+                                            ├0x005   holder_F    Sampler_cnc       B1       wash
+                                            ├0x006   holder_A    Sampler_cnc       D1         N2
+                                            ├0x007   holder_A    Sampler_cnc       D2     Mixing
+                                            ├0x008   holder_B  Collector_cnc       A1   Sample_1
+                                            ├0x009   holder_B  Collector_cnc       A2   Sample_2
+                                            ├0x010   holder_B  Collector_cnc       A3   Sample_3
+                                            ├0x011   holder_B  Collector_cnc       A4   Sample_4
+                                            ├0x012   holder_B  Collector_cnc       A5   Sample_5
+                                            ├0x013   holder_B  Collector_cnc       A6   Sample_6
+                                            ├0x014   holder_B  Collector_cnc       B1  Sample_21
+                                            ├0x015   holder_B  Collector_cnc       B2  Sample_22
+                                            ├0x016   holder_B  Collector_cnc       B3  Sample_23
+                                            ├0x017   holder_B  Collector_cnc       B4  Sample_24
+                                            ├0x018   holder_B  Collector_cnc       B5  Sample_25
+                                            ├0x019   holder_B  Collector_cnc       B6  Sample_26
+                                            ├0x020   holder_B  Collector_cnc       C1  Sample_31
+                                            ├0x021   holder_B  Collector_cnc       C2  Sample_32
+                                            ├0x022   holder_B  Collector_cnc       C3  Sample_33
+                                            ├0x023   holder_B  Collector_cnc       C4  Sample_34
+                                            ├0x024   holder_B  Collector_cnc       C5  Sample_35
+                                            ├0x025   holder_B  Collector_cnc       C6  Sample_36
+                                            ├0x026   holder_B  Collector_cnc       D1  Sample_41
+                                            ├0x027   holder_B  Collector_cnc       D2  Sample_42
+                                            ├0x028   holder_B  Collector_cnc       D3  Sample_43
+                                            ├0x029   holder_B  Collector_cnc       D4  Sample_44
+                                            ├0x030   holder_B  Collector_cnc       D5  Sample_45
+                                            ├0x031   holder_B  Collector_cnc       D6  Sample_46
+                                            ├0x032   holder_B  Collector_cnc       E1  Sample_51
+                                            ├0x033   holder_B  Collector_cnc       E2  Sample_52
+                                            ├0x034   holder_B  Collector_cnc       E3  Sample_53
+                                            ├0x035   holder_B  Collector_cnc       E4  Sample_54
+                                            ├0x036   holder_B  Collector_cnc       E5  Sample_55
+                                            ├0x037   holder_B  Collector_cnc       E6  Sample_56
+                                            ├0x038   holder_B  Collector_cnc       F1  Sample_61
+                                            ├0x039   holder_B  Collector_cnc       F2  Sample_62
+                                            ├0x040   holder_B  Collector_cnc       F3  Sample_63
+                                            ├0x041   holder_B  Collector_cnc       F4  Sample_64
+                                            ├0x042   holder_B  Collector_cnc       F5  Sample_65
+                                            ├0x043   holder_B  Collector_cnc       F6  Sample_66
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 15:49:01[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+     [OK] 15:49:01[GenerateSampleDataframe] └Completed.
+          15:52:18[GenerateSampleDataframe] Started...
+          15:52:18[GenerateSampleDataframe] ├platform: Perry
+          15:52:18[GenerateSampleDataframe] ├samples:
+                                            ├          Holder        Sampler Position   VialName
+                                            ├VialID                                             
+                                            ├0x001   holder_D    Sampler_cnc       A1         SM
+                                            ├0x002   holder_D    Sampler_cnc       A3        THF
+                                            ├0x003   holder_E    Sampler_cnc       C1      TBADT
+                                            ├0x004   holder_F    Sampler_cnc       C1       MeCN
+                                            ├0x005   holder_F    Sampler_cnc       B1       wash
+                                            ├0x006   holder_A    Sampler_cnc       D1         N2
+                                            ├0x007   holder_A    Sampler_cnc       D2     Mixing
+                                            ├0x008   holder_B  Collector_cnc       A1   Sample_1
+                                            ├0x009   holder_B  Collector_cnc       A2   Sample_2
+                                            ├0x010   holder_B  Collector_cnc       A3   Sample_3
+                                            ├0x011   holder_B  Collector_cnc       A4   Sample_4
+                                            ├0x012   holder_B  Collector_cnc       A5   Sample_5
+                                            ├0x013   holder_B  Collector_cnc       A6   Sample_6
+                                            ├0x014   holder_B  Collector_cnc       B1  Sample_21
+                                            ├0x015   holder_B  Collector_cnc       B2  Sample_22
+                                            ├0x016   holder_B  Collector_cnc       B3  Sample_23
+                                            ├0x017   holder_B  Collector_cnc       B4  Sample_24
+                                            ├0x018   holder_B  Collector_cnc       B5  Sample_25
+                                            ├0x019   holder_B  Collector_cnc       B6  Sample_26
+                                            ├0x020   holder_B  Collector_cnc       C1  Sample_31
+                                            ├0x021   holder_B  Collector_cnc       C2  Sample_32
+                                            ├0x022   holder_B  Collector_cnc       C3  Sample_33
+                                            ├0x023   holder_B  Collector_cnc       C4  Sample_34
+                                            ├0x024   holder_B  Collector_cnc       C5  Sample_35
+                                            ├0x025   holder_B  Collector_cnc       C6  Sample_36
+                                            ├0x026   holder_B  Collector_cnc       D1  Sample_41
+                                            ├0x027   holder_B  Collector_cnc       D2  Sample_42
+                                            ├0x028   holder_B  Collector_cnc       D3  Sample_43
+                                            ├0x029   holder_B  Collector_cnc       D4  Sample_44
+                                            ├0x030   holder_B  Collector_cnc       D5  Sample_45
+                                            ├0x031   holder_B  Collector_cnc       D6  Sample_46
+                                            ├0x032   holder_B  Collector_cnc       E1  Sample_51
+                                            ├0x033   holder_B  Collector_cnc       E2  Sample_52
+                                            ├0x034   holder_B  Collector_cnc       E3  Sample_53
+                                            ├0x035   holder_B  Collector_cnc       E4  Sample_54
+                                            ├0x036   holder_B  Collector_cnc       E5  Sample_55
+                                            ├0x037   holder_B  Collector_cnc       E6  Sample_56
+                                            ├0x038   holder_B  Collector_cnc       F1  Sample_61
+                                            ├0x039   holder_B  Collector_cnc       F2  Sample_62
+                                            ├0x040   holder_B  Collector_cnc       F3  Sample_63
+                                            ├0x041   holder_B  Collector_cnc       F4  Sample_64
+                                            ├0x042   holder_B  Collector_cnc       F5  Sample_65
+                                            ├0x043   holder_B  Collector_cnc       F6  Sample_66
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 15:52:18[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+     [OK] 15:52:18[GenerateSampleDataframe] └Completed.
+          15:57:32[GenerateSampleDataframe] Started...
+          15:57:32[GenerateSampleDataframe] ├platform: Perry
+          15:57:32[GenerateSampleDataframe] ├samples:
+                                            ├              Sampler Position   VialName    Holder
+                                            ├VialID                                             
+                                            ├0x001     Sampler_cnc       A1         SM  holder_D
+                                            ├0x002     Sampler_cnc       A3        THF  holder_D
+                                            ├0x003     Sampler_cnc       C1      TBADT  holder_E
+                                            ├0x004     Sampler_cnc       C1       MeCN  holder_F
+                                            ├0x005     Sampler_cnc       B1       wash  holder_F
+                                            ├0x006     Sampler_cnc       D1         N2  holder_A
+                                            ├0x007     Sampler_cnc       D2     Mixing  holder_A
+                                            ├0x008   Collector_cnc       A1   Sample_1  holder_B
+                                            ├0x009   Collector_cnc       A2   Sample_2  holder_B
+                                            ├0x010   Collector_cnc       A3   Sample_3  holder_B
+                                            ├0x011   Collector_cnc       A4   Sample_4  holder_B
+                                            ├0x012   Collector_cnc       A5   Sample_5  holder_B
+                                            ├0x013   Collector_cnc       A6   Sample_6  holder_B
+                                            ├0x014   Collector_cnc       B1  Sample_21  holder_B
+                                            ├0x015   Collector_cnc       B2  Sample_22  holder_B
+                                            ├0x016   Collector_cnc       B3  Sample_23  holder_B
+                                            ├0x017   Collector_cnc       B4  Sample_24  holder_B
+                                            ├0x018   Collector_cnc       B5  Sample_25  holder_B
+                                            ├0x019   Collector_cnc       B6  Sample_26  holder_B
+                                            ├0x020   Collector_cnc       C1  Sample_31  holder_B
+                                            ├0x021   Collector_cnc       C2  Sample_32  holder_B
+                                            ├0x022   Collector_cnc       C3  Sample_33  holder_B
+                                            ├0x023   Collector_cnc       C4  Sample_34  holder_B
+                                            ├0x024   Collector_cnc       C5  Sample_35  holder_B
+                                            ├0x025   Collector_cnc       C6  Sample_36  holder_B
+                                            ├0x026   Collector_cnc       D1  Sample_41  holder_B
+                                            ├0x027   Collector_cnc       D2  Sample_42  holder_B
+                                            ├0x028   Collector_cnc       D3  Sample_43  holder_B
+                                            ├0x029   Collector_cnc       D4  Sample_44  holder_B
+                                            ├0x030   Collector_cnc       D5  Sample_45  holder_B
+                                            ├0x031   Collector_cnc       D6  Sample_46  holder_B
+                                            ├0x032   Collector_cnc       E1  Sample_51  holder_B
+                                            ├0x033   Collector_cnc       E2  Sample_52  holder_B
+                                            ├0x034   Collector_cnc       E3  Sample_53  holder_B
+                                            ├0x035   Collector_cnc       E4  Sample_54  holder_B
+                                            ├0x036   Collector_cnc       E5  Sample_55  holder_B
+                                            ├0x037   Collector_cnc       E6  Sample_56  holder_B
+                                            ├0x038   Collector_cnc       F1  Sample_61  holder_B
+                                            ├0x039   Collector_cnc       F2  Sample_62  holder_B
+                                            ├0x040   Collector_cnc       F3  Sample_63  holder_B
+                                            ├0x041   Collector_cnc       F4  Sample_64  holder_B
+                                            ├0x042   Collector_cnc       F5  Sample_65  holder_B
+                                            ├0x043   Collector_cnc       F6  Sample_66  holder_B
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 15:57:32[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+     [OK] 15:57:32[GenerateSampleDataframe] └Completed.
+          15:59:04[GenerateSampleDataframe] Started...
+          15:59:04[GenerateSampleDataframe] ├platform: Perry
+          15:59:04[GenerateSampleDataframe] ├samples:
+                                            ├          Holder        Sampler   VialName Position
+                                            ├VialID                                             
+                                            ├0x001   holder_D    Sampler_cnc         SM       A1
+                                            ├0x002   holder_D    Sampler_cnc        THF       A3
+                                            ├0x003   holder_E    Sampler_cnc      TBADT       C1
+                                            ├0x004   holder_F    Sampler_cnc       MeCN       C1
+                                            ├0x005   holder_F    Sampler_cnc       wash       B1
+                                            ├0x006   holder_A    Sampler_cnc         N2       D1
+                                            ├0x007   holder_A    Sampler_cnc     Mixing       D2
+                                            ├0x008   holder_B  Collector_cnc   Sample_1       A1
+                                            ├0x009   holder_B  Collector_cnc   Sample_2       A2
+                                            ├0x010   holder_B  Collector_cnc   Sample_3       A3
+                                            ├0x011   holder_B  Collector_cnc   Sample_4       A4
+                                            ├0x012   holder_B  Collector_cnc   Sample_5       A5
+                                            ├0x013   holder_B  Collector_cnc   Sample_6       A6
+                                            ├0x014   holder_B  Collector_cnc  Sample_21       B1
+                                            ├0x015   holder_B  Collector_cnc  Sample_22       B2
+                                            ├0x016   holder_B  Collector_cnc  Sample_23       B3
+                                            ├0x017   holder_B  Collector_cnc  Sample_24       B4
+                                            ├0x018   holder_B  Collector_cnc  Sample_25       B5
+                                            ├0x019   holder_B  Collector_cnc  Sample_26       B6
+                                            ├0x020   holder_B  Collector_cnc  Sample_31       C1
+                                            ├0x021   holder_B  Collector_cnc  Sample_32       C2
+                                            ├0x022   holder_B  Collector_cnc  Sample_33       C3
+                                            ├0x023   holder_B  Collector_cnc  Sample_34       C4
+                                            ├0x024   holder_B  Collector_cnc  Sample_35       C5
+                                            ├0x025   holder_B  Collector_cnc  Sample_36       C6
+                                            ├0x026   holder_B  Collector_cnc  Sample_41       D1
+                                            ├0x027   holder_B  Collector_cnc  Sample_42       D2
+                                            ├0x028   holder_B  Collector_cnc  Sample_43       D3
+                                            ├0x029   holder_B  Collector_cnc  Sample_44       D4
+                                            ├0x030   holder_B  Collector_cnc  Sample_45       D5
+                                            ├0x031   holder_B  Collector_cnc  Sample_46       D6
+                                            ├0x032   holder_B  Collector_cnc  Sample_51       E1
+                                            ├0x033   holder_B  Collector_cnc  Sample_52       E2
+                                            ├0x034   holder_B  Collector_cnc  Sample_53       E3
+                                            ├0x035   holder_B  Collector_cnc  Sample_54       E4
+                                            ├0x036   holder_B  Collector_cnc  Sample_55       E5
+                                            ├0x037   holder_B  Collector_cnc  Sample_56       E6
+                                            ├0x038   holder_B  Collector_cnc  Sample_61       F1
+                                            ├0x039   holder_B  Collector_cnc  Sample_62       F2
+                                            ├0x040   holder_B  Collector_cnc  Sample_63       F3
+                                            ├0x041   holder_B  Collector_cnc  Sample_64       F4
+                                            ├0x042   holder_B  Collector_cnc  Sample_65       F5
+                                            ├0x043   holder_B  Collector_cnc  Sample_66       F6
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 15:59:04[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+     [OK] 15:59:04[GenerateSampleDataframe] └Completed.
+          16:02:41[GenerateSampleDataframe] Started...
+          16:02:41[GenerateSampleDataframe] ├platform: Perry
+          16:02:41[GenerateSampleDataframe] ├samples:
+                                            ├          Holder        Sampler   VialName Position
+                                            ├VialID                                             
+                                            ├0x001   holder_D    Sampler_cnc         SM       A1
+                                            ├0x002   holder_D    Sampler_cnc        THF       A3
+                                            ├0x003   holder_E    Sampler_cnc      TBADT       C1
+                                            ├0x004   holder_F    Sampler_cnc       MeCN       C1
+                                            ├0x005   holder_F    Sampler_cnc       wash       B1
+                                            ├0x006   holder_A    Sampler_cnc         N2       D1
+                                            ├0x007   holder_A    Sampler_cnc     Mixing       D2
+                                            ├0x008   holder_B  Collector_cnc   Sample_1       A1
+                                            ├0x009   holder_B  Collector_cnc   Sample_2       A2
+                                            ├0x010   holder_B  Collector_cnc   Sample_3       A3
+                                            ├0x011   holder_B  Collector_cnc   Sample_4       A4
+                                            ├0x012   holder_B  Collector_cnc   Sample_5       A5
+                                            ├0x013   holder_B  Collector_cnc   Sample_6       A6
+                                            ├0x014   holder_B  Collector_cnc  Sample_21       B1
+                                            ├0x015   holder_B  Collector_cnc  Sample_22       B2
+                                            ├0x016   holder_B  Collector_cnc  Sample_23       B3
+                                            ├0x017   holder_B  Collector_cnc  Sample_24       B4
+                                            ├0x018   holder_B  Collector_cnc  Sample_25       B5
+                                            ├0x019   holder_B  Collector_cnc  Sample_26       B6
+                                            ├0x020   holder_B  Collector_cnc  Sample_31       C1
+                                            ├0x021   holder_B  Collector_cnc  Sample_32       C2
+                                            ├0x022   holder_B  Collector_cnc  Sample_33       C3
+                                            ├0x023   holder_B  Collector_cnc  Sample_34       C4
+                                            ├0x024   holder_B  Collector_cnc  Sample_35       C5
+                                            ├0x025   holder_B  Collector_cnc  Sample_36       C6
+                                            ├0x026   holder_B  Collector_cnc  Sample_41       D1
+                                            ├0x027   holder_B  Collector_cnc  Sample_42       D2
+                                            ├0x028   holder_B  Collector_cnc  Sample_43       D3
+                                            ├0x029   holder_B  Collector_cnc  Sample_44       D4
+                                            ├0x030   holder_B  Collector_cnc  Sample_45       D5
+                                            ├0x031   holder_B  Collector_cnc  Sample_46       D6
+                                            ├0x032   holder_B  Collector_cnc  Sample_51       E1
+                                            ├0x033   holder_B  Collector_cnc  Sample_52       E2
+                                            ├0x034   holder_B  Collector_cnc  Sample_53       E3
+                                            ├0x035   holder_B  Collector_cnc  Sample_54       E4
+                                            ├0x036   holder_B  Collector_cnc  Sample_55       E5
+                                            ├0x037   holder_B  Collector_cnc  Sample_56       E6
+                                            ├0x038   holder_B  Collector_cnc  Sample_61       F1
+                                            ├0x039   holder_B  Collector_cnc  Sample_62       F2
+                                            ├0x040   holder_B  Collector_cnc  Sample_63       F3
+                                            ├0x041   holder_B  Collector_cnc  Sample_64       F4
+                                            ├0x042   holder_B  Collector_cnc  Sample_65       F5
+                                            ├0x043   holder_B  Collector_cnc  Sample_66       F6
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 16:02:41[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+     [OK] 16:02:41[GenerateSampleDataframe] └Completed.
+          16:25:29[GenerateSampleDataframe] Started...
+          16:25:29[GenerateSampleDataframe] ├platform: Perry
+          16:25:29[GenerateSampleDataframe] ├samples:
+                                            ├         VialName    Holder        Sampler Position
+                                            ├VialID                                             
+                                            ├0x001          SM  holder_D    Sampler_cnc       A1
+                                            ├0x002         THF  holder_D    Sampler_cnc       A3
+                                            ├0x003       TBADT  holder_E    Sampler_cnc       C1
+                                            ├0x004        MeCN  holder_F    Sampler_cnc       C1
+                                            ├0x005        wash  holder_F    Sampler_cnc       B1
+                                            ├0x006          N2  holder_A    Sampler_cnc       D1
+                                            ├0x007      Mixing  holder_A    Sampler_cnc       D2
+                                            ├0x008    Sample_1  holder_B  Collector_cnc       A1
+                                            ├0x009    Sample_2  holder_B  Collector_cnc       A2
+                                            ├0x010    Sample_3  holder_B  Collector_cnc       A3
+                                            ├0x011    Sample_4  holder_B  Collector_cnc       A4
+                                            ├0x012    Sample_5  holder_B  Collector_cnc       A5
+                                            ├0x013    Sample_6  holder_B  Collector_cnc       A6
+                                            ├0x014   Sample_21  holder_B  Collector_cnc       B1
+                                            ├0x015   Sample_22  holder_B  Collector_cnc       B2
+                                            ├0x016   Sample_23  holder_B  Collector_cnc       B3
+                                            ├0x017   Sample_24  holder_B  Collector_cnc       B4
+                                            ├0x018   Sample_25  holder_B  Collector_cnc       B5
+                                            ├0x019   Sample_26  holder_B  Collector_cnc       B6
+                                            ├0x020   Sample_31  holder_B  Collector_cnc       C1
+                                            ├0x021   Sample_32  holder_B  Collector_cnc       C2
+                                            ├0x022   Sample_33  holder_B  Collector_cnc       C3
+                                            ├0x023   Sample_34  holder_B  Collector_cnc       C4
+                                            ├0x024   Sample_35  holder_B  Collector_cnc       C5
+                                            ├0x025   Sample_36  holder_B  Collector_cnc       C6
+                                            ├0x026   Sample_41  holder_B  Collector_cnc       D1
+                                            ├0x027   Sample_42  holder_B  Collector_cnc       D2
+                                            ├0x028   Sample_43  holder_B  Collector_cnc       D3
+                                            ├0x029   Sample_44  holder_B  Collector_cnc       D4
+                                            ├0x030   Sample_45  holder_B  Collector_cnc       D5
+                                            ├0x031   Sample_46  holder_B  Collector_cnc       D6
+                                            ├0x032   Sample_51  holder_B  Collector_cnc       E1
+                                            ├0x033   Sample_52  holder_B  Collector_cnc       E2
+                                            ├0x034   Sample_53  holder_B  Collector_cnc       E3
+                                            ├0x035   Sample_54  holder_B  Collector_cnc       E4
+                                            ├0x036   Sample_55  holder_B  Collector_cnc       E5
+                                            ├0x037   Sample_56  holder_B  Collector_cnc       E6
+                                            ├0x038   Sample_61  holder_B  Collector_cnc       F1
+                                            ├0x039   Sample_62  holder_B  Collector_cnc       F2
+                                            ├0x040   Sample_63  holder_B  Collector_cnc       F3
+                                            ├0x041   Sample_64  holder_B  Collector_cnc       F4
+                                            ├0x042   Sample_65  holder_B  Collector_cnc       F5
+                                            ├0x043   Sample_66  holder_B  Collector_cnc       F6
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 16:25:29[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+     [OK] 16:25:29[GenerateSampleDataframe] └Completed.
+          16:27:24[GenerateSampleDataframe] Started...
+          16:27:24[GenerateSampleDataframe] ├platform: Perry
+          16:27:24[GenerateSampleDataframe] ├samples:
+                                            ├       Position        Sampler    Holder   VialName
+                                            ├VialID                                             
+                                            ├0x001        A1    Sampler_cnc  holder_D         SM
+                                            ├0x002        A3    Sampler_cnc  holder_D        THF
+                                            ├0x003        C1    Sampler_cnc  holder_E      TBADT
+                                            ├0x004        C1    Sampler_cnc  holder_F       MeCN
+                                            ├0x005        B1    Sampler_cnc  holder_F       wash
+                                            ├0x006        D1    Sampler_cnc  holder_A         N2
+                                            ├0x007        D2    Sampler_cnc  holder_A     Mixing
+                                            ├0x008        A1  Collector_cnc  holder_B   Sample_1
+                                            ├0x009        A2  Collector_cnc  holder_B   Sample_2
+                                            ├0x010        A3  Collector_cnc  holder_B   Sample_3
+                                            ├0x011        A4  Collector_cnc  holder_B   Sample_4
+                                            ├0x012        A5  Collector_cnc  holder_B   Sample_5
+                                            ├0x013        A6  Collector_cnc  holder_B   Sample_6
+                                            ├0x014        B1  Collector_cnc  holder_B  Sample_21
+                                            ├0x015        B2  Collector_cnc  holder_B  Sample_22
+                                            ├0x016        B3  Collector_cnc  holder_B  Sample_23
+                                            ├0x017        B4  Collector_cnc  holder_B  Sample_24
+                                            ├0x018        B5  Collector_cnc  holder_B  Sample_25
+                                            ├0x019        B6  Collector_cnc  holder_B  Sample_26
+                                            ├0x020        C1  Collector_cnc  holder_B  Sample_31
+                                            ├0x021        C2  Collector_cnc  holder_B  Sample_32
+                                            ├0x022        C3  Collector_cnc  holder_B  Sample_33
+                                            ├0x023        C4  Collector_cnc  holder_B  Sample_34
+                                            ├0x024        C5  Collector_cnc  holder_B  Sample_35
+                                            ├0x025        C6  Collector_cnc  holder_B  Sample_36
+                                            ├0x026        D1  Collector_cnc  holder_B  Sample_41
+                                            ├0x027        D2  Collector_cnc  holder_B  Sample_42
+                                            ├0x028        D3  Collector_cnc  holder_B  Sample_43
+                                            ├0x029        D4  Collector_cnc  holder_B  Sample_44
+                                            ├0x030        D5  Collector_cnc  holder_B  Sample_45
+                                            ├0x031        D6  Collector_cnc  holder_B  Sample_46
+                                            ├0x032        E1  Collector_cnc  holder_B  Sample_51
+                                            ├0x033        E2  Collector_cnc  holder_B  Sample_52
+                                            ├0x034        E3  Collector_cnc  holder_B  Sample_53
+                                            ├0x035        E4  Collector_cnc  holder_B  Sample_54
+                                            ├0x036        E5  Collector_cnc  holder_B  Sample_55
+                                            ├0x037        E6  Collector_cnc  holder_B  Sample_56
+                                            ├0x038        F1  Collector_cnc  holder_B  Sample_61
+                                            ├0x039        F2  Collector_cnc  holder_B  Sample_62
+                                            ├0x040        F3  Collector_cnc  holder_B  Sample_63
+                                            ├0x041        F4  Collector_cnc  holder_B  Sample_64
+                                            ├0x042        F5  Collector_cnc  holder_B  Sample_65
+                                            ├0x043        F6  Collector_cnc  holder_B  Sample_66
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 16:27:24[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+     [OK] 16:27:24[GenerateSampleDataframe] └Completed.
+          16:50:13[GenerateSampleDataframe] Started...
+          16:50:13[GenerateSampleDataframe] ├platform: Perry
+          16:50:13[GenerateSampleDataframe] ├samples:
+                                            ├       Position    Holder   VialName        Sampler
+                                            ├VialID                                             
+                                            ├0x001        A1  holder_D         SM    Sampler_cnc
+                                            ├0x002        A3  holder_D        THF    Sampler_cnc
+                                            ├0x003        C1  holder_E      TBADT    Sampler_cnc
+                                            ├0x004        C1  holder_F       MeCN    Sampler_cnc
+                                            ├0x005        B1  holder_F       wash    Sampler_cnc
+                                            ├0x006        D1  holder_A         N2    Sampler_cnc
+                                            ├0x007        D2  holder_A     Mixing    Sampler_cnc
+                                            ├0x008        A1  holder_B   Sample_1  Collector_cnc
+                                            ├0x009        A2  holder_B   Sample_2  Collector_cnc
+                                            ├0x010        A3  holder_B   Sample_3  Collector_cnc
+                                            ├0x011        A4  holder_B   Sample_4  Collector_cnc
+                                            ├0x012        A5  holder_B   Sample_5  Collector_cnc
+                                            ├0x013        A6  holder_B   Sample_6  Collector_cnc
+                                            ├0x014        B1  holder_B  Sample_21  Collector_cnc
+                                            ├0x015        B2  holder_B  Sample_22  Collector_cnc
+                                            ├0x016        B3  holder_B  Sample_23  Collector_cnc
+                                            ├0x017        B4  holder_B  Sample_24  Collector_cnc
+                                            ├0x018        B5  holder_B  Sample_25  Collector_cnc
+                                            ├0x019        B6  holder_B  Sample_26  Collector_cnc
+                                            ├0x020        C1  holder_B  Sample_31  Collector_cnc
+                                            ├0x021        C2  holder_B  Sample_32  Collector_cnc
+                                            ├0x022        C3  holder_B  Sample_33  Collector_cnc
+                                            ├0x023        C4  holder_B  Sample_34  Collector_cnc
+                                            ├0x024        C5  holder_B  Sample_35  Collector_cnc
+                                            ├0x025        C6  holder_B  Sample_36  Collector_cnc
+                                            ├0x026        D1  holder_B  Sample_41  Collector_cnc
+                                            ├0x027        D2  holder_B  Sample_42  Collector_cnc
+                                            ├0x028        D3  holder_B  Sample_43  Collector_cnc
+                                            ├0x029        D4  holder_B  Sample_44  Collector_cnc
+                                            ├0x030        D5  holder_B  Sample_45  Collector_cnc
+                                            ├0x031        D6  holder_B  Sample_46  Collector_cnc
+                                            ├0x032        E1  holder_B  Sample_51  Collector_cnc
+                                            ├0x033        E2  holder_B  Sample_52  Collector_cnc
+                                            ├0x034        E3  holder_B  Sample_53  Collector_cnc
+                                            ├0x035        E4  holder_B  Sample_54  Collector_cnc
+                                            ├0x036        E5  holder_B  Sample_55  Collector_cnc
+                                            ├0x037        E6  holder_B  Sample_56  Collector_cnc
+                                            ├0x038        F1  holder_B  Sample_61  Collector_cnc
+                                            ├0x039        F2  holder_B  Sample_62  Collector_cnc
+                                            ├0x040        F3  holder_B  Sample_63  Collector_cnc
+                                            ├0x041        F4  holder_B  Sample_64  Collector_cnc
+                                            ├0x042        F5  holder_B  Sample_65  Collector_cnc
+                                            ├0x043        F6  holder_B  Sample_66  Collector_cnc
+                                            ├0x044        A1  holder_D  Sample_71  Collector_cnc
+                                            ├0x045        A2  holder_D  Sample_72  Collector_cnc
+                                            ├0x046        A3  holder_D  Sample_73  Collector_cnc
+                                            ├0x047        A4  holder_D  Sample_74  Collector_cnc
+                                            ├0x048        A5  holder_D  Sample_75  Collector_cnc
+                                            ├0x049        A6  holder_D  Sample_76  Collector_cnc
+                                            ├0x04A        B1  holder_D  Sample_81  Collector_cnc
+                                            ├0x04B        B2  holder_D  Sample_82  Collector_cnc
+                                            ├0x04C        B3  holder_D  Sample_83  Collector_cnc
+                                            ├0x04D        B4  holder_D  Sample_84  Collector_cnc
+                                            ├0x04E        B5  holder_D  Sample_85  Collector_cnc
+                                            ├0x04F        B6  holder_D  Sample_86  Collector_cnc
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'A6': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'B2': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'B3': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'B4': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'B5': sampler cannot reach bottom.
+[WARNING] 16:50:13[GenerateSampleDataframe] ├Vial 'holder_D' > 'B6': sampler cannot reach bottom.
+     [OK] 16:50:13[GenerateSampleDataframe] └Completed.
+          16:59:37[GenerateSampleDataframe] Started...
+          16:59:37[GenerateSampleDataframe] ├platform: Perry
+          16:59:37[GenerateSampleDataframe] ├samples:
+                                            ├       Position    Holder   VialName        Sampler
+                                            ├VialID                                             
+                                            ├0x001        A1  holder_D         SM    Sampler_cnc
+                                            ├0x002        A3  holder_D        THF    Sampler_cnc
+                                            ├0x003        C1  holder_E      TBADT    Sampler_cnc
+                                            ├0x004        C1  holder_F       MeCN    Sampler_cnc
+                                            ├0x005        B1  holder_F       wash    Sampler_cnc
+                                            ├0x006        D1  holder_A         N2    Sampler_cnc
+                                            ├0x007        D2  holder_A     Mixing    Sampler_cnc
+                                            ├0x008        A1  holder_B   Sample_1  Collector_cnc
+                                            ├0x009        A2  holder_B   Sample_2  Collector_cnc
+                                            ├0x010        A3  holder_B   Sample_3  Collector_cnc
+                                            ├0x011        A4  holder_B   Sample_4  Collector_cnc
+                                            ├0x012        A5  holder_B   Sample_5  Collector_cnc
+                                            ├0x013        A6  holder_B   Sample_6  Collector_cnc
+                                            ├0x014        B1  holder_B  Sample_21  Collector_cnc
+                                            ├0x015        B2  holder_B  Sample_22  Collector_cnc
+                                            ├0x016        B3  holder_B  Sample_23  Collector_cnc
+                                            ├0x017        B4  holder_B  Sample_24  Collector_cnc
+                                            ├0x018        B5  holder_B  Sample_25  Collector_cnc
+                                            ├0x019        B6  holder_B  Sample_26  Collector_cnc
+                                            ├0x020        C1  holder_B  Sample_31  Collector_cnc
+                                            ├0x021        C2  holder_B  Sample_32  Collector_cnc
+                                            ├0x022        C3  holder_B  Sample_33  Collector_cnc
+                                            ├0x023        C4  holder_B  Sample_34  Collector_cnc
+                                            ├0x024        C5  holder_B  Sample_35  Collector_cnc
+                                            ├0x025        C6  holder_B  Sample_36  Collector_cnc
+                                            ├0x026        D1  holder_B  Sample_41  Collector_cnc
+                                            ├0x027        D2  holder_B  Sample_42  Collector_cnc
+                                            ├0x028        D3  holder_B  Sample_43  Collector_cnc
+                                            ├0x029        D4  holder_B  Sample_44  Collector_cnc
+                                            ├0x030        D5  holder_B  Sample_45  Collector_cnc
+                                            ├0x031        D6  holder_B  Sample_46  Collector_cnc
+                                            ├0x032        E1  holder_B  Sample_51  Collector_cnc
+                                            ├0x033        E2  holder_B  Sample_52  Collector_cnc
+                                            ├0x034        E3  holder_B  Sample_53  Collector_cnc
+                                            ├0x035        E4  holder_B  Sample_54  Collector_cnc
+                                            ├0x036        E5  holder_B  Sample_55  Collector_cnc
+                                            ├0x037        E6  holder_B  Sample_56  Collector_cnc
+                                            ├0x038        F1  holder_B  Sample_61  Collector_cnc
+                                            ├0x039        F2  holder_B  Sample_62  Collector_cnc
+                                            ├0x040        F3  holder_B  Sample_63  Collector_cnc
+                                            ├0x041        F4  holder_B  Sample_64  Collector_cnc
+                                            ├0x042        F5  holder_B  Sample_65  Collector_cnc
+                                            ├0x043        F6  holder_B  Sample_66  Collector_cnc
+                                            ├0x044        A1  holder_D  Sample_71  Collector_cnc
+                                            ├0x045        A2  holder_D  Sample_72  Collector_cnc
+                                            ├0x046        A3  holder_D  Sample_73  Collector_cnc
+                                            ├0x047        A4  holder_D  Sample_74  Collector_cnc
+                                            ├0x048        A5  holder_D  Sample_75  Collector_cnc
+                                            ├0x049        A6  holder_D  Sample_76  Collector_cnc
+                                            ├0x04A        B1  holder_D  Sample_81  Collector_cnc
+                                            ├0x04B        B2  holder_D  Sample_82  Collector_cnc
+                                            ├0x04C        B3  holder_D  Sample_83  Collector_cnc
+                                            ├0x04D        B4  holder_D  Sample_84  Collector_cnc
+                                            ├0x04E        B5  holder_D  Sample_85  Collector_cnc
+                                            ├0x04F        B6  holder_D  Sample_86  Collector_cnc
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'A6': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'B1': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'B2': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'B3': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'B4': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'B5': sampler cannot reach bottom.
+[WARNING] 16:59:37[GenerateSampleDataframe] ├Vial 'holder_D' > 'B6': sampler cannot reach bottom.
+     [OK] 16:59:37[GenerateSampleDataframe] └Completed.
+          17:05:49[GenerateSampleDataframe] Started...
+          17:05:49[GenerateSampleDataframe] ├platform: Perry
+          17:05:49[GenerateSampleDataframe] ├samples:
+                                            ├              Sampler    Holder Position   VialName
+                                            ├VialID                                             
+                                            ├0x001     Sampler_cnc  holder_D       A1         SM
+                                            ├0x002     Sampler_cnc  holder_D       A3        THF
+                                            ├0x003     Sampler_cnc  holder_E       C1      TBADT
+                                            ├0x004     Sampler_cnc  holder_F       C1       MeCN
+                                            ├0x005     Sampler_cnc  holder_F       B1       wash
+                                            ├0x006     Sampler_cnc  holder_A       D1         N2
+                                            ├0x007     Sampler_cnc  holder_A       D2     Mixing
+                                            ├0x008   Collector_cnc  holder_B       A1   Sample_1
+                                            ├0x009   Collector_cnc  holder_B       A2   Sample_2
+                                            ├0x010   Collector_cnc  holder_B       A3   Sample_3
+                                            ├0x011   Collector_cnc  holder_B       A4   Sample_4
+                                            ├0x012   Collector_cnc  holder_B       A5   Sample_5
+                                            ├0x013   Collector_cnc  holder_B       A6   Sample_6
+                                            ├0x014   Collector_cnc  holder_B       B1  Sample_21
+                                            ├0x015   Collector_cnc  holder_B       B2  Sample_22
+                                            ├0x016   Collector_cnc  holder_B       B3  Sample_23
+                                            ├0x017   Collector_cnc  holder_B       B4  Sample_24
+                                            ├0x018   Collector_cnc  holder_B       B5  Sample_25
+                                            ├0x019   Collector_cnc  holder_B       B6  Sample_26
+                                            ├0x020   Collector_cnc  holder_B       C1  Sample_31
+                                            ├0x021   Collector_cnc  holder_B       C2  Sample_32
+                                            ├0x022   Collector_cnc  holder_B       C3  Sample_33
+                                            ├0x023   Collector_cnc  holder_B       C4  Sample_34
+                                            ├0x024   Collector_cnc  holder_B       C5  Sample_35
+                                            ├0x025   Collector_cnc  holder_B       C6  Sample_36
+                                            ├0x026   Collector_cnc  holder_B       D1  Sample_41
+                                            ├0x027   Collector_cnc  holder_B       D2  Sample_42
+                                            ├0x028   Collector_cnc  holder_B       D3  Sample_43
+                                            ├0x029   Collector_cnc  holder_B       D4  Sample_44
+                                            ├0x030   Collector_cnc  holder_B       D5  Sample_45
+                                            ├0x031   Collector_cnc  holder_B       D6  Sample_46
+                                            ├0x032   Collector_cnc  holder_B       E1  Sample_51
+                                            ├0x033   Collector_cnc  holder_B       E2  Sample_52
+                                            ├0x034   Collector_cnc  holder_B       E3  Sample_53
+                                            ├0x035   Collector_cnc  holder_B       E4  Sample_54
+                                            ├0x036   Collector_cnc  holder_B       E5  Sample_55
+                                            ├0x037   Collector_cnc  holder_B       E6  Sample_56
+                                            ├0x038   Collector_cnc  holder_B       F1  Sample_61
+                                            ├0x039   Collector_cnc  holder_B       F2  Sample_62
+                                            ├0x040   Collector_cnc  holder_B       F3  Sample_63
+                                            ├0x041   Collector_cnc  holder_B       F4  Sample_64
+                                            ├0x042   Collector_cnc  holder_B       F5  Sample_65
+                                            ├0x043   Collector_cnc  holder_B       F6  Sample_66
+                                            ├0x044   Collector_cnc  holder_D       A1  Sample_71
+                                            ├0x045   Collector_cnc  holder_D       A2  Sample_72
+                                            ├0x046   Collector_cnc  holder_D       A3  Sample_73
+                                            ├0x047   Collector_cnc  holder_D       A4  Sample_74
+                                            ├0x048   Collector_cnc  holder_D       A5  Sample_75
+                                            ├0x049   Collector_cnc  holder_D       A6  Sample_76
+                                            ├0x04A   Collector_cnc  holder_D       B1  Sample_81
+                                            ├0x04B   Collector_cnc  holder_D       B2  Sample_82
+                                            ├0x04C   Collector_cnc  holder_D       B3  Sample_83
+                                            ├0x04D   Collector_cnc  holder_D       B4  Sample_84
+                                            ├0x04E   Collector_cnc  holder_D       B5  Sample_85
+                                            ├0x04F   Collector_cnc  holder_D       B6  Sample_86
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:05:49[GenerateSampleDataframe] ├Vial 'holder_D' > 'B6': sampler cannot reach bottom.
+     [OK] 17:05:49[GenerateSampleDataframe] └Completed.
+          17:08:20[GenerateSampleDataframe] Started...
+          17:08:20[GenerateSampleDataframe] ├platform: Perry
+          17:08:20[GenerateSampleDataframe] ├samples:
+                                            ├         VialName Position        Sampler    Holder
+                                            ├VialID                                             
+                                            ├0x001          SM       A1    Sampler_cnc  holder_D
+                                            ├0x002         THF       A3    Sampler_cnc  holder_D
+                                            ├0x003       TBADT       C1    Sampler_cnc  holder_E
+                                            ├0x004        MeCN       C1    Sampler_cnc  holder_F
+                                            ├0x005        wash       B1    Sampler_cnc  holder_F
+                                            ├0x006          N2       D1    Sampler_cnc  holder_A
+                                            ├0x007      Mixing       D2    Sampler_cnc  holder_A
+                                            ├0x008    Sample_1       A1  Collector_cnc  holder_B
+                                            ├0x009    Sample_2       A2  Collector_cnc  holder_B
+                                            ├0x010    Sample_3       A3  Collector_cnc  holder_B
+                                            ├0x011    Sample_4       A4  Collector_cnc  holder_B
+                                            ├0x012    Sample_5       A5  Collector_cnc  holder_B
+                                            ├0x013    Sample_6       A6  Collector_cnc  holder_B
+                                            ├0x014   Sample_21       B1  Collector_cnc  holder_B
+                                            ├0x015   Sample_22       B2  Collector_cnc  holder_B
+                                            ├0x016   Sample_23       B3  Collector_cnc  holder_B
+                                            ├0x017   Sample_24       B4  Collector_cnc  holder_B
+                                            ├0x018   Sample_25       B5  Collector_cnc  holder_B
+                                            ├0x019   Sample_26       B6  Collector_cnc  holder_B
+                                            ├0x020   Sample_31       C1  Collector_cnc  holder_B
+                                            ├0x021   Sample_32       C2  Collector_cnc  holder_B
+                                            ├0x022   Sample_33       C3  Collector_cnc  holder_B
+                                            ├0x023   Sample_34       C4  Collector_cnc  holder_B
+                                            ├0x024   Sample_35       C5  Collector_cnc  holder_B
+                                            ├0x025   Sample_36       C6  Collector_cnc  holder_B
+                                            ├0x026   Sample_41       D1  Collector_cnc  holder_B
+                                            ├0x027   Sample_42       D2  Collector_cnc  holder_B
+                                            ├0x028   Sample_43       D3  Collector_cnc  holder_B
+                                            ├0x029   Sample_44       D4  Collector_cnc  holder_B
+                                            ├0x030   Sample_45       D5  Collector_cnc  holder_B
+                                            ├0x031   Sample_46       D6  Collector_cnc  holder_B
+                                            ├0x032   Sample_51       E1  Collector_cnc  holder_B
+                                            ├0x033   Sample_52       E2  Collector_cnc  holder_B
+                                            ├0x034   Sample_53       E3  Collector_cnc  holder_B
+                                            ├0x035   Sample_54       E4  Collector_cnc  holder_B
+                                            ├0x036   Sample_55       E5  Collector_cnc  holder_B
+                                            ├0x037   Sample_56       E6  Collector_cnc  holder_B
+                                            ├0x038   Sample_61       F1  Collector_cnc  holder_B
+                                            ├0x039   Sample_62       F2  Collector_cnc  holder_B
+                                            ├0x040   Sample_63       F3  Collector_cnc  holder_B
+                                            ├0x041   Sample_64       F4  Collector_cnc  holder_B
+                                            ├0x042   Sample_65       F5  Collector_cnc  holder_B
+                                            ├0x043   Sample_66       F6  Collector_cnc  holder_B
+                                            ├0x044   Sample_71       A1  Collector_cnc  holder_D
+                                            ├0x045   Sample_72       A2  Collector_cnc  holder_D
+                                            ├0x046   Sample_73       A3  Collector_cnc  holder_D
+                                            ├0x047   Sample_74       A4  Collector_cnc  holder_D
+                                            ├0x048   Sample_75       A5  Collector_cnc  holder_D
+                                            ├0x049   Sample_76       A6  Collector_cnc  holder_D
+                                            ├0x04A   Sample_81       B1  Collector_cnc  holder_D
+                                            ├0x04B   Sample_82       B2  Collector_cnc  holder_D
+                                            ├0x04C   Sample_83       B3  Collector_cnc  holder_D
+                                            ├0x04D   Sample_84       B4  Collector_cnc  holder_D
+                                            ├0x04E   Sample_85       B5  Collector_cnc  holder_D
+                                            ├0x04F   Sample_86       B6  Collector_cnc  holder_D
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:08:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B6': sampler cannot reach bottom.
+     [OK] 17:08:20[GenerateSampleDataframe] └Completed.
+          17:15:20[GenerateSampleDataframe] Started...
+          17:15:20[GenerateSampleDataframe] ├platform: Perry
+          17:15:20[GenerateSampleDataframe] ├samples:
+                                            ├         VialName    Holder Position        Sampler
+                                            ├VialID                                             
+                                            ├0x001          SM  holder_D       A1    Sampler_cnc
+                                            ├0x002         THF  holder_D       A3    Sampler_cnc
+                                            ├0x003       TBADT  holder_E       C1    Sampler_cnc
+                                            ├0x004        MeCN  holder_F       C1    Sampler_cnc
+                                            ├0x005        wash  holder_F       B1    Sampler_cnc
+                                            ├0x006          N2  holder_A       D1    Sampler_cnc
+                                            ├0x007      Mixing  holder_A       D2    Sampler_cnc
+                                            ├0x008    Sample_1  holder_B       A1  Collector_cnc
+                                            ├0x009    Sample_2  holder_B       A2  Collector_cnc
+                                            ├0x010    Sample_3  holder_B       A3  Collector_cnc
+                                            ├0x011    Sample_4  holder_B       A4  Collector_cnc
+                                            ├0x012    Sample_5  holder_B       A5  Collector_cnc
+                                            ├0x013    Sample_6  holder_B       A6  Collector_cnc
+                                            ├0x014   Sample_21  holder_B       B1  Collector_cnc
+                                            ├0x015   Sample_22  holder_B       B2  Collector_cnc
+                                            ├0x016   Sample_23  holder_B       B3  Collector_cnc
+                                            ├0x017   Sample_24  holder_B       B4  Collector_cnc
+                                            ├0x018   Sample_25  holder_B       B5  Collector_cnc
+                                            ├0x019   Sample_26  holder_B       B6  Collector_cnc
+                                            ├0x020   Sample_31  holder_B       C1  Collector_cnc
+                                            ├0x021   Sample_32  holder_B       C2  Collector_cnc
+                                            ├0x022   Sample_33  holder_B       C3  Collector_cnc
+                                            ├0x023   Sample_34  holder_B       C4  Collector_cnc
+                                            ├0x024   Sample_35  holder_B       C5  Collector_cnc
+                                            ├0x025   Sample_36  holder_B       C6  Collector_cnc
+                                            ├0x026   Sample_41  holder_B       D1  Collector_cnc
+                                            ├0x027   Sample_42  holder_B       D2  Collector_cnc
+                                            ├0x028   Sample_43  holder_B       D3  Collector_cnc
+                                            ├0x029   Sample_44  holder_B       D4  Collector_cnc
+                                            ├0x030   Sample_45  holder_B       D5  Collector_cnc
+                                            ├0x031   Sample_46  holder_B       D6  Collector_cnc
+                                            ├0x032   Sample_51  holder_B       E1  Collector_cnc
+                                            ├0x033   Sample_52  holder_B       E2  Collector_cnc
+                                            ├0x034   Sample_53  holder_B       E3  Collector_cnc
+                                            ├0x035   Sample_54  holder_B       E4  Collector_cnc
+                                            ├0x036   Sample_55  holder_B       E5  Collector_cnc
+                                            ├0x037   Sample_56  holder_B       E6  Collector_cnc
+                                            ├0x038   Sample_61  holder_B       F1  Collector_cnc
+                                            ├0x039   Sample_62  holder_B       F2  Collector_cnc
+                                            ├0x040   Sample_63  holder_B       F3  Collector_cnc
+                                            ├0x041   Sample_64  holder_B       F4  Collector_cnc
+                                            ├0x042   Sample_65  holder_B       F5  Collector_cnc
+                                            ├0x043   Sample_66  holder_B       F6  Collector_cnc
+                                            ├0x044   Sample_71  holder_D       A1  Collector_cnc
+                                            ├0x045   Sample_72  holder_D       A2  Collector_cnc
+                                            ├0x046   Sample_73  holder_D       A3  Collector_cnc
+                                            ├0x047   Sample_74  holder_D       A4  Collector_cnc
+                                            ├0x048   Sample_75  holder_D       A5  Collector_cnc
+                                            ├0x049   Sample_76  holder_D       A6  Collector_cnc
+                                            ├0x04A   Sample_81  holder_D       B1  Collector_cnc
+                                            ├0x04B   Sample_82  holder_D       B2  Collector_cnc
+                                            ├0x04C   Sample_83  holder_D       B3  Collector_cnc
+                                            ├0x04D   Sample_84  holder_D       B4  Collector_cnc
+                                            ├0x04E   Sample_85  holder_D       B5  Collector_cnc
+                                            ├0x04F   Sample_86  holder_D       B6  Collector_cnc
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:15:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B6': sampler cannot reach bottom.
+     [OK] 17:15:20[GenerateSampleDataframe] └Completed.
+          17:18:20[GenerateSampleDataframe] Started...
+          17:18:20[GenerateSampleDataframe] ├platform: Perry
+          17:18:20[GenerateSampleDataframe] ├samples:
+                                            ├       Position   VialName        Sampler    Holder
+                                            ├VialID                                             
+                                            ├0x001        A1         SM    Sampler_cnc  holder_D
+                                            ├0x002        A3        THF    Sampler_cnc  holder_D
+                                            ├0x003        C1      TBADT    Sampler_cnc  holder_E
+                                            ├0x004        C1       MeCN    Sampler_cnc  holder_F
+                                            ├0x005        B1       wash    Sampler_cnc  holder_F
+                                            ├0x006        D1         N2    Sampler_cnc  holder_A
+                                            ├0x007        D2     Mixing    Sampler_cnc  holder_A
+                                            ├0x008        A1   Sample_1  Collector_cnc  holder_B
+                                            ├0x009        A2   Sample_2  Collector_cnc  holder_B
+                                            ├0x010        A3   Sample_3  Collector_cnc  holder_B
+                                            ├0x011        A4   Sample_4  Collector_cnc  holder_B
+                                            ├0x012        A5   Sample_5  Collector_cnc  holder_B
+                                            ├0x013        A6   Sample_6  Collector_cnc  holder_B
+                                            ├0x014        B1  Sample_21  Collector_cnc  holder_B
+                                            ├0x015        B2  Sample_22  Collector_cnc  holder_B
+                                            ├0x016        B3  Sample_23  Collector_cnc  holder_B
+                                            ├0x017        B4  Sample_24  Collector_cnc  holder_B
+                                            ├0x018        B5  Sample_25  Collector_cnc  holder_B
+                                            ├0x019        B6  Sample_26  Collector_cnc  holder_B
+                                            ├0x020        C1  Sample_31  Collector_cnc  holder_B
+                                            ├0x021        C2  Sample_32  Collector_cnc  holder_B
+                                            ├0x022        C3  Sample_33  Collector_cnc  holder_B
+                                            ├0x023        C4  Sample_34  Collector_cnc  holder_B
+                                            ├0x024        C5  Sample_35  Collector_cnc  holder_B
+                                            ├0x025        C6  Sample_36  Collector_cnc  holder_B
+                                            ├0x026        D1  Sample_41  Collector_cnc  holder_B
+                                            ├0x027        D2  Sample_42  Collector_cnc  holder_B
+                                            ├0x028        D3  Sample_43  Collector_cnc  holder_B
+                                            ├0x029        D4  Sample_44  Collector_cnc  holder_B
+                                            ├0x030        D5  Sample_45  Collector_cnc  holder_B
+                                            ├0x031        D6  Sample_46  Collector_cnc  holder_B
+                                            ├0x032        E1  Sample_51  Collector_cnc  holder_B
+                                            ├0x033        E2  Sample_52  Collector_cnc  holder_B
+                                            ├0x034        E3  Sample_53  Collector_cnc  holder_B
+                                            ├0x035        E4  Sample_54  Collector_cnc  holder_B
+                                            ├0x036        E5  Sample_55  Collector_cnc  holder_B
+                                            ├0x037        E6  Sample_56  Collector_cnc  holder_B
+                                            ├0x038        F1  Sample_61  Collector_cnc  holder_B
+                                            ├0x039        F2  Sample_62  Collector_cnc  holder_B
+                                            ├0x040        F3  Sample_63  Collector_cnc  holder_B
+                                            ├0x041        F4  Sample_64  Collector_cnc  holder_B
+                                            ├0x042        F5  Sample_65  Collector_cnc  holder_B
+                                            ├0x043        F6  Sample_66  Collector_cnc  holder_B
+                                            ├0x044        A1  Sample_71  Collector_cnc  holder_D
+                                            ├0x045        A2  Sample_72  Collector_cnc  holder_D
+                                            ├0x046        A3  Sample_73  Collector_cnc  holder_D
+                                            ├0x047        A4  Sample_74  Collector_cnc  holder_D
+                                            ├0x048        A5  Sample_75  Collector_cnc  holder_D
+                                            ├0x049        A6  Sample_76  Collector_cnc  holder_D
+                                            ├0x04A        B1  Sample_81  Collector_cnc  holder_D
+                                            ├0x04B        B2  Sample_82  Collector_cnc  holder_D
+                                            ├0x04C        B3  Sample_83  Collector_cnc  holder_D
+                                            ├0x04D        B4  Sample_84  Collector_cnc  holder_D
+                                            ├0x04E        B5  Sample_85  Collector_cnc  holder_D
+                                            ├0x04F        B6  Sample_86  Collector_cnc  holder_D
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_F' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_F' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_A' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_A' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'B6': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'C6': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'D6': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'E6': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_B' > 'F6': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'A6': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B1': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B2': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B3': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B4': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B5': sampler cannot reach bottom.
+[WARNING] 17:18:20[GenerateSampleDataframe] ├Vial 'holder_D' > 'B6': sampler cannot reach bottom.
+     [OK] 17:18:20[GenerateSampleDataframe] └Completed.

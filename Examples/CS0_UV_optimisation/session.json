@@ -24,7 +24,7 @@
         "value": null
     },
     "number_of_reagents": 4,
-    "price": "No",
+    "price": "\u5426",
     "number_of_stock_solutions": 3,
     "StockDF": {
         "class": "StockSolutionDF",
@@ -36,20 +36,22 @@
         "solvent_list": [
             "MeCN"
         ],
-        "df": "@DataFrame]StockSolutionDF.csv",
-        "num_call_names": 1
+        "df": "@DataFrame]StockSolutionDF.csv"
     },
-    "number_of_vials": 43,
+    "number_of_vials": 55,
     "VialDF": {
         "class": "VialDF",
-        "number_vials": 43,
-        "solvent_list": [
-            "MeCN"
-        ],
+        "number_vials": 55,
+        "solvent_list": null,
         "stock_list": [
             "Stock_0",
             "Stock_1",
             "Stock_2",
+            "Not a Stock",
+            "Not a Stock",
+            "Not a Stock",
+            "Not a Stock",
+            "Not a Stock",
             "Not a Stock"
         ],
         "handler_info": {
@@ -383,7 +385,7 @@
         "unit": "",
         "style": "constant",
         "omni_tag": "all",
-        "value": "SM",
+        "value": "Limiting Reagent",
         "low_bound": null,
         "high_bound": null,
         "allowed_values": null
@@ -427,32 +429,6 @@
         "high_bound": null,
         "allowed_values": null
     },
-    "sample_name": {
-        "class": "AnalyParameter",
-        "name": "sample_name",
-        "min_value": null,
-        "max_value": null,
-        "unit": "",
-        "style": "constant",
-        "omni_tag": null,
-        "value": "test",
-        "low_bound": null,
-        "high_bound": null,
-        "allowed_values": null
-    },
-    "data_folder": {
-        "class": "AnalyParameter",
-        "name": "data_folder",
-        "min_value": null,
-        "max_value": null,
-        "unit": "",
-        "style": "constant",
-        "omni_tag": null,
-        "value": "Path/To/Data/Folder",
-        "low_bound": null,
-        "high_bound": null,
-        "allowed_values": null
-    },
     "baseline_calibrate": {
         "class": "AnalyParameter",
         "name": "baseline_calibrate",
@@ -461,7 +437,7 @@
         "unit": "",
         "style": "constant",
         "omni_tag": "all",
-        "value": true,
+        "value": 1,
         "low_bound": null,
         "high_bound": null,
         "allowed_values": null
@@ -540,32 +516,6 @@
         "style": "constant",
         "omni_tag": "all",
         "value": 1.0,
-        "low_bound": null,
-        "high_bound": null,
-        "allowed_values": null
-    },
-    "integration_lower_bound": {
-        "class": "AnalyParameter",
-        "name": "integration_lower_bound",
-        "min_value": 190,
-        "max_value": 1100,
-        "unit": "nm",
-        "style": "constant",
-        "omni_tag": "simple_integration",
-        "value": 200,
-        "low_bound": null,
-        "high_bound": null,
-        "allowed_values": null
-    },
-    "integration_upper_bound": {
-        "class": "AnalyParameter",
-        "name": "integration_upper_bound",
-        "min_value": 190,
-        "max_value": 1100,
-        "unit": "nm",
-        "style": "constant",
-        "omni_tag": "simple_integration",
-        "value": 600,
         "low_bound": null,
         "high_bound": null,
         "allowed_values": null

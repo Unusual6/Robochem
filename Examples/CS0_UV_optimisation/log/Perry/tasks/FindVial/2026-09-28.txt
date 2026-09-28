@@ -1,0 +1,473 @@
+          15:49:10[FindVial] Started...
+          15:49:10[FindVial] ├platform: Perry
+          15:49:10[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          15:49:10[FindVial] ├vial_type: Sample
+          15:49:10[FindVial] ├nominal_volume: 1500
+          15:49:10[FindVial] ├ensure_volume: 500
+          15:49:10[FindVial] ├order_by_distance: True
+          15:49:10[FindVial] ├from_sample: None
+          15:49:10[FindVial] ├allow_user_requests: True
+  [ERROR] 15:49:10[FindVial] ┴NoSuitableVialError: Sampler 'Liquid Handler Sampler (Collector_cnc)' has no viable vials of this type.
+                             ┴Required vial type: 'Sample'
+          15:52:23[FindVial] Started...
+          15:52:23[FindVial] ├platform: Perry
+          15:52:23[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          15:52:23[FindVial] ├vial_type: Sample
+          15:52:23[FindVial] ├nominal_volume: 1500
+          15:52:23[FindVial] ├ensure_volume: 500
+          15:52:23[FindVial] ├order_by_distance: True
+          15:52:23[FindVial] ├from_sample: None
+          15:52:23[FindVial] ├allow_user_requests: True
+  [ERROR] 15:52:23[FindVial] ┴NoSuitableVialError: Sampler 'Liquid Handler Sampler (Collector_cnc)' has no viable vials of this type.
+                             ┴Required vial type: 'Sample'
+          16:02:46[FindVial] Started...
+          16:02:46[FindVial] ├platform: Perry
+          16:02:46[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:02:46[FindVial] ├vial_type: Sample
+          16:02:46[FindVial] ├nominal_volume: 1500
+          16:02:46[FindVial] ├ensure_volume: 500
+          16:02:46[FindVial] ├order_by_distance: True
+          16:02:46[FindVial] ├from_sample: None
+          16:02:46[FindVial] ├allow_user_requests: True
+  [ERROR] 16:02:46[FindVial] ┴NoSuitableVialError: Sampler 'Liquid Handler Sampler (Collector_cnc)' has no viable vials of this type.
+                             ┴Required vial type: 'Sample'
+          16:27:26[FindVial] Started...
+          16:27:26[FindVial] ├platform: Perry
+          16:27:26[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:27:26[FindVial] ├vial_type: Sample
+          16:27:26[FindVial] ├nominal_volume: 1500
+          16:27:26[FindVial] ├ensure_volume: 500
+          16:27:26[FindVial] ├order_by_distance: True
+          16:27:26[FindVial] ├from_sample: None
+          16:27:26[FindVial] ├allow_user_requests: True
+          16:27:26[FindVial] ├Result: 0x008
+     [OK] 16:27:26[FindVial] └Completed.
+          16:27:57[FindVial] Started...
+          16:27:57[FindVial] ├platform: Perry
+          16:27:57[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:27:57[FindVial] ├vial_type: Sample
+          16:27:57[FindVial] ├nominal_volume: 1500
+          16:27:57[FindVial] ├ensure_volume: 500
+          16:27:57[FindVial] ├order_by_distance: True
+          16:27:57[FindVial] ├from_sample: None
+          16:27:57[FindVial] ├allow_user_requests: True
+          16:27:57[FindVial] ├Result: 0x014
+     [OK] 16:27:57[FindVial] └Completed.
+          16:28:28[FindVial] Started...
+          16:28:28[FindVial] ├platform: Perry
+          16:28:28[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:28:28[FindVial] ├vial_type: Sample
+          16:28:28[FindVial] ├nominal_volume: 1500
+          16:28:28[FindVial] ├ensure_volume: 500
+          16:28:28[FindVial] ├order_by_distance: True
+          16:28:28[FindVial] ├from_sample: None
+          16:28:28[FindVial] ├allow_user_requests: True
+          16:28:28[FindVial] ├Result: 0x020
+     [OK] 16:28:28[FindVial] └Completed.
+          16:28:59[FindVial] Started...
+          16:28:59[FindVial] ├platform: Perry
+          16:28:59[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:28:59[FindVial] ├vial_type: Sample
+          16:28:59[FindVial] ├nominal_volume: 1500
+          16:28:59[FindVial] ├ensure_volume: 500
+          16:28:59[FindVial] ├order_by_distance: True
+          16:28:59[FindVial] ├from_sample: None
+          16:28:59[FindVial] ├allow_user_requests: True
+          16:28:59[FindVial] ├Result: 0x009
+     [OK] 16:28:59[FindVial] └Completed.
+          16:29:30[FindVial] Started...
+          16:29:30[FindVial] ├platform: Perry
+          16:29:30[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:29:30[FindVial] ├vial_type: Sample
+          16:29:30[FindVial] ├nominal_volume: 1500
+          16:29:30[FindVial] ├ensure_volume: 500
+          16:29:30[FindVial] ├order_by_distance: True
+          16:29:30[FindVial] ├from_sample: None
+          16:29:30[FindVial] ├allow_user_requests: True
+          16:29:30[FindVial] ├Result: 0x015
+     [OK] 16:29:30[FindVial] └Completed.
+          16:30:00[FindVial] Started...
+          16:30:00[FindVial] ├platform: Perry
+          16:30:00[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:30:00[FindVial] ├vial_type: Sample
+          16:30:00[FindVial] ├nominal_volume: 1500
+          16:30:00[FindVial] ├ensure_volume: 500
+          16:30:00[FindVial] ├order_by_distance: True
+          16:30:00[FindVial] ├from_sample: None
+          16:30:00[FindVial] ├allow_user_requests: True
+          16:30:00[FindVial] ├Result: 0x026
+     [OK] 16:30:00[FindVial] └Completed.
+          16:30:32[FindVial] Started...
+          16:30:32[FindVial] ├platform: Perry
+          16:30:32[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:30:32[FindVial] ├vial_type: Sample
+          16:30:32[FindVial] ├nominal_volume: 1500
+          16:30:32[FindVial] ├ensure_volume: 500
+          16:30:32[FindVial] ├order_by_distance: True
+          16:30:32[FindVial] ├from_sample: None
+          16:30:32[FindVial] ├allow_user_requests: True
+          16:30:32[FindVial] ├Result: 0x021
+     [OK] 16:30:32[FindVial] └Completed.
+          16:31:03[FindVial] Started...
+          16:31:03[FindVial] ├platform: Perry
+          16:31:03[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:31:03[FindVial] ├vial_type: Sample
+          16:31:03[FindVial] ├nominal_volume: 1500
+          16:31:03[FindVial] ├ensure_volume: 500
+          16:31:03[FindVial] ├order_by_distance: True
+          16:31:03[FindVial] ├from_sample: None
+          16:31:03[FindVial] ├allow_user_requests: True
+          16:31:03[FindVial] ├Result: 0x010
+     [OK] 16:31:03[FindVial] └Completed.
+          16:50:16[FindVial] Started...
+          16:50:16[FindVial] ├platform: Perry
+          16:50:16[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:50:16[FindVial] ├vial_type: Sample
+          16:50:16[FindVial] ├nominal_volume: 1500
+          16:50:16[FindVial] ├ensure_volume: 500
+          16:50:16[FindVial] ├order_by_distance: True
+          16:50:16[FindVial] ├from_sample: None
+          16:50:16[FindVial] ├allow_user_requests: True
+          16:50:16[FindVial] ├Result: 0x008
+     [OK] 16:50:16[FindVial] └Completed.
+          16:50:47[FindVial] Started...
+          16:50:47[FindVial] ├platform: Perry
+          16:50:47[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:50:47[FindVial] ├vial_type: Sample
+          16:50:47[FindVial] ├nominal_volume: 1500
+          16:50:47[FindVial] ├ensure_volume: 500
+          16:50:47[FindVial] ├order_by_distance: True
+          16:50:47[FindVial] ├from_sample: None
+          16:50:47[FindVial] ├allow_user_requests: True
+          16:50:47[FindVial] ├Result: 0x014
+     [OK] 16:50:47[FindVial] └Completed.
+          16:51:19[FindVial] Started...
+          16:51:19[FindVial] ├platform: Perry
+          16:51:19[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:51:19[FindVial] ├vial_type: Sample
+          16:51:19[FindVial] ├nominal_volume: 1500
+          16:51:19[FindVial] ├ensure_volume: 500
+          16:51:19[FindVial] ├order_by_distance: True
+          16:51:19[FindVial] ├from_sample: None
+          16:51:19[FindVial] ├allow_user_requests: True
+          16:51:19[FindVial] ├Result: 0x020
+     [OK] 16:51:19[FindVial] └Completed.
+          16:51:51[FindVial] Started...
+          16:51:51[FindVial] ├platform: Perry
+          16:51:51[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:51:51[FindVial] ├vial_type: Sample
+          16:51:51[FindVial] ├nominal_volume: 1500
+          16:51:51[FindVial] ├ensure_volume: 500
+          16:51:51[FindVial] ├order_by_distance: True
+          16:51:51[FindVial] ├from_sample: None
+          16:51:51[FindVial] ├allow_user_requests: True
+          16:51:52[FindVial] ├Result: 0x009
+     [OK] 16:51:52[FindVial] └Completed.
+          16:52:24[FindVial] Started...
+          16:52:24[FindVial] ├platform: Perry
+          16:52:24[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:52:24[FindVial] ├vial_type: Sample
+          16:52:24[FindVial] ├nominal_volume: 1500
+          16:52:24[FindVial] ├ensure_volume: 500
+          16:52:24[FindVial] ├order_by_distance: True
+          16:52:24[FindVial] ├from_sample: None
+          16:52:24[FindVial] ├allow_user_requests: True
+          16:52:24[FindVial] ├Result: 0x015
+     [OK] 16:52:24[FindVial] └Completed.
+          16:52:56[FindVial] Started...
+          16:52:56[FindVial] ├platform: Perry
+          16:52:56[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:52:56[FindVial] ├vial_type: Sample
+          16:52:56[FindVial] ├nominal_volume: 1500
+          16:52:56[FindVial] ├ensure_volume: 500
+          16:52:56[FindVial] ├order_by_distance: True
+          16:52:56[FindVial] ├from_sample: None
+          16:52:56[FindVial] ├allow_user_requests: True
+          16:52:56[FindVial] ├Result: 0x026
+     [OK] 16:52:56[FindVial] └Completed.
+          16:53:28[FindVial] Started...
+          16:53:28[FindVial] ├platform: Perry
+          16:53:28[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:53:28[FindVial] ├vial_type: Sample
+          16:53:28[FindVial] ├nominal_volume: 1500
+          16:53:28[FindVial] ├ensure_volume: 500
+          16:53:28[FindVial] ├order_by_distance: True
+          16:53:28[FindVial] ├from_sample: None
+          16:53:28[FindVial] ├allow_user_requests: True
+          16:53:28[FindVial] ├Result: 0x021
+     [OK] 16:53:28[FindVial] └Completed.
+          16:54:01[FindVial] Started...
+          16:54:01[FindVial] ├platform: Perry
+          16:54:01[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:54:01[FindVial] ├vial_type: Sample
+          16:54:01[FindVial] ├nominal_volume: 1500
+          16:54:01[FindVial] ├ensure_volume: 500
+          16:54:01[FindVial] ├order_by_distance: True
+          16:54:01[FindVial] ├from_sample: None
+          16:54:01[FindVial] ├allow_user_requests: True
+          16:54:01[FindVial] ├Result: 0x010
+     [OK] 16:54:01[FindVial] └Completed.
+          16:54:33[FindVial] Started...
+          16:54:33[FindVial] ├platform: Perry
+          16:54:33[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:54:33[FindVial] ├vial_type: Sample
+          16:54:33[FindVial] ├nominal_volume: 1500
+          16:54:33[FindVial] ├ensure_volume: 500
+          16:54:33[FindVial] ├order_by_distance: True
+          16:54:33[FindVial] ├from_sample: None
+          16:54:33[FindVial] ├allow_user_requests: True
+          16:54:33[FindVial] ├Result: 0x027
+     [OK] 16:54:33[FindVial] └Completed.
+          16:55:04[FindVial] Started...
+          16:55:04[FindVial] ├platform: Perry
+          16:55:04[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:55:04[FindVial] ├vial_type: Sample
+          16:55:04[FindVial] ├nominal_volume: 1500
+          16:55:04[FindVial] ├ensure_volume: 500
+          16:55:04[FindVial] ├order_by_distance: True
+          16:55:04[FindVial] ├from_sample: None
+          16:55:04[FindVial] ├allow_user_requests: True
+          16:55:04[FindVial] ├Result: 0x016
+     [OK] 16:55:04[FindVial] └Completed.
+          16:55:42[FindVial] Started...
+          16:55:42[FindVial] ├platform: Perry
+          16:55:42[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:55:42[FindVial] ├vial_type: Sample
+          16:55:42[FindVial] ├nominal_volume: 1500
+          16:55:42[FindVial] ├ensure_volume: 500
+          16:55:42[FindVial] ├order_by_distance: True
+          16:55:42[FindVial] ├from_sample: None
+          16:55:42[FindVial] ├allow_user_requests: True
+          16:55:42[FindVial] ├Result: 0x032
+     [OK] 16:55:42[FindVial] └Completed.
+          16:56:19[FindVial] Started...
+          16:56:19[FindVial] ├platform: Perry
+          16:56:19[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:56:19[FindVial] ├vial_type: Sample
+          16:56:19[FindVial] ├nominal_volume: 1500
+          16:56:19[FindVial] ├ensure_volume: 500
+          16:56:19[FindVial] ├order_by_distance: True
+          16:56:19[FindVial] ├from_sample: None
+          16:56:19[FindVial] ├allow_user_requests: True
+          16:56:19[FindVial] ├Result: 0x022
+     [OK] 16:56:19[FindVial] └Completed.
+          16:56:58[FindVial] Started...
+          16:56:58[FindVial] ├platform: Perry
+          16:56:58[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:56:58[FindVial] ├vial_type: Sample
+          16:56:58[FindVial] ├nominal_volume: 1500
+          16:56:58[FindVial] ├ensure_volume: 500
+          16:56:58[FindVial] ├order_by_distance: True
+          16:56:58[FindVial] ├from_sample: None
+          16:56:58[FindVial] ├allow_user_requests: True
+          16:56:58[FindVial] ├Result: 0x033
+     [OK] 16:56:58[FindVial] └Completed.
+          16:57:34[FindVial] Started...
+          16:57:34[FindVial] ├platform: Perry
+          16:57:34[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:57:34[FindVial] ├vial_type: Sample
+          16:57:34[FindVial] ├nominal_volume: 1500
+          16:57:34[FindVial] ├ensure_volume: 500
+          16:57:34[FindVial] ├order_by_distance: True
+          16:57:34[FindVial] ├from_sample: None
+          16:57:34[FindVial] ├allow_user_requests: True
+          16:57:34[FindVial] ├Result: 0x028
+     [OK] 16:57:34[FindVial] └Completed.
+          16:58:10[FindVial] Started...
+          16:58:10[FindVial] ├platform: Perry
+          16:58:10[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:58:10[FindVial] ├vial_type: Sample
+          16:58:10[FindVial] ├nominal_volume: 1500
+          16:58:10[FindVial] ├ensure_volume: 500
+          16:58:10[FindVial] ├order_by_distance: True
+          16:58:10[FindVial] ├from_sample: None
+          16:58:10[FindVial] ├allow_user_requests: True
+          16:58:10[FindVial] ├Result: 0x038
+     [OK] 16:58:10[FindVial] └Completed.
+          16:58:46[FindVial] Started...
+          16:58:46[FindVial] ├platform: Perry
+          16:58:46[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          16:58:46[FindVial] ├vial_type: Sample
+          16:58:46[FindVial] ├nominal_volume: 1500
+          16:58:46[FindVial] ├ensure_volume: 500
+          16:58:46[FindVial] ├order_by_distance: True
+          16:58:46[FindVial] ├from_sample: None
+          16:58:46[FindVial] ├allow_user_requests: True
+          16:58:46[FindVial] ├Result: 0x011
+     [OK] 16:58:46[FindVial] └Completed.
+          17:08:23[FindVial] Started...
+          17:08:23[FindVial] ├platform: Perry
+          17:08:23[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:08:23[FindVial] ├vial_type: Sample
+          17:08:23[FindVial] ├nominal_volume: 1500
+          17:08:23[FindVial] ├ensure_volume: 500
+          17:08:23[FindVial] ├order_by_distance: True
+          17:08:23[FindVial] ├from_sample: None
+          17:08:23[FindVial] ├allow_user_requests: True
+          17:08:23[FindVial] ├Result: 0x008
+     [OK] 17:08:23[FindVial] └Completed.
+          17:08:54[FindVial] Started...
+          17:08:54[FindVial] ├platform: Perry
+          17:08:54[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:08:54[FindVial] ├vial_type: Sample
+          17:08:54[FindVial] ├nominal_volume: 1500
+          17:08:54[FindVial] ├ensure_volume: 500
+          17:08:54[FindVial] ├order_by_distance: True
+          17:08:54[FindVial] ├from_sample: None
+          17:08:54[FindVial] ├allow_user_requests: True
+          17:08:54[FindVial] ├Result: 0x014
+     [OK] 17:08:54[FindVial] └Completed.
+          17:09:25[FindVial] Started...
+          17:09:25[FindVial] ├platform: Perry
+          17:09:25[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:09:25[FindVial] ├vial_type: Sample
+          17:09:25[FindVial] ├nominal_volume: 1500
+          17:09:25[FindVial] ├ensure_volume: 500
+          17:09:25[FindVial] ├order_by_distance: True
+          17:09:25[FindVial] ├from_sample: None
+          17:09:25[FindVial] ├allow_user_requests: True
+          17:09:25[FindVial] ├Result: 0x020
+     [OK] 17:09:25[FindVial] └Completed.
+          17:09:56[FindVial] Started...
+          17:09:56[FindVial] ├platform: Perry
+          17:09:56[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:09:56[FindVial] ├vial_type: Sample
+          17:09:56[FindVial] ├nominal_volume: 1500
+          17:09:56[FindVial] ├ensure_volume: 500
+          17:09:56[FindVial] ├order_by_distance: True
+          17:09:56[FindVial] ├from_sample: None
+          17:09:56[FindVial] ├allow_user_requests: True
+          17:09:56[FindVial] ├Result: 0x009
+     [OK] 17:09:56[FindVial] └Completed.
+          17:10:27[FindVial] Started...
+          17:10:27[FindVial] ├platform: Perry
+          17:10:27[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:10:27[FindVial] ├vial_type: Sample
+          17:10:27[FindVial] ├nominal_volume: 1500
+          17:10:27[FindVial] ├ensure_volume: 500
+          17:10:27[FindVial] ├order_by_distance: True
+          17:10:27[FindVial] ├from_sample: None
+          17:10:27[FindVial] ├allow_user_requests: True
+          17:10:27[FindVial] ├Result: 0x015
+     [OK] 17:10:27[FindVial] └Completed.
+          17:10:58[FindVial] Started...
+          17:10:58[FindVial] ├platform: Perry
+          17:10:58[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:10:58[FindVial] ├vial_type: Sample
+          17:10:58[FindVial] ├nominal_volume: 1500
+          17:10:58[FindVial] ├ensure_volume: 500
+          17:10:58[FindVial] ├order_by_distance: True
+          17:10:58[FindVial] ├from_sample: None
+          17:10:58[FindVial] ├allow_user_requests: True
+          17:10:58[FindVial] ├Result: 0x026
+     [OK] 17:10:58[FindVial] └Completed.
+          17:11:30[FindVial] Started...
+          17:11:30[FindVial] ├platform: Perry
+          17:11:30[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:11:30[FindVial] ├vial_type: Sample
+          17:11:30[FindVial] ├nominal_volume: 1500
+          17:11:30[FindVial] ├ensure_volume: 500
+          17:11:30[FindVial] ├order_by_distance: True
+          17:11:30[FindVial] ├from_sample: None
+          17:11:30[FindVial] ├allow_user_requests: True
+          17:11:30[FindVial] ├Result: 0x021
+     [OK] 17:11:30[FindVial] └Completed.
+          17:12:02[FindVial] Started...
+          17:12:02[FindVial] ├platform: Perry
+          17:12:02[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:12:02[FindVial] ├vial_type: Sample
+          17:12:02[FindVial] ├nominal_volume: 1500
+          17:12:02[FindVial] ├ensure_volume: 500
+          17:12:02[FindVial] ├order_by_distance: True
+          17:12:02[FindVial] ├from_sample: None
+          17:12:02[FindVial] ├allow_user_requests: True
+          17:12:02[FindVial] ├Result: 0x010
+     [OK] 17:12:02[FindVial] └Completed.
+          17:12:33[FindVial] Started...
+          17:12:33[FindVial] ├platform: Perry
+          17:12:33[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:12:33[FindVial] ├vial_type: Sample
+          17:12:33[FindVial] ├nominal_volume: 1500
+          17:12:33[FindVial] ├ensure_volume: 500
+          17:12:33[FindVial] ├order_by_distance: True
+          17:12:33[FindVial] ├from_sample: None
+          17:12:33[FindVial] ├allow_user_requests: True
+          17:12:33[FindVial] ├Result: 0x027
+     [OK] 17:12:33[FindVial] └Completed.
+          17:15:23[FindVial] Started...
+          17:15:23[FindVial] ├platform: Perry
+          17:15:23[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:15:23[FindVial] ├vial_type: Sample
+          17:15:23[FindVial] ├nominal_volume: 1500
+          17:15:23[FindVial] ├ensure_volume: 500
+          17:15:23[FindVial] ├order_by_distance: True
+          17:15:23[FindVial] ├from_sample: None
+          17:15:23[FindVial] ├allow_user_requests: True
+          17:15:23[FindVial] ├Result: 0x008
+     [OK] 17:15:23[FindVial] └Completed.
+          17:15:54[FindVial] Started...
+          17:15:54[FindVial] ├platform: Perry
+          17:15:54[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:15:54[FindVial] ├vial_type: Sample
+          17:15:54[FindVial] ├nominal_volume: 1500
+          17:15:54[FindVial] ├ensure_volume: 500
+          17:15:54[FindVial] ├order_by_distance: True
+          17:15:54[FindVial] ├from_sample: None
+          17:15:54[FindVial] ├allow_user_requests: True
+          17:15:54[FindVial] ├Result: 0x014
+     [OK] 17:15:54[FindVial] └Completed.
+          17:16:26[FindVial] Started...
+          17:16:26[FindVial] ├platform: Perry
+          17:16:26[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:16:26[FindVial] ├vial_type: Sample
+          17:16:26[FindVial] ├nominal_volume: 1500
+          17:16:26[FindVial] ├ensure_volume: 500
+          17:16:26[FindVial] ├order_by_distance: True
+          17:16:26[FindVial] ├from_sample: None
+          17:16:26[FindVial] ├allow_user_requests: True
+          17:16:26[FindVial] ├Result: 0x020
+     [OK] 17:16:26[FindVial] └Completed.
+          17:16:59[FindVial] Started...
+          17:16:59[FindVial] ├platform: Perry
+          17:16:59[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:16:59[FindVial] ├vial_type: Sample
+          17:16:59[FindVial] ├nominal_volume: 1500
+          17:16:59[FindVial] ├ensure_volume: 500
+          17:16:59[FindVial] ├order_by_distance: True
+          17:16:59[FindVial] ├from_sample: None
+          17:16:59[FindVial] ├allow_user_requests: True
+          17:16:59[FindVial] ├Result: 0x009
+     [OK] 17:16:59[FindVial] └Completed.
+          17:18:23[FindVial] Started...
+          17:18:23[FindVial] ├platform: Perry
+          17:18:23[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:18:23[FindVial] ├vial_type: Sample
+          17:18:23[FindVial] ├nominal_volume: 1500
+          17:18:23[FindVial] ├ensure_volume: 500
+          17:18:23[FindVial] ├order_by_distance: True
+          17:18:23[FindVial] ├from_sample: None
+          17:18:23[FindVial] ├allow_user_requests: True
+          17:18:23[FindVial] ├Result: 0x008
+     [OK] 17:18:23[FindVial] └Completed.
+          17:18:55[FindVial] Started...
+          17:18:55[FindVial] ├platform: Perry
+          17:18:55[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:18:55[FindVial] ├vial_type: Sample
+          17:18:55[FindVial] ├nominal_volume: 1500
+          17:18:55[FindVial] ├ensure_volume: 500
+          17:18:55[FindVial] ├order_by_distance: True
+          17:18:55[FindVial] ├from_sample: None
+          17:18:55[FindVial] ├allow_user_requests: True
+          17:18:55[FindVial] ├Result: 0x014
+     [OK] 17:18:55[FindVial] └Completed.
+          17:19:26[FindVial] Started...
+          17:19:26[FindVial] ├platform: Perry
+          17:19:26[FindVial] ├sampler: Liquid Handler Sampler (Collector_cnc)
+          17:19:26[FindVial] ├vial_type: Sample
+          17:19:26[FindVial] ├nominal_volume: 1500
+          17:19:26[FindVial] ├ensure_volume: 500
+          17:19:26[FindVial] ├order_by_distance: True
+          17:19:26[FindVial] ├from_sample: None
+          17:19:26[FindVial] ├allow_user_requests: True
+          17:19:26[FindVial] ├Result: 0x020
+     [OK] 17:19:26[FindVial] └Completed.

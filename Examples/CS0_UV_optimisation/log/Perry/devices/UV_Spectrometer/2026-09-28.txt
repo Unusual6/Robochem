@@ -1,0 +1,2216 @@
+     [OK] 15:49:01[UV_Spectrometer] Created device.
+          15:49:01[UV_Spectrometer] Connecting...
+          15:49:01[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 15:49:01[UV_Spectrometer] └Connected.
+          15:49:01[UV_Spectrometer] Running setup options...
+     [OK] 15:49:01[UV_Spectrometer] └Setup completed.
+          15:49:01[UV_Spectrometer] Initializing...
+     [OK] 15:49:01[UV_Spectrometer] └Initialization completed.
+     [OK] 15:52:18[UV_Spectrometer] Created device.
+          15:52:18[UV_Spectrometer] Connecting...
+          15:52:18[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 15:52:18[UV_Spectrometer] └Connected.
+          15:52:18[UV_Spectrometer] Running setup options...
+     [OK] 15:52:18[UV_Spectrometer] └Setup completed.
+          15:52:18[UV_Spectrometer] Initializing...
+     [OK] 15:52:18[UV_Spectrometer] └Initialization completed.
+  [ERROR] 15:55:51[UV_Spectrometer] U3900H receive error: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+  [ERROR] 15:55:51[UV_Spectrometer] U3900H receive error: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+     [OK] 15:57:32[UV_Spectrometer] Created device.
+          15:57:32[UV_Spectrometer] Connecting...
+          15:57:32[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 15:57:32[UV_Spectrometer] └Connected.
+          15:57:32[UV_Spectrometer] Running setup options...
+     [OK] 15:57:32[UV_Spectrometer] └Setup completed.
+          15:57:32[UV_Spectrometer] Initializing...
+     [OK] 15:57:32[UV_Spectrometer] └Initialization completed.
+     [OK] 15:59:04[UV_Spectrometer] Created device.
+          15:59:04[UV_Spectrometer] Connecting...
+          15:59:04[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 15:59:04[UV_Spectrometer] └Connected.
+          15:59:04[UV_Spectrometer] Running setup options...
+     [OK] 15:59:04[UV_Spectrometer] └Setup completed.
+          15:59:04[UV_Spectrometer] Initializing...
+     [OK] 15:59:04[UV_Spectrometer] └Initialization completed.
+     [OK] 16:02:41[UV_Spectrometer] Created device.
+          16:02:41[UV_Spectrometer] Connecting...
+          16:02:41[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 16:02:41[UV_Spectrometer] └Connected.
+          16:02:41[UV_Spectrometer] Running setup options...
+     [OK] 16:02:41[UV_Spectrometer] └Setup completed.
+          16:02:41[UV_Spectrometer] Initializing...
+     [OK] 16:02:41[UV_Spectrometer] └Initialization completed.
+  [ERROR] 16:04:22[UV_Spectrometer] U3900H receive error: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+     [OK] 16:25:29[UV_Spectrometer] Created device.
+          16:25:29[UV_Spectrometer] Connecting...
+          16:25:29[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 16:25:29[UV_Spectrometer] └Connected.
+          16:25:29[UV_Spectrometer] Running setup options...
+     [OK] 16:25:29[UV_Spectrometer] └Setup completed.
+          16:25:29[UV_Spectrometer] Initializing...
+     [OK] 16:25:29[UV_Spectrometer] └Initialization completed.
+  [ERROR] 16:25:58[UV_Spectrometer] U3900H receive error: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+     [OK] 16:27:24[UV_Spectrometer] Created device.
+          16:27:24[UV_Spectrometer] Connecting...
+          16:27:24[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 16:27:24[UV_Spectrometer] └Connected.
+          16:27:24[UV_Spectrometer] Running setup options...
+     [OK] 16:27:24[UV_Spectrometer] └Setup completed.
+          16:27:24[UV_Spectrometer] Initializing...
+     [OK] 16:27:24[UV_Spectrometer] └Initialization completed.
+          16:27:27[UV_Spectrometer] Writing 'start_wavelength'.
+          16:27:27[UV_Spectrometer] ├Validated value 534.0nm
+          16:27:27[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:27:27[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:27:27[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:27:27[UV_Spectrometer] Writing 'end_wavelength'.
+          16:27:27[UV_Spectrometer] ├Validated value 200.0nm
+          16:27:27[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:27:27[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:27:27[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:27:27[UV_Spectrometer] Writing 'scan_speed'.
+          16:27:27[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:27:27[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:27:27[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:27:27[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:27:27[UV_Spectrometer] Writing 'selftest'.
+          16:27:27[UV_Spectrometer] ├Validated value True
+          16:27:27[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:27:27[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:27:27[UV_Spectrometer] ├U3900H self-test started
+          16:27:34[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:27:35[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:27:35[UV_Spectrometer] └Written 'selftest' -> True
+          16:27:37[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:27:37[UV_Spectrometer] ├Validated value True
+          16:27:37[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:27:37[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:27:37[UV_Spectrometer] ├U3900H baseline calibration started
+          16:27:42[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:27:42[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:27:44[UV_Spectrometer] Writing 'start_scan'.
+          16:27:44[UV_Spectrometer] ├Validated value True
+          16:27:44[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:27:44[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:27:44[UV_Spectrometer] ├U3900H scan started
+          16:27:56[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:27:56[UV_Spectrometer] └Written 'start_scan' -> True
+          16:27:57[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:27:57[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:27:57[UV_Spectrometer] Reading 'data'.
+     [OK] 16:27:57[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60545
+                                    └331       203.0     0.66902
+                                    └332       202.0     0.75746
+                                    └333       201.0     0.82399
+                                    └334       200.0     0.88913
+                                    └
+                                    └[335 rows x 2 columns]
+          16:27:57[UV_Spectrometer] Writing 'start_wavelength'.
+          16:27:57[UV_Spectrometer] ├Validated value 534.0nm
+          16:27:57[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:27:57[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:27:57[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:27:57[UV_Spectrometer] Writing 'end_wavelength'.
+          16:27:57[UV_Spectrometer] ├Validated value 200.0nm
+          16:27:57[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:27:57[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:27:57[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:27:57[UV_Spectrometer] Writing 'scan_speed'.
+          16:27:57[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:27:57[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:27:57[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:27:57[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:27:57[UV_Spectrometer] Writing 'selftest'.
+          16:27:57[UV_Spectrometer] ├Validated value True
+          16:27:57[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:27:57[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:27:57[UV_Spectrometer] ├U3900H self-test started
+          16:28:04[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:28:06[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:28:06[UV_Spectrometer] └Written 'selftest' -> True
+          16:28:08[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:28:08[UV_Spectrometer] ├Validated value True
+          16:28:08[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:28:08[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:28:08[UV_Spectrometer] ├U3900H baseline calibration started
+          16:28:13[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:28:13[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:28:15[UV_Spectrometer] Writing 'start_scan'.
+          16:28:15[UV_Spectrometer] ├Validated value True
+          16:28:15[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:28:15[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:28:15[UV_Spectrometer] ├U3900H scan started
+          16:28:27[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:28:27[UV_Spectrometer] └Written 'start_scan' -> True
+          16:28:28[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:28:28[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:28:28[UV_Spectrometer] Reading 'data'.
+     [OK] 16:28:28[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1664
+                                    └331       203.0      1.2809
+                                    └332       202.0      1.4547
+                                    └333       201.0      1.6003
+                                    └334       200.0      1.6911
+                                    └
+                                    └[335 rows x 2 columns]
+          16:28:28[UV_Spectrometer] Writing 'start_wavelength'.
+          16:28:28[UV_Spectrometer] ├Validated value 534.0nm
+          16:28:28[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:28:28[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:28:28[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:28:28[UV_Spectrometer] Writing 'end_wavelength'.
+          16:28:28[UV_Spectrometer] ├Validated value 200.0nm
+          16:28:28[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:28:28[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:28:28[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:28:28[UV_Spectrometer] Writing 'scan_speed'.
+          16:28:28[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:28:28[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:28:28[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:28:28[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:28:28[UV_Spectrometer] Writing 'selftest'.
+          16:28:28[UV_Spectrometer] ├Validated value True
+          16:28:28[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:28:28[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:28:28[UV_Spectrometer] ├U3900H self-test started
+          16:28:35[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:28:37[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:28:37[UV_Spectrometer] └Written 'selftest' -> True
+          16:28:39[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:28:39[UV_Spectrometer] ├Validated value True
+          16:28:39[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:28:39[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:28:39[UV_Spectrometer] ├U3900H baseline calibration started
+          16:28:44[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:28:44[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:28:46[UV_Spectrometer] Writing 'start_scan'.
+          16:28:46[UV_Spectrometer] ├Validated value True
+          16:28:46[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:28:46[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:28:46[UV_Spectrometer] ├U3900H scan started
+          16:28:58[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:28:58[UV_Spectrometer] └Written 'start_scan' -> True
+          16:28:59[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:28:59[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:28:59[UV_Spectrometer] Reading 'data'.
+     [OK] 16:28:59[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60469
+                                    └331       203.0     0.66930
+                                    └332       202.0     0.75803
+                                    └333       201.0     0.82397
+                                    └334       200.0     0.88939
+                                    └
+                                    └[335 rows x 2 columns]
+          16:28:59[UV_Spectrometer] Writing 'start_wavelength'.
+          16:28:59[UV_Spectrometer] ├Validated value 534.0nm
+          16:28:59[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:28:59[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:28:59[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:28:59[UV_Spectrometer] Writing 'end_wavelength'.
+          16:28:59[UV_Spectrometer] ├Validated value 200.0nm
+          16:28:59[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:28:59[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:28:59[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:28:59[UV_Spectrometer] Writing 'scan_speed'.
+          16:28:59[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:28:59[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:28:59[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:28:59[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:28:59[UV_Spectrometer] Writing 'selftest'.
+          16:28:59[UV_Spectrometer] ├Validated value True
+          16:28:59[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:28:59[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:28:59[UV_Spectrometer] ├U3900H self-test started
+          16:29:06[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:29:08[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:29:08[UV_Spectrometer] └Written 'selftest' -> True
+          16:29:10[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:29:10[UV_Spectrometer] ├Validated value True
+          16:29:10[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:29:10[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:29:10[UV_Spectrometer] ├U3900H baseline calibration started
+          16:29:14[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:29:14[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:29:16[UV_Spectrometer] Writing 'start_scan'.
+          16:29:16[UV_Spectrometer] ├Validated value True
+          16:29:16[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:29:16[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:29:16[UV_Spectrometer] ├U3900H scan started
+          16:29:29[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:29:29[UV_Spectrometer] └Written 'start_scan' -> True
+          16:29:30[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:29:30[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:29:30[UV_Spectrometer] Reading 'data'.
+     [OK] 16:29:30[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1675
+                                    └331       203.0      1.2799
+                                    └332       202.0      1.4548
+                                    └333       201.0      1.5995
+                                    └334       200.0      1.6914
+                                    └
+                                    └[335 rows x 2 columns]
+          16:29:30[UV_Spectrometer] Writing 'start_wavelength'.
+          16:29:30[UV_Spectrometer] ├Validated value 534.0nm
+          16:29:30[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:29:30[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:29:30[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:29:30[UV_Spectrometer] Writing 'end_wavelength'.
+          16:29:30[UV_Spectrometer] ├Validated value 200.0nm
+          16:29:30[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:29:30[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:29:30[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:29:30[UV_Spectrometer] Writing 'scan_speed'.
+          16:29:30[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:29:30[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:29:30[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:29:30[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:29:30[UV_Spectrometer] Writing 'selftest'.
+          16:29:30[UV_Spectrometer] ├Validated value True
+          16:29:30[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:29:30[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:29:30[UV_Spectrometer] ├U3900H self-test started
+          16:29:37[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:29:39[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:29:39[UV_Spectrometer] └Written 'selftest' -> True
+          16:29:41[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:29:41[UV_Spectrometer] ├Validated value True
+          16:29:41[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:29:41[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:29:41[UV_Spectrometer] ├U3900H baseline calibration started
+          16:29:45[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:29:45[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:29:47[UV_Spectrometer] Writing 'start_scan'.
+          16:29:47[UV_Spectrometer] ├Validated value True
+          16:29:47[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:29:47[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:29:47[UV_Spectrometer] ├U3900H scan started
+          16:29:59[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:29:59[UV_Spectrometer] └Written 'start_scan' -> True
+          16:30:00[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:30:00[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:30:00[UV_Spectrometer] Reading 'data'.
+     [OK] 16:30:00[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60480
+                                    └331       203.0     0.66889
+                                    └332       202.0     0.75852
+                                    └333       201.0     0.82416
+                                    └334       200.0     0.88859
+                                    └
+                                    └[335 rows x 2 columns]
+          16:30:01[UV_Spectrometer] Writing 'start_wavelength'.
+          16:30:01[UV_Spectrometer] ├Validated value 534.0nm
+          16:30:01[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:30:01[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:30:01[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:30:01[UV_Spectrometer] Writing 'end_wavelength'.
+          16:30:01[UV_Spectrometer] ├Validated value 200.0nm
+          16:30:01[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:30:01[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:30:01[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:30:01[UV_Spectrometer] Writing 'scan_speed'.
+          16:30:01[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:30:01[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:30:01[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:30:01[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:30:01[UV_Spectrometer] Writing 'selftest'.
+          16:30:01[UV_Spectrometer] ├Validated value True
+          16:30:01[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:30:01[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:30:01[UV_Spectrometer] ├U3900H self-test started
+          16:30:08[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:30:10[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:30:10[UV_Spectrometer] └Written 'selftest' -> True
+          16:30:12[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:30:12[UV_Spectrometer] ├Validated value True
+          16:30:12[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:30:12[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:30:12[UV_Spectrometer] ├U3900H baseline calibration started
+          16:30:16[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:30:16[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:30:18[UV_Spectrometer] Writing 'start_scan'.
+          16:30:18[UV_Spectrometer] ├Validated value True
+          16:30:18[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:30:18[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:30:18[UV_Spectrometer] ├U3900H scan started
+          16:30:31[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:30:31[UV_Spectrometer] └Written 'start_scan' -> True
+          16:30:32[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:30:32[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:30:32[UV_Spectrometer] Reading 'data'.
+     [OK] 16:30:32[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1668
+                                    └331       203.0      1.2796
+                                    └332       202.0      1.4552
+                                    └333       201.0      1.6004
+                                    └334       200.0      1.6906
+                                    └
+                                    └[335 rows x 2 columns]
+          16:30:32[UV_Spectrometer] Writing 'start_wavelength'.
+          16:30:32[UV_Spectrometer] ├Validated value 534.0nm
+          16:30:32[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:30:32[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:30:32[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:30:32[UV_Spectrometer] Writing 'end_wavelength'.
+          16:30:32[UV_Spectrometer] ├Validated value 200.0nm
+          16:30:32[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:30:32[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:30:32[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:30:32[UV_Spectrometer] Writing 'scan_speed'.
+          16:30:32[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:30:32[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:30:32[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:30:32[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:30:32[UV_Spectrometer] Writing 'selftest'.
+          16:30:32[UV_Spectrometer] ├Validated value True
+          16:30:32[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:30:32[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:30:32[UV_Spectrometer] ├U3900H self-test started
+          16:30:39[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:30:41[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:30:41[UV_Spectrometer] └Written 'selftest' -> True
+          16:30:43[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:30:43[UV_Spectrometer] ├Validated value True
+          16:30:43[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:30:43[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:30:43[UV_Spectrometer] ├U3900H baseline calibration started
+          16:30:47[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:30:47[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:30:49[UV_Spectrometer] Writing 'start_scan'.
+          16:30:49[UV_Spectrometer] ├Validated value True
+          16:30:49[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:30:49[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:30:49[UV_Spectrometer] ├U3900H scan started
+          16:31:02[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:31:02[UV_Spectrometer] └Written 'start_scan' -> True
+          16:31:03[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:31:03[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:31:03[UV_Spectrometer] Reading 'data'.
+     [OK] 16:31:03[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60467
+                                    └331       203.0     0.66845
+                                    └332       202.0     0.75784
+                                    └333       201.0     0.82413
+                                    └334       200.0     0.88885
+                                    └
+                                    └[335 rows x 2 columns]
+          16:31:03[UV_Spectrometer] Writing 'start_wavelength'.
+          16:31:03[UV_Spectrometer] ├Validated value 534.0nm
+          16:31:03[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:31:03[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:31:03[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:31:03[UV_Spectrometer] Writing 'end_wavelength'.
+          16:31:03[UV_Spectrometer] ├Validated value 200.0nm
+          16:31:03[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:31:03[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:31:03[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:31:03[UV_Spectrometer] Writing 'scan_speed'.
+          16:31:03[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:31:03[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:31:03[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:31:03[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:31:03[UV_Spectrometer] Writing 'selftest'.
+          16:31:03[UV_Spectrometer] ├Validated value True
+          16:31:03[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:31:03[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:31:03[UV_Spectrometer] ├U3900H self-test started
+          16:31:10[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:31:12[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:31:12[UV_Spectrometer] └Written 'selftest' -> True
+          16:31:14[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:31:14[UV_Spectrometer] ├Validated value True
+          16:31:14[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:31:14[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:31:14[UV_Spectrometer] ├U3900H baseline calibration started
+          16:31:18[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:31:18[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:31:20[UV_Spectrometer] Writing 'start_scan'.
+          16:31:20[UV_Spectrometer] ├Validated value True
+          16:31:20[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:31:20[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:31:20[UV_Spectrometer] ├U3900H scan started
+          16:31:33[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:31:33[UV_Spectrometer] └Written 'start_scan' -> True
+          16:31:34[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:31:34[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:31:34[UV_Spectrometer] Reading 'data'.
+     [OK] 16:31:34[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1674
+                                    └331       203.0      1.2797
+                                    └332       202.0      1.4547
+                                    └333       201.0      1.6002
+                                    └334       200.0      1.6908
+                                    └
+                                    └[335 rows x 2 columns]
+  [ERROR] 16:35:45[UV_Spectrometer] U3900H receive error: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+     [OK] 16:50:13[UV_Spectrometer] Created device.
+          16:50:13[UV_Spectrometer] Connecting...
+          16:50:13[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 16:50:13[UV_Spectrometer] └Connected.
+          16:50:13[UV_Spectrometer] Running setup options...
+     [OK] 16:50:13[UV_Spectrometer] └Setup completed.
+          16:50:13[UV_Spectrometer] Initializing...
+     [OK] 16:50:13[UV_Spectrometer] └Initialization completed.
+          16:50:16[UV_Spectrometer] Writing 'start_wavelength'.
+          16:50:16[UV_Spectrometer] ├Validated value 534.0nm
+          16:50:16[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:50:16[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:50:16[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:50:16[UV_Spectrometer] Writing 'end_wavelength'.
+          16:50:16[UV_Spectrometer] ├Validated value 200.0nm
+          16:50:16[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:50:16[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:50:16[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:50:16[UV_Spectrometer] Writing 'scan_speed'.
+          16:50:16[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:50:16[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:50:16[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:50:16[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:50:16[UV_Spectrometer] Writing 'selftest'.
+          16:50:16[UV_Spectrometer] ├Validated value True
+          16:50:16[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:50:16[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:50:16[UV_Spectrometer] ├U3900H self-test started
+          16:50:23[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:50:25[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:50:25[UV_Spectrometer] └Written 'selftest' -> True
+          16:50:27[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:50:27[UV_Spectrometer] ├Validated value True
+          16:50:27[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:50:27[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:50:27[UV_Spectrometer] ├U3900H baseline calibration started
+          16:50:31[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:50:31[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:50:33[UV_Spectrometer] Writing 'start_scan'.
+          16:50:33[UV_Spectrometer] ├Validated value True
+          16:50:33[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:50:33[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:50:33[UV_Spectrometer] ├U3900H scan started
+          16:50:46[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:50:46[UV_Spectrometer] └Written 'start_scan' -> True
+          16:50:47[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:50:47[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:50:47[UV_Spectrometer] Reading 'data'.
+     [OK] 16:50:47[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60466
+                                    └331       203.0     0.66889
+                                    └332       202.0     0.75783
+                                    └333       201.0     0.82424
+                                    └334       200.0     0.88944
+                                    └
+                                    └[335 rows x 2 columns]
+          16:50:47[UV_Spectrometer] Writing 'start_wavelength'.
+          16:50:47[UV_Spectrometer] ├Validated value 534.0nm
+          16:50:47[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:50:47[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:50:47[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:50:47[UV_Spectrometer] Writing 'end_wavelength'.
+          16:50:47[UV_Spectrometer] ├Validated value 200.0nm
+          16:50:47[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:50:47[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:50:47[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:50:47[UV_Spectrometer] Writing 'scan_speed'.
+          16:50:47[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:50:47[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:50:47[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:50:47[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:50:47[UV_Spectrometer] Writing 'selftest'.
+          16:50:47[UV_Spectrometer] ├Validated value True
+          16:50:47[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:50:47[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:50:47[UV_Spectrometer] ├U3900H self-test started
+          16:50:54[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:50:56[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:50:56[UV_Spectrometer] └Written 'selftest' -> True
+          16:50:58[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:50:58[UV_Spectrometer] ├Validated value True
+          16:50:58[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:50:58[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:50:58[UV_Spectrometer] ├U3900H baseline calibration started
+          16:51:03[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:51:03[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:51:05[UV_Spectrometer] Writing 'start_scan'.
+          16:51:05[UV_Spectrometer] ├Validated value True
+          16:51:05[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:51:05[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:51:05[UV_Spectrometer] ├U3900H scan started
+          16:51:18[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:51:18[UV_Spectrometer] └Written 'start_scan' -> True
+          16:51:19[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:51:19[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:51:19[UV_Spectrometer] Reading 'data'.
+     [OK] 16:51:19[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1670
+                                    └331       203.0      1.2796
+                                    └332       202.0      1.4549
+                                    └333       201.0      1.6000
+                                    └334       200.0      1.6908
+                                    └
+                                    └[335 rows x 2 columns]
+          16:51:19[UV_Spectrometer] Writing 'start_wavelength'.
+          16:51:19[UV_Spectrometer] ├Validated value 534.0nm
+          16:51:19[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:51:19[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:51:19[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:51:19[UV_Spectrometer] Writing 'end_wavelength'.
+          16:51:19[UV_Spectrometer] ├Validated value 200.0nm
+          16:51:19[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:51:19[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:51:19[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:51:19[UV_Spectrometer] Writing 'scan_speed'.
+          16:51:19[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:51:19[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:51:19[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:51:19[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:51:19[UV_Spectrometer] Writing 'selftest'.
+          16:51:19[UV_Spectrometer] ├Validated value True
+          16:51:19[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:51:19[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:51:19[UV_Spectrometer] ├U3900H self-test started
+          16:51:26[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:51:28[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:51:28[UV_Spectrometer] └Written 'selftest' -> True
+          16:51:30[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:51:30[UV_Spectrometer] ├Validated value True
+          16:51:30[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:51:30[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:51:30[UV_Spectrometer] ├U3900H baseline calibration started
+          16:51:35[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:51:35[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:51:37[UV_Spectrometer] Writing 'start_scan'.
+          16:51:37[UV_Spectrometer] ├Validated value True
+          16:51:37[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:51:37[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:51:37[UV_Spectrometer] ├U3900H scan started
+          16:51:50[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:51:50[UV_Spectrometer] └Written 'start_scan' -> True
+          16:51:51[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:51:51[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:51:51[UV_Spectrometer] Reading 'data'.
+     [OK] 16:51:51[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60471
+                                    └331       203.0     0.66842
+                                    └332       202.0     0.75799
+                                    └333       201.0     0.82387
+                                    └334       200.0     0.88883
+                                    └
+                                    └[335 rows x 2 columns]
+          16:51:52[UV_Spectrometer] Writing 'start_wavelength'.
+          16:51:52[UV_Spectrometer] ├Validated value 534.0nm
+          16:51:52[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:51:52[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:51:52[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:51:52[UV_Spectrometer] Writing 'end_wavelength'.
+          16:51:52[UV_Spectrometer] ├Validated value 200.0nm
+          16:51:52[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:51:52[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:51:52[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:51:52[UV_Spectrometer] Writing 'scan_speed'.
+          16:51:52[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:51:52[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:51:52[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:51:52[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:51:52[UV_Spectrometer] Writing 'selftest'.
+          16:51:52[UV_Spectrometer] ├Validated value True
+          16:51:52[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:51:52[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:51:52[UV_Spectrometer] ├U3900H self-test started
+          16:51:58[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:52:00[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:52:00[UV_Spectrometer] └Written 'selftest' -> True
+          16:52:02[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:52:02[UV_Spectrometer] ├Validated value True
+          16:52:02[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:52:02[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:52:02[UV_Spectrometer] ├U3900H baseline calibration started
+          16:52:07[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:52:07[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:52:09[UV_Spectrometer] Writing 'start_scan'.
+          16:52:09[UV_Spectrometer] ├Validated value True
+          16:52:09[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:52:09[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:52:09[UV_Spectrometer] ├U3900H scan started
+          16:52:22[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:52:22[UV_Spectrometer] └Written 'start_scan' -> True
+          16:52:23[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:52:23[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:52:23[UV_Spectrometer] Reading 'data'.
+     [OK] 16:52:23[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1674
+                                    └331       203.0      1.2802
+                                    └332       202.0      1.4549
+                                    └333       201.0      1.5998
+                                    └334       200.0      1.6908
+                                    └
+                                    └[335 rows x 2 columns]
+          16:52:24[UV_Spectrometer] Writing 'start_wavelength'.
+          16:52:24[UV_Spectrometer] ├Validated value 534.0nm
+          16:52:24[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:52:24[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:52:24[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:52:24[UV_Spectrometer] Writing 'end_wavelength'.
+          16:52:24[UV_Spectrometer] ├Validated value 200.0nm
+          16:52:24[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:52:24[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:52:24[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:52:24[UV_Spectrometer] Writing 'scan_speed'.
+          16:52:24[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:52:24[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:52:24[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:52:24[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:52:24[UV_Spectrometer] Writing 'selftest'.
+          16:52:24[UV_Spectrometer] ├Validated value True
+          16:52:24[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:52:24[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:52:24[UV_Spectrometer] ├U3900H self-test started
+          16:52:31[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:52:33[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:52:33[UV_Spectrometer] └Written 'selftest' -> True
+          16:52:35[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:52:35[UV_Spectrometer] ├Validated value True
+          16:52:35[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:52:35[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:52:35[UV_Spectrometer] ├U3900H baseline calibration started
+          16:52:39[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:52:39[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:52:41[UV_Spectrometer] Writing 'start_scan'.
+          16:52:41[UV_Spectrometer] ├Validated value True
+          16:52:41[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:52:41[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:52:41[UV_Spectrometer] ├U3900H scan started
+          16:52:55[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:52:55[UV_Spectrometer] └Written 'start_scan' -> True
+          16:52:56[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:52:56[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:52:56[UV_Spectrometer] Reading 'data'.
+     [OK] 16:52:56[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60514
+                                    └331       203.0     0.66909
+                                    └332       202.0     0.75819
+                                    └333       201.0     0.82393
+                                    └334       200.0     0.88979
+                                    └
+                                    └[335 rows x 2 columns]
+          16:52:56[UV_Spectrometer] Writing 'start_wavelength'.
+          16:52:56[UV_Spectrometer] ├Validated value 534.0nm
+          16:52:56[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:52:56[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:52:56[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:52:56[UV_Spectrometer] Writing 'end_wavelength'.
+          16:52:56[UV_Spectrometer] ├Validated value 200.0nm
+          16:52:56[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:52:56[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:52:56[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:52:56[UV_Spectrometer] Writing 'scan_speed'.
+          16:52:56[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:52:56[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:52:56[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:52:56[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:52:56[UV_Spectrometer] Writing 'selftest'.
+          16:52:56[UV_Spectrometer] ├Validated value True
+          16:52:56[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:52:56[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:52:56[UV_Spectrometer] ├U3900H self-test started
+          16:53:03[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:53:05[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:53:05[UV_Spectrometer] └Written 'selftest' -> True
+          16:53:07[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:53:07[UV_Spectrometer] ├Validated value True
+          16:53:07[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:53:07[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:53:07[UV_Spectrometer] ├U3900H baseline calibration started
+          16:53:11[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:53:11[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:53:13[UV_Spectrometer] Writing 'start_scan'.
+          16:53:13[UV_Spectrometer] ├Validated value True
+          16:53:13[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:53:13[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:53:13[UV_Spectrometer] ├U3900H scan started
+          16:53:27[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:53:27[UV_Spectrometer] └Written 'start_scan' -> True
+          16:53:28[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:53:28[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:53:28[UV_Spectrometer] Reading 'data'.
+     [OK] 16:53:28[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1671
+                                    └331       203.0      1.2799
+                                    └332       202.0      1.4547
+                                    └333       201.0      1.6001
+                                    └334       200.0      1.6909
+                                    └
+                                    └[335 rows x 2 columns]
+          16:53:28[UV_Spectrometer] Writing 'start_wavelength'.
+          16:53:28[UV_Spectrometer] ├Validated value 534.0nm
+          16:53:28[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:53:28[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:53:28[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:53:28[UV_Spectrometer] Writing 'end_wavelength'.
+          16:53:28[UV_Spectrometer] ├Validated value 200.0nm
+          16:53:28[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:53:28[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:53:28[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:53:28[UV_Spectrometer] Writing 'scan_speed'.
+          16:53:28[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:53:28[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:53:28[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:53:28[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:53:28[UV_Spectrometer] Writing 'selftest'.
+          16:53:28[UV_Spectrometer] ├Validated value True
+          16:53:28[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:53:28[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:53:28[UV_Spectrometer] ├U3900H self-test started
+          16:53:36[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:53:37[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:53:37[UV_Spectrometer] └Written 'selftest' -> True
+          16:53:39[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:53:39[UV_Spectrometer] ├Validated value True
+          16:53:39[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:53:39[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:53:39[UV_Spectrometer] ├U3900H baseline calibration started
+          16:53:44[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:53:44[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:53:46[UV_Spectrometer] Writing 'start_scan'.
+          16:53:46[UV_Spectrometer] ├Validated value True
+          16:53:46[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:53:46[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:53:46[UV_Spectrometer] ├U3900H scan started
+          16:54:00[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:54:00[UV_Spectrometer] └Written 'start_scan' -> True
+          16:54:01[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:54:01[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:54:01[UV_Spectrometer] Reading 'data'.
+     [OK] 16:54:01[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60473
+                                    └331       203.0     0.66866
+                                    └332       202.0     0.75873
+                                    └333       201.0     0.82359
+                                    └334       200.0     0.88897
+                                    └
+                                    └[335 rows x 2 columns]
+          16:54:01[UV_Spectrometer] Writing 'start_wavelength'.
+          16:54:01[UV_Spectrometer] ├Validated value 534.0nm
+          16:54:01[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:54:01[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:54:01[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:54:01[UV_Spectrometer] Writing 'end_wavelength'.
+          16:54:01[UV_Spectrometer] ├Validated value 200.0nm
+          16:54:01[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:54:01[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:54:01[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:54:01[UV_Spectrometer] Writing 'scan_speed'.
+          16:54:01[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:54:01[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:54:01[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:54:01[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:54:01[UV_Spectrometer] Writing 'selftest'.
+          16:54:01[UV_Spectrometer] ├Validated value True
+          16:54:01[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:54:01[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:54:01[UV_Spectrometer] ├U3900H self-test started
+          16:54:08[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:54:10[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:54:10[UV_Spectrometer] └Written 'selftest' -> True
+          16:54:12[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:54:12[UV_Spectrometer] ├Validated value True
+          16:54:12[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:54:12[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:54:12[UV_Spectrometer] ├U3900H baseline calibration started
+          16:54:16[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:54:16[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:54:18[UV_Spectrometer] Writing 'start_scan'.
+          16:54:18[UV_Spectrometer] ├Validated value True
+          16:54:18[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:54:18[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:54:18[UV_Spectrometer] ├U3900H scan started
+          16:54:32[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:54:32[UV_Spectrometer] └Written 'start_scan' -> True
+          16:54:33[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:54:33[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:54:33[UV_Spectrometer] Reading 'data'.
+     [OK] 16:54:33[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1668
+                                    └331       203.0      1.2801
+                                    └332       202.0      1.4548
+                                    └333       201.0      1.6001
+                                    └334       200.0      1.6909
+                                    └
+                                    └[335 rows x 2 columns]
+          16:54:33[UV_Spectrometer] Writing 'start_wavelength'.
+          16:54:33[UV_Spectrometer] ├Validated value 534.0nm
+          16:54:33[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:54:33[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:54:33[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:54:33[UV_Spectrometer] Writing 'end_wavelength'.
+          16:54:33[UV_Spectrometer] ├Validated value 200.0nm
+          16:54:33[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:54:33[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:54:33[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:54:33[UV_Spectrometer] Writing 'scan_speed'.
+          16:54:33[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:54:33[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:54:33[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:54:33[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:54:33[UV_Spectrometer] Writing 'selftest'.
+          16:54:33[UV_Spectrometer] ├Validated value True
+          16:54:33[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:54:33[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:54:33[UV_Spectrometer] ├U3900H self-test started
+          16:54:40[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:54:42[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:54:42[UV_Spectrometer] └Written 'selftest' -> True
+          16:54:44[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:54:44[UV_Spectrometer] ├Validated value True
+          16:54:44[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:54:44[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:54:44[UV_Spectrometer] ├U3900H baseline calibration started
+          16:54:48[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:54:48[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:54:50[UV_Spectrometer] Writing 'start_scan'.
+          16:54:50[UV_Spectrometer] ├Validated value True
+          16:54:50[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:54:50[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:54:50[UV_Spectrometer] ├U3900H scan started
+          16:55:03[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:55:03[UV_Spectrometer] └Written 'start_scan' -> True
+          16:55:04[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:55:04[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:55:04[UV_Spectrometer] Reading 'data'.
+     [OK] 16:55:04[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60514
+                                    └331       203.0     0.66868
+                                    └332       202.0     0.75810
+                                    └333       201.0     0.82359
+                                    └334       200.0     0.88918
+                                    └
+                                    └[335 rows x 2 columns]
+          16:55:04[UV_Spectrometer] Writing 'start_wavelength'.
+          16:55:04[UV_Spectrometer] ├Validated value 534.0nm
+          16:55:04[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:55:04[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:55:04[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:55:04[UV_Spectrometer] Writing 'end_wavelength'.
+          16:55:04[UV_Spectrometer] ├Validated value 200.0nm
+          16:55:04[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:55:04[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:55:04[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:55:04[UV_Spectrometer] Writing 'scan_speed'.
+          16:55:04[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:55:04[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:55:04[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:55:04[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:55:04[UV_Spectrometer] Writing 'selftest'.
+          16:55:04[UV_Spectrometer] ├Validated value True
+          16:55:04[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:55:04[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:55:04[UV_Spectrometer] ├U3900H self-test started
+          16:55:11[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:55:13[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:55:13[UV_Spectrometer] └Written 'selftest' -> True
+          16:55:15[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:55:15[UV_Spectrometer] ├Validated value True
+          16:55:15[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:55:15[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:55:15[UV_Spectrometer] ├U3900H baseline calibration started
+          16:55:20[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:55:20[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:55:22[UV_Spectrometer] Writing 'start_scan'.
+          16:55:22[UV_Spectrometer] ├Validated value True
+          16:55:22[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:55:22[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:55:22[UV_Spectrometer] ├U3900H scan started
+          16:55:35[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:55:35[UV_Spectrometer] └Written 'start_scan' -> True
+          16:55:36[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:55:36[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:55:36[UV_Spectrometer] Reading 'data'.
+     [OK] 16:55:36[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1675
+                                    └331       203.0      1.2799
+                                    └332       202.0      1.4552
+                                    └333       201.0      1.6006
+                                    └334       200.0      1.6904
+                                    └
+                                    └[335 rows x 2 columns]
+          16:55:42[UV_Spectrometer] Writing 'start_wavelength'.
+          16:55:42[UV_Spectrometer] ├Validated value 534.0nm
+          16:55:42[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:55:42[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:55:42[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:55:42[UV_Spectrometer] Writing 'end_wavelength'.
+          16:55:42[UV_Spectrometer] ├Validated value 200.0nm
+          16:55:42[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:55:42[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:55:42[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:55:42[UV_Spectrometer] Writing 'scan_speed'.
+          16:55:42[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:55:42[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:55:42[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:55:42[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:55:42[UV_Spectrometer] Writing 'selftest'.
+          16:55:42[UV_Spectrometer] ├Validated value True
+          16:55:42[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:55:42[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:55:42[UV_Spectrometer] ├U3900H self-test started
+          16:55:49[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:55:51[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:55:51[UV_Spectrometer] └Written 'selftest' -> True
+          16:55:53[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:55:53[UV_Spectrometer] ├Validated value True
+          16:55:53[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:55:53[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:55:53[UV_Spectrometer] ├U3900H baseline calibration started
+          16:55:57[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:55:57[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:55:59[UV_Spectrometer] Writing 'start_scan'.
+          16:55:59[UV_Spectrometer] ├Validated value True
+          16:55:59[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:55:59[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:55:59[UV_Spectrometer] ├U3900H scan started
+          16:56:13[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:56:13[UV_Spectrometer] └Written 'start_scan' -> True
+          16:56:14[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:56:14[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:56:14[UV_Spectrometer] Reading 'data'.
+     [OK] 16:56:14[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60473
+                                    └331       203.0     0.66902
+                                    └332       202.0     0.75871
+                                    └333       201.0     0.82409
+                                    └334       200.0     0.88904
+                                    └
+                                    └[335 rows x 2 columns]
+          16:56:19[UV_Spectrometer] Writing 'start_wavelength'.
+          16:56:19[UV_Spectrometer] ├Validated value 534.0nm
+          16:56:19[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:56:19[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:56:19[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:56:19[UV_Spectrometer] Writing 'end_wavelength'.
+          16:56:19[UV_Spectrometer] ├Validated value 200.0nm
+          16:56:19[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:56:19[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:56:19[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:56:19[UV_Spectrometer] Writing 'scan_speed'.
+          16:56:19[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:56:19[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:56:19[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:56:19[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:56:19[UV_Spectrometer] Writing 'selftest'.
+          16:56:19[UV_Spectrometer] ├Validated value True
+          16:56:19[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:56:19[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:56:19[UV_Spectrometer] ├U3900H self-test started
+          16:56:26[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:56:28[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:56:28[UV_Spectrometer] └Written 'selftest' -> True
+          16:56:30[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:56:30[UV_Spectrometer] ├Validated value True
+          16:56:30[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:56:30[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:56:30[UV_Spectrometer] ├U3900H baseline calibration started
+          16:56:34[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:56:34[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:56:36[UV_Spectrometer] Writing 'start_scan'.
+          16:56:36[UV_Spectrometer] ├Validated value True
+          16:56:36[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:56:36[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:56:36[UV_Spectrometer] ├U3900H scan started
+          16:56:50[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:56:50[UV_Spectrometer] └Written 'start_scan' -> True
+          16:56:51[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:56:51[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:56:51[UV_Spectrometer] Reading 'data'.
+     [OK] 16:56:51[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1666
+                                    └331       203.0      1.2800
+                                    └332       202.0      1.4552
+                                    └333       201.0      1.5999
+                                    └334       200.0      1.6916
+                                    └
+                                    └[335 rows x 2 columns]
+          16:56:58[UV_Spectrometer] Writing 'start_wavelength'.
+          16:56:58[UV_Spectrometer] ├Validated value 534.0nm
+          16:56:58[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:56:58[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:56:58[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:56:58[UV_Spectrometer] Writing 'end_wavelength'.
+          16:56:58[UV_Spectrometer] ├Validated value 200.0nm
+          16:56:58[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:56:58[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:56:58[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:56:58[UV_Spectrometer] Writing 'scan_speed'.
+          16:56:58[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:56:58[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:56:58[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:56:58[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:56:58[UV_Spectrometer] Writing 'selftest'.
+          16:56:58[UV_Spectrometer] ├Validated value True
+          16:56:58[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:56:58[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:56:58[UV_Spectrometer] ├U3900H self-test started
+          16:57:05[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:57:06[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:57:06[UV_Spectrometer] └Written 'selftest' -> True
+          16:57:08[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:57:08[UV_Spectrometer] ├Validated value True
+          16:57:08[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:57:08[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:57:08[UV_Spectrometer] ├U3900H baseline calibration started
+          16:57:13[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:57:13[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:57:15[UV_Spectrometer] Writing 'start_scan'.
+          16:57:15[UV_Spectrometer] ├Validated value True
+          16:57:15[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:57:15[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:57:15[UV_Spectrometer] ├U3900H scan started
+          16:57:29[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:57:29[UV_Spectrometer] └Written 'start_scan' -> True
+          16:57:30[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:57:30[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:57:30[UV_Spectrometer] Reading 'data'.
+     [OK] 16:57:30[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60498
+                                    └331       203.0     0.66872
+                                    └332       202.0     0.75778
+                                    └333       201.0     0.82372
+                                    └334       200.0     0.88902
+                                    └
+                                    └[335 rows x 2 columns]
+          16:57:34[UV_Spectrometer] Writing 'start_wavelength'.
+          16:57:34[UV_Spectrometer] ├Validated value 534.0nm
+          16:57:34[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:57:34[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:57:34[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:57:34[UV_Spectrometer] Writing 'end_wavelength'.
+          16:57:34[UV_Spectrometer] ├Validated value 200.0nm
+          16:57:34[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:57:34[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:57:34[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:57:34[UV_Spectrometer] Writing 'scan_speed'.
+          16:57:34[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:57:34[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:57:34[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:57:34[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:57:34[UV_Spectrometer] Writing 'selftest'.
+          16:57:34[UV_Spectrometer] ├Validated value True
+          16:57:34[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:57:34[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:57:34[UV_Spectrometer] ├U3900H self-test started
+          16:57:41[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:57:43[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:57:43[UV_Spectrometer] └Written 'selftest' -> True
+          16:57:45[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:57:45[UV_Spectrometer] ├Validated value True
+          16:57:45[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:57:45[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:57:45[UV_Spectrometer] ├U3900H baseline calibration started
+          16:57:49[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:57:49[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:57:51[UV_Spectrometer] Writing 'start_scan'.
+          16:57:51[UV_Spectrometer] ├Validated value True
+          16:57:51[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:57:51[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:57:51[UV_Spectrometer] ├U3900H scan started
+          16:58:05[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:58:05[UV_Spectrometer] └Written 'start_scan' -> True
+          16:58:06[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:58:06[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:58:06[UV_Spectrometer] Reading 'data'.
+     [OK] 16:58:06[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1669
+                                    └331       203.0      1.2802
+                                    └332       202.0      1.4550
+                                    └333       201.0      1.6002
+                                    └334       200.0      1.6913
+                                    └
+                                    └[335 rows x 2 columns]
+          16:58:10[UV_Spectrometer] Writing 'start_wavelength'.
+          16:58:10[UV_Spectrometer] ├Validated value 534.0nm
+          16:58:10[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:58:10[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:58:10[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:58:10[UV_Spectrometer] Writing 'end_wavelength'.
+          16:58:10[UV_Spectrometer] ├Validated value 200.0nm
+          16:58:10[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:58:10[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:58:10[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:58:10[UV_Spectrometer] Writing 'scan_speed'.
+          16:58:10[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:58:10[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:58:10[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:58:10[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:58:10[UV_Spectrometer] Writing 'selftest'.
+          16:58:10[UV_Spectrometer] ├Validated value True
+          16:58:10[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:58:10[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:58:10[UV_Spectrometer] ├U3900H self-test started
+          16:58:17[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:58:19[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:58:19[UV_Spectrometer] └Written 'selftest' -> True
+          16:58:21[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:58:21[UV_Spectrometer] ├Validated value True
+          16:58:21[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:58:21[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:58:21[UV_Spectrometer] ├U3900H baseline calibration started
+          16:58:26[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:58:26[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:58:28[UV_Spectrometer] Writing 'start_scan'.
+          16:58:28[UV_Spectrometer] ├Validated value True
+          16:58:28[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:58:28[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:58:28[UV_Spectrometer] ├U3900H scan started
+          16:58:41[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:58:41[UV_Spectrometer] └Written 'start_scan' -> True
+          16:58:42[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:58:42[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:58:42[UV_Spectrometer] Reading 'data'.
+     [OK] 16:58:42[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60494
+                                    └331       203.0     0.66964
+                                    └332       202.0     0.75799
+                                    └333       201.0     0.82343
+                                    └334       200.0     0.88812
+                                    └
+                                    └[335 rows x 2 columns]
+          16:58:46[UV_Spectrometer] Writing 'start_wavelength'.
+          16:58:46[UV_Spectrometer] ├Validated value 534.0nm
+          16:58:46[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          16:58:46[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 16:58:46[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          16:58:46[UV_Spectrometer] Writing 'end_wavelength'.
+          16:58:46[UV_Spectrometer] ├Validated value 200.0nm
+          16:58:46[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          16:58:46[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 16:58:46[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          16:58:46[UV_Spectrometer] Writing 'scan_speed'.
+          16:58:46[UV_Spectrometer] ├Validated value 300.0nm/min
+          16:58:46[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          16:58:46[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 16:58:46[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          16:58:46[UV_Spectrometer] Writing 'selftest'.
+          16:58:46[UV_Spectrometer] ├Validated value True
+          16:58:46[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          16:58:46[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          16:58:46[UV_Spectrometer] ├U3900H self-test started
+          16:58:53[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          16:58:55[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 16:58:55[UV_Spectrometer] └Written 'selftest' -> True
+          16:58:57[UV_Spectrometer] Writing 'baseline_calibrate'.
+          16:58:57[UV_Spectrometer] ├Validated value True
+          16:58:57[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          16:58:57[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          16:58:57[UV_Spectrometer] ├U3900H baseline calibration started
+          16:59:01[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 16:59:01[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          16:59:03[UV_Spectrometer] Writing 'start_scan'.
+          16:59:03[UV_Spectrometer] ├Validated value True
+          16:59:03[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          16:59:03[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          16:59:03[UV_Spectrometer] ├U3900H scan started
+          16:59:17[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 16:59:17[UV_Spectrometer] └Written 'start_scan' -> True
+          16:59:18[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 16:59:18[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          16:59:18[UV_Spectrometer] Reading 'data'.
+     [OK] 16:59:18[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1669
+                                    └331       203.0      1.2801
+                                    └332       202.0      1.4552
+                                    └333       201.0      1.6001
+                                    └334       200.0      1.6913
+                                    └
+                                    └[335 rows x 2 columns]
+     [OK] 16:59:37[UV_Spectrometer] Created device.
+          16:59:37[UV_Spectrometer] Connecting...
+          16:59:37[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 16:59:37[UV_Spectrometer] └Connected.
+          16:59:37[UV_Spectrometer] Running setup options...
+     [OK] 16:59:37[UV_Spectrometer] └Setup completed.
+          16:59:37[UV_Spectrometer] Initializing...
+     [OK] 16:59:37[UV_Spectrometer] └Initialization completed.
+     [OK] 17:05:49[UV_Spectrometer] Created device.
+          17:05:49[UV_Spectrometer] Connecting...
+          17:05:49[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 17:05:49[UV_Spectrometer] └Connected.
+          17:05:49[UV_Spectrometer] Running setup options...
+     [OK] 17:05:49[UV_Spectrometer] └Setup completed.
+          17:05:49[UV_Spectrometer] Initializing...
+     [OK] 17:05:49[UV_Spectrometer] └Initialization completed.
+     [OK] 17:08:20[UV_Spectrometer] Created device.
+          17:08:20[UV_Spectrometer] Connecting...
+          17:08:20[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 17:08:20[UV_Spectrometer] └Connected.
+          17:08:20[UV_Spectrometer] Running setup options...
+     [OK] 17:08:20[UV_Spectrometer] └Setup completed.
+          17:08:20[UV_Spectrometer] Initializing...
+     [OK] 17:08:20[UV_Spectrometer] └Initialization completed.
+          17:08:23[UV_Spectrometer] Writing 'start_wavelength'.
+          17:08:23[UV_Spectrometer] ├Validated value 534.0nm
+          17:08:23[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:08:23[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:08:23[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:08:23[UV_Spectrometer] Writing 'end_wavelength'.
+          17:08:23[UV_Spectrometer] ├Validated value 200.0nm
+          17:08:23[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:08:23[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:08:23[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:08:23[UV_Spectrometer] Writing 'scan_speed'.
+          17:08:23[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:08:23[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:08:23[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:08:23[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:08:23[UV_Spectrometer] Writing 'selftest'.
+          17:08:23[UV_Spectrometer] ├Validated value True
+          17:08:23[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:08:23[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:08:23[UV_Spectrometer] ├U3900H self-test started
+          17:08:30[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:08:32[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:08:32[UV_Spectrometer] └Written 'selftest' -> True
+          17:08:34[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:08:34[UV_Spectrometer] ├Validated value True
+          17:08:34[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:08:34[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:08:34[UV_Spectrometer] ├U3900H baseline calibration started
+          17:08:38[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:08:38[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:08:40[UV_Spectrometer] Writing 'start_scan'.
+          17:08:40[UV_Spectrometer] ├Validated value True
+          17:08:40[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:08:40[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:08:40[UV_Spectrometer] ├U3900H scan started
+          17:08:53[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:08:53[UV_Spectrometer] └Written 'start_scan' -> True
+          17:08:54[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:08:54[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:08:54[UV_Spectrometer] Reading 'data'.
+     [OK] 17:08:54[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60434
+                                    └331       203.0     0.66866
+                                    └332       202.0     0.75798
+                                    └333       201.0     0.82405
+                                    └334       200.0     0.88876
+                                    └
+                                    └[335 rows x 2 columns]
+          17:08:54[UV_Spectrometer] Writing 'start_wavelength'.
+          17:08:54[UV_Spectrometer] ├Validated value 534.0nm
+          17:08:54[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:08:54[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:08:54[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:08:54[UV_Spectrometer] Writing 'end_wavelength'.
+          17:08:54[UV_Spectrometer] ├Validated value 200.0nm
+          17:08:54[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:08:54[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:08:54[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:08:54[UV_Spectrometer] Writing 'scan_speed'.
+          17:08:54[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:08:54[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:08:54[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:08:54[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:08:54[UV_Spectrometer] Writing 'selftest'.
+          17:08:54[UV_Spectrometer] ├Validated value True
+          17:08:54[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:08:54[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:08:54[UV_Spectrometer] ├U3900H self-test started
+          17:09:01[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:09:03[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:09:03[UV_Spectrometer] └Written 'selftest' -> True
+          17:09:05[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:09:05[UV_Spectrometer] ├Validated value True
+          17:09:05[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:09:05[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:09:05[UV_Spectrometer] ├U3900H baseline calibration started
+          17:09:09[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:09:09[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:09:11[UV_Spectrometer] Writing 'start_scan'.
+          17:09:11[UV_Spectrometer] ├Validated value True
+          17:09:11[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:09:11[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:09:11[UV_Spectrometer] ├U3900H scan started
+          17:09:24[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:09:24[UV_Spectrometer] └Written 'start_scan' -> True
+          17:09:25[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:09:25[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:09:25[UV_Spectrometer] Reading 'data'.
+     [OK] 17:09:25[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1666
+                                    └331       203.0      1.2804
+                                    └332       202.0      1.4556
+                                    └333       201.0      1.6003
+                                    └334       200.0      1.6913
+                                    └
+                                    └[335 rows x 2 columns]
+          17:09:25[UV_Spectrometer] Writing 'start_wavelength'.
+          17:09:25[UV_Spectrometer] ├Validated value 534.0nm
+          17:09:25[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:09:25[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:09:25[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:09:25[UV_Spectrometer] Writing 'end_wavelength'.
+          17:09:25[UV_Spectrometer] ├Validated value 200.0nm
+          17:09:25[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:09:25[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:09:25[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:09:25[UV_Spectrometer] Writing 'scan_speed'.
+          17:09:25[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:09:25[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:09:25[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:09:25[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:09:25[UV_Spectrometer] Writing 'selftest'.
+          17:09:25[UV_Spectrometer] ├Validated value True
+          17:09:25[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:09:25[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:09:25[UV_Spectrometer] ├U3900H self-test started
+          17:09:32[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:09:34[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:09:34[UV_Spectrometer] └Written 'selftest' -> True
+          17:09:36[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:09:36[UV_Spectrometer] ├Validated value True
+          17:09:36[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:09:36[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:09:36[UV_Spectrometer] ├U3900H baseline calibration started
+          17:09:41[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:09:41[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:09:43[UV_Spectrometer] Writing 'start_scan'.
+          17:09:43[UV_Spectrometer] ├Validated value True
+          17:09:43[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:09:43[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:09:43[UV_Spectrometer] ├U3900H scan started
+          17:09:55[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:09:55[UV_Spectrometer] └Written 'start_scan' -> True
+          17:09:56[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:09:56[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:09:56[UV_Spectrometer] Reading 'data'.
+     [OK] 17:09:56[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60497
+                                    └331       203.0     0.66902
+                                    └332       202.0     0.75840
+                                    └333       201.0     0.82458
+                                    └334       200.0     0.88882
+                                    └
+                                    └[335 rows x 2 columns]
+          17:09:56[UV_Spectrometer] Writing 'start_wavelength'.
+          17:09:56[UV_Spectrometer] ├Validated value 534.0nm
+          17:09:56[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:09:56[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:09:56[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:09:56[UV_Spectrometer] Writing 'end_wavelength'.
+          17:09:56[UV_Spectrometer] ├Validated value 200.0nm
+          17:09:56[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:09:56[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:09:56[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:09:56[UV_Spectrometer] Writing 'scan_speed'.
+          17:09:56[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:09:56[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:09:56[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:09:56[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:09:56[UV_Spectrometer] Writing 'selftest'.
+          17:09:56[UV_Spectrometer] ├Validated value True
+          17:09:56[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:09:56[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:09:56[UV_Spectrometer] ├U3900H self-test started
+          17:10:03[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:10:05[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:10:05[UV_Spectrometer] └Written 'selftest' -> True
+          17:10:07[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:10:07[UV_Spectrometer] ├Validated value True
+          17:10:07[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:10:07[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:10:07[UV_Spectrometer] ├U3900H baseline calibration started
+          17:10:12[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:10:12[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:10:14[UV_Spectrometer] Writing 'start_scan'.
+          17:10:14[UV_Spectrometer] ├Validated value True
+          17:10:14[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:10:14[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:10:14[UV_Spectrometer] ├U3900H scan started
+          17:10:26[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:10:26[UV_Spectrometer] └Written 'start_scan' -> True
+          17:10:27[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:10:27[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:10:27[UV_Spectrometer] Reading 'data'.
+     [OK] 17:10:27[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1666
+                                    └331       203.0      1.2799
+                                    └332       202.0      1.4547
+                                    └333       201.0      1.6000
+                                    └334       200.0      1.6908
+                                    └
+                                    └[335 rows x 2 columns]
+          17:10:27[UV_Spectrometer] Writing 'start_wavelength'.
+          17:10:27[UV_Spectrometer] ├Validated value 534.0nm
+          17:10:27[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:10:27[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:10:27[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:10:27[UV_Spectrometer] Writing 'end_wavelength'.
+          17:10:27[UV_Spectrometer] ├Validated value 200.0nm
+          17:10:27[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:10:27[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:10:27[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:10:27[UV_Spectrometer] Writing 'scan_speed'.
+          17:10:27[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:10:27[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:10:27[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:10:27[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:10:27[UV_Spectrometer] Writing 'selftest'.
+          17:10:27[UV_Spectrometer] ├Validated value True
+          17:10:27[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:10:27[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:10:27[UV_Spectrometer] ├U3900H self-test started
+          17:10:34[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:10:36[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:10:36[UV_Spectrometer] └Written 'selftest' -> True
+          17:10:38[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:10:38[UV_Spectrometer] ├Validated value True
+          17:10:38[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:10:38[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:10:38[UV_Spectrometer] ├U3900H baseline calibration started
+          17:10:43[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:10:43[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:10:45[UV_Spectrometer] Writing 'start_scan'.
+          17:10:45[UV_Spectrometer] ├Validated value True
+          17:10:45[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:10:45[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:10:45[UV_Spectrometer] ├U3900H scan started
+          17:10:57[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:10:57[UV_Spectrometer] └Written 'start_scan' -> True
+          17:10:58[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:10:58[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:10:58[UV_Spectrometer] Reading 'data'.
+     [OK] 17:10:58[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60496
+                                    └331       203.0     0.66895
+                                    └332       202.0     0.75758
+                                    └333       201.0     0.82477
+                                    └334       200.0     0.88886
+                                    └
+                                    └[335 rows x 2 columns]
+          17:10:58[UV_Spectrometer] Writing 'start_wavelength'.
+          17:10:58[UV_Spectrometer] ├Validated value 534.0nm
+          17:10:58[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:10:58[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:10:58[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:10:58[UV_Spectrometer] Writing 'end_wavelength'.
+          17:10:58[UV_Spectrometer] ├Validated value 200.0nm
+          17:10:58[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:10:58[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:10:58[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:10:58[UV_Spectrometer] Writing 'scan_speed'.
+          17:10:58[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:10:58[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:10:58[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:10:58[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:10:58[UV_Spectrometer] Writing 'selftest'.
+          17:10:58[UV_Spectrometer] ├Validated value True
+          17:10:58[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:10:58[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:10:58[UV_Spectrometer] ├U3900H self-test started
+          17:11:06[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:11:07[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:11:07[UV_Spectrometer] └Written 'selftest' -> True
+          17:11:09[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:11:09[UV_Spectrometer] ├Validated value True
+          17:11:09[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:11:09[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:11:09[UV_Spectrometer] ├U3900H baseline calibration started
+          17:11:14[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:11:14[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:11:16[UV_Spectrometer] Writing 'start_scan'.
+          17:11:16[UV_Spectrometer] ├Validated value True
+          17:11:16[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:11:16[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:11:16[UV_Spectrometer] ├U3900H scan started
+          17:11:29[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:11:29[UV_Spectrometer] └Written 'start_scan' -> True
+          17:11:30[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:11:30[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:11:30[UV_Spectrometer] Reading 'data'.
+     [OK] 17:11:30[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1666
+                                    └331       203.0      1.2807
+                                    └332       202.0      1.4552
+                                    └333       201.0      1.6005
+                                    └334       200.0      1.6915
+                                    └
+                                    └[335 rows x 2 columns]
+          17:11:30[UV_Spectrometer] Writing 'start_wavelength'.
+          17:11:30[UV_Spectrometer] ├Validated value 534.0nm
+          17:11:30[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:11:30[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:11:30[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:11:30[UV_Spectrometer] Writing 'end_wavelength'.
+          17:11:30[UV_Spectrometer] ├Validated value 200.0nm
+          17:11:30[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:11:30[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:11:30[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:11:30[UV_Spectrometer] Writing 'scan_speed'.
+          17:11:30[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:11:30[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:11:30[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:11:30[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:11:30[UV_Spectrometer] Writing 'selftest'.
+          17:11:30[UV_Spectrometer] ├Validated value True
+          17:11:30[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:11:30[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:11:30[UV_Spectrometer] ├U3900H self-test started
+          17:11:37[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:11:39[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:11:39[UV_Spectrometer] └Written 'selftest' -> True
+          17:11:41[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:11:41[UV_Spectrometer] ├Validated value True
+          17:11:41[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:11:41[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:11:41[UV_Spectrometer] ├U3900H baseline calibration started
+          17:11:45[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:11:45[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:11:47[UV_Spectrometer] Writing 'start_scan'.
+          17:11:47[UV_Spectrometer] ├Validated value True
+          17:11:47[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:11:47[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:11:47[UV_Spectrometer] ├U3900H scan started
+          17:12:00[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:12:00[UV_Spectrometer] └Written 'start_scan' -> True
+          17:12:01[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:12:01[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:12:01[UV_Spectrometer] Reading 'data'.
+     [OK] 17:12:01[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60530
+                                    └331       203.0     0.66916
+                                    └332       202.0     0.75720
+                                    └333       201.0     0.82416
+                                    └334       200.0     0.88891
+                                    └
+                                    └[335 rows x 2 columns]
+          17:12:02[UV_Spectrometer] Writing 'start_wavelength'.
+          17:12:02[UV_Spectrometer] ├Validated value 534.0nm
+          17:12:02[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:12:02[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:12:02[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:12:02[UV_Spectrometer] Writing 'end_wavelength'.
+          17:12:02[UV_Spectrometer] ├Validated value 200.0nm
+          17:12:02[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:12:02[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:12:02[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:12:02[UV_Spectrometer] Writing 'scan_speed'.
+          17:12:02[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:12:02[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:12:02[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:12:02[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:12:02[UV_Spectrometer] Writing 'selftest'.
+          17:12:02[UV_Spectrometer] ├Validated value True
+          17:12:02[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:12:02[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:12:02[UV_Spectrometer] ├U3900H self-test started
+          17:12:09[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:12:11[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:12:11[UV_Spectrometer] └Written 'selftest' -> True
+          17:12:13[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:12:13[UV_Spectrometer] ├Validated value True
+          17:12:13[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:12:13[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:12:13[UV_Spectrometer] ├U3900H baseline calibration started
+          17:12:17[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:12:17[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:12:19[UV_Spectrometer] Writing 'start_scan'.
+          17:12:19[UV_Spectrometer] ├Validated value True
+          17:12:19[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:12:19[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:12:19[UV_Spectrometer] ├U3900H scan started
+          17:12:31[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:12:31[UV_Spectrometer] └Written 'start_scan' -> True
+          17:12:33[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:12:33[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:12:33[UV_Spectrometer] Reading 'data'.
+     [OK] 17:12:33[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1671
+                                    └331       203.0      1.2802
+                                    └332       202.0      1.4550
+                                    └333       201.0      1.5995
+                                    └334       200.0      1.6908
+                                    └
+                                    └[335 rows x 2 columns]
+          17:12:33[UV_Spectrometer] Writing 'start_wavelength'.
+          17:12:33[UV_Spectrometer] ├Validated value 534.0nm
+          17:12:33[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:12:33[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:12:33[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:12:33[UV_Spectrometer] Writing 'end_wavelength'.
+          17:12:33[UV_Spectrometer] ├Validated value 200.0nm
+          17:12:33[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:12:33[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:12:33[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:12:33[UV_Spectrometer] Writing 'scan_speed'.
+          17:12:33[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:12:33[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:12:33[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:12:33[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:12:33[UV_Spectrometer] Writing 'selftest'.
+          17:12:33[UV_Spectrometer] ├Validated value True
+          17:12:33[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:12:33[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:12:33[UV_Spectrometer] ├U3900H self-test started
+          17:12:40[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:12:41[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:12:41[UV_Spectrometer] └Written 'selftest' -> True
+          17:12:43[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:12:43[UV_Spectrometer] ├Validated value True
+          17:12:43[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:12:43[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:12:43[UV_Spectrometer] ├U3900H baseline calibration started
+          17:12:48[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:12:48[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:12:50[UV_Spectrometer] Writing 'start_scan'.
+          17:12:50[UV_Spectrometer] ├Validated value True
+          17:12:50[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:12:50[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:12:50[UV_Spectrometer] ├U3900H scan started
+          17:13:05[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:13:05[UV_Spectrometer] └Written 'start_scan' -> True
+          17:13:06[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:13:06[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:13:06[UV_Spectrometer] Reading 'data'.
+     [OK] 17:13:06[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60494
+                                    └331       203.0     0.66940
+                                    └332       202.0     0.75814
+                                    └333       201.0     0.82415
+                                    └334       200.0     0.88863
+                                    └
+                                    └[335 rows x 2 columns]
+     [OK] 17:15:20[UV_Spectrometer] Created device.
+          17:15:20[UV_Spectrometer] Connecting...
+          17:15:20[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 17:15:20[UV_Spectrometer] └Connected.
+          17:15:20[UV_Spectrometer] Running setup options...
+     [OK] 17:15:20[UV_Spectrometer] └Setup completed.
+          17:15:20[UV_Spectrometer] Initializing...
+     [OK] 17:15:20[UV_Spectrometer] └Initialization completed.
+          17:15:23[UV_Spectrometer] Writing 'start_wavelength'.
+          17:15:23[UV_Spectrometer] ├Validated value 534.0nm
+          17:15:23[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:15:23[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:15:23[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:15:23[UV_Spectrometer] Writing 'end_wavelength'.
+          17:15:23[UV_Spectrometer] ├Validated value 200.0nm
+          17:15:23[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:15:23[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:15:23[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:15:23[UV_Spectrometer] Writing 'scan_speed'.
+          17:15:23[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:15:23[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:15:23[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:15:23[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:15:23[UV_Spectrometer] Writing 'selftest'.
+          17:15:23[UV_Spectrometer] ├Validated value True
+          17:15:23[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:15:23[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:15:23[UV_Spectrometer] ├U3900H self-test started
+          17:15:30[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:15:32[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:15:32[UV_Spectrometer] └Written 'selftest' -> True
+          17:15:34[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:15:34[UV_Spectrometer] ├Validated value True
+          17:15:34[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:15:34[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:15:34[UV_Spectrometer] ├U3900H baseline calibration started
+          17:15:38[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:15:38[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:15:40[UV_Spectrometer] Writing 'start_scan'.
+          17:15:40[UV_Spectrometer] ├Validated value True
+          17:15:40[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:15:40[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:15:40[UV_Spectrometer] ├U3900H scan started
+          17:15:53[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:15:53[UV_Spectrometer] └Written 'start_scan' -> True
+          17:15:54[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:15:54[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:15:54[UV_Spectrometer] Reading 'data'.
+     [OK] 17:15:54[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60555
+                                    └331       203.0     0.66915
+                                    └332       202.0     0.75774
+                                    └333       201.0     0.82390
+                                    └334       200.0     0.88898
+                                    └
+                                    └[335 rows x 2 columns]
+          17:15:54[UV_Spectrometer] Writing 'start_wavelength'.
+          17:15:54[UV_Spectrometer] ├Validated value 534.0nm
+          17:15:54[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:15:54[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:15:54[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:15:54[UV_Spectrometer] Writing 'end_wavelength'.
+          17:15:54[UV_Spectrometer] ├Validated value 200.0nm
+          17:15:54[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:15:54[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:15:54[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:15:54[UV_Spectrometer] Writing 'scan_speed'.
+          17:15:54[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:15:54[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:15:54[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:15:54[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:15:54[UV_Spectrometer] Writing 'selftest'.
+          17:15:54[UV_Spectrometer] ├Validated value True
+          17:15:54[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:15:54[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:15:54[UV_Spectrometer] ├U3900H self-test started
+          17:16:01[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:16:03[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:16:03[UV_Spectrometer] └Written 'selftest' -> True
+          17:16:05[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:16:05[UV_Spectrometer] ├Validated value True
+          17:16:05[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:16:05[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:16:05[UV_Spectrometer] ├U3900H baseline calibration started
+          17:16:10[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:16:10[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:16:12[UV_Spectrometer] Writing 'start_scan'.
+          17:16:12[UV_Spectrometer] ├Validated value True
+          17:16:12[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:16:12[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:16:12[UV_Spectrometer] ├U3900H scan started
+          17:16:25[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:16:25[UV_Spectrometer] └Written 'start_scan' -> True
+          17:16:26[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:16:26[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:16:26[UV_Spectrometer] Reading 'data'.
+     [OK] 17:16:26[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1672
+                                    └331       203.0      1.2799
+                                    └332       202.0      1.4553
+                                    └333       201.0      1.5999
+                                    └334       200.0      1.6910
+                                    └
+                                    └[335 rows x 2 columns]
+          17:16:26[UV_Spectrometer] Writing 'start_wavelength'.
+          17:16:26[UV_Spectrometer] ├Validated value 534.0nm
+          17:16:26[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:16:26[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:16:26[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:16:26[UV_Spectrometer] Writing 'end_wavelength'.
+          17:16:26[UV_Spectrometer] ├Validated value 200.0nm
+          17:16:26[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:16:26[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:16:26[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:16:26[UV_Spectrometer] Writing 'scan_speed'.
+          17:16:26[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:16:26[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:16:26[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:16:26[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:16:26[UV_Spectrometer] Writing 'selftest'.
+          17:16:26[UV_Spectrometer] ├Validated value True
+          17:16:26[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:16:26[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:16:26[UV_Spectrometer] ├U3900H self-test started
+          17:16:34[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:16:35[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:16:35[UV_Spectrometer] └Written 'selftest' -> True
+          17:16:37[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:16:37[UV_Spectrometer] ├Validated value True
+          17:16:37[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:16:37[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:16:37[UV_Spectrometer] ├U3900H baseline calibration started
+          17:16:42[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:16:42[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:16:44[UV_Spectrometer] Writing 'start_scan'.
+          17:16:44[UV_Spectrometer] ├Validated value True
+          17:16:44[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:16:44[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:16:44[UV_Spectrometer] ├U3900H scan started
+          17:16:58[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:16:58[UV_Spectrometer] └Written 'start_scan' -> True
+          17:16:59[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:16:59[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:16:59[UV_Spectrometer] Reading 'data'.
+     [OK] 17:16:59[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60508
+                                    └331       203.0     0.66882
+                                    └332       202.0     0.75776
+                                    └333       201.0     0.82371
+                                    └334       200.0     0.88912
+                                    └
+                                    └[335 rows x 2 columns]
+          17:16:59[UV_Spectrometer] Writing 'start_wavelength'.
+          17:16:59[UV_Spectrometer] ├Validated value 534.0nm
+          17:16:59[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:16:59[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:16:59[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:16:59[UV_Spectrometer] Writing 'end_wavelength'.
+          17:16:59[UV_Spectrometer] ├Validated value 200.0nm
+          17:16:59[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:16:59[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:16:59[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:16:59[UV_Spectrometer] Writing 'scan_speed'.
+          17:16:59[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:16:59[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:16:59[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:16:59[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:16:59[UV_Spectrometer] Writing 'selftest'.
+          17:16:59[UV_Spectrometer] ├Validated value True
+          17:16:59[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:16:59[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:16:59[UV_Spectrometer] ├U3900H self-test started
+          17:17:06[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:17:08[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:17:08[UV_Spectrometer] └Written 'selftest' -> True
+          17:17:10[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:17:10[UV_Spectrometer] ├Validated value True
+          17:17:10[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:17:10[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:17:10[UV_Spectrometer] ├U3900H baseline calibration started
+          17:17:14[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:17:14[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:17:16[UV_Spectrometer] Writing 'start_scan'.
+          17:17:16[UV_Spectrometer] ├Validated value True
+          17:17:16[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:17:16[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:17:16[UV_Spectrometer] ├U3900H scan started
+     [OK] 17:18:20[UV_Spectrometer] Created device.
+          17:18:20[UV_Spectrometer] Connecting...
+          17:18:20[UV_Spectrometer] ├Connected to U3900H at localhost:9100
+     [OK] 17:18:20[UV_Spectrometer] └Connected.
+          17:18:20[UV_Spectrometer] Running setup options...
+     [OK] 17:18:20[UV_Spectrometer] └Setup completed.
+          17:18:20[UV_Spectrometer] Initializing...
+     [OK] 17:18:20[UV_Spectrometer] └Initialization completed.
+          17:18:23[UV_Spectrometer] Writing 'start_wavelength'.
+          17:18:23[UV_Spectrometer] ├Validated value 534.0nm
+          17:18:23[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:18:23[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:18:23[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:18:23[UV_Spectrometer] Writing 'end_wavelength'.
+          17:18:23[UV_Spectrometer] ├Validated value 200.0nm
+          17:18:23[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:18:23[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:18:23[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:18:23[UV_Spectrometer] Writing 'scan_speed'.
+          17:18:23[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:18:23[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:18:23[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:18:23[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:18:23[UV_Spectrometer] Writing 'selftest'.
+          17:18:23[UV_Spectrometer] ├Validated value True
+          17:18:23[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:18:23[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:18:23[UV_Spectrometer] ├U3900H self-test started
+          17:18:30[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:18:32[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:18:32[UV_Spectrometer] └Written 'selftest' -> True
+          17:18:34[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:18:34[UV_Spectrometer] ├Validated value True
+          17:18:34[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:18:34[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:18:34[UV_Spectrometer] ├U3900H baseline calibration started
+          17:18:39[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:18:39[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:18:41[UV_Spectrometer] Writing 'start_scan'.
+          17:18:41[UV_Spectrometer] ├Validated value True
+          17:18:41[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:18:41[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:18:41[UV_Spectrometer] ├U3900H scan started
+          17:18:53[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:18:53[UV_Spectrometer] └Written 'start_scan' -> True
+          17:18:55[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:18:55[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:18:55[UV_Spectrometer] Reading 'data'.
+     [OK] 17:18:55[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0     0.00100
+                                    └1         533.0    -0.00200
+                                    └2         532.0     0.00100
+                                    └3         531.0     0.00000
+                                    └4         530.0    -0.00200
+                                    └..          ...         ...
+                                    └330       204.0     0.60524
+                                    └331       203.0     0.66970
+                                    └332       202.0     0.75785
+                                    └333       201.0     0.82455
+                                    └334       200.0     0.88920
+                                    └
+                                    └[335 rows x 2 columns]
+          17:18:55[UV_Spectrometer] Writing 'start_wavelength'.
+          17:18:55[UV_Spectrometer] ├Validated value 534.0nm
+          17:18:55[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:18:55[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:18:55[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:18:55[UV_Spectrometer] Writing 'end_wavelength'.
+          17:18:55[UV_Spectrometer] ├Validated value 200.0nm
+          17:18:55[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:18:55[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:18:55[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:18:55[UV_Spectrometer] Writing 'scan_speed'.
+          17:18:55[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:18:55[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:18:55[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:18:55[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:18:55[UV_Spectrometer] Writing 'selftest'.
+          17:18:55[UV_Spectrometer] ├Validated value True
+          17:18:55[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:18:55[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:18:55[UV_Spectrometer] ├U3900H self-test started
+          17:19:02[UV_Spectrometer] ├U3900H self-test phase 1 complete
+          17:19:04[UV_Spectrometer] ├U3900H self-test complete
+     [OK] 17:19:04[UV_Spectrometer] └Written 'selftest' -> True
+          17:19:06[UV_Spectrometer] Writing 'baseline_calibrate'.
+          17:19:06[UV_Spectrometer] ├Validated value True
+          17:19:06[UV_Spectrometer] ├[DIAG] _write() called: name=baseline_calibrate, value=True, type=bool
+          17:19:06[UV_Spectrometer] ├[DIAG] Triggering _do_baseline()
+          17:19:06[UV_Spectrometer] ├U3900H baseline calibration started
+          17:19:10[UV_Spectrometer] ├U3900H baseline calibration complete
+     [OK] 17:19:10[UV_Spectrometer] └Written 'baseline_calibrate' -> True
+          17:19:12[UV_Spectrometer] Writing 'start_scan'.
+          17:19:12[UV_Spectrometer] ├Validated value True
+          17:19:12[UV_Spectrometer] ├[DIAG] _write() called: name=start_scan, value=True, type=bool
+          17:19:12[UV_Spectrometer] ├[DIAG] Triggering _do_scan()
+          17:19:12[UV_Spectrometer] ├U3900H scan started
+          17:19:25[UV_Spectrometer] ├U3900H scan complete, 335 points
+     [OK] 17:19:25[UV_Spectrometer] └Written 'start_scan' -> True
+          17:19:26[UV_Spectrometer] Reading 'scan_progress'.
+     [OK] 17:19:26[UV_Spectrometer] └Read 'scan_progress' <- 100.0
+          17:19:26[UV_Spectrometer] Reading 'data'.
+     [OK] 17:19:26[UV_Spectrometer] └Read 'data' <-      wavelength  absorbance
+                                    └0         534.0      0.0010
+                                    └1         533.0      0.0000
+                                    └2         532.0     -0.0010
+                                    └3         531.0     -0.0020
+                                    └4         530.0      0.0000
+                                    └..          ...         ...
+                                    └330       204.0      1.1670
+                                    └331       203.0      1.2799
+                                    └332       202.0      1.4546
+                                    └333       201.0      1.6001
+                                    └334       200.0      1.6904
+                                    └
+                                    └[335 rows x 2 columns]
+          17:19:26[UV_Spectrometer] Writing 'start_wavelength'.
+          17:19:26[UV_Spectrometer] ├Validated value 534.0nm
+          17:19:26[UV_Spectrometer] ├[DIAG] _write() called: name=start_wavelength, value=534.0, type=float
+          17:19:26[UV_Spectrometer] ├Start wavelength set to 534.0 nm
+     [OK] 17:19:26[UV_Spectrometer] └Written 'start_wavelength' -> 534.0nm
+          17:19:26[UV_Spectrometer] Writing 'end_wavelength'.
+          17:19:26[UV_Spectrometer] ├Validated value 200.0nm
+          17:19:26[UV_Spectrometer] ├[DIAG] _write() called: name=end_wavelength, value=200.0, type=float
+          17:19:26[UV_Spectrometer] ├End wavelength set to 200.0 nm
+     [OK] 17:19:26[UV_Spectrometer] └Written 'end_wavelength' -> 200.0nm
+          17:19:26[UV_Spectrometer] Writing 'scan_speed'.
+          17:19:26[UV_Spectrometer] ├Validated value 300.0nm/min
+          17:19:26[UV_Spectrometer] ├[DIAG] _write() called: name=scan_speed, value=300.0, type=float
+          17:19:26[UV_Spectrometer] ├Scan speed set to 300.0 nm/min
+     [OK] 17:19:26[UV_Spectrometer] └Written 'scan_speed' -> 300.0nm/min
+          17:19:26[UV_Spectrometer] Writing 'selftest'.
+          17:19:26[UV_Spectrometer] ├Validated value True
+          17:19:26[UV_Spectrometer] ├[DIAG] _write() called: name=selftest, value=True, type=bool
+          17:19:26[UV_Spectrometer] ├[DIAG] Triggering _do_selftest()
+          17:19:26[UV_Spectrometer] ├U3900H self-test started

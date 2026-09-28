@@ -116,8 +116,12 @@ class GuiRoot(tk.Tk):
 
         # icon
         self.project_root = getcwd()
-        icon = GuiRoot.get_icon()
+        icon = GuiRoot.get_icon(master=self)
         if icon is not None:
+            # Keep a reference so the image is not garbage-collected, and make
+            # sure it belongs to this root's interpreter (master=self), otherwise
+            # iconphoto fails with "not a photo image" when multiple Tk roots exist.
+            self._icon = icon
             self.iconphoto(True, icon)
 
         # main window
@@ -163,9 +167,10 @@ class GuiRoot(tk.Tk):
         self._log_queue = log_queue
 
     @staticmethod
-    def get_icon():
+    def get_icon(master=None):
         try:
             icon = tk.PhotoImage(
+                master=master,
                 file=os.path.join(path_to_img_folder(), "NRG_icon.png")
             )
             return icon

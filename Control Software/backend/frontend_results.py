@@ -244,6 +244,10 @@ def handle_results(
     """
     # get the results df:
     # check if there is data in the visual queue:
+    if backend.ml_experiment_class is None:
+        # ML 实验尚未初始化（平台正在构建或未启动），暂无结果可显示
+        st.write("暂无结果")
+        return
     visual_data = backend.ml_experiment_class.get_visual()
     if visual_data is not None and not isinstance(visual_data, str):
         visual_data = visual_data.drop_duplicates(subset=["run_index"], keep="last")

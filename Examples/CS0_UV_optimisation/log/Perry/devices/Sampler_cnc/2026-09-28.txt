@@ -1,0 +1,520 @@
+     [OK] 15:49:01[Sampler_cnc] Created device.
+          15:49:01[Sampler_cnc] Connecting...
+     [OK] 15:49:01[Sampler_cnc] └Connected.
+          15:49:01[Sampler_cnc] Running setup options...
+     [OK] 15:49:01[Sampler_cnc] └Setup completed.
+          15:49:01[Sampler_cnc] Initializing...
+          15:49:01[Sampler_cnc] ├Reading grbl settings.
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 15:49:01[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 15:49:01[Sampler_cnc] │ └Read grbl settings.
+     [OK] 15:49:01[Sampler_cnc] └Initialization completed.
+     [OK] 15:52:18[Sampler_cnc] Created device.
+          15:52:18[Sampler_cnc] Connecting...
+     [OK] 15:52:18[Sampler_cnc] └Connected.
+          15:52:18[Sampler_cnc] Running setup options...
+     [OK] 15:52:18[Sampler_cnc] └Setup completed.
+          15:52:18[Sampler_cnc] Initializing...
+          15:52:18[Sampler_cnc] ├Reading grbl settings.
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 15:52:18[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 15:52:18[Sampler_cnc] │ └Read grbl settings.
+     [OK] 15:52:18[Sampler_cnc] └Initialization completed.
+     [OK] 15:57:32[Sampler_cnc] Created device.
+          15:57:32[Sampler_cnc] Connecting...
+     [OK] 15:57:32[Sampler_cnc] └Connected.
+          15:57:32[Sampler_cnc] Running setup options...
+     [OK] 15:57:32[Sampler_cnc] └Setup completed.
+          15:57:32[Sampler_cnc] Initializing...
+          15:57:32[Sampler_cnc] ├Reading grbl settings.
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 15:57:32[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 15:57:32[Sampler_cnc] │ └Read grbl settings.
+     [OK] 15:57:32[Sampler_cnc] └Initialization completed.
+     [OK] 15:59:04[Sampler_cnc] Created device.
+          15:59:04[Sampler_cnc] Connecting...
+     [OK] 15:59:04[Sampler_cnc] └Connected.
+          15:59:04[Sampler_cnc] Running setup options...
+     [OK] 15:59:04[Sampler_cnc] └Setup completed.
+          15:59:04[Sampler_cnc] Initializing...
+          15:59:04[Sampler_cnc] ├Reading grbl settings.
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 15:59:04[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 15:59:04[Sampler_cnc] │ └Read grbl settings.
+     [OK] 15:59:04[Sampler_cnc] └Initialization completed.
+     [OK] 16:02:41[Sampler_cnc] Created device.
+          16:02:41[Sampler_cnc] Connecting...
+     [OK] 16:02:41[Sampler_cnc] └Connected.
+          16:02:41[Sampler_cnc] Running setup options...
+     [OK] 16:02:41[Sampler_cnc] └Setup completed.
+          16:02:41[Sampler_cnc] Initializing...
+          16:02:41[Sampler_cnc] ├Reading grbl settings.
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 16:02:41[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 16:02:41[Sampler_cnc] │ └Read grbl settings.
+     [OK] 16:02:41[Sampler_cnc] └Initialization completed.
+     [OK] 16:25:29[Sampler_cnc] Created device.
+          16:25:29[Sampler_cnc] Connecting...
+     [OK] 16:25:29[Sampler_cnc] └Connected.
+          16:25:29[Sampler_cnc] Running setup options...
+     [OK] 16:25:29[Sampler_cnc] └Setup completed.
+          16:25:29[Sampler_cnc] Initializing...
+          16:25:29[Sampler_cnc] ├Reading grbl settings.
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 16:25:29[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 16:25:29[Sampler_cnc] │ └Read grbl settings.
+     [OK] 16:25:29[Sampler_cnc] └Initialization completed.
+     [OK] 16:27:24[Sampler_cnc] Created device.
+          16:27:24[Sampler_cnc] Connecting...
+     [OK] 16:27:24[Sampler_cnc] └Connected.
+          16:27:24[Sampler_cnc] Running setup options...
+     [OK] 16:27:24[Sampler_cnc] └Setup completed.
+          16:27:24[Sampler_cnc] Initializing...
+          16:27:24[Sampler_cnc] ├Reading grbl settings.
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 16:27:24[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 16:27:24[Sampler_cnc] │ └Read grbl settings.
+     [OK] 16:27:24[Sampler_cnc] └Initialization completed.
+     [OK] 16:50:13[Sampler_cnc] Created device.
+          16:50:13[Sampler_cnc] Connecting...
+     [OK] 16:50:13[Sampler_cnc] └Connected.
+          16:50:13[Sampler_cnc] Running setup options...
+     [OK] 16:50:13[Sampler_cnc] └Setup completed.
+          16:50:13[Sampler_cnc] Initializing...
+          16:50:13[Sampler_cnc] ├Reading grbl settings.
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 16:50:13[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 16:50:13[Sampler_cnc] │ └Read grbl settings.
+     [OK] 16:50:13[Sampler_cnc] └Initialization completed.
+     [OK] 16:59:37[Sampler_cnc] Created device.
+          16:59:37[Sampler_cnc] Connecting...
+     [OK] 16:59:37[Sampler_cnc] └Connected.
+          16:59:37[Sampler_cnc] Running setup options...
+     [OK] 16:59:37[Sampler_cnc] └Setup completed.
+          16:59:37[Sampler_cnc] Initializing...
+          16:59:37[Sampler_cnc] ├Reading grbl settings.
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 16:59:37[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 16:59:37[Sampler_cnc] │ └Read grbl settings.
+     [OK] 16:59:37[Sampler_cnc] └Initialization completed.
+     [OK] 17:05:49[Sampler_cnc] Created device.
+          17:05:49[Sampler_cnc] Connecting...
+     [OK] 17:05:49[Sampler_cnc] └Connected.
+          17:05:49[Sampler_cnc] Running setup options...
+     [OK] 17:05:49[Sampler_cnc] └Setup completed.
+          17:05:49[Sampler_cnc] Initializing...
+          17:05:49[Sampler_cnc] ├Reading grbl settings.
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 17:05:49[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 17:05:49[Sampler_cnc] │ └Read grbl settings.
+     [OK] 17:05:49[Sampler_cnc] └Initialization completed.
+     [OK] 17:08:20[Sampler_cnc] Created device.
+          17:08:20[Sampler_cnc] Connecting...
+     [OK] 17:08:20[Sampler_cnc] └Connected.
+          17:08:20[Sampler_cnc] Running setup options...
+     [OK] 17:08:20[Sampler_cnc] └Setup completed.
+          17:08:20[Sampler_cnc] Initializing...
+          17:08:20[Sampler_cnc] ├Reading grbl settings.
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 17:08:20[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 17:08:20[Sampler_cnc] │ └Read grbl settings.
+     [OK] 17:08:20[Sampler_cnc] └Initialization completed.
+     [OK] 17:15:20[Sampler_cnc] Created device.
+          17:15:20[Sampler_cnc] Connecting...
+     [OK] 17:15:20[Sampler_cnc] └Connected.
+          17:15:20[Sampler_cnc] Running setup options...
+     [OK] 17:15:20[Sampler_cnc] └Setup completed.
+          17:15:20[Sampler_cnc] Initializing...
+          17:15:20[Sampler_cnc] ├Reading grbl settings.
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 17:15:20[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 17:15:20[Sampler_cnc] │ └Read grbl settings.
+     [OK] 17:15:20[Sampler_cnc] └Initialization completed.
+     [OK] 17:18:20[Sampler_cnc] Created device.
+          17:18:20[Sampler_cnc] Connecting...
+     [OK] 17:18:20[Sampler_cnc] └Connected.
+          17:18:20[Sampler_cnc] Running setup options...
+     [OK] 17:18:20[Sampler_cnc] └Setup completed.
+          17:18:20[Sampler_cnc] Initializing...
+          17:18:20[Sampler_cnc] ├Reading grbl settings.
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'step_pulse' <- 10  usec
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'step_idle_delay' <- 25  msec
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'step_port_invert_mask' <- 0 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'dir_port_invert_mask' <- 0 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'step_enable_invert' <- 0 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'limit_pins_invert' <- 0 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'probe_pin_invert' <- 0 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'status_report_mask' <- 3 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'junction_deviation' <- 0.010 mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'arc_tolerance' <- 0.002 mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'report_inches' <- 0 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'soft_limits' <- 1 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'hard_limits' <- 1 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'homing_cycle' <- 1 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'homing_dir_invert_mask' <- 3 
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'homing_feed' <- 25.000 mm/min
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'homing_seek' <- 2000.000 mm/min
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'homing_debounce' <- 250  msec
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'homing_pull-off' <- 1.000 mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'x_move' <- 400.000 step/mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'y_move' <- 400.000 step/mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'z_move' <- 400.000 step/mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'x_max_rate' <- 6000.000 mm/min
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'y_max_rate' <- 6000.000 mm/min
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'z_max_rate' <- 1000.000 mm/min
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'x_accel' <- 100.000 mm/sec^2
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'y_accel' <- 100.000 mm/sec^2
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'z_accel' <- 50.000 mm/sec^2
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'x_max_travel' <- 173.000 mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'y_max_travel' <- 291.000 mm
+     [OK] 17:18:20[Sampler_cnc] │ ├Read 'z_max_travel' <- 77.500 mm
+     [OK] 17:18:20[Sampler_cnc] │ └Read grbl settings.
+     [OK] 17:18:20[Sampler_cnc] └Initialization completed.
