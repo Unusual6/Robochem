@@ -145,15 +145,12 @@ class PlatformBackend(BaseLoggedClass):
     _platform_ready = False
     _results_df = None
     platform_experiment: BaseExperiment | None = None
-    _spectrometer_server_process: subprocess.Popen | None = None
-
     def __del__(self):
         try:
             if self.platform_experiment is not None:
                 self.platform_experiment.stop()
         except:
             pass
-        self._stop_spectrometer_server()
 
     def __init__(self, streamlit_session: SessionStateProxy) -> None:
         """Initialises the platform backend"""
@@ -732,9 +729,6 @@ class PlatformBackend(BaseLoggedClass):
             platform_name = self.session_container["platform_name"]
             # get the DFA for the platform:
             samples_df = self.merge_dfs()
-
-            # 如果分析类型是 UV，自动启动虚拟光谱仪服务端
-            self._start_spectrometer_server_if_needed(analysis_type)
 
             # start the experiment:
             # optional arguments for Platform object, see Omniplatypus Platform.build() for details.
